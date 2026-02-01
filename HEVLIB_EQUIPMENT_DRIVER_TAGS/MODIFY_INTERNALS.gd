@@ -31,23 +31,39 @@ const MODIFY_INTERNALS = [
 		"storage_flat":2000,
 		"mass":1600,
 		"mass_per_tonne_of_processed_ore":100,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_2K"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_4K",
 		"storage_flat":4000,
 		"mass":3300,
 		"mass_per_tonne_of_processed_ore":100,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_4K"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_6K",
 		"storage_flat":6000,
 		"mass":5500,
 		"mass_per_tonne_of_processed_ore":100,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_6K"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
 		"force_type":"divided",
-		"mass":-2650
+		"mass":-2650,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_BOLTS"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH4",
@@ -55,7 +71,11 @@ const MODIFY_INTERNALS = [
 		"storage_multi_lower":2,
 		"force_type":"amorphic",
 		"mass_per_tonne_total_storage_added":-20,
-		"mass":1500
+		"mass":1500,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_AMORPH4"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH5",
@@ -63,7 +83,11 @@ const MODIFY_INTERNALS = [
 		"storage_multi_lower":3,
 		"force_type":"amorphic",
 		"mass_per_tonne_total_storage_added":-75,
-		"mass":2500
+		"mass":2500,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_AMORPH5"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH6",
@@ -71,49 +95,77 @@ const MODIFY_INTERNALS = [
 		"storage_multi_lower":6,
 		"force_type":"amorphic",
 		"mass_per_tonne_total_storage_added":-165,
-		"mass":3750
+		"mass":3750,
+		"display_system":{
+			"name":"SYSTEM_CARGO_MOD_AMORPH6"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK",
 		"crew_count":1,
 		"crew_morale":-0.3,
 		"mass":250,
-		"mass_per_crew_member":15
+		"mass_per_crew_member":15,
+		"display_system":{
+			"name":"SYSTEM_CREW_ADD_BUNK"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK2",
 		"crew_count":2,
 		"crew_morale":-0.4,
 		"mass":500,
-		"mass_per_crew_member":35
+		"mass_per_crew_member":35,
+		"display_system":{
+			"name":"SYSTEM_CREW_ADD_BUNK2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_CAPSULE",
 		"crew_count":2,
 		"crew_morale":-0.25,
 		"mass":1000,
-		"mass_per_crew_member":60
+		"mass_per_crew_member":60,
+		"display_system":{
+			"name":"SYSTEM_CREW_ADD_CAPSULE"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_HOME",
 		"crew_count":0,
 		"crew_morale":0.1,
 		"mass":200,
-		"mass_per_crew_member":75
+		"mass_per_crew_member":75,
+		"display_system":{
+			"name":"SYSTEM_CREW_MOD_HOME"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_KMX",
 		"crew_count":-1,
 		"crew_morale":0.2,
 		"mass":500,
-		"mass_per_crew_member":150
+		"mass_per_crew_member":150,
+		"display_system":{
+			"name":"SYSTEM_CREW_MOD_KMX"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_OCM",
 		"crew_count":-2,
 		"crew_morale":0.5,
 		"mass":700,
-		"mass_per_crew_member":200
+		"mass_per_crew_member":200,
+		"display_system":{
+			"name":"SYSTEM_CREW_MOD_OCM"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_1",
@@ -122,6 +174,10 @@ const MODIFY_INTERNALS = [
 		"nano_multi_upper":3,
 		"nano_multi_lower":4,
 		"mass":3000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_2",
@@ -130,6 +186,10 @@ const MODIFY_INTERNALS = [
 		"nano_multi_upper":1,
 		"nano_multi_lower":2,
 		"mass":10000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_1",
@@ -139,6 +199,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":9,
 		"storage_multi_lower":10,
 		"mass":9000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
@@ -148,6 +212,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":4,
 		"storage_multi_lower":5,
 		"mass":20000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_3",
@@ -157,6 +225,10 @@ const MODIFY_INTERNALS = [
 		"propellant_multi_upper":2,
 		"propellant_multi_lower":3,
 		"mass":35000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_3"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_1",
@@ -165,6 +237,10 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":3,
 		"ammo_multi_lower":4,
 		"mass":4500,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_NANO_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_2",
@@ -173,6 +249,10 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":1,
 		"ammo_multi_lower":2,
 		"mass":12000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_NANO_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_1",
@@ -182,6 +262,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":9,
 		"storage_multi_lower":10,
 		"mass":10500,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_NANO_EXTEND_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_2",
@@ -191,6 +275,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":4,
 		"storage_multi_lower":5,
 		"mass":25000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_NANO_EXTEND_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_3",
@@ -200,6 +288,10 @@ const MODIFY_INTERNALS = [
 		"propellant_multi_upper":2,
 		"propellant_multi_lower":3,
 		"mass":40000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_NANO_EXTEND_3"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_1",
@@ -207,6 +299,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":9,
 		"storage_multi_lower":10,
 		"mass":1500,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_PROP_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_2",
@@ -214,6 +310,10 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":31,
 		"storage_multi_lower":40,
 		"mass":7000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_PROP_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_1",
@@ -224,6 +324,10 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":7,
 		"ammo_multi_lower":8,
 		"mass":3000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_PROP_EXTEND_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_2",
@@ -234,6 +338,10 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":6,
 		"ammo_multi_lower":8,
 		"mass":8000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_PROP_EXTEND_2"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_3",
@@ -244,6 +352,10 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":5,
 		"ammo_multi_lower":8,
 		"mass":15000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_PROP_EXTEND_3"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_1",
@@ -252,6 +364,10 @@ const MODIFY_INTERNALS = [
 		"nano_speed_multi_upper":7,
 		"nano_speed_multi_lower":4,
 		"mass":3800,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_CONSUMABLESPEED_1"
+		},
+		"show_modifier_system":false,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_2",
@@ -261,5 +377,9 @@ const MODIFY_INTERNALS = [
 		"nano_speed_multi_lower":2,
 		"crew_morale":-0.1,
 		"mass":9000,
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_CONSUMABLESPEED_2"
+		},
+		"show_modifier_system":false,
 	},
 ]
