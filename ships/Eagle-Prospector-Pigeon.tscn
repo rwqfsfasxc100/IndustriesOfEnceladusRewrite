@@ -171,12 +171,13 @@ __meta__ = {
 "_edit_group_": true,
 "_edit_horizontal_guides_": [  ]
 }
+crewMoraleBonus = -0.3
 shipName = "SHIP_PROSPECTOR_PIGEON"
 baseShipName = "SHIP_PROSPECTOR"
 shipType = "fission"
 crew = 6
 hullPrice = 5752500
-processedCargoCapacity = 14000
+processedCargoCapacity = 10000
 lifepod = ExtResource( 18 )
 model = "PROSPECTOR"
 defaultAutopilot = "SYSTEM_AUTOPILOT_MK2"
