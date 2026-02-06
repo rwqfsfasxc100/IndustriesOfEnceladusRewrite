@@ -59,9 +59,9 @@ func get_power():
 	return powerDrawKw
 
 func get_mpu_power():
-	var dynamicKgps = (get_mpu_speed()/100) * self_kgps
+	var dynamicKgps = (get_mpu_speed()/100) * basekgps
 	var ratio = dynamicKgps / basekgps
-	var pv = powerFromRatio(ratio) * dynamicKgps
+	var pv = powerFromRatio(ratio) #* dynamicKgps
 	var powerDrawKw = (basePowerDrawPerKg * pv)/basekgps
 	return powerDrawKw
 
@@ -74,8 +74,8 @@ func getParameters():
 	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [(get_preprocessor_efficiency() * 100.0)], "%"]})
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
-	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
-		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [get_mpu_speed()], "%"]})
+#	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
+#		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [get_mpu_speed()], "%"]})
 		
 	return out
 
@@ -94,17 +94,17 @@ func getTuneables():
 			"unit": "kg/s", 
 			"testProtocol": "cargo"
 		}})
-	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
-		out.merge({"IOE_TUNE_PREPROC_MODIFY": {
-			"type": "float", 
-			"min": modify_mineralEfficiency + tunable_mpu_min, 
-			"max": modify_mineralEfficiency + tunable_mpu_max, 
-			"step": 1, 
-			"default": modify_mineralEfficiency, 
-			"current": get_mpu_efficiency(), 
-			"unit": "%", 
-			"testProtocol": "cargo"
-		}})
+#	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
+#		out.merge({"IOE_TUNE_PREPROC_MODIFY": {
+#			"type": "float", 
+#			"min": modify_mineralEfficiency + tunable_mpu_min, 
+#			"max": modify_mineralEfficiency + tunable_mpu_max, 
+#			"step": 1, 
+#			"default": modify_mineralEfficiency, 
+#			"current": get_mpu_efficiency(), 
+#			"unit": "%", 
+#			"testProtocol": "cargo"
+#		}})
 	return out
 
 var processor = null
@@ -222,20 +222,23 @@ func _physics_process(delta):
 
 
 func modifyProcessor():
-	var current_efficiency_multi = get_mpu_efficiency()
+	var current_efficiency_multi = modify_mineralEfficiency
+#	var current_efficiency_multi = get_mpu_efficiency()
 	
 	
-	var newMinEff = clamp(baseMineralEfficiency * (current_efficiency_multi/100), 0.05, 0.995)
+	var newMinEff = clamp(baseMineralEfficiency * (float(current_efficiency_multi)/100), 0.05, 0.995)
 	
-	var current_speed_multi = get_mpu_speed()
+	var current_speed_multi = modify_kgps_percent_multi
+#	var current_speed_multi = get_mpu_speed()
 	var clp = clamp(current_speed_multi,10,1000)
 	var cc = clp/100.0
 	var pl = basekgps * cc
 	var om = pl + modify_kgps_add
-	var newKGPS = int(pl)
+	var newKGPS = int(om)
 	
-	
-	var newPower = get_mpu_power()
+	var rt = (float(baseMineralEfficiency)/float(newMinEff))
+	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
+#	var newPower = get_mpu_power()
 	
 	processor.set("mineralEfficiency", newMinEff)
 	processor.set("kgps",newKGPS)
