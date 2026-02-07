@@ -169,7 +169,7 @@ func _physics_process(delta):
 							var fillerMass = p.fillerContent * p.mass
 							var mineralMass = p.mineralContent * p.mass
 							var procDelta = min(fillerMass, delta * current_kgps / 1000)
-							var requiredPower = procDelta * current_powerdraw * 1000
+							var requiredPower = procDelta * current_powerdraw * 100
 							var gotPower = ship.drawEnergy(requiredPower)
 							if gotPower / requiredPower > 0.9:
 								# for some reason it doesn't work if this isn't in place
@@ -234,7 +234,7 @@ func modifyProcessor():
 	var cc = clp/100.0
 	var pl = basekgps * cc
 	var om = pl + modify_kgps_add
-	var newKGPS = int(om)
+	var newKGPS = int(max(om,5))
 	
 	var rt = (float(baseMineralEfficiency)/float(newMinEff))
 	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
