@@ -615,7 +615,6 @@ polygon = PoolVector2Array( -140, -68.0003, -143, -123, -137, -163, -111, -204, 
 polygon = PoolVector2Array( -75, 4.99983, -14, 28, 16, 28, 83, 3.00018, 134, -53.9997, 142, -145, 124, -189, 64, -234, 16, -251, 16, -268, -16, -268, -16, -251, -71, -235, -123, -186, -141, -132, -140, -64.0003 )
 
 [node name="MineralProcessingUnit_FSO" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 position = Vector2( 0, 109 )
 z_index = 50
@@ -634,8 +633,6 @@ mineralEfficiency = 0.4
 remassEfficiency = 0.4
 
 [node name="MineralProcessingUnit" type="Area2D" parent="MineralProcessingUnit_FSO"]
-visible = false
-position = Vector2( 0, -109 )
 z_index = 50
 collision_layer = 524288
 monitorable = false
@@ -646,9 +643,7 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit"]
-visible = false
 polygon = PoolVector2Array( -75, 4.99983, -14, 28, 16, 28, 83, 3.00018, 134, -53.9997, 142, -145, 124, -189, -123, -186, -141, -132, -140, -64.0003 )
-disabled = true
 
 [node name="Processing" type="AudioStreamPlayer" parent="MineralProcessingUnit_FSO"]
 stream = ExtResource( 36 )
