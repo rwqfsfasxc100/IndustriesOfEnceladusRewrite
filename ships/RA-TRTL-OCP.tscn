@@ -253,7 +253,7 @@ rotationCabinOffsetPx = 170.0
 colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider", "LeftShell", "RightShell" ]
 spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder" )
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -150, -250, 300, 400 )
+cargoHoldArea = Rect2( -150, -210, 300, 360 )
 cargoHoldOffset = Vector2( 0, 105 )
 
 [node name="Noises" parent="." instance=ExtResource( 8 )]
