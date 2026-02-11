@@ -285,7 +285,6 @@ lifepod = ExtResource( 17 )
 evaOffset = Vector2( 0, -325 )
 shockAbsorber = 0.9
 autopilotRotationPriority = 1.0
-droneGatheringSpotRotation = 3.142
 colliderPaths = [ "Collider", "Cabin" ]
 aiTargetPosition = Vector2( 0, -50 )
 aiIgnoreCollisionEnergy = 7500.0
