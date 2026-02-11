@@ -271,7 +271,7 @@ autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 170.0
 spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder", "Thrustrum", "ThrustrumBottom" )
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -150, -250, 300, 400 )
+cargoHoldArea = Rect2( -150, -160, 300, 300 )
 cargoHoldOffset = Vector2( 0, 105 )
 
 [node name="Light2D3" type="Light2D" parent="."]
@@ -643,18 +643,19 @@ range_height = 2048.0
 [node name="WeaponSlot" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 0, -225 )
 z_index = 26
+toggleCommand = "ship_slot_1"
 
 [node name="WeaponLeft" parent="." instance=ExtResource( 35 )]
 position = Vector2( -140, -167.672 )
 z_index = 33
 slot = "left"
-toggleCommand = "ship_slot_1"
+toggleCommand = "ship_slot_2"
 
 [node name="WeaponRight" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 140, -167.672 )
 z_index = 33
 slot = "right"
-toggleCommand = "ship_slot_2"
+toggleCommand = "ship_slot_3"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "appear"
@@ -854,13 +855,13 @@ range_height = 380.4
 position = Vector2( -60, 92.3281 )
 z_index = 23
 slot = "leftBack"
-toggleCommand = "ship_slot_3"
+toggleCommand = "ship_slot_4"
 
 [node name="LoStressAftStbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 60, 92.3281 )
 z_index = 23
 slot = "rightBack"
-toggleCommand = "ship_slot_4"
+toggleCommand = "ship_slot_5"
 
 [node name="MineralProcessingUnit_SMELT" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_SMELT.tscn"]
 visible = false
