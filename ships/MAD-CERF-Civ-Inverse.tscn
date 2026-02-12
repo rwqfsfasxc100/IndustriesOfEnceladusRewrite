@@ -312,7 +312,6 @@ range_height = 100.0
 
 [node name="BigHatch" type="Node2D" parent="."]
 position = Vector2( 0, -109 )
-rotation = 3.14159
 z_index = 80
 script = ExtResource( 35 )
 registerExternal = true
