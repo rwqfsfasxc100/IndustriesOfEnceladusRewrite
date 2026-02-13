@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -46,6 +46,7 @@
 [ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=44]
 [ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=45]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=46]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=47]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=48]
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=49]
 [ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=50]
@@ -292,8 +293,8 @@ aiHaulDroneAccurancy = 0.95
 aiExcavationMassLimit = 150
 aiBirdFeedSpot = Vector2( 0, 1000 )
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -250, -220, 500, 400 )
-cargoHoldOffset = Vector2( 0, 50 )
+cargoHoldArea = Rect2( -250, -120, 500, 280 )
+cargoHoldOffset = Vector2( 0, 200 )
 
 [node name="editor_allbright" type="Light2D" parent="."]
 material = SubResource( 4 )
@@ -1042,6 +1043,8 @@ mass = 0.5
 maxRpm = 1800.0
 powerDraw = 25000.0
 rpmPS = 300.0
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 47 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

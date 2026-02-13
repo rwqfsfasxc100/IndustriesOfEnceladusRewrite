@@ -181,7 +181,7 @@ evaOffset = Vector2( -38, -282 )
 model = "COTHON"
 aiMassIgnoreFraction = 0.015
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -40, -335, 80, 425 )
+cargoHoldArea = Rect2( -40, -355, 80, 425 )
 
 [node name="Noises" parent="." instance=ExtResource( 16 )]
 position = Vector2( 0, -132 )
@@ -904,18 +904,6 @@ texture = ExtResource( 36 )
 [node name="UberConversation" parent="." instance=ExtResource( 34 )]
 
 [node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 38 )]
-editor_only = false
-
-[node name="ColorRect" parent="CargoBayCoverageVisual" index="0"]
-margin_left = -40.0
-margin_top = -335.0
-margin_bottom = 90.0
-
-[node name="ReferenceRect" parent="CargoBayCoverageVisual/Offset" index="0"]
-margin_left = 0.0
-margin_top = 0.0
-margin_right = 98.0
-margin_bottom = 425.0
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
@@ -937,4 +925,3 @@ margin_bottom = 425.0
 [editable path="weapon-left-back3"]
 [editable path="weapon-right-back3"]
 [editable path="AI"]
-[editable path="CargoBayCoverageVisual"]

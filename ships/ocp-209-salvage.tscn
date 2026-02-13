@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=21]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=22]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=23]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=24]
 [ext_resource path="res://lights/spotlight.png" type="Texture" id=25]
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=26]
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=27]
@@ -177,8 +178,8 @@ aiCatchDistance = 750
 aiKeepRotationWhileExcavating = false
 aiExcavationTimeLimit = 15
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -150, -150, 300, 380 )
-cargoHoldOffset = Vector2( 0, 105 )
+cargoHoldArea = Rect2( -150, -170, 300, 400 )
+cargoHoldOffset = Vector2( 0, 170 )
 
 [node name="Noises" parent="." instance=ExtResource( 6 )]
 
@@ -212,7 +213,6 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 [node name="ShipCamera" parent="." instance=ExtResource( 8 )]
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 z_index = 29
 polygon = PoolVector2Array( 0, -400, 24, -394, 48, -380, 65, -355, 68, -324, 62, -303, 58, -293, 58, -284, 151, -279, 150, -261, 90, -256, 91, -137, 82, -121, 71, -121, 37, -135, 0, -140, 0, -156, -17, -155, -36, -135, -70, -121, -77, -116, -86, -129, -91, -139, -92, -259, -150, -262, -150, -278, -59, -283, -59, -295, -64, -305, -69, -324, -63, -360, -49, -379, -27, -393 )
@@ -525,6 +525,8 @@ polygon = PoolVector2Array( -67, -78, -24, -62, -24, 12, -12, 24, 10, 24, 22, 12
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -24, 12, -12, 24, 10, 24, 22, 12, 23, -63, 68, -79, 73, -103, 48, -145, -56, -145, -77, -103, -66, -78, -24, -62 )
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 24 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

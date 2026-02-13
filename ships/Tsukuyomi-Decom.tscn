@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=31]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=33]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=34]
 [ext_resource path="res://ships/excavator_open.wav" type="AudioStream" id=35]
@@ -134,7 +135,7 @@ tradePriceMultiplier = 2.0
 colliderPaths = [ "Collider", "NacelleTip" ]
 dialogTree = NodePath("UberConversation")
 iffWeight = 5.0
-cargoHoldArea = Rect2( -120, -1300, 240, 900 )
+cargoHoldArea = Rect2( -150, -1250, 300, 825 )
 cargoHoldOffset = Vector2( 0, -600 )
 
 [node name="ShipCamera" parent="." instance=ExtResource( 3 )]
@@ -871,6 +872,8 @@ shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 3
 
 [node name="UberConversation" parent="." instance=ExtResource( 29 )]
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 32 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

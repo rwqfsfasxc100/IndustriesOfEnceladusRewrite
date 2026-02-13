@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=29]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=30]
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=31]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=33]
 [ext_resource path="res://ships/k225-n.png" type="Texture" id=34]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=35]
@@ -271,7 +272,7 @@ autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 170.0
 spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder", "Thrustrum", "ThrustrumBottom" )
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -150, -160, 300, 300 )
+cargoHoldArea = Rect2( -150, -160, 300, 290 )
 cargoHoldOffset = Vector2( 0, 105 )
 
 [node name="Light2D3" type="Light2D" parent="."]
@@ -940,6 +941,8 @@ scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 32 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

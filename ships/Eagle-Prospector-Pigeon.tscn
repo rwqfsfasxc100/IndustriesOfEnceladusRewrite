@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=30]
 [ext_resource path="res://hud/prospector-alert.wav" type="AudioStream" id=31]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=32]
 
 [sub_resource type="ShaderMaterial" id=8]
 shader = ExtResource( 2 )
@@ -186,8 +187,8 @@ autopilotRotationPriority = 1.0
 rotationCabinOffsetPx = 10.0
 aiCatchDistance = 280
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -47, -275, 94, 303 )
-cargoHoldOffset = Vector2( 0, 32 )
+cargoHoldArea = Rect2( -47, -203, 94, 235 )
+cargoHoldOffset = Vector2( 0, 82 )
 
 [node name="Noises" parent="." instance=ExtResource( 8 )]
 
@@ -585,6 +586,7 @@ light_mask = 0
 polygon = PoolVector2Array( -22, 24, 22, 24, 22, -4, 16, -20, -16, -20, -22, -4 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 16 )]
+visible = false
 position = Vector2( 0, 2 )
 polygon = PoolVector2Array( -41, -201, -35, -185, -32, 5, -25, 13, 24, 13, 32, 5, 36, -185, 42, -201, 41, 23, -41, 23 )
 
@@ -652,6 +654,8 @@ region_rect = Rect2( 0, 348, 2816, 160 )
 systemName = "SYSTEM_REACTOR_PROSPECTOR"
 
 [node name="UberConversation" parent="." instance=ExtResource( 23 )]
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 32 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

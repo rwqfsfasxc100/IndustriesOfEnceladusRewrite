@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -30,6 +30,7 @@
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=28]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=30]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=31]
 [ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=32]
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav.sample" type="AudioStream" id=37]
@@ -182,7 +183,7 @@ aiCatchDistance = 750
 aiKeepRotationWhileExcavating = false
 aiExcavationTimeLimit = 15
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -145, -145, 290, 290 )
+cargoHoldArea = Rect2( -150, -165, 300, 330 )
 cargoHoldOffset = Vector2( 0, 105 )
 
 [node name="allbright" type="Light2D" parent="."]
@@ -713,6 +714,8 @@ region_enabled = true
 region_rect = Rect2( 0, 824, 3630, 140 )
 script = ExtResource( 4 )
 hullCustomPaintFile = "user://custom-ocp-209.png"
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 31 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=4]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=6]
@@ -841,6 +842,8 @@ region_enabled = true
 region_rect = Rect2( 0, 824, 3630, 140 )
 script = ExtResource( 4 )
 hullCustomPaintFile = "user://custom-ocp-209.png"
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 3 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

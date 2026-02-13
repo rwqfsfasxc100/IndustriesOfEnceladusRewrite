@@ -1,8 +1,9 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=3]
+[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=4]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=7]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=9]
@@ -131,7 +132,7 @@ tradePriceMultiplier = 2.0
 aiPilotingSkillAdjust = 0.5
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -36, -250, 72, 150 )
-cargoHoldOffset = Vector2( 0, -225 )
+cargoHoldOffset = Vector2( 0, -20 )
 
 [node name="allbright" type="Light2D" parent="."]
 editor_only = true
@@ -456,6 +457,8 @@ shape = SubResource( 6 )
 [node name="Hud" parent="." instance=ExtResource( 22 )]
 
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
+
+[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 4 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
