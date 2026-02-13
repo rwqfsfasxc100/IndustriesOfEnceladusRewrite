@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -55,6 +55,7 @@
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=53]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=54]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.gd" type="Script" id=55]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/CERF_ALERT.oggstr" type="AudioStream" id=56]
 
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 2 )
@@ -580,7 +581,7 @@ shape = SubResource( 12 )
 [node name="CargoHoldArea" type="Area2D" parent="."]
 z_index = 50
 collision_layer = 524288
-collision_mask = 35
+collision_mask = 33
 monitorable = false
 gravity = 0.0
 linear_damp = 0.0
@@ -662,16 +663,16 @@ slot = "middleRight"
 toggleCommand = "ship_slot_3"
 
 [node name="turret-fore-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -330, -380 )
-rotation = -0.698132
-z_index = 20
+position = Vector2( 150, 240 )
+rotation = 3.14159
+z_index = 44
 slot = "turretLeft"
 toggleCommand = "ship_slot_4"
 
 [node name="turret-fore-stbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 330, -380 )
-rotation = 0.698132
-z_index = 22
+position = Vector2( -150, 240 )
+rotation = 3.14159
+z_index = 44
 slot = "turretRight"
 toggleCommand = "ship_slot_5"
 
@@ -1026,6 +1027,7 @@ volume_db = -15.0
 autoplay = false
 
 [node name="Alert" parent="Noises" index="5"]
+stream = ExtResource( 56 )
 pitch_scale = 0.75
 
 [node name="Hud" parent="." instance=ExtResource( 19 )]
@@ -1040,6 +1042,8 @@ rpmPS = 300.0
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
+[connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_entered"]
 [connection signal="body_exited" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_exited"]
 [connection signal="body_entered" from="MineralProcessingUnit_Furnace/MineralProcessingUnit" to="MineralProcessingUnit_Furnace" method="_on_MineralProcessingUnit_body_entered"]
