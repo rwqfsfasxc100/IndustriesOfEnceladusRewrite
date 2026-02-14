@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/CERF_ALERT.ogg-797ea285f9ffe9f2cdeebcc1021588b1.oggstr"
+
+[deps]
+
+source_file="res://IndustriesOfEnceladusRewrite/ships/sounds/CERF_ALERT.ogg"
+dest_files=[ "res://.import/CERF_ALERT.ogg-797ea285f9ffe9f2cdeebcc1021588b1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
