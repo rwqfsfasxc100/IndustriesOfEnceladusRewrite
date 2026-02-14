@@ -7,7 +7,7 @@ const MOD_PRIORITY = -99
 const MOD_NAME = "Industries of Enceladus Compat Port"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 6
-const MOD_VERSION_BUGFIX = 11
+const MOD_VERSION_BUGFIX = 12
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -38,24 +38,14 @@ func _init(modLoader = ModLoader):
 	add_child(self_check)
 # replace ShipParams for hold percentage fill readout
 	replaceScene("hud/trtl/ShipParams.tscn")
-#	installScriptExtension("ships/modules/ThrusterSlot.gd")
 # install ship-ctrl.gd, adds hold sensors and AP setup
 	installScriptExtension("ships/ship-ctrl.gd")
 # install AutopilotOverlay.gd for new AP type
 	installScriptExtension("hud/AutopilotOverlay.gd")
 
-# replace slots for all our new equipment
-#	installScriptExtension("weapons/WeaponSlot.gd")
-#	installScriptExtension("weapons/drone-plant.patch.gd")
-#	replaceScene("weapons/drone-plant.tscn")
 	replaceScene("sfx/torch-PMS.tscn")
 	replaceScene("sfx/torch-ZUBRIN.tscn")
 	
-	
-	
-#	replaceScene("ships/modules/AuxSlot.tscn")
-#	replaceScene("ships/modules/ThrusterSlot.tscn")
-#	replaceScene("ships/modules/TorchSlot.tscn")
 	
 	
 # replace weapons and WeaponSlot
@@ -67,21 +57,12 @@ func _init(modLoader = ModLoader):
 	
 	replaceScene("enceladus/Dealer.tscn")
 	
-# replace the Upgrades.tscn containing equipment modifications
-#	replaceScene("weapons/WeaponSlot.tscn")
-#	replaceScene("res://IndustriesOfEnceladusRewrite/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
-	
 	
 # install the Shipyard.gd script extension, which loads replacements + new ships
 	
 	replaceScene("enceladus/Upgrades.tscn")
 	# install CurrentGame.gd which loads new ships into the game
 	
-	l("Injecting new ships")
-#	installScriptExtension("CurrentGame.gd")
-#	installScriptExtension("ships/Shipyard.gd")
-#	shipReplacements()
-# Load custom translations
 	updateTL("en") 
 	updateTL("uk_UA") 
 	updateTL("ru_RU") 
@@ -91,12 +72,7 @@ func _init(modLoader = ModLoader):
 
 
 func _ready():
-	# Adds IoE-specific ships to the event pool
-	replaceScene("story/TheRing.tscn")
 	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
-	# Game.tscn should be loaded on ready, separate from TheRing.tscn to allow for other mods to add their own events
-	replaceScene("Game.tscn")
-	made_additions()
 	l("Ready!")
 
 
@@ -198,44 +174,6 @@ func l(msg:String, title:String = MOD_NAME, version:String = str(MOD_VERSION_MAJ
 	if not MOD_VERSION_METADATA == "":
 		version = version + "-" + MOD_VERSION_METADATA
 	Debug.l("[%s V%s]: %s" % [title, version, msg])
-
-func shipReplacements():
-	replaceScene("ships/ATK225-B.tscn")
-	replaceScene("ships/ATK225-R.tscn")
-	replaceScene("ships/ATK225.tscn")
-	replaceScene("ships/ocp-209.tscn")
-	replaceScene("ships/kitsune.tscn")
-	replaceScene("ships/Eagle-Prospector-VP.tscn")
-	replaceScene("ships/Eagle-Prospector-Lux.tscn")
-	replaceScene("ships/Eagle-Prospector-Fat.tscn")
-	replaceScene("ships/Eagle-Prospector-Bald.tscn")
-	replaceScene("ships/Eagle-Prospector.tscn")
-	replaceScene("ships/EIME.tscn")
-	replaceScene("ships/RA-TRTL-K44.tscn")
-	replaceScene("ships/RA-TRTL-R.tscn")
-	replaceScene("ships/RA-TRTL-T.tscn")
-	replaceScene("ships/RA-TRTL-LCB.tscn")
-	replaceScene("ships/RA-TRTL.tscn")
-	replaceScene("ships/Cothon-V.tscn")
-	replaceScene("ships/Cothon-CHK.tscn")
-	replaceScene("ships/Cothon-Lnd.tscn")
-	replaceScene("ships/Cothon.tscn")
-
-func made_additions():
-	var slots = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/slots.gd")
-	var assignments = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/slot_assignments.gd")
-	var tags = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/tags.gd")
-	for slot in slots.get_script_constant_map():
-		addEquipmentSlot(slots.get(slot))
-	EQUIPMENT_TAGS = tags.EQUIPMENT_TAGS
-	SLOT_TAGS = tags.SLOT_TAGS
-	for slot in assignments.get_script_constant_map():
-		addEquipmentItem(assignments.get(slot))
-
-func addEquipmentSlot(slot_data: Dictionary):
-	ADD_EQUIPMENT_SLOTS.append(slot_data)
-func addEquipmentItem(item_data: Dictionary):
-	ADD_EQUIPMENT_ITEMS.append(item_data)
 
 func updateTL_r(path:String, delim:String = ",", useRelativePath:bool = true, fullLogging:bool = true):
 	if useRelativePath:
