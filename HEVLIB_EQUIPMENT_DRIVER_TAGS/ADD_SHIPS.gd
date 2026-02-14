@@ -51,7 +51,29 @@ const Tsukuyomi_Decom = {
 			"leftBay3":{"type":"SYSTEM_NONE"}, 
 			"rightBay3":{"type":"SYSTEM_NONE"},
 		},
-	}}
+	}},
+	"dealer":{
+		"age":200,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.1,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.65
+	},
+#	"miner":{
+#		"chaos":0.4
+#	},
 }
 
 const AT225_STUB = {
@@ -89,7 +111,29 @@ const AT225_STUB = {
 			"rightBay1":{"type":"SYSTEM_EXSTORAGE-R"}, 
 			"rightBay3":{"type":"SYSTEM_EXSTORAGE-R"}, 
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":60,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.3,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const ATLAS_WASP = {
@@ -120,7 +164,29 @@ const ATLAS_WASP = {
 			"middleLeft":{"type":"SYSTEM_RAILTOR"}, 
 			"middleRight":{"type":"SYSTEM_RAILTOR"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":50,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":3000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const COTHON_LUX = {
@@ -146,14 +212,36 @@ const COTHON_LUX = {
 			"main":"SYSTEM_MAIN_ENGINE_PNTR", 
 			"rcs":"SYSTEM_THRUSTER_NDSTR"
 		}, 
-		"reactor":{	"power": 8.0},
+		"reactor":{"power": 8.0},
 		"shielding":{"emp": 100},  
 		"turbine":{"power": 200.0}, 
 		"weaponSlot":{
 			"right":{"type":"SYSTEM_EMD14"}, 
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":200,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":10000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.3
+	},
+	"miner":{
+		"chaos":0.0
+	},
 }
 
 const PIGEON_PROSPECTOR = {
@@ -181,7 +269,29 @@ const PIGEON_PROSPECTOR = {
 			"right":{"type":"SYSTEM_EMD14"}, 
 			"left":{"type":"SYSTEM_EMD14"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":80,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.5,
+		"minimum_chance":0.1,
+		"money":10000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const MAD_CERF_CIV = {
@@ -219,7 +329,29 @@ const MAD_CERF_CIV = {
 			"middleRight":{"type":"SYSTEM_EMD14"}, 
 			"main":{"type":"SYSTEM_SALVAGE_ARM"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":150,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":4000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.4
+	},
 }
 
 const MAD_CERF_CIV_INVERSE = {
@@ -257,7 +389,29 @@ const MAD_CERF_CIV_INVERSE = {
 			"middleRight":{"type":"SYSTEM_EMD14"}, 
 			"main":{"type":"SYSTEM_SALVAGE_ARM"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":130,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":4000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.4
+	},
 }
 
 const OBERON = {
@@ -299,7 +453,29 @@ const OBERON = {
 			"mainLeft":{"type":"SYSTEM_SALVAGE_ARM"},
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
 		},
-	}}
+	}},
+	"dealer":{
+		"age":35,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.1,
+		"money":3000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.6
+	},
+	"miner":{
+		"chaos":0.4
+	},
 }
 
 const OCP_DD = {
@@ -349,7 +525,29 @@ const OCP_DD = {
 			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
-	}}
+	}},
+	"dealer":{
+		"age":75,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const OCP_TWIN = {
@@ -399,7 +597,29 @@ const OCP_TWIN = {
 			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
-	}}
+	}},
+	"dealer":{
+		"age":100,
+		"weight":2
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const OCP_SNAP = {
@@ -448,7 +668,29 @@ const OCP_SNAP = {
 			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
-	}}
+	}},
+	"dealer":{
+		"age":100,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const TRTL_OCP = {
@@ -482,7 +724,29 @@ const TRTL_OCP = {
 			"leftBack": {"type":"SYSTEM_NONE"},
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":60,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":5000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.2
+	},
+	"miner":{
+		"chaos":0.0
+	},
 }
 
 const TRTL_PEEPER = {
@@ -516,7 +780,29 @@ const TRTL_PEEPER = {
 			"leftBack": {"type":"SYSTEM_NONE"},
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":45,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.4,
+		"minimum_chance":0.1,
+		"money":5000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.2
+	},
+	"miner":{
+		"chaos":0.0
+	},
 }
 
 const TRTL_RAM = {
@@ -550,7 +836,29 @@ const TRTL_RAM = {
 			"right":{"type":"SYSTEM_EMD14"}, 
 			"left":{"type":"SYSTEM_EMD14"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":75,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.1,
+		"money":5000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.2
+	},
+	"miner":{
+		"chaos":0.0
+	},
 }
 
 const CK65 = {
@@ -583,7 +891,29 @@ const CK65 = {
 			"right":{"type":"SYSTEM_EMD14"}, 
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":20,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.5,
+		"minimum_chance":0.1,
+		"money":5000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const CK69 = {
@@ -616,7 +946,29 @@ const CK69 = {
 			"right":{"type":"SYSTEM_EMD14"}, 
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
-	}}
+	}},
+	"dealer":{
+		"age":20,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.5,
+		"minimum_chance":0.1,
+		"money":5000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.4
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const YME = {
@@ -661,7 +1013,29 @@ const YME = {
 				"power": 30.0
 			},
 		}
-	}
+	},
+	"dealer":{
+		"age":1,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.3,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }
 
 const OCP_SALVAGE = {
@@ -712,5 +1086,27 @@ const OCP_SALVAGE = {
 				"rcs":"SYSTEM_THRUSTER_GHET"
 			}, 
 		}
-	}
+	},
+	"dealer":{
+		"age":50,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.2,
+		"minimum_chance":0.2,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
 }

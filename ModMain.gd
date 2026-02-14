@@ -78,7 +78,7 @@ func _init(modLoader = ModLoader):
 	# install CurrentGame.gd which loads new ships into the game
 	
 	l("Injecting new ships")
-	installScriptExtension("CurrentGame.gd")
+#	installScriptExtension("CurrentGame.gd")
 #	installScriptExtension("ships/Shipyard.gd")
 #	shipReplacements()
 # Load custom translations
