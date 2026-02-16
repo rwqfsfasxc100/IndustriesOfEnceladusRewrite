@@ -27,11 +27,19 @@ SYSTEM_CARGO_PREPROC_P15_DESC|The RCC was produced in the earlier days of bay mo
 
 SYSTEM_CARGO_PREPROC_P15_SPECS|MPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 15 kg/s \nAdditional MPU power cost per chunk: minimal \nAmbient power cost per chunk: 150 kW \nAmbient ice melt rate: 5 kg/s \n Mass: 1,220 kg \nManufacturer: Rusatom
 
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL|Reduces ice mass of chunks within a large area. \nIncreases MPU speed additively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+
+
 SYSTEM_CARGO_PREPROC_M35|MAD Heating Coils
 
 SYSTEM_CARGO_PREPROC_M35_DESC|This specialized processing unit utilizes patterned melting of ore chunks entering the bay to create a more fragile ice structure. This unit also comes with a secondary efficiency unit that is to be strapped onto the MPU unit itself to produce a higher processing speed and mineral reclaimation rate. \n\nThis unit does receive major criticism for companies using it for long periods of time, as the proprietary components lead to quick decomposition after a few months of use.
 
 SYSTEM_CARGO_PREPROC_M35_SPECS|MPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nAdditional MPU power cost per chunk: ~38% \nIce melt rate: 30 kg/s \nPreprocessor remass processing efficiency: 10% \nPreprocessor Power draw: 550 kW / chunk \nMPU mineral efficiency multiplier: x110% \n Mass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+
 
 SYSTEM_CARGO_PREPROC_M85|MS Frakker
 
@@ -39,14 +47,11 @@ SYSTEM_CARGO_PREPROC_M85_DESC|Mitsudaya-Starbus's Frakker uses a combination of 
 
 SYSTEM_CARGO_PREPROC_M85_SPECS|MPU processing speed factor: 185% MPU speed \nSecondary MPU processing speed modifier: 0 kg/s \nAdditional MPU power cost per chunk: ~85% \nGoverning AI: Class-1 \nAmbient power cost per chunk: 2,500 kW \nAmbient ice melt rate: 12 kg/s \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus
 
+SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nIncreases MPU speed multiplicatively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
 
 
 SYSTEM_CARGO_AUX_PREPROC_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk \nDoes not extract minerals or destroy chunks.
 
 SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
 
-SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed multiplicatively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
-
-SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
-
-SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
