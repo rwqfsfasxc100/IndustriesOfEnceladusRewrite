@@ -4,6 +4,7 @@ SYSTEM_CARGO_AUX_FAB_DESC|A custom-made and completely unlicensed monstrosity fr
 
 SYSTEM_CARGO_AUX_FAB_SPECS|Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed factor: 155% MPU speed \nAdditional MPU power cost per chunk: ~55% \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto
 
+SYSTEM_CARGO_AUX_FAB_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed by 55%. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.
 
 
 SYSTEM_CARGO_AUX_BIGFAB|RMS-PAL Fabricator
@@ -12,6 +13,4 @@ SYSTEM_CARGO_AUX_BIGFAB_DESC|Rasamama Material Solutions' Portable Assembly Line
 
 SYSTEM_CARGO_AUX_BIGFAB_SPECS|Print power draw: 210 MW \nPrinting capability: drones, ammunition \nAmmunition capacity: 5,000 kg \nDrone capacity: 5,000 kg \nMass: 10,500 kg \nManufacturer: Rasamama Material Solutions
 
-
-
-SYSTEM_CARGO_AUX_FAB_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.
+SYSTEM_CARGO_AUX_BIGFAB_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard ammo and nanodrone storages. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.

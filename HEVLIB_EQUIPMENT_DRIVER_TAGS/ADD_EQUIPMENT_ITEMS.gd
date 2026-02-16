@@ -584,7 +584,7 @@ const CARGO_ACCESSORY_FAB = {
 }
 const CARGO_ACCESSORY_BIG_FAB = {
 	"system":"SYSTEM_CARGO_AUX_BIGFAB",
-	"manual":"SYSTEM_CARGO_AUX_FAB_MANUAL",
+	"manual":"SYSTEM_CARGO_AUX_BIGFAB_MANUAL",
 	"price":3650000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",
