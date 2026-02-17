@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -56,6 +56,7 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=54]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.gd" type="Script" id=55]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/sounds/CERF_ALERT.oggstr" type="AudioStream" id=56]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=57]
 
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 2 )
@@ -848,6 +849,7 @@ texture = ExtResource( 21 )
 range_height = 380.4
 
 [node name="MineralProcessingUnit_DRY" type="CollisionPolygon2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 0, 129 )
 z_index = 50
@@ -1058,6 +1060,12 @@ texture = ExtResource( 43 )
 normal_map = ExtResource( 42 )
 region_enabled = true
 region_rect = Rect2( 1, 99, 124, 117 )
+
+[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 57 )]
+visible = false
+position = Vector2( -184, 119 )
+rotation = 1.5708
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, 0, 32, 56, -68, 56, -32, -56, -24, -40, -14, -34 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 49 )]
 visible = false
