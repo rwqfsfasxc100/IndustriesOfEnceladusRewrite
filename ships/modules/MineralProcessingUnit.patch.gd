@@ -1,6 +1,9 @@
 extends "res://ships/modules/MineralProcessingUnit.gd"
 
-var bkgps = kgps
+var bkgps = 50.0
+
+func _init():
+	bkgps = float(kgps)
 
 func getKgps() -> float:
 	var base = ship.getTunedValue(slotName, "TUNE_MPU_SPEED", bkgps)
