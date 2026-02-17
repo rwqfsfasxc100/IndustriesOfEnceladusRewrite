@@ -36,6 +36,9 @@ func _init(modLoader = ModLoader):
 	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
 	var self_check = load(self_directory + "mod_checker_script.tscn").instance()
 	add_child(self_check)
+	
+	installScriptExtension("ships/modules/MineralProcessingUnit.patch.gd")
+	
 # replace ShipParams for hold percentage fill readout
 	replaceScene("hud/trtl/ShipParams.tscn")
 # install ship-ctrl.gd, adds hold sensors and AP setup
