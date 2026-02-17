@@ -624,7 +624,6 @@ z_index = 50
 shape = SubResource( 12 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
-rotation = 3.14159
 z_index = 50
 collision_layer = 524288
 collision_mask = 33
@@ -635,7 +634,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, 36, -164, 44, -156, 246, -156, 246, 110, 110, 110, 110, 120, -110, 120, -110, 110, -246, 110 )
+polygon = PoolVector2Array( 246, 156, 44, 156, 36, 164, -36, 164, -44, 156, -246, 156, -246, -110, -110, -110, -110, -120, 110, -120, 110, -110, 246, -110 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
