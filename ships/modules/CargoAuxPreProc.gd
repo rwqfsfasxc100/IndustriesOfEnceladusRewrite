@@ -226,7 +226,7 @@ func modifyProcessor():
 #	var current_efficiency_multi = get_mpu_efficiency()
 	
 	
-	var newMinEff = clamp(baseMineralEfficiency * (float(current_efficiency_multi)/100), 0.05, 0.995)
+	var newMinEff = clamp(baseMineralEfficiency * (float(current_efficiency_multi)/100), 0.05, 0.995) if baseMineralEfficiency > 0.0 else 0.0
 	
 	var current_speed_multi = modify_kgps_percent_multi
 #	var current_speed_multi = get_mpu_speed()
@@ -236,7 +236,7 @@ func modifyProcessor():
 	var om = pl + modify_kgps_add
 	var newKGPS = int(max(om,5))
 	
-	var rt = (float(baseMineralEfficiency)/float(newMinEff))
+	var rt = (float(baseMineralEfficiency)/float(newMinEff)) if newMinEff > 0.0 else 1.0
 	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
 #	var newPower = get_mpu_power()
 	

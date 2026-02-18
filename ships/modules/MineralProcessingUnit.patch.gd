@@ -3,7 +3,6 @@ extends "res://ships/modules/MineralProcessingUnit.gd"
 var bkgps = 50.0
 
 func _enter_tree():
-	print("MPU CODE CHANGED on ",self.name)
 	bkgps = float(kgps)
 
 func getKgps(default = true) -> float:
