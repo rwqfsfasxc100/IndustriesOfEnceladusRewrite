@@ -240,9 +240,9 @@ func modifyProcessor():
 	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
 #	var newPower = get_mpu_power()
 	
-	processor.set_deferred("mineralEfficiency", newMinEff)
-	processor.set_deferred("kgps",newKGPS)
-	processor.set_deferred("powerDrawPerKg",newPower)
+	processor.setEfficiency(newMinEff)
+	processor.setKgps(newKGPS)
+	processor.setPower(newPower)
 
 									
 func _on_ProcessingArea_body_entered(body):

@@ -1,9 +1,22 @@
 extends "res://ships/modules/MineralProcessingUnit.gd"
 
-var bkgps = 50.0
+var bkgps = 0.0
+var bmineralefficiency = 0.0
+var bpower = 0.0
 
 func _enter_tree():
 	bkgps = float(kgps)
+	bmineralefficiency = float(mineralEfficiency)
+	bpower = float(powerDrawPerKg)
+
+func setKgps(k):
+	kgps = k
+
+func setEfficiency(m):
+	mineralEfficiency = m
+
+func setPower(p):
+	powerDrawPerKg = p
 
 func getKgps(default = true) -> float:
 	var modify = 1.0
