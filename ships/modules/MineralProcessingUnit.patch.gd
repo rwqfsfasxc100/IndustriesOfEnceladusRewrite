@@ -6,10 +6,14 @@ func _enter_tree():
 	print("MPU CODE CHANGED on ",self.name)
 	bkgps = float(kgps)
 
-func getKgps() -> float:
+func getKgps(default = true) -> float:
+	var speed = 1.0
 	var base = ship.getTunedValue(slotName, "TUNE_MPU_SPEED", bkgps)
-	var modify = kgps/bkgps
-	var speed = base * modify
+	if default:
+		var modify = kgps/bkgps
+		speed = base * modify
+	else:
+		speed = base
 	return speed
 
 func getTuneables():
@@ -20,7 +24,7 @@ func getTuneables():
 			"max": float(bkgps) * 1.5, 
 			"step": ceil(float(bkgps) / 100), 
 			"default": kgps, 
-			"current": getKgps(), 
+			"current": getKgps(false), 
 			"unit": "kg/s", 
 			"testProtocol": "cargo"
 		}
