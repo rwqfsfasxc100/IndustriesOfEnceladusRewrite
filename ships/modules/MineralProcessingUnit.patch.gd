@@ -7,13 +7,11 @@ func _enter_tree():
 	bkgps = float(kgps)
 
 func getKgps(default = true) -> float:
-	var speed = 1.0
+	var modify = 1.0
 	var base = ship.getTunedValue(slotName, "TUNE_MPU_SPEED", bkgps)
 	if default:
-		var modify = kgps/bkgps
-		speed = base * modify
-	else:
-		speed = base
+		modify = kgps/bkgps
+	var speed = base * modify
 	return speed
 
 func getTuneables():
