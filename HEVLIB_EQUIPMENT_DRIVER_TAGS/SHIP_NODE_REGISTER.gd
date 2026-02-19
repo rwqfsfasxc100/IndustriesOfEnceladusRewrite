@@ -1773,12 +1773,12 @@ const SHIP_AT225 = {
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
-				"position":[-32,-210]
+				"position":[-32,-160]
 			},
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
-				"position":[-32,-210]
+				"position":[-32,-160]
 			},
 		},
 		"IOE_ICEBREAKER_M35":{
