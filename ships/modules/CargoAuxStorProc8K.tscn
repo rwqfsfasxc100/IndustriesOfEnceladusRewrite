@@ -9,6 +9,7 @@ repairReplacementPrice = 435000
 mass = 8000
 systemName = "SYSTEM_CARGO_AUX_STORPROC_8K"
 mirrorCollider = true
+self_kgps = 5
 powerDrawPerKg = 250
 modify_kgps_percent_multi = 110
 
