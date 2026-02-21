@@ -596,7 +596,6 @@ toggleCommand = "ship_slot_3"
 
 [node name="SYSTEM_SALVAGE_ARM" parent="WeaponHardTop" index="11"]
 flip = true
-feedVelocity = Vector2( -140, 0 )
 
 [node name="WeaponHardRight" parent="." instance=ExtResource( 29 )]
 position = Vector2( -130, 0 )
@@ -604,9 +603,6 @@ rotation = -1.5708
 z_index = 32
 slot = "mainLeft"
 toggleCommand = "ship_slot_4"
-
-[node name="SYSTEM_SALVAGE_ARM" parent="WeaponHardRight" index="11"]
-feedVelocity = Vector2( 140, 0 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "appear"
