@@ -3561,7 +3561,6 @@ const SHIP_TRTL_PEEPER = {
 		"IOE_MPU_BULKER":{
 			"position_data":{
 				"position":[0,95],
-				"rotation":-90,
 			},
 			"properties":{
 				"polygon":{
