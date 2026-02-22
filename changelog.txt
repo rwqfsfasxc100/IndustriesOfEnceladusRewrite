@@ -1,3 +1,8 @@
+[2.6.17]
+
+1="* Fixed incorrect rotation of the Bulker MPU on the OCK Peeper"
+2="* Fixed collider of the RA and AOP to not break baffles on the OK720 and the OCK Peeper"
+
 [2.6.16]
 
 1="* Fixed arm velocities on the OCP SNAP"
