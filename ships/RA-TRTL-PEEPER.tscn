@@ -676,11 +676,10 @@ __meta__ = {
 }
 
 [node name="MineralProcessingUnit_DRY" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 position = Vector2( 0, 108.3 )
 z_index = 50
-polygon = PoolVector2Array( -140, -68.0003, -143, -123, -137, -163, -111, -204, -83, -229, -16, -256, -16, -246, -71, -221, -109, -179, -129, -126, -125, -67, -95, -18.0002, -66, 4.99986, 66, 5, 94, -17, 126, -72, 129, -120, 108, -180, 76, -214, 16, -246, 16, -255, 79, -230, 122, -189, 142, -130, 136, -61, 108, -13, 46, 31, 0, 35, -46.0001, 30.9999, -109, -14.0002 )
+polygon = PoolVector2Array( -140, -68.0003, -143, -123, -137, -163, -111, -204, -83, -229, -32, -250.3, -32, -240.3, -71, -221, -109, -179, -129, -126, -125, -67, -95, -18.0002, -66, 4.99986, 66, 5, 94, -17, 126, -72, 129, -120, 108, -180, 76, -214, 31, -242.3, 31, -252.3, 79, -230, 122, -189, 142, -130, 136, -61, 108, -13, 46, 31, 0, 35, -46.0001, 30.9999, -109, -14.0002 )
 script = ExtResource( 13 )
 repairReplacementPrice = 120000
 repairFixPrice = 25000
@@ -762,7 +761,6 @@ texture = ExtResource( 21 )
 range_height = 380.4
 
 [node name="MineralProcessingUnit_FSO" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 position = Vector2( 0, 89.3 )
 z_index = 50
@@ -921,7 +919,6 @@ hframes = 11
 region_rect = Rect2( 0, 348, 2816, 160 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 12 )]
-visible = false
 position = Vector2( 0, -41.7 )
 slot = "cargo.aux"
 
