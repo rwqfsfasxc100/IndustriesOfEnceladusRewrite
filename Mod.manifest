@@ -11,7 +11,7 @@ credits=["SpaceDOTexe - original mod with a majority of the mod's functionality 
 
 version_major=2
 version_minor=6
-version_bugfix=15
+version_bugfix=16
 version_metadata=""
 
 [tags]
@@ -135,3 +135,4 @@ HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 
 manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite/main/Mod.manifest"
+changelog_path="changelog.txt"
