@@ -1,10 +1,10 @@
 extends Node
 
 const REGISTER_AMMO = {
-	200:{
-		"price":500,
-		"delivery_speed":100
-	},
+#	200:{
+#		"price":500,
+#		"delivery_speed":100
+#	},
 	100000:{
 		"price":750000,
 		"delivery_speed":1000

@@ -183,7 +183,11 @@ const AMMO_200 = {
 	"price":500,
 	"test_protocol":"takeoff",
 	"slot_type":"MASS_DRIVER_AMMUNITION",
-	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION"
+	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION",
+	"REGISTER_AMMO":{
+#		"price":500,
+		"delivery_speed":100
+	}
 }
 const AMMO_100000 = {
 	"num_val":100000,
