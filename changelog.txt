@@ -1,3 +1,8 @@
+[2.6.18]
+
+1="* Updated baffles on the OCP SNAP to not break with the RA MkII"
+2="* Fixed bulker MPU on the OCK Peeper"
+
 [2.6.17]
 
 1="* Fixed incorrect rotation of the Bulker MPU on the OCK Peeper"
