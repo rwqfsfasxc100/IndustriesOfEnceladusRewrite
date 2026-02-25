@@ -11,6 +11,7 @@ systemName = "SYSTEM_CARGO_AUX_STORPROC_8K"
 mirrorCollider = true
 self_kgps = 5
 powerDrawPerKg = 250
+self_remassEfficiency = 0.1
 modify_kgps_percent_multi = 110
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
