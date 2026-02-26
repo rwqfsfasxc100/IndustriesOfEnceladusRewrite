@@ -450,25 +450,24 @@ polygon = PoolVector2Array( 0, 31, 38, 25, 72, 11, 70, 73, 80, 78, 80, 86, 70, 9
 light_mask = 0
 position = Vector2( 0, 29 )
 z_index = 50
-polygon = PoolVector2Array( -30, -231, -30, -241, -16, -241, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
+polygon = PoolVector2Array( -30, -231, -30, -245, -16, -245, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="RightForeCollider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 position = Vector2( 0, 29 )
 scale = Vector2( -1, 1 )
 z_index = 50
-polygon = PoolVector2Array( -30, -231, -30, -241, -16, -241, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
+polygon = PoolVector2Array( -30, -231, -30, -245, -16, -245, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="LeftShell" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 z_index = 50
-polygon = PoolVector2Array( -150, 0, -144, -40, -130, -76, -108, -104, -82, -126, -72, -132, -48, -144, -40, -136, -76, -120, -100, -100, -122, -72, -136, -38, -141, 0, -136, 38, -122, 72, -100, 100, -66, 126, -72, 132, -108, 104, -130, 76, -144, 40 )
+polygon = PoolVector2Array( -150, 0, -144, -40, -130, -76, -108, -104, -82, -126, -72, -132, -48, -144, -35, -137, -71, -120, -95, -100, -117, -72, -131, -38, -135, 0, -131, 38, -117, 72, -95, 100, -59, 128, -71, 133, -108, 104, -130, 76, -144, 40 )
 
 [node name="RightShell" type="CollisionPolygon2D" parent="."]
 light_mask = 0
-scale = Vector2( -1, 1 )
 z_index = 50
-polygon = PoolVector2Array( -150, 0, -144, -40, -130, -76, -108, -104, -82, -126, -72, -132, -48, -144, -40, -136, -76, -120, -100, -100, -122, -72, -136, -38, -141, 0, -136, 38, -122, 72, -100, 100, -66, 126, -72, 132, -108, 104, -130, 76, -144, 40 )
+polygon = PoolVector2Array( 150, 0, 144, -40, 130, -76, 108, -104, 82, -126, 72, -132, 48, -144, 35, -137, 71, -120, 95, -100, 117, -72, 131, -38, 135, 0, 131, 38, 117, 72, 95, 100, 59, 128, 71, 133, 108, 104, 130, 76, 144, 40 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
 visible = false
@@ -481,9 +480,8 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
-visible = false
 position = Vector2( 0, 40 )
-polygon = PoolVector2Array( 20, -180, -20, -180, -20, -258, 20, -258 )
+polygon = PoolVector2Array( 20, -180, -20, -180, -20, -258, -9, -293, 9, -293, 20, -258 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CargoHoldArea"]
 shape = SubResource( 7 )
