@@ -32,10 +32,6 @@ var duped = false
 var ship_name = ""
 var base_ship_name = ""
 
-onready var area = get_node_or_null("ProcessingArea")
-onready var top = get_node_or_null("ProcessingArea/ZoneTop")
-onready var bottom = get_node_or_null("ProcessingArea/ZoneBottom")
-
 var capacity = 3000
 var shipHoldType = "divided"
 
@@ -54,6 +50,7 @@ func _ready():
 		if registerExternal:
 			ship.externalSystems.append(self)
 #	modify_shape()
+	yield(CurrentGame.get_tree(),"idle_frame")
 	make_mirror()
 	isready = true
 	
@@ -132,7 +129,8 @@ func make_mirror():
 
 func modify_position() -> Vector2:
 	var selfPos = self.get_position()
-	var nselfPos = DataFormat.__rotate_point(selfPos,(1/2)*set_rot)
+	var rv = (float(1)/float(2))*float(set_rot)
+	var nselfPos = DataFormat.__rotate_point(selfPos,rv)
 	var modifyP = Vector2(nselfPos[0], nselfPos[1])
 	if mirrorVertical:
 		modifyP[1] = -modifyP[1]#*2
@@ -210,12 +208,7 @@ func adjust(data):
 	if "shape" in data:
 		var shape = convert_arr_to_vec2arr(data["shape"])
 		self.polygon = shape
-	if top and "ZoneTop" in data:
-		var shape = convert_arr_to_vec2arr(data["ZoneTop"])
-		top.polygon = shape
-	if bottom and "ZoneBottom" in data:
-		var shape = convert_arr_to_vec2arr(data["ZoneBottom"])
-		bottom.polygon = shape
+	
 	if "scale" in data:
 		if data["scale"].size() >= 2:
 			var x = data["scale"][0]
