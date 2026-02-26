@@ -7,15 +7,9 @@ polygon = PoolVector2Array( 0, 8, 0, -8, 9, -3, 9, 5 )
 repairReplacementPrice = 815000
 mass = 4780
 systemName = "SYSTEM_CARGO_PREPROC_M35"
-self_kgps = 30
+self_kgps = 12.5
 powerDrawPerKg = 550
 modify_mineralEfficiency = 110
 self_remassEfficiency = 0.1
 modify_kgps_add = 10
 modify_kgps_percent_multi = 135
-
-[node name="ZoneTop" parent="ProcessingArea" index="0"]
-visible = true
-
-[node name="ZoneBottom" parent="ProcessingArea" index="1"]
-visible = true

@@ -11,14 +11,8 @@ systemName = "SYSTEM_CARGO_AUX_STORPROC_8K"
 mirrorCollider = true
 self_kgps = 5
 powerDrawPerKg = 250
-self_remassEfficiency = 0.1
+self_remassEfficiency = 0.15
 modify_kgps_percent_multi = 110
 
-[node name="ZoneTop" parent="ProcessingArea" index="0"]
-disabled = true
-
-[node name="ZoneBottom" parent="ProcessingArea" index="1"]
-polygon = PoolVector2Array( 16, -28, 24, 22, -24, 22, -16, -28 )
-
-[node name="VentRemass" parent="." index="1"]
+[node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 16 )

@@ -48,26 +48,7 @@ tunable_mpu_min = -15
 tunable_mpu_max = 15
 enabled = true
 
-[node name="ProcessingArea" type="Area2D" parent="." index="0"]
-position = Vector2( 32, 0 )
-z_index = 50
-collision_layer = 524288
-monitorable = false
-space_override = 3
-gravity_vec = Vector2( 0, 0 )
-gravity = 0.0
-linear_damp = 0.0
-angular_damp = 0.0
-
-[node name="ZoneTop" type="CollisionPolygon2D" parent="ProcessingArea" index="0"]
-visible = false
-polygon = PoolVector2Array( 8, 0, 0, -8, -8, 0 )
-
-[node name="ZoneBottom" type="CollisionPolygon2D" parent="ProcessingArea" index="1"]
-visible = false
-polygon = PoolVector2Array( 8, 0, 0, 8, -8, 0 )
-
-[node name="VentRemass" type="Particles2D" parent="." index="1"]
+[node name="VentRemass" type="Particles2D" parent="." index="0"]
 show_behind_parent = true
 z_index = -50
 emitting = false
@@ -81,30 +62,27 @@ process_material = SubResource( 4 )
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
 
-[node name="Processing" type="AudioStreamPlayer" parent="." index="2"]
+[node name="Processing" type="AudioStreamPlayer" parent="." index="1"]
 stream = ExtResource( 3 )
 volume_db = -25.0
 pitch_scale = 5.0
 bus = "ShipBowels"
 script = ExtResource( 7 )
 
-[node name="ProStart" type="AudioStreamPlayer" parent="." index="3"]
+[node name="ProStart" type="AudioStreamPlayer" parent="." index="2"]
 stream = ExtResource( 4 )
 volume_db = -25.0
 pitch_scale = 5.0
 bus = "SFX"
 script = ExtResource( 7 )
 
-[node name="ProStop" type="AudioStreamPlayer" parent="." index="4"]
+[node name="ProStop" type="AudioStreamPlayer" parent="." index="3"]
 stream = ExtResource( 2 )
 volume_db = -25.0
 pitch_scale = 5.0
 bus = "SFX"
 script = ExtResource( 7 )
 
-[node name="Mirror" parent="." index="5"]
+[node name="Mirror" parent="." index="4"]
 visible = false
 disabled = true
-
-[connection signal="body_entered" from="ProcessingArea" to="." method="_on_ProcessingArea_body_entered"]
-[connection signal="body_exited" from="ProcessingArea" to="." method="_on_ProcessingArea_body_exited"]

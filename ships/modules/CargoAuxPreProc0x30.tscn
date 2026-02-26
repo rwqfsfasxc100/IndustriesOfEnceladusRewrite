@@ -9,18 +9,10 @@ mass = 750
 systemName = "SYSTEM_CARGO_AUX_PREPROC_0x30"
 mirrorCollider = true
 massDamageScale = 10.0
-self_kgps = 20
+self_kgps = 15
 powerDrawPerKg = 1250
 self_remassEfficiency = 0.45
 modify_kgps_add = -10
 
-[node name="ZoneTop" parent="ProcessingArea" index="0"]
-visible = true
-polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )
-
-[node name="ZoneBottom" parent="ProcessingArea" index="1"]
-visible = true
-polygon = PoolVector2Array( 26, 0, 0, 8, -26, 0 )
-
-[node name="VentRemass" parent="." index="1"]
+[node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 0 )

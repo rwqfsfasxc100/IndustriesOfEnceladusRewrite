@@ -8,19 +8,11 @@ repairReplacementPrice = 225000
 mass = 2000
 systemName = "SYSTEM_CARGO_AUX_PREPROC_20x10"
 mirrorCollider = true
-self_kgps = 25
+self_kgps = 20.0
 powerDrawPerKg = 125
 modify_mineralEfficiency = 115
-self_remassEfficiency = 0.1
+self_remassEfficiency = 0.25
 modify_kgps_percent_multi = 90
 
-[node name="ZoneTop" parent="ProcessingArea" index="0"]
-visible = true
-polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )
-
-[node name="ZoneBottom" parent="ProcessingArea" index="1"]
-visible = true
-polygon = PoolVector2Array( 26, 0, 0, 8, -26, 0 )
-
-[node name="VentRemass" parent="." index="1"]
+[node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 0 )

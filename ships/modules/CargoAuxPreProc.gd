@@ -7,7 +7,7 @@ extends "res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.gd"
 
 export  var ventTime = 0.5
 export  var massDamageScale = 20.0
-export  var self_kgps = 100
+export (float, 0, 1000, 0.5) var self_kgps = 100.0
 export  var powerDrawPerKg = 100
 export (int, 50, 150) var modify_mineralEfficiency = 100
 export (float, 0, 1, 0.05) var self_remassEfficiency = 0.5
@@ -23,7 +23,6 @@ export (int,-50,50,1) var tunable_mpu_max = 15
 export  var enabled = true
 
 
-var processing = []
 var power = 0
 
 func getStatus():
@@ -159,7 +158,7 @@ func _physics_process(delta):
 		if self_kgps <= 0.0 or powerDrawPerKg <= 0.0:
 			pass
 		else:
-			for p in processing:
+			for p in get_processable_object():
 				var current_kgps = get_preprocessor_kgps()
 				var current_powerdraw = get_power()
 				var current_remassefficiency = get_preprocessor_efficiency()
@@ -244,11 +243,11 @@ func modifyProcessor():
 	processor.setKgps(newKGPS)
 	processor.setPower(newPower)
 
-									
-func _on_ProcessingArea_body_entered(body):
+func get_processable_object():
+	var cargo = ship.cargo
+	if cargo.size():
+		return cargo
+	return []
 	
-	processing.append(body)
+	
 
-func _on_ProcessingArea_body_exited(body):
-	
-	processing.remove(processing.find(body))
