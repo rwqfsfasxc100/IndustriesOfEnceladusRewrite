@@ -19,7 +19,7 @@
 4.6.1="* Ice melt rate: 30 kg/s -> 12.5 kg/s"
 4.6.2="* Preprocessor remass processing efficiency: 10% -> 20%"
 4.7="* MS Frakker"
-4.7.1="* Ambient ice melt rate: 12 kg/s -> 35%"
+4.7.1="* Ambient ice melt rate: 12 kg/s -> 35 kg/s"
 4.8="* This should partially balance out the tradeoffs provided by the units, with one or two being considerably better than the rest. The changes should also now fit with the preprocessor's theme too"
 5="* Increased volume of the CERF alarm sound by 5db"
 
