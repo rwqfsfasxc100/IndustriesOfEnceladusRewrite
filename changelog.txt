@@ -1,3 +1,28 @@
+[2.7.0]
+
+1="* Fixed thin colliders on the OK720, OCK Peeper, and both CERF variants, with cargo bay volumes being adjusted to compensate"
+2="* Fixed THI Bulker collider on the OCK Peeper"
+3="* Fixed cargo bay leak on the OCK Peeper and CERF variants"
+4="* Refactored preprocessors, they now no longer use colliders to detect ore and now process anything considered onboard the ship, and as a result of the boost in coverage all preprocessors have been rebalanced:"
+4.1="* THI Mineral Tank Module"
+4.1.1="* Remass processing efficiency: 10% -> 15%"
+4.2="* Rasamama RP-25"
+4.2.1="* Ice melt rate: 20 kg/s -> 15 kg/s"
+4.3="* Nakamura Big MT"
+4.3.1="* Ice melt rate: 25 kg/s -> 20 kg/s"
+4.3.2="* Preprocessor remass processing efficiency: 10% -> 25%"
+4.4="* Rusatom-Antonoff MPP-N1"
+4.4.1="* Ice melt rate: 40 kg/s -> 10 kg/s"
+4.5="* Rusatom Chunk Cutter"
+4.5.1="* Ambient ice melt rate: 5 kg/s -> 10 kg/s"
+4.6="* MAD Heating Coils"
+4.6.1="* Ice melt rate: 30 kg/s -> 12.5 kg/s"
+4.6.2="* Preprocessor remass processing efficiency: 10% -> 20%"
+4.7="* MS Frakker"
+4.7.1="* Ambient ice melt rate: 12 kg/s -> 35%"
+4.8="* This should partially balance out the tradeoffs provided by the units, with one or two being considerably better than the rest. The changes should also now fit with the preprocessor's theme too"
+5="* Increased volume of the CERF alarm sound by 5db"
+
 [2.6.18]
 
 1="* Updated baffles on the OCP SNAP to not break with the RA MkII"
