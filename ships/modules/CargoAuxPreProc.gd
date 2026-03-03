@@ -164,7 +164,7 @@ func _physics_process(delta):
 				var current_remassefficiency = get_preprocessor_efficiency()
 				if Tool.claim(p):
 					if "fillerContent" in p:
-						if p.fillerContent > 0.01:
+						if p.fillerContent > 0.15:
 							var fillerMass = p.fillerContent * p.mass
 							var mineralMass = p.mineralContent * p.mass
 							var procDelta = min(fillerMass, delta * current_kgps / 1000)
