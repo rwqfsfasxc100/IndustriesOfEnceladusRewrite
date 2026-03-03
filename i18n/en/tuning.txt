@@ -4,6 +4,8 @@ IOE_TUNE_PARAMETER_MPU_POWER_DRAW|Mineral Processing Unit Power Draw (per chunk)
 
 IOE_TUNE_PREPROC_RECLAIM|Ice Thawing Speed
 
+IOE_TUNE_PREPROC_RECLAIM_DESC|Increasing the processing speed of a preprocessor improves water melt speed by rerouting extra power to the unit. This decreases efficiency of the unit cuased by the overheating, however the additional heat produced by the unit combined with additional power provided to melting facilities (if applicable) cause chunks to lose more water.\n\nSlowing down the process enhances water capture efficiency and lowers power usage.
+
 IOE_TUNE_PREPROC_MODIFY|MPU Processing Efficiency Modifier
 
 IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER|Mineral Processing Unit Speed Modifier
