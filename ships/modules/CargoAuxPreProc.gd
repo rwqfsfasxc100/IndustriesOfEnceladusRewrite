@@ -1,10 +1,5 @@
 extends "res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.gd"
 
-# ok this is very stupid
-# _physics_process can't be explicitly overriden in 3.5.3
-# goddamnit. i have to cpy the entire fucking thing
-# fuck! fuck! fuck!
-
 export  var ventTime = 0.5
 export  var massDamageScale = 20.0
 export (float, 0, 1000, 0.5) var self_kgps = 100.0
@@ -38,15 +33,6 @@ func get_preprocessor_efficiency() -> float:
 	var val = pow(self_remassEfficiency,tuned / self_kgps)
 	return val
 
-func get_mpu_efficiency() -> float:
-	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)
-
-func get_mpu_speed() -> float:
-	var tuned = float(ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency))
-	
-	var val = pow(modify_kgps_percent_multi, 2.0 - (tuned / float(modify_mineralEfficiency)))
-	return val
-
 func powerFromRatio(x: float) -> float:
 	return ((1.0 / (x * (2.0 - x)) - 1) * 1.8 + 1)
 
@@ -55,13 +41,6 @@ func get_power():
 	var ratio = dynamicKgps / self_kgps
 	var pv = powerFromRatio(ratio) * dynamicKgps
 	var powerDrawKw = (powerDrawPerKg * pv)/self_kgps
-	return powerDrawKw
-
-func get_mpu_power():
-	var dynamicKgps = (get_mpu_speed()/100) * basekgps
-	var ratio = dynamicKgps / basekgps
-	var pv = powerFromRatio(ratio) #* dynamicKgps
-	var powerDrawKw = (basePowerDrawPerKg * pv)/basekgps
 	return powerDrawKw
 
 func getParameters():
@@ -73,8 +52,6 @@ func getParameters():
 	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [(get_preprocessor_efficiency() * 100.0)], "%"]})
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
-#	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
-#		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [get_mpu_speed()], "%"]})
 		
 	return out
 
@@ -93,32 +70,16 @@ func getTuneables():
 			"unit": "kg/s", 
 			"testProtocol": "cargo"
 		}})
-#	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
-#		out.merge({"IOE_TUNE_PREPROC_MODIFY": {
-#			"type": "float", 
-#			"min": modify_mineralEfficiency + tunable_mpu_min, 
-#			"max": modify_mineralEfficiency + tunable_mpu_max, 
-#			"step": 1, 
-#			"default": modify_mineralEfficiency, 
-#			"current": get_mpu_efficiency(), 
-#			"unit": "%", 
-#			"testProtocol": "cargo"
-#		}})
 	return out
 
 var processor = null
 
 func _ready():
-#	yield(get_tree(),"idle_frame")
 	ship = getShip()
-#	if !ship.cutscene and ship.isPlayerControlled():
-		
-#	var reinstance = false
 	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
 	if current_aux == systemName:
 		if current_model != current_mpu:
-#			reinstance = true
 			current_model = current_mpu
 		var self_aux = systemName
 		for node in ship.get_children():
@@ -171,7 +132,6 @@ func _physics_process(delta):
 							var requiredPower = procDelta * current_powerdraw * 100
 							var gotPower = ship.drawEnergy(requiredPower)
 							if gotPower / requiredPower > 0.9:
-								# for some reason it doesn't work if this isn't in place
 								var nm = max(mineralMass, p.mass - procDelta)
 								
 								if nm > 0:
@@ -179,7 +139,6 @@ func _physics_process(delta):
 									p.mineralContent = mineralMass / nm
 								
 								p.fillerContent = 1 - p.mineralContent
-								# stuff from the original imp
 								var newMass = max(mineralMass, p.mass - procDelta)
 								var massChange = p.mass - newMass
 								var shipRemass = ship.reactiveMass
@@ -222,13 +181,9 @@ func _physics_process(delta):
 
 func modifyProcessor():
 	var current_efficiency_multi = modify_mineralEfficiency
-#	var current_efficiency_multi = get_mpu_efficiency()
-	
-	
 	var newMinEff = clamp(baseMineralEfficiency * (float(current_efficiency_multi)/100), 0.05, 0.995) if baseMineralEfficiency > 0.0 else 0.0
 	
 	var current_speed_multi = modify_kgps_percent_multi
-#	var current_speed_multi = get_mpu_speed()
 	var clp = clamp(current_speed_multi,10,1000)
 	var cc = clp/100.0
 	var pl = basekgps * cc
@@ -237,7 +192,6 @@ func modifyProcessor():
 	
 	var rt = (float(baseMineralEfficiency)/float(newMinEff)) if newMinEff > 0.0 else 1.0
 	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
-#	var newPower = get_mpu_power()
 	
 	processor.setEfficiency(newMinEff)
 	processor.setKgps(newKGPS)
