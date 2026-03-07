@@ -1,3 +1,21 @@
+[2.7.1]
+
+1="* Fixed typo on the Pigeon Prospector's specs"
+2="* Fixed missing preprocessor tune description text"
+3="* Adjusted THI Mineral Tank positioning on the Deep Dish OCP to prevent blocking of the bulker MPU"
+4="* Increased absolute minimum ore water content for preprocessors from 1% to 15%."
+5="* Minimum processable water content now adjusts based on preprocessor speed tuning, with faster speeds increasing it and requiring more work from the MPU, and vice versa with slower speeds."
+5.1="* Slow tunings still cannot drop below 15% for balance reasons."
+6="* Individual preprocessor units now have per-unit base minimum processable water content percentages:"
+6.1="* Rasamama RP-25: 45%"
+6.2="* Nakamura Big MT: 15%"
+6.3="* Rusatom-Antonoff MPP-N1: 50%"
+6.4="* Rusatom Chunk Cutter: 25%"
+6.5="* MAD Heating Coils: 35%"
+6.6="* MS Frakker: 50%"
+6.7="* THI Mineral Tank: 25%"
+7="* Increased mineral efficiency modifier of the Rusatom-Antonoff MPP-N1 to 135%"
+
 [2.7.0]
 
 1="* Fixed thin colliders on the OK720, OCK Peeper, and both CERF variants, with cargo bay volumes being adjusted to compensate"
