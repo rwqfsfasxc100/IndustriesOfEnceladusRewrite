@@ -7,7 +7,7 @@
 5="* Minimum processable water content now adjusts based on preprocessor speed tuning, with faster speeds increasing it and requiring more work from the MPU, and vice versa with slower speeds."
 5.1="* Slow tunings still cannot drop below 15% for balance reasons."
 6="* Individual preprocessor units now have per-unit base minimum processable water content percentages:"
-6.1="* Rasamama RP-25: 45%"
+6.1="* Rasamama RP-25: 20%"
 6.2="* Nakamura Big MT: 15%"
 6.3="* Rusatom-Antonoff MPP-N1: 50%"
 6.4="* Rusatom Chunk Cutter: 25%"

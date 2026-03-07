@@ -13,7 +13,7 @@ self_kgps = 22.5
 powerDrawPerKg = 1000
 self_remassEfficiency = 0.45
 modify_kgps_add = -10
-minimum_filler_content = 0.45
+minimum_filler_content = 0.2
 
 [node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 0 )
