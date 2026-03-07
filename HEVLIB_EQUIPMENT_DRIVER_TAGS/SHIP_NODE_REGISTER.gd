@@ -2463,7 +2463,7 @@ const SHIP_OCP209 = {
 #					"method":"arr2vec2"
 #				},
 				"set_rot":{
-					"value":45
+					"value":25
 				}
 			}
 		},
