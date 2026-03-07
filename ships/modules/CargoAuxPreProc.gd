@@ -12,6 +12,8 @@ export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 export (float) var tunable_speed_min = 0.5
 export (float) var tunable_speed_max = 1.5
 
+export (float,0.15,1.0,0.05) var minimum_filler_content = 0.35
+
 export (int,-50,50,1) var tunable_mpu_min = -15
 export (int,-50,50,1) var tunable_mpu_max = 15
 
@@ -24,6 +26,15 @@ func getStatus():
 	return 100
 func getPower():
 	return clamp(power, 0, 1)
+
+func get_minimum_filler_content():
+	var base = minimum_filler_content
+	var dynamicKgps = get_preprocessor_kgps()
+	var ratio = dynamicKgps / self_kgps
+	base = pow(base,2.0 - ratio)
+	return clamp(base,0.15,1.0)
+
+
 
 func get_preprocessor_kgps() -> float:
 	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_RECLAIM", self_kgps)
@@ -46,12 +57,16 @@ func get_power():
 func getParameters():
 	if self_kgps == 0 or powerDrawPerKg == 0:
 		return {}
-	var powerDrawKw = get_power()
-	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
+	
 	var out = {}
 	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
+		var powerDrawKw = get_power()
+		var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [(get_preprocessor_efficiency() * 100.0)], "%"]})
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
+		if minimum_filler_content < 1.0:
+			
+			out.merge({"IOE_TUNE_PARAMETER_PREPROC_CHUNK_WATER_MASS_CEILING": ["%.1f" % (get_minimum_filler_content() * 100), "%"]})
 		
 	return out
 
@@ -116,16 +131,14 @@ func _physics_process(delta):
 	var isproc = false
 	
 	if enabled:
-		if self_kgps <= 0.0 or powerDrawPerKg <= 0.0:
-			pass
-		else:
+		if self_remassEfficiency > 0.0 or self_kgps > 0.0:
 			for p in get_processable_object():
 				var current_kgps = get_preprocessor_kgps()
 				var current_powerdraw = get_power()
 				var current_remassefficiency = get_preprocessor_efficiency()
 				if Tool.claim(p):
 					if "fillerContent" in p:
-						if p.fillerContent > 0.15:
+						if p.fillerContent > get_minimum_filler_content():
 							var fillerMass = p.fillerContent * p.mass
 							var mineralMass = p.mineralContent * p.mass
 							var procDelta = min(fillerMass, delta * current_kgps / 1000)

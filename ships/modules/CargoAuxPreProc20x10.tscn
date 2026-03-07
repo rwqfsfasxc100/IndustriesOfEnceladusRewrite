@@ -13,6 +13,7 @@ powerDrawPerKg = 750
 modify_mineralEfficiency = 115
 self_remassEfficiency = 0.25
 modify_kgps_percent_multi = 90
+minimum_filler_content = 0.15
 
 [node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 0 )

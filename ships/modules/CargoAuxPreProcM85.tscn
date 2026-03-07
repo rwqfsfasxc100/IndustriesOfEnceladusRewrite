@@ -11,3 +11,4 @@ self_kgps = 35
 powerDrawPerKg = 2500
 self_remassEfficiency = 0.0
 modify_kgps_percent_multi = 185
+minimum_filler_content = 0.5
