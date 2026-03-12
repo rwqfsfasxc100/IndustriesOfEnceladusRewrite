@@ -544,7 +544,6 @@ slot = "mainLeft"
 toggleCommand = "ship_slot_3"
 
 [node name="SYSTEM_SALVAGE_ARM" parent="WeaponHardTop" index="11"]
-flip = true
 feedVelocity = Vector2( -140, -280 )
 
 [node name="SYSTEM_ACTEMD14" parent="WeaponHardTop" index="19"]
