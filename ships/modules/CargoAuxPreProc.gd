@@ -9,8 +9,8 @@ export (float, 0, 1, 0.05) var self_remassEfficiency = 0.5
 export (int) var modify_kgps_add = 0
 export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 
-export (float) var tunable_speed_min = 0.5
-export (float) var tunable_speed_max = 1.5
+export (float) var tuneable_speed_min = 0.5
+export (float) var tuneable_speed_max = 1.5
 
 export (float,0.15,1.0,0.05) var minimum_filler_content = 0.35
 
@@ -77,8 +77,8 @@ func getTuneables():
 	if self_remassEfficiency > 0.0:
 		out.merge({"IOE_TUNE_PREPROC_RECLAIM": {
 			"type": "float", 
-			"min": float(self_kgps) * tunable_speed_min, 
-			"max": float(self_kgps) * tunable_speed_max, 
+			"min": ceil(float(self_kgps) * tuneable_speed_min), 
+			"max": ceil(float(self_kgps) * tuneable_speed_max), 
 			"step": ceil(float(self_kgps) / 100), 
 			"default": self_kgps, 
 			"current": get_preprocessor_kgps(), 

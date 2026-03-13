@@ -19,6 +19,9 @@ const massDriverCostPerKg = {
 	"V":0.1
 }
 
+var massDriverCostCache = {}
+var droneCostCache = {}
+
 onready var printA = $PrintAudio
 
 onready var dronePrintCtr = dronePrintTime
@@ -55,37 +58,71 @@ var baseMineralEfficiency = 0
 var basekgps = 0
 var basePowerDrawPerKg = 0
 
+var fabricationRate = 100.0
+export var tuneable_speed_min = 0.5
+export var tuneable_speed_max = 2.5
+
+func get_fabrication_rate() -> float:
+	return ship.getTunedValue(slotName, "IOE_TUNE_FAB_SPEED", fabricationRate)
+
+func getTuneables():
+	var out = {}
+	out.merge({"IOE_TUNE_FAB_SPEED": {
+		"type": "float", 
+		"min": ceil(fabricationRate * tuneable_speed_min), 
+		"max": ceil(fabricationRate * tuneable_speed_max), 
+		"step": ceil(fabricationRate / 10), 
+		"default": fabricationRate, 
+		"current": get_fabrication_rate(), 
+		"unit": "%", 
+		"testProtocol": "cargo"
+	}})
+	return out
+func getParameters():
+	var out = {}
+	
+	
+	
+
+
+func calculate_costs():
+	
+	
+	
+	pass
+
+func _ready():
+	var ship = getShip()
+	var processor
+	var reinstance = false
+	var current_aux = ship.getConfig("cargo.aux")
+	var current_mpu = ship.getConfig("cargo.equipment")
+	
+	if current_aux == systemName:
+		if current_model != current_mpu:
+			reinstance = true
+			current_model = current_mpu
+		var self_aux = systemName
+		for node in ship.get_children():
+			if "systemName" in node:
+				var nname = node.name
+				if node.systemName == current_mpu:
+					processor = node
+		if processor:
+			if not has_modified:
+				baseMineralEfficiency = processor.mineralEfficiency
+				basekgps = processor.kgps
+				basePowerDrawPerKg = processor.powerDrawPerKg
+				modifyProcessor(processor,basekgps,basePowerDrawPerKg)
+				has_modified = true
+			else:
+				modifyProcessor(processor,basekgps,basePowerDrawPerKg)
+			
+#				breakpoint
+	
+
 func _physics_process(delta):
 	
-	var ship = getShip()
-	if !ship.cutscene and ship.isPlayerControlled():
-		var processor
-		var reinstance = false
-		var current_aux = ship.getConfig("cargo.aux")
-		var current_mpu = ship.getConfig("cargo.equipment")
-		
-		if current_aux == systemName:
-			if current_model != current_mpu:
-				reinstance = true
-				current_model = current_mpu
-			var self_aux = systemName
-			for node in ship.get_children():
-				if "systemName" in node:
-					var nname = node.name
-					if node.systemName == current_mpu:
-						processor = node
-			if processor:
-				if not has_modified:
-					baseMineralEfficiency = processor.mineralEfficiency
-					basekgps = processor.kgps
-					basePowerDrawPerKg = processor.powerDrawPerKg
-					modifyProcessor(processor,basekgps,basePowerDrawPerKg)
-					has_modified = true
-				else:
-					modifyProcessor(processor,basekgps,basePowerDrawPerKg)
-				
-#				breakpoint
-				
 	if enabled:
 		if Tool.claim(ship):
 			if ship.droneParts + droneUnit <= ship.dronePartsMax and powerDrawPrint > 0:
