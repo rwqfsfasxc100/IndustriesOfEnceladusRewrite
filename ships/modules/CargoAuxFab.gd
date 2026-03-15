@@ -59,11 +59,30 @@ var basekgps = 0
 var basePowerDrawPerKg = 0
 
 var fabricationRate = 100.0
-export var tuneable_speed_min = 0.5
+export var tuneable_speed_min = 0.75
 export var tuneable_speed_max = 2.5
+
+export var material_low = 0.5
+export var material_high = 3.0
+export var max_efficiency_reduction = 100
 
 func get_fabrication_rate() -> float:
 	return ship.getTunedValue(slotName, "IOE_TUNE_FAB_SPEED", fabricationRate)
+
+func powerFromRatio(x: float) -> float:
+	return (( 1.0 / ( x * ( 3.0 - x )) - 1 ) * 1.8 + 2 )
+
+func get_power():
+	var dynamicKgps = get_fabrication_rate()
+	var ratio = dynamicKgps / fabricationRate
+	var powerDrawKw = powerDrawPrint * ratio
+	return powerDrawKw
+
+func material_efficiency():
+	var dynamicKgps = get_fabrication_rate()
+	var ratio = dynamicKgps / fabricationRate
+	var lv = range_lerp(ratio,material_low,material_high,0,1)
+	return lv * max_efficiency_reduction
 
 func getTuneables():
 	var out = {}
@@ -71,25 +90,40 @@ func getTuneables():
 		"type": "float", 
 		"min": ceil(fabricationRate * tuneable_speed_min), 
 		"max": ceil(fabricationRate * tuneable_speed_max), 
-		"step": ceil(fabricationRate / 10), 
+		"step": 5, 
 		"default": fabricationRate, 
 		"current": get_fabrication_rate(), 
 		"unit": "%", 
 		"testProtocol": "cargo"
 	}})
 	return out
+
 func getParameters():
 	var out = {}
-	
-	
-	
+	var powerDrawKw = get_power()
+	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
+	out.merge({"IOE_TUNE_PARAMETER_PRINT_POWER_DRAW": powerDrawHuman})
+	out.merge({"IOE_TUNE_PARAMETER_PRINT_MATERIAL_EFFICIENCY":["%.1f" % material_efficiency(), "%"]})
+	return out 
 
 
 func calculate_costs():
-	
-	
-	
-	pass
+	var modify = (float(material_efficiency()) / 100)
+	for m in droneCostPerKg:
+		droneCostCache[m] = float(droneCostPerKg[m]) * (1 + modify)
+	for m in massDriverCostPerKg:
+		massDriverCostCache[m] = float(massDriverCostPerKg[m]) * (1 + modify)
+
+func getAmmoCost():
+	if massDriverCostCache:
+		return massDriverCostCache
+	return massDriverCostPerKg
+
+func getDroneCost():
+	if droneCostCache:
+		return droneCostCache
+	return droneCostPerKg
+
 
 func _ready():
 	var ship = getShip()
@@ -97,7 +131,7 @@ func _ready():
 	var reinstance = false
 	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
-	
+	calculate_costs()
 	if current_aux == systemName:
 		if current_model != current_mpu:
 			reinstance = true
@@ -125,20 +159,23 @@ func _physics_process(delta):
 	
 	if enabled:
 		if Tool.claim(ship):
-			if ship.droneParts + droneUnit <= ship.dronePartsMax and powerDrawPrint > 0:
+			var pwr = get_power()
+			var speedRatio = fabricationRate / get_fabrication_rate()
+			
+			if ship.droneParts + droneUnit <= ship.dronePartsMax and pwr > 0:
 				if dronePrintCtr < dronePrintTime:
-					var p = powerDrawPrint * delta
+					var p = pwr * delta
 					if ship.drawEnergy(p) >= p * 0.9:
 						dronePrintCtr += delta
 						
-			if ship.massDriverAmmo + massDriverUnit <= ship.massDriverAmmoMax and powerDrawPrint > 0:
+			if ship.massDriverAmmo + massDriverUnit <= ship.massDriverAmmoMax and pwr > 0:
 				if bulletPrintCtr < bulletPrintTime:
-					var p = powerDrawPrint * delta
+					var p = pwr * delta
 					if ship.drawEnergy(p) >= p * 0.9:
 						bulletPrintCtr += delta
 					
 			if bulletPrintTime > 0 and bulletPrintCtr >= bulletPrintTime:
-				if tryToDraw(massDriverCostPerKg, massDriverUnit):
+				if tryToDraw(getAmmoCost(), massDriverUnit):
 					ship.addAmmo(massDriverUnit)
 					bulletPrintCtr -= bulletPrintTime
 					if bulletPrintTime > 1:
@@ -146,7 +183,7 @@ func _physics_process(delta):
 							printA.play()
 							
 			if dronePrintTime > 0 and dronePrintCtr >= dronePrintTime:
-				if tryToDraw(droneCostPerKg, droneUnit):
+				if tryToDraw(getDroneCost(), droneUnit):
 					ship.addDrones(droneUnit)
 					dronePrintCtr -= dronePrintTime
 					if dronePrintTime > 1:

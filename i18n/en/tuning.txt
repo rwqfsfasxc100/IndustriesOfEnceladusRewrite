@@ -12,3 +12,8 @@ IOE_TUNE_PARAMETER_PREPROC_CHUNK_WATER_MASS_CEILING|Minimum Chunk Water Content
 
 IOE_TUNE_FAB_SPEED|Fabrication Print Speed
 
+IOE_TUNE_FAB_SPEED_DESC|Modifies the rate at which the fabrication unit converts processed ore into consumables. Inefficiencies within the production line will scale with production rate, with an increased speed requiring more power and material in the process.
+
+IOE_TUNE_PARAMETER_PRINT_POWER_DRAW|Printing Power Draw
+
+IOE_TUNE_PARAMETER_PRINT_MATERIAL_EFFICIENCY|Additional material cost from inefficiencies

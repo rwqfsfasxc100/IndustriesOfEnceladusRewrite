@@ -14,6 +14,11 @@ dronePrintTime = 0.014
 bulletPrintTime = 4.0
 powerDrawPrint = 120000.0
 modify_kgps_percent_multi = 155
+tuneable_speed_min = 0.75
+tuneable_speed_max = 2.5
+material_low = 0.5
+material_high = 3.0
+max_efficiency_reduction = 75
 
 [node name="Mirror" parent="." index="0"]
 visible = false
