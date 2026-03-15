@@ -132,6 +132,7 @@ func _ready():
 	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
 	calculate_costs()
+	yield(CurrentGame.get_tree(),"idle_frame")
 	if current_aux == systemName:
 		if current_model != current_mpu:
 			reinstance = true
