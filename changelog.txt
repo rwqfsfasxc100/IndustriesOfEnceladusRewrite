@@ -1,3 +1,13 @@
+[2.7.2]
+
+1="* Fixed incorrectly flipped arms on all OCP variants"
+2="* Fixed Z layer of MAD CERF Inverse's turret slots"
+3="* Made preprocessor tuning displays consistent between save loads"
+4="* Fabricator bay accessories now can have their speed tuned"
+4.1="* Tuning now scales power and printing inefficiencies linearly"
+4.2="* All fabricators now have inefficiencies."
+4.2.1="* These are to provide incentives to downtune the unit, and to use the Voyager RSLS MPU which remains 100% efficient"
+
 [2.7.1]
 
 1="* Fixed typo on the Pigeon Prospector's specs"
