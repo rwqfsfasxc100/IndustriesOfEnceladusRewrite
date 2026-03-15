@@ -1,3 +1,7 @@
+[2.7.3]
+
+1="* Preprocessors and fabricator accessories now modify MPU stats again"
+
 [2.7.2]
 
 1="* Fixed incorrectly flipped arms on all OCP variants"
