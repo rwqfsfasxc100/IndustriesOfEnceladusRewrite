@@ -31,7 +31,6 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=30]
 [ext_resource path="res://hud/prospector-alert.wav" type="AudioStream" id=31]
-[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=35]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=36]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=37]
@@ -142,6 +141,59 @@ shader_param/frequency = 30.0
 shader_param/speed = 2.0
 shader_param/reverseFrequency = 602.104
 shader_param/reverseAmplitude = 500.0
+
+[sub_resource type="GDScript" id=1]
+script/source = "tool
+extends CanvasLayer
+
+onready var center = $Center
+onready var rect = $Center/ColorRect
+onready var ref = $Center/Offset/ReferenceRect
+onready var within_ref = $Center/Offset/ReferenceRect/ReferenceRect
+onready var set = $Center/Offset
+export var editor_only = true
+var count = 0
+var colorswap = false
+func _init():
+	visible = (Engine.is_editor_hint() or not editor_only)
+
+func _physics_process(delta):
+	if Engine.is_editor_hint() or not editor_only:
+		count += 1
+		
+		if count > 5:
+			count = 0
+			
+			var parent = get_parent()
+			if colorswap:
+				rect.color.b -= 0.05
+				if rect.color.b <= 0.6:
+					colorswap = false
+			else:
+				rect.color.b += 0.05
+				if rect.color.b >= 0.9:
+					colorswap = true
+			if parent.has_method(\"getConfig\"):
+				if \"cargoHoldArea\" in parent:
+					var cam = parent.get_global_transform_with_canvas()
+					center.global_position = cam.origin
+					center.global_rotation = cam.get_rotation()
+					center.scale = cam.get_scale()
+					var area = parent.cargoHoldArea
+					rect.rect_position = area.position
+					rect.rect_size = area.size
+					if \"cargoHoldOffset\" in parent:
+						ref.rect_size = Vector2(260,230)
+						set.position = parent.cargoHoldOffset
+						
+						
+						var h2w_ratio = area.size.y / area.size.x
+						var scale_ratio = rect.rect_size.y / ref.rect_size.y
+						within_ref.rect_size = rect.rect_size / scale_ratio
+						within_ref.rect_position = (ref.rect_size - within_ref.rect_size) / 2
+	else:
+		Tool.remove(self)
+"
 
 [node name="CK-65" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
@@ -641,7 +693,38 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 [node name="Alert" parent="Noises" index="5"]
 stream = ExtResource( 31 )
 
-[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 32 )]
+[node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
+layer = 128
+script = SubResource( 1 )
+
+[node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
+
+[node name="ColorRect" type="ColorRect" parent="CargoBayCoverageVisual/Center"]
+margin_left = -30.0
+margin_top = -247.0
+margin_right = 30.0
+margin_bottom = -165.0
+color = Color( 1, 1, 0.8, 0.498039 )
+
+[node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
+position = Vector2( 0, -50 )
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CargoBayCoverageVisual/Center/Offset"]
+margin_left = -130.0
+margin_top = -282.0
+margin_right = 130.0
+margin_bottom = -52.0
+rect_min_size = Vector2( 98, 198 )
+border_width = 5.0
+editor_only = false
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CargoBayCoverageVisual/Center/Offset/ReferenceRect"]
+margin_left = 45.8537
+margin_right = 214.146
+margin_bottom = 230.0
+border_color = Color( 0, 1, 0, 1 )
+border_width = 5.0
+editor_only = false
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

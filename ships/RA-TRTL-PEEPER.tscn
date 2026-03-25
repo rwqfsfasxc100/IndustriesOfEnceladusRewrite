@@ -31,7 +31,6 @@
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=29]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=30]
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=31]
-[ext_resource path="res://HevLib/scenes/development_tools/CargoBayCoverageVisual.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=33]
 [ext_resource path="res://ships/k225-n.png" type="Texture" id=34]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=35]
@@ -245,6 +244,65 @@ height = 220.0
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 250.0
 height = 600.0
+
+[sub_resource type="GDScript" id=8]
+script/source = "# This tool is used to visualize the coverage of the cargo bay
+# 
+# Flashing yellow box marks the area that is covered by the scanner
+# Red box marks the bounding box of the EIME HUD's cargo display
+# Green box marks the shape that the cargo hold will cover in the EIME HUD display
+
+tool
+extends CanvasLayer
+
+onready var center = $Center
+onready var rect = $Center/ColorRect
+onready var ref = $Center/Offset/ReferenceRect
+onready var within_ref = $Center/Offset/ReferenceRect/ReferenceRect
+onready var set = $Center/Offset
+export var editor_only = true
+var count = 0
+var colorswap = false
+func _init():
+	visible = (Engine.is_editor_hint() or not editor_only)
+
+func _physics_process(delta):
+	if Engine.is_editor_hint() or not editor_only:
+		count += 1
+		
+		if count > 5:
+			count = 0
+			
+			var parent = get_parent()
+			if colorswap:
+				rect.color.b -= 0.05
+				if rect.color.b <= 0.6:
+					colorswap = false
+			else:
+				rect.color.b += 0.05
+				if rect.color.b >= 0.9:
+					colorswap = true
+			if parent.has_method(\"getConfig\"):
+				if \"cargoHoldArea\" in parent:
+					var cam = parent.get_global_transform_with_canvas()
+					center.global_position = cam.origin
+					center.global_rotation = cam.get_rotation()
+					center.scale = cam.get_scale()
+					var area = parent.cargoHoldArea
+					rect.rect_position = area.position
+					rect.rect_size = area.size
+					if \"cargoHoldOffset\" in parent:
+						ref.rect_size = Vector2(260,230)
+						set.position = parent.cargoHoldOffset
+						
+						
+						var h2w_ratio = area.size.y / area.size.x
+						var scale_ratio = rect.rect_size.y / ref.rect_size.y
+						within_ref.rect_size = rect.rect_size / scale_ratio
+						within_ref.rect_position = (ref.rect_size - within_ref.rect_size) / 2
+	else:
+		Tool.remove(self)
+"
 
 [node name="TRTL-PEEPER" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
@@ -941,7 +999,38 @@ polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
 
-[node name="CargoBayCoverageVisual" parent="." instance=ExtResource( 32 )]
+[node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
+layer = 128
+script = SubResource( 8 )
+
+[node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
+
+[node name="ColorRect" type="ColorRect" parent="CargoBayCoverageVisual/Center"]
+margin_left = -150.0
+margin_top = -160.0
+margin_right = 150.0
+margin_bottom = 130.0
+color = Color( 1, 1, 0.85, 0.498039 )
+
+[node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
+position = Vector2( 0, 105 )
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CargoBayCoverageVisual/Center/Offset"]
+margin_left = -130.0
+margin_top = -282.0
+margin_right = 130.0
+margin_bottom = -52.0
+rect_min_size = Vector2( 98, 198 )
+border_width = 5.0
+editor_only = false
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CargoBayCoverageVisual/Center/Offset/ReferenceRect"]
+margin_left = 11.0345
+margin_right = 248.966
+margin_bottom = 230.0
+border_color = Color( 0, 1, 0, 1 )
+border_width = 5.0
+editor_only = false
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
