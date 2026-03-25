@@ -27,6 +27,14 @@ const MODIFY_INTERNALS = [
 		"storage_nanodrones":5000
 	},
 	{
+		"system":"SYSTEM_DND_HARVTUG",
+		"storage_nanodrones":2500
+	},
+	{
+		"system":"SYSTEM_DND_HARVHAUL",
+		"storage_nanodrones":2500
+	},
+	{
 		"system":"SYSTEM_CARGO_MOD_2K",
 		"storage_flat":2000,
 		"mass":1600,

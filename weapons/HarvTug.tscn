@@ -23,7 +23,6 @@ offset = Vector2( 0, 114 )
 region_enabled = true
 region_rect = Rect2( 744, 260, 48, 138 )
 script = ExtResource( 4 )
-droneWeightKg = 0.1
 repairReplacementPrice = 385000
 repairReplacementTime = 4
 repairFixPrice = 75000
@@ -38,8 +37,9 @@ maxDroneDistance = 8000
 minEnergyToTarget = 250
 droneTugPower = 20.0
 haulAccurancy = 0.96
+droneWeightKg = 0.1
 launchVector = Vector2( 0, -50 )
-builtInDroneStorage = 2500
+builtInDroneStorage = 0
 mass = 8000
 
 [node name="AudioFire" type="AudioStreamPlayer" parent="."]
@@ -77,7 +77,7 @@ modulate = Color( 0, 0.14902, 0.533333, 1 )
 light_mask = 0
 shape = SubResource( 1 )
 
-[node name="HarvBlock" type="Sprite" parent="." index="5"]
+[node name="HarvBlock" type="Sprite" parent="."]
 material = ExtResource( 1 )
 position = Vector2( 0, 148 )
 scale = Vector2( 0.9, 0.9 )
@@ -87,7 +87,7 @@ normal_map = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 600, 292, 80, 90 )
 
-[node name="HarvVeins" type="Sprite" parent="HarvBlock" index="0"]
+[node name="HarvVeins" type="Sprite" parent="HarvBlock"]
 use_parent_material = true
 position = Vector2( -0.5, -51.1786 )
 scale = Vector2( -0.96, 1 )
@@ -97,7 +97,7 @@ normal_map = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 616, 177, 48, 20 )
 
-[node name="HarvExhaust" type="Sprite" parent="HarvBlock" index="1"]
+[node name="HarvExhaust" type="Sprite" parent="HarvBlock"]
 use_parent_material = true
 position = Vector2( 0, -120 )
 scale = Vector2( 0.944445, 1.11111 )
