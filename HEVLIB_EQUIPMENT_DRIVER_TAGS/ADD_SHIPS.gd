@@ -78,7 +78,7 @@ const Tsukuyomi_Decom = {
 
 const AT225_STUB = {
 	"name":"AT225-STUB",
-	"alias":"AT225-STUB",
+	"alias":"AT225",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/ATK225-Stub.tscn",
 	"config":{"config": {
 		"ammo": {

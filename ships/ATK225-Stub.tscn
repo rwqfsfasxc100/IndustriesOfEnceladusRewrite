@@ -633,8 +633,7 @@ z_index = 27
 visible = false
 position = Vector2( -122, -265 )
 rotation = -0.523599
-slot = ""
-command = ""
+slot = "leftBay2"
 remove = true
 
 [node name="SYSTEM_DND_TS" parent="weapon-left-back2" index="6"]
@@ -696,8 +695,7 @@ toggleCommand = "ship_slot_4"
 visible = false
 position = Vector2( 122, -265 )
 rotation = 0.523599
-slot = ""
-command = ""
+slot = "rightBay2"
 remove = true
 
 [node name="SYSTEM_DND_TS" parent="weapon-right-back2" index="6"]
