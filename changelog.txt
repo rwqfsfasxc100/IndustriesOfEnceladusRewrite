@@ -1,3 +1,9 @@
+[2.7.4]
+
+1="* Fixed K225-SH not using stock titan loadouts"
+2="* Localized cargo bay coverage tool for future filepath change on all ships"
+3="* switched harvester class drones to using MODIFY_INTERNALS for drone storage"
+
 [2.7.3]
 
 1="* Preprocessors and fabricator accessories now modify MPU stats again"
