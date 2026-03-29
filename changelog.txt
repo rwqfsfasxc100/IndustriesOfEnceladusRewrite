@@ -10,6 +10,7 @@
 2.6="* OCK Peeper"
 3="* Fixed manual for the Runasimi KRB-500 and the Rusatom-Antonoff ORD"
 4="* Added the TR-60 Extended Manipulator - a longer and more fragile manipulator arm variant"
+5="* Rebalanced the NDCL-80 by slowing down turret rotations by 6 times. This allows for other turrets to be more equal sidegrades."
 
 [2.7.4]
 
