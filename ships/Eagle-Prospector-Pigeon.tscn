@@ -499,9 +499,6 @@ position = Vector2( 52, -100 )
 [node name="SYSTEM_EXMONO-L" parent="WeaponLeft" index="27"]
 position = Vector2( 48, -86 )
 
-[node name="SYSTEM_IROH" parent="WeaponLeft" index="32"]
-visible = true
-
 [node name="WeaponRight" parent="." instance=ExtResource( 14 )]
 position = Vector2( 70, -68 )
 z_index = 19
@@ -533,9 +530,6 @@ position = Vector2( 52, -100 )
 
 [node name="SYSTEM_EXMONO-R" parent="WeaponRight" index="28"]
 position = Vector2( -48, -86 )
-
-[node name="SYSTEM_IROH" parent="WeaponRight" index="32"]
-visible = true
 
 [node name="DroneLeft" parent="." instance=ExtResource( 14 )]
 visible = false
@@ -718,7 +712,7 @@ margin_left = -47.0
 margin_top = -203.0
 margin_right = 47.0
 margin_bottom = 32.0
-color = Color( 1, 1, 0.85, 0.498039 )
+color = Color( 1, 1, 0.9, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 82 )

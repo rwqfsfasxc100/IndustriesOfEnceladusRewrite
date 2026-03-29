@@ -55,6 +55,10 @@ const SYSTEM_SALVAGE_ARM_LIGHT_R = {
 		{
 			"property":"visible",
 			"value":"false"
+		},
+		{
+			"property":"feedVelocity",
+			"value":"Vector2( 72, -320 )"
 		}
 	]
 }
@@ -96,7 +100,7 @@ const SYSTEM_SALVAGE_ARM_HEAVY_R = {
 		},
 		{
 			"property":"feedVelocity",
-			"value":"Vector2( -60, -240 )"
+			"value":"Vector2( 60, -240 )"
 		}
 	]
 }
