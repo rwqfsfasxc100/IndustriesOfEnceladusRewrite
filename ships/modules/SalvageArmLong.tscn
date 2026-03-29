@@ -1,0 +1,113 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://lights/light-mask.png" type="Texture" id=1]
+[ext_resource path="res://weapons/weapons.material" type="Material" id=2]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=3]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=4]
+[ext_resource path="res://ships/modules/SalvageArm.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 640.0
+height = 120.0
+
+[node name="SYSTEM_SALVAGE_ARM_LONG" instance=ExtResource( 5 )]
+scale = Vector2( 0.5, 0.5 )
+actuationPitchFactor = 3.0
+massLimit = 700
+response = 0.9
+repairFixPrice = 25000
+repairFixTime = 20
+repairReplacementPrice = 195000
+maxDist = 550
+conDist = 750
+mass = 7750
+powerDraw = 1.7
+thrust = 40
+fullThrust = 350
+maxThrust = 500
+torque = 500.0
+damageWearCapacity = 108000.0
+damageBentCapacity = 45000.0
+damageBentThreshold = 60.0
+damageOverheatThreshold = 18.0
+damageOverheatCapacity = 150000.0
+bendRange = 180.0
+systemName = "SYSTEM_SALVAGE_ARM_LONG"
+feedVelocity = Vector2( 0, -320 )
+
+[node name="allbright" type="Light2D" parent="." index="0"]
+position = Vector2( 0, -372 )
+editor_only = true
+texture = ExtResource( 1 )
+texture_scale = 32.0
+energy = 1.5
+range_height = 2048.0
+range_z_min = -4096
+range_z_max = 4096
+
+[node name="Arm" parent="." index="1"]
+armLength = 600
+
+[node name="A" parent="Arm" index="0"]
+position = Vector2( 0, 1.04904e-05 )
+offset = Vector2( 1, 0 )
+region_rect = Rect2( 448, 23, 62, 79 )
+
+[node name="Strobe" parent="Arm/A" index="0"]
+position = Vector2( -372, 0.000244141 )
+
+[node name="B" parent="Arm/A" index="1"]
+position = Vector2( -600, 0 )
+rotation = 0.0
+offset = Vector2( 0, 0 )
+region_rect = Rect2( 448, 23, 62, 79 )
+
+[node name="Beam" type="Sprite" parent="Arm/A/B" index="0"]
+material = ExtResource( 2 )
+position = Vector2( -300, 0 )
+rotation = -1.5708
+scale = Vector2( 3, 4.5 )
+z_index = -1
+texture = ExtResource( 4 )
+normal_map = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 884, 258, 24, 131 )
+
+[node name="Arm" parent="Arm/A/B" index="1"]
+position = Vector2( -600, 0.002 )
+
+[node name="Strobe" parent="Arm/A/B" index="2"]
+position = Vector2( -388, 0.000244141 )
+
+[node name="Spotlight" parent="Arm/A/B" index="3"]
+position = Vector2( -600, -0.998 )
+
+[node name="Beam" type="Sprite" parent="Arm/A" index="2"]
+material = ExtResource( 2 )
+position = Vector2( -300, 0 )
+rotation = 1.5708
+scale = Vector2( 3, 5 )
+z_index = -1
+texture = ExtResource( 4 )
+normal_map = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 884, 273, 24, 116 )
+
+[node name="DockArea" parent="." index="2"]
+position = Vector2( 0, -484 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" parent="DockArea" index="0"]
+visible = true
+position = Vector2( 0, 1.43051e-06 )
+shape = SubResource( 1 )
+
+[node name="DockSlot" parent="." index="3"]
+position = Vector2( 0, -580 )
+
+[node name="Actuation" parent="." index="8"]
+volume_db = -5.0
+pitch_scale = 0.8
+
+[editable path="Arm"]
+[editable path="Arm/A/B/Spotlight"]

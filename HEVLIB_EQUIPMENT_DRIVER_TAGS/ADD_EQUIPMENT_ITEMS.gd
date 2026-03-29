@@ -2,7 +2,7 @@ extends Node
 
 const SALVAGE_LIGHT = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT",
-	"manual":"SYSTEM_SALVAGE_ARM_LIGHT",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":87500,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -13,7 +13,7 @@ const SALVAGE_LIGHT = {
 const SALVAGE_LIGHT_L = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT-L",
 	"name_override":"SYSTEM_SALVAGE_ARM_LIGHT",
-	"manual":"SYSTEM_SALVAGE_ARM_LIGHT",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":87500,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -24,7 +24,7 @@ const SALVAGE_LIGHT_L = {
 const SALVAGE_LIGHT_R = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT-R",
 	"name_override":"SYSTEM_SALVAGE_ARM_LIGHT",
-	"manual":"SYSTEM_SALVAGE_ARM_LIGHT",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":87500,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -34,7 +34,7 @@ const SALVAGE_LIGHT_R = {
 }
 const SALVAGE_HEAVY = {
 	"system":"SYSTEM_SALVAGE_ARM_HEAVY",
-	"manual":"SYSTEM_SALVAGE_ARM_HEAVY",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":125000,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -45,7 +45,7 @@ const SALVAGE_HEAVY = {
 const SALVAGE_HEAVY_L = {
 	"system":"SYSTEM_SALVAGE_ARM_HEAVY-L",
 	"name_override":"SYSTEM_SALVAGE_ARM_HEAVY",
-	"manual":"SYSTEM_SALVAGE_ARM_HEAVY",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":125000,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -56,7 +56,7 @@ const SALVAGE_HEAVY_L = {
 const SALVAGE_HEAVY_R = {
 	"system":"SYSTEM_SALVAGE_ARM_HEAVY-R",
 	"name_override":"SYSTEM_SALVAGE_ARM_HEAVY",
-	"manual":"SYSTEM_SALVAGE_ARM_HEAVY",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
 	"price":125000,
 	"test_protocol":"arm",
 	"warn_if_electric_below":100,
@@ -792,4 +792,36 @@ const HULL_VAT_SPEED_2 = {
 	"test_protocol":"takeoff",
 	"slot_type":"HULL_VAT",
 	"equipment_type":"CONSUMABLE_VAT"
+}
+const SALVAGE_LONG = {
+	"system":"SYSTEM_SALVAGE_ARM_LONG",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
+	"price":195000,
+	"test_protocol":"arm",
+	"warn_if_electric_below":100,
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_CENTER",
+	"equipment_type":"SYSTEM_SALVAGE_ARM_LONG"
+}
+const SALVAGE_LONG_L = {
+	"system":"SYSTEM_SALVAGE_ARM_LONG-L",
+	"name_override":"SYSTEM_SALVAGE_ARM_LONG",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
+	"price":195000,
+	"test_protocol":"arm",
+	"warn_if_electric_below":100,
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_LEFT",
+	"equipment_type":"SYSTEM_SALVAGE_ARM_LONG"
+}
+const SALVAGE_LONG_R = {
+	"system":"SYSTEM_SALVAGE_ARM_LONG-R",
+	"name_override":"SYSTEM_SALVAGE_ARM_LONG",
+	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
+	"price":195000,
+	"test_protocol":"arm",
+	"warn_if_electric_below":100,
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_RIGHT",
+	"equipment_type":"SYSTEM_SALVAGE_ARM_LONG"
 }

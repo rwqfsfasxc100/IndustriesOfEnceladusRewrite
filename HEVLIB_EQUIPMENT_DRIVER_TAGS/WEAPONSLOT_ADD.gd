@@ -174,6 +174,10 @@ const SYSTEM_PDTL = {
 		{
 			"property":"repairReplacementPrice",
 			"value":"300000"
+		},
+		{
+			"property":"rotationPerSecond",
+			"value":"0.5236"
 		}
 	]
 }
@@ -183,6 +187,10 @@ const SYSTEM_PDTL_L = {
 		{
 			"property":"repairReplacementPrice",
 			"value":"300000"
+		},
+		{
+			"property":"rotationPerSecond",
+			"value":"0.5236"
 		}
 	]
 }
@@ -192,6 +200,10 @@ const SYSTEM_PDTL_R = {
 		{
 			"property":"repairReplacementPrice",
 			"value":"300000"
+		},
+		{
+			"property":"rotationPerSecond",
+			"value":"0.5236"
 		}
 	]
 }
@@ -220,6 +232,49 @@ const SYSTEM_EXODYN_R = {
 		{
 			"property":"position",
 			"value":"Vector2( 0, 196 )"
+		}
+	]
+}
+
+const SYSTEM_SALVAGE_ARM_LONG = {
+	"name":"SYSTEM_SALVAGE_ARM_LONG",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
+	"data":[
+		{
+			"property":"visible",
+			"value":"false"
+		}
+	]
+}
+const SYSTEM_SALVAGE_ARM_LONG_L = {
+	"name":"SYSTEM_SALVAGE_ARM_LONG-L",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
+	"data":[
+		{
+			"property":"visible",
+			"value":"false"
+		},
+		{
+			"property":"flip",
+			"value":"true"
+		},
+		{
+			"property":"feedVelocity",
+			"value":"Vector2( -72, -320 )"
+		}
+	]
+}
+const SYSTEM_SALVAGE_ARM_LONG_R = {
+	"name":"SYSTEM_SALVAGE_ARM_LONG-R",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLong.tscn",
+	"data":[
+		{
+			"property":"visible",
+			"value":"false"
+		},
+		{
+			"property":"feedVelocity",
+			"value":"Vector2( 72, -320 )"
 		}
 	]
 }
