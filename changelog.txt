@@ -1,3 +1,16 @@
+[2.7.5]
+
+1="* Improved targeting heuristics for the Runasimi KRB-500 and the Rusatom-Antonoff ORD"
+2="* Adjusted positioning of the Runasimi KRB-500 on the following ships to make it actually viable:"
+2.1="* All Eagle Prospectors"
+2.2="* Bald Eagles"
+2.3="* ATLAS Wasp"
+2.4="* AT-K225"
+2.5="* Tsukuyomi-class Frigate"
+2.6="* OCK Peeper"
+3="* Fixed manual for the Runasimi KRB-500 and the Rusatom-Antonoff ORD"
+4="* Added the TR-60 Extended Manipulator - a longer and more fragile manipulator arm variant"
+
 [2.7.4]
 
 1="* Fixed K225-SH not using stock titan loadouts"
