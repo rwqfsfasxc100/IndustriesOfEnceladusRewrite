@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report issues with HevLib
+about: Report issues with IoER
 title: "[BUG]"
 labels: bug
 assignees: rwqfsfasxc100
