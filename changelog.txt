@@ -1,3 +1,10 @@
+[2.7.6]
+
+1="* Added supporters to the credits"
+2="* Defined static derelict names for added ships"
+3="* Fixed pirate trades for added ships not providing the ship, and added trades for new ships"
+4="* Added example rescue entries"
+
 [2.7.5]
 
 1="* Improved targeting heuristics for the Runasimi KRB-500 and the Rusatom-Antonoff ORD"
