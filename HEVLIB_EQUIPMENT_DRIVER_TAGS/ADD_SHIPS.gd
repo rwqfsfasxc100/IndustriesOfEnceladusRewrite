@@ -70,6 +70,7 @@ const Tsukuyomi_Decom = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.65
 	},
 #	"miner":{
@@ -131,6 +132,7 @@ const AT225_STUB = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
@@ -185,6 +187,7 @@ const ATLAS_WASP = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -241,6 +244,7 @@ const COTHON_LUX = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.3
 	},
 	"miner":{
@@ -292,6 +296,7 @@ const PIGEON_PROSPECTOR = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -353,6 +358,7 @@ const MAD_CERF_CIV = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -414,6 +420,7 @@ const MAD_CERF_CIV_INVERSE = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -479,6 +486,7 @@ const OBERON = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.6
 	},
 	"miner":{
@@ -552,6 +560,7 @@ const OCP_DD = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
@@ -625,6 +634,7 @@ const OCP_TWIN = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
@@ -697,6 +707,7 @@ const OCP_SNAP = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
@@ -754,6 +765,7 @@ const TRTL_OCP = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.2
 	},
 	"miner":{
@@ -811,6 +823,7 @@ const TRTL_PEEPER = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.2
 	},
 	"miner":{
@@ -868,6 +881,7 @@ const TRTL_RAM = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.2
 	},
 	"miner":{
@@ -924,6 +938,7 @@ const CK65 = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -980,6 +995,7 @@ const CK69 = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.4
 	},
 	"miner":{
@@ -1048,6 +1064,7 @@ const YME = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
@@ -1122,6 +1139,7 @@ const OCP_SALVAGE = {
 		"clump_velocity":25,
 		"ring_storm_chance":0.3,
 		"pirate_chance":0.3,
+		"rescue":false,
 		"chaos":0.5
 	},
 	"miner":{
