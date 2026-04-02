@@ -3,6 +3,7 @@ extends Node
 const Tsukuyomi_Decom = {
 	"name":"Tsukuyomi-Decom",
 	"alias":"TSUKUYOMI",
+	"specific_derelict_name":"IOER_DerelictTsukuyomi",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/Tsukuyomi-Decom.tscn",
 	"config":{"config": {
 		"ammo":{
@@ -79,6 +80,7 @@ const Tsukuyomi_Decom = {
 const AT225_STUB = {
 	"name":"AT225-STUB",
 	"alias":"AT225",
+	"specific_derelict_name":"IOER_DerelictTitanStub",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/ATK225-Stub.tscn",
 	"config":{"config": {
 		"ammo": {
@@ -138,6 +140,7 @@ const AT225_STUB = {
 
 const ATLAS_WASP = {
 	"name":"ATLAS-WASP",
+	"specific_derelict_name":"IOER_DerelictWasp",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/ATLAS-Wasp.tscn",
 	"alias":"WASP",
 	"config":{"config": {
@@ -191,6 +194,7 @@ const ATLAS_WASP = {
 
 const COTHON_LUX = {
 	"name":"COTHON-LUX",
+	"specific_derelict_name":"IOER_DerelictCothonLux",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/Cothon-Lux.tscn",
 	"alias":"COTHON",
 	"config":{"config": {
@@ -246,6 +250,7 @@ const COTHON_LUX = {
 
 const PIGEON_PROSPECTOR = {
 	"name":"PIGEON-PROSPECTOR",
+	"specific_derelict_name":"IOER_DerelictPigeon",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/Eagle-Prospector-Pigeon.tscn",
 	"alias":"PROSPECTOR",
 	"config":{"config":{
@@ -296,6 +301,7 @@ const PIGEON_PROSPECTOR = {
 
 const MAD_CERF_CIV = {
 	"name":"MAD-CERF-CIV",
+	"specific_derelict_name":"IOER_DerelictCERF",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/MAD-CERF-Civ.tscn",
 	"alias":"MADCERF",
 	"config":{"config": {
@@ -356,6 +362,7 @@ const MAD_CERF_CIV = {
 
 const MAD_CERF_CIV_INVERSE = {
 	"name":"MAD-CERF-CIV-INVERSE",
+	"specific_derelict_name":"IOER_DerelictCERFInverse",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/MAD-CERF-Civ-Inverse.tscn",
 	"alias":"MADCERF",
 	"config":{"config": {
@@ -416,6 +423,7 @@ const MAD_CERF_CIV_INVERSE = {
 
 const OBERON = {
 	"name":"OBERON",
+	"specific_derelict_name":"IOER_DerelictOberon",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/Oberon.tscn",
 	"config":{"config": {
 		"ammo":{
@@ -480,6 +488,7 @@ const OBERON = {
 
 const OCP_DD = {
 	"name":"OCP209-DD",
+	"specific_derelict_name":"IOER_DerelictOCPDeepDish",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/OCP-209-DD.tscn",
 	"alias":"OCP209",
 	"config":{"config": {
@@ -552,6 +561,7 @@ const OCP_DD = {
 
 const OCP_TWIN = {
 	"name":"OCP213-TWIN",
+	"specific_derelict_name":"IOER_DerelictOCPTwin",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/OCP-213-TWIN.tscn",
 	"alias":"OCP209",
 	"config":{"config": {
@@ -624,6 +634,7 @@ const OCP_TWIN = {
 
 const OCP_SNAP = {
 	"name":"OCP209-SNAP",
+	"specific_derelict_name":"IOER_DerelictOCPSnap",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/OCP-209-Snap.tscn",
 	"alias":"OCP209",
 	"config":{"config": {
@@ -695,6 +706,7 @@ const OCP_SNAP = {
 
 const TRTL_OCP = {
 	"name":"TRTL-OCP",
+	"specific_derelict_name":"IOER_DerelictOK720",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-OCP.tscn",
 	"alias":"TRTL",
 	"config":{"config": {
@@ -751,6 +763,7 @@ const TRTL_OCP = {
 
 const TRTL_PEEPER = {
 	"name":"TRTL-PEEPER",
+	"specific_derelict_name":"IOER_DerelictPeeper",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-PEEPER.tscn",
 	"alias":"TRTL",
 	"config":{"config": {
@@ -807,6 +820,7 @@ const TRTL_PEEPER = {
 
 const TRTL_RAM = {
 	"name":"TRTL-RAM",
+	"specific_derelict_name":"IOER_DerelictTRTLRam",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-Ram.tscn",
 	"alias":"TRTL",
 	"config":{"config": {
@@ -863,6 +877,7 @@ const TRTL_RAM = {
 
 const CK65 = {
 	"name":"CK65",
+	"specific_derelict_name":"IOER_DerelictCK65",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/CK65.tscn",
 	"alias":"PROSPECTOR",
 	"config":{"config": {
@@ -918,6 +933,7 @@ const CK65 = {
 
 const CK69 = {
 	"name":"CK69",
+	"specific_derelict_name":"IOER_DerelictCK69",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/CK69.tscn",
 	"alias":"PROSPECTOR",
 	"config":{"config": {
@@ -973,6 +989,7 @@ const CK69 = {
 
 const YME = {
 	"name":"YME",
+	"specific_derelict_name":"IOER_DerelictYME",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/YME.tscn",
 	"alias":"EIME",
 	"config":{
@@ -1040,6 +1057,7 @@ const YME = {
 
 const OCP_SALVAGE = {
 	"name":"OCP-SALVAGE",
+	"specific_derelict_name":"IOER_DerelictOCPSalvage",
 	"path":"res://IndustriesOfEnceladusRewrite/ships/ocp-209-salvage.tscn",
 	"alias":"OCP209",
 	"config":{
