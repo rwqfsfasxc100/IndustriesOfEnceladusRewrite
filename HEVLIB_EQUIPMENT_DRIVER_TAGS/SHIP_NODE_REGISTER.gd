@@ -3522,3 +3522,87 @@ const SHIP_ATLAS_WASP = {
 		},
 	}
 }
+
+const SHIP_AT225_CK = {
+	"ship_name":"SHIP_AT225_CB",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, 136],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, 126],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		
+		"IOE_PREPROC_0x30":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_PREPROC_20x10":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		
+		},
+		"IOE_PREPROC_40x20":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_STORAGE_4K":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_STORAGE_8K":{
+			"position_data":{
+				"position":[-32,-150],
+				"scale":[0.9]
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_FABAUX_FAB":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_FABAUX_BIGFAB":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_ICEBREAKER_M35":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_ICEBREAKER_M85":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_ICEBREAKER_P15":{
+			"position_data":{
+				"position":[-32,-150],
+			},
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+		"IOE_BAY_AUX_PERSIST":{
+			"mod_requirements":[["wt.funnel_titan"]]
+		},
+	}
+}
