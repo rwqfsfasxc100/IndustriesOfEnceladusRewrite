@@ -181,6 +181,7 @@ const MODIFY_INTERNALS = [
 		"crew_morale":-0.05,
 		"nano_multi_upper":3,
 		"nano_multi_lower":4,
+		"minimum_nano_utilization_for_reduction":0.33,
 		"mass":3000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_1"
@@ -193,6 +194,7 @@ const MODIFY_INTERNALS = [
 		"crew_morale":-0.1,
 		"nano_multi_upper":1,
 		"nano_multi_lower":2,
+		"minimum_nano_utilization_for_reduction":0.33,
 		"mass":10000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_2"
@@ -232,6 +234,7 @@ const MODIFY_INTERNALS = [
 		"storage_ammo":1000,
 		"propellant_multi_upper":2,
 		"propellant_multi_lower":3,
+		"minimum_propellant_utilization_for_reduction":0.33,
 		"mass":35000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_3"
@@ -244,6 +247,7 @@ const MODIFY_INTERNALS = [
 		"crew_morale":-0.05,
 		"ammo_multi_upper":3,
 		"ammo_multi_lower":4,
+		"minimum_ammo_utilization_for_reduction":0.33,
 		"mass":4500,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_1"
@@ -256,6 +260,7 @@ const MODIFY_INTERNALS = [
 		"crew_morale":-0.1,
 		"ammo_multi_upper":1,
 		"ammo_multi_lower":2,
+		"minimum_ammo_utilization_for_reduction":0.33,
 		"mass":12000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_2"
@@ -295,6 +300,7 @@ const MODIFY_INTERNALS = [
 		"storage_nano":1000,
 		"propellant_multi_upper":2,
 		"propellant_multi_lower":3,
+		"minimum_propellant_utilization_for_reduction":0.33,
 		"mass":40000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_EXTEND_3"
@@ -331,6 +337,8 @@ const MODIFY_INTERNALS = [
 		"nano_multi_lower":8,
 		"ammo_multi_upper":7,
 		"ammo_multi_lower":8,
+		"minimum_ammo_utilization_for_reduction":0.33,
+		"minimum_nano_utilization_for_reduction":0.33,
 		"mass":3000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_1"
@@ -345,6 +353,8 @@ const MODIFY_INTERNALS = [
 		"nano_multi_lower":8,
 		"ammo_multi_upper":6,
 		"ammo_multi_lower":8,
+		"minimum_ammo_utilization_for_reduction":0.33,
+		"minimum_nano_utilization_for_reduction":0.33,
 		"mass":8000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_2"
@@ -359,6 +369,8 @@ const MODIFY_INTERNALS = [
 		"nano_multi_lower":8,
 		"ammo_multi_upper":5,
 		"ammo_multi_lower":8,
+		"minimum_ammo_utilization_for_reduction":0.33,
+		"minimum_nano_utilization_for_reduction":0.33,
 		"mass":15000,
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_3"
