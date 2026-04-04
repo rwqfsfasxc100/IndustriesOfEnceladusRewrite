@@ -1,3 +1,10 @@
+[2.7.7]
+
+1="* Updated supporters list in credits"
+2="* Commented out research tag"
+3="* Added 33% minimum utilization of consumable slots for a reduction to happen"
+4="* Added support for the Charybdis titan for both accessories and MPU units"
+
 [2.7.6]
 
 1="* Added supporters to the credits"
