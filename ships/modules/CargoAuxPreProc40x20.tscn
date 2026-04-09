@@ -13,4 +13,4 @@ self_kgps = 10.0
 modify_mineralEfficiency = 135
 self_remassEfficiency = 0.2
 modify_kgps_percent_multi = 80
-minimum_filler_content = 0.5
+max_ores_processing = 10

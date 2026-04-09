@@ -12,10 +12,12 @@ export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 export (float) var tuneable_speed_min = 0.5
 export (float) var tuneable_speed_max = 1.5
 
-export (float,0.15,1.0,0.05) var minimum_filler_content = 0.35
+export (float,0.15,1.0,0.05) var minimum_filler_content = 0.3
 
 export (int,-50,50,1) var tunable_mpu_min = -15
 export (int,-50,50,1) var tunable_mpu_max = 15
+
+export (int, 5, 75, 1) var max_ores_processing = 15
 
 export  var enabled = true
 
@@ -133,10 +135,10 @@ func _physics_process(delta):
 	
 	if enabled:
 		if self_remassEfficiency > 0.0 or self_kgps > 0.0:
+			var current_kgps = get_preprocessor_kgps()
+			var current_powerdraw = get_power()
+			var current_remassefficiency = get_preprocessor_efficiency()
 			for p in get_processable_object():
-				var current_kgps = get_preprocessor_kgps()
-				var current_powerdraw = get_power()
-				var current_remassefficiency = get_preprocessor_efficiency()
 				if Tool.claim(p):
 					if "fillerContent" in p:
 						if p.fillerContent > get_minimum_filler_content():
@@ -213,8 +215,14 @@ func modifyProcessor():
 
 func get_processable_object():
 	var cargo = ship.cargo
-	if cargo.size():
-		return cargo
+	var s = cargo.size()
+	if s:
+		var lucky = []
+		var arr = range(s)
+		arr.shuffle()
+		for i in range(min(s,max_ores_processing)):
+			lucky.append(cargo[i])
+		return lucky
 	return []
 	
 	
