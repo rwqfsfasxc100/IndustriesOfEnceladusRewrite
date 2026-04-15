@@ -231,6 +231,7 @@ func get_processable_object(delta):
 			else:
 				current_indexes = range(s)
 				current_indexes.shuffle()
+				bayCount = s
 			for i in range(max_ores_processing):
 				lucky.append(cargo[current_indexes[i]])
 			return lucky
