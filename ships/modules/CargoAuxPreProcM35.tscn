@@ -13,3 +13,5 @@ modify_mineralEfficiency = 110
 self_remassEfficiency = 0.1
 modify_kgps_add = 10
 modify_kgps_percent_multi = 135
+max_ores_processing = 10
+ore_swapover_time = 5.0

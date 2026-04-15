@@ -12,13 +12,13 @@ export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 export (float) var tuneable_speed_min = 0.5
 export (float) var tuneable_speed_max = 1.5
 
-export (float,0.15,1.0,0.05) var minimum_filler_content = 0.3
+export (float,0.15,1.0,0.05) var minimum_filler_content = 0.25
 
 export (int,-50,50,1) var tunable_mpu_min = -15
 export (int,-50,50,1) var tunable_mpu_max = 15
 
-export (int, 5, 75, 1) var max_ores_processing = 15
-export (float, 0,20,0.05) var ore_swapover_time = 3.0
+export (int, 5, 75, 1) var max_ores_processing = 10
+export (float, 0,20,0.05) var ore_swapover_time = 5.0
 
 export  var enabled = true
 
@@ -232,6 +232,7 @@ func get_processable_object(delta):
 				current_indexes = range(s)
 				current_indexes.shuffle()
 				bayCount = s
+				counter = 0.0
 			for i in range(max_ores_processing):
 				lucky.append(cargo[current_indexes[i]])
 			return lucky

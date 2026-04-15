@@ -47,7 +47,8 @@ tuneable_speed_max = 1.5
 minimum_filler_content = 0.3
 tunable_mpu_min = -15
 tunable_mpu_max = 15
-max_ores_processing = 15
+max_ores_processing = 10
+ore_swapover_time = 5.0
 enabled = true
 
 [node name="VentRemass" type="Particles2D" parent="." index="0"]
