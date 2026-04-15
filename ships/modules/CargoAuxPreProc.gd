@@ -217,12 +217,15 @@ func get_processable_object():
 	var cargo = ship.cargo
 	var s = cargo.size()
 	if s:
-		var lucky = []
-		var arr = range(s)
-		arr.shuffle()
-		for i in range(min(s,max_ores_processing)):
-			lucky.append(cargo[i])
-		return lucky
+		if s > max_ores_processing:
+			var lucky = []
+			var arr = range(s)
+			arr.shuffle()
+			for i in range(min(s,max_ores_processing)):
+				lucky.append(cargo[i])
+			return lucky
+		else:
+			return cargo
 	return []
 	
 	
