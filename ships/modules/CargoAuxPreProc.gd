@@ -18,6 +18,7 @@ export (int,-50,50,1) var tunable_mpu_min = -15
 export (int,-50,50,1) var tunable_mpu_max = 15
 
 export (int, 5, 75, 1) var max_ores_processing = 15
+export (float, 0,20,0.05) var ore_swapover_time = 3.0
 
 export  var enabled = true
 
@@ -138,7 +139,7 @@ func _physics_process(delta):
 			var current_kgps = get_preprocessor_kgps()
 			var current_powerdraw = get_power()
 			var current_remassefficiency = get_preprocessor_efficiency()
-			for p in get_processable_object():
+			for p in get_processable_object(delta):
 				if Tool.claim(p):
 					if "fillerContent" in p:
 						if p.fillerContent > get_minimum_filler_content():
@@ -213,19 +214,30 @@ func modifyProcessor():
 	processor.setKgps(newKGPS)
 	processor.setPower(newPower)
 
-func get_processable_object():
+var counter = 0.0
+var bayCount = 0
+var current_indexes = []
+func get_processable_object(delta):
 	var cargo = ship.cargo
 	var s = cargo.size()
 	if s:
 		if s > max_ores_processing:
 			var lucky = []
-			var arr = range(s)
-			arr.shuffle()
-			for i in range(min(s,max_ores_processing)):
-				lucky.append(cargo[i])
+			if s == bayCount:
+				counter += delta
+				if counter > ore_swapover_time:
+					counter = 0.0
+					current_indexes.shuffle()
+			else:
+				current_indexes = range(s)
+				current_indexes.shuffle()
+			for i in range(max_ores_processing):
+				lucky.append(cargo[current_indexes[i]])
 			return lucky
 		else:
+			counter = 0.0
 			return cargo
+	bayCount = 0
 	return []
 	
 	
