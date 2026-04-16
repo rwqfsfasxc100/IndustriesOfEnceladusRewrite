@@ -176,6 +176,14 @@ const SYSTEM_PDTL = {
 			"value":"300000"
 		},
 		{
+			"property":"repairFixPrice",
+			"value":"50000"
+		},
+		{
+			"property":"Pivot/laser/damageWearCapacity",
+			"value":"2250"
+		},
+		{
 			"property":"rotationPerSecond",
 			"value":"0.5236"
 		}
@@ -189,6 +197,14 @@ const SYSTEM_PDTL_L = {
 			"value":"300000"
 		},
 		{
+			"property":"repairFixPrice",
+			"value":"50000"
+		},
+		{
+			"property":"Pivot/laser/damageWearCapacity",
+			"value":"2250"
+		},
+		{
 			"property":"rotationPerSecond",
 			"value":"0.5236"
 		}
@@ -200,6 +216,14 @@ const SYSTEM_PDTL_R = {
 		{
 			"property":"repairReplacementPrice",
 			"value":"300000"
+		},
+		{
+			"property":"repairFixPrice",
+			"value":"50000"
+		},
+		{
+			"property":"Pivot/laser/damageWearCapacity",
+			"value":"2250"
 		},
 		{
 			"property":"rotationPerSecond",
