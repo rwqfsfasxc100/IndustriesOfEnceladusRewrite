@@ -158,7 +158,7 @@ Consumable Delivery Speed Boosters:
 * Runasimi Habitation Capsules
 * Conlido mgHome Kit
 * Antonoff KMX Upfit
-* OCM-36 Upfit[/indent
+* OCM-36 Upfit[/indent]
 
 
 [center][u]Changes:[/u][/center]
