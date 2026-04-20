@@ -6,7 +6,8 @@
 
 > [!WARNING]
 > This mod requires HevLib to function
-> https://github.com/rwqfsfasxc100/HevLib/releases/latest
+> 
+> [Download Here](https://github.com/rwqfsfasxc100/HevLib/releases/latest)
 
 ## First time installing mods?
 If you've never installed mods before, check out either:
