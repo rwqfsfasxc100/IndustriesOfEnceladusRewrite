@@ -29,4 +29,81 @@ A large content mod for [i]ΔV: Rings of Saturn[/i]
 * OCK Peeper TNTRL
 * MAD-CERF (Inverted Civilian Refit)[/indent]
 
+[b]9 New Hardpoint Equipment Items[/b]
+[indent]* RA DMW Cannon
+* RA DMW Cannon Turret
+* NDCL-80 Point Defence Laser Turret
+* Rusatom-Antonoff ORD
+* Runasimi KRB-500
+* TR-60 Extended Manipulator
+* OT Hard-Stop Tug Drones
+* THI Harvester-class Haul Drones
+* THI Dyna-Cargo Container[/indent]
+
+[b]2 New Mineral Processing Units[/b]
+[indent]* Rusatom-Antonoff MPU Mk2
+* THI Bulker MPU[/indent]
+
+[b]11 New Thrusters[/b]
+Reaction Control System:
+[indent]* RMS Pin-C50 thruster
+* ERS-BlasTR 7200 thruster
+* ND-PNTRm thruster[/indent]
+
+Main Propulsion:
+[indent]* RA-TNTRL-R44 quad engine
+* RA-K69V quad engine
+* ND PMS engine
+* SSE NANI Torch Refit
+* MA-NTR600-II dual engine
+* RMS Pin-M200 engine
+* NDDFD engine
+* ND ZURBIN engine[/indent]
+
+[b]1 New Autopilot[/b]
+[indent]* MA-337-MAX Autopilot[/indent]
+
+[b]10 New Power Systems[/b]
+MPDGs:
+[indent]* OPG-14 StatPlasma
+* MPI City-class MPDG[/indent]
+
+SMESes:
+[indent]* OPS-10 Capacitor Bank[/indent]
+
+Ultracapacitors:
+[indent]* Light Ultracapacitor
+* ND-iSMB
+* ND-iSMB Dual Coupling[/indent]
+
+Reactor Cores:
+[indent]* 1x SO6 fuel rod[/indent]
+
+Turbines:
+[indent]* Thermocouple Array
+* Laminar Turbine
+* Dual Laminar Turbine[/indent]
+
+[b]2 Propellant Tanks[/b]
+[indent]* 2x Freighter propellant tank array
+* Frigate propellant tank array[/indent]
+
+[b]2 Mass Driver Ammunition Magazines[/b]
+[indent]* Projectile clip
+* Shipyard-class projectile magazine[/indent]
+
+[b]1 Nanodrone Component Storage[/b]
+[indent]* Shipyard-class nanodrone storage[/indent]
+
+
+
+
+
+
+
+
+
+
+
+
 
