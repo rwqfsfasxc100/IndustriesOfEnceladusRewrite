@@ -5,4 +5,28 @@
 
 [b]Industries Of Enceladus Rewrite[/b]
 
-Description example text
+A large content mod for [i]ΔV: Rings of Saturn[/i]
+
+[center][u]Additions:[/u][/center]
+
+[b]18 New Ships:[/b]
+[indent]* Tsukuyomi-Class Frigate (Decommissioned)
+* OCP-214-DD "Deep Dish"
+* OCP-207-SNAP "Piranha"
+* SSE Cothon-2200-XL
+* MAD-CERF (Civilian Refit)
+* UMC Oberon MLP-60
+* KX37 TNTRL "RAM"
+* Wasp-class Scout (Decommissioned)
+* Pigeon Prospector
+* Antonoff-Titan K225-SH
+* SSE OK720 TNTRL
+* Y-ME Fission Retrofit
+* OCP-209 Salvaged Hull
+* CK-65
+* CK-69
+* OCP-213 Twin
+* OCK Peeper TNTRL
+* MAD-CERF (Inverted Civilian Refit)[/indent]
+
+
