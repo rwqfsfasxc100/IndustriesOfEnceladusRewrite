@@ -95,15 +95,85 @@ Turbines:
 [b]1 Nanodrone Component Storage[/b]
 [indent]* Shipyard-class nanodrone storage[/indent]
 
+[b]10 Cargo Bay Accessories (New Equipment Type!)[/b]
+Preprocessors:
+[indent]* Rasamama RP-25
+* Nakamura Big MT
+* Rusatom-Antonoff MPP-N1
+* Rusatom Chunk Cutter
+* MAD Heating Coils
+* MS Frakker[/indent]
+
+Storage Units:
+[indent]* Conlido Internal Storage Rack
+* THI Mineral Tank Module[/indent]
+
+Fabrication Units:
+[indent]* SSE Voyager Fabricator
+* RMS-PAL Fabricator[/indent]
+
+[b]7 New Mineral Hold Kits (New Equipment Type!)[/b]
+Storage Units:
+[indent]* SSE Saddlebags
+* E-Prime Hold Rejoin
+* Conlido freightReady Hoppers[/indent]
+
+Variable Geometry Locking Bolts:
+[indent]* Locking Bolts[/indent]
+
+Divided to Dynamic Conversion Kits:
+[indent]* Conlido aMorphIV
+* THI MD-5
+* NDSBH[/indent]
+
+[b]17 Consumable Vats (New Equipment Type!)[/b]
+Ammunition Storages:
+[indent]* MPI Mounted Ammunition Canister
+* ND Hollowed Hull Ammunition Magazine
+* Antonoff Ammunition Expansion Kit
+* Antonoff 2x Ammunition Expansion Kit
+* Obonto Projectile Extendo+[/indent]
+
+Nanodrone Component Storages:
+[indent]* Runasimi Drone Component Vat
+* Runasimi Hull-Fitted Nanodrone Locker
+* Antonoff Nano Storage Expansion
+* Antonoff Dual Nano Storage Expansion
+* Obonto Liquid Nanobot Hold[/indent]
+
+Propellant Storages:
+[indent]* Propellant Can Mk. I
+* Propellant Can Mk. II
+* Reaction Mass Tank Expander
+* 2x Reaction Mass Tank Expander
+* 3x Reaction Mass Tank Expander[/indent]
+
+Consumable Delivery Speed Boosters:
+[indent]* Tetsuo SCARLETTE Delivery Driver
+* Tetsuo RamDrive Consumable Delivery Efficiency Module[/indent]
+
+[b]6 Habitat Kits (New Equipment Type!)[/b]
+[indent]* Conlido bunkX1
+* Conlido bunkX2
+* Runasimi Habitation Capsules
+* Conlido mgHome Kit
+* Antonoff KMX Upfit
+* OCM-36 Upfit[/indent
 
 
+[center][u]Changes:[/u][/center]
 
+[b]Ship Changes[/b]
+[indent]* OCP-based ships now have 4 variated hardpoints to make them more useful
+* Added new slot types: turrets, large drives[/indent]
 
+[b]New Derelicts and NPCs[/b]
+[indent]* NPCs for all ships except the Tsukuyomi
+* Derelicts for all ships variants with various chances based on their vanilla counterparts (if applicable) 
+* Can also be purchased from the Pirates[/indent]
 
-
-
-
-
-
+[b]Added Ship Parameter Stats[/b]
+[indent]* Crew quality and hold capacity displayed at Enceladus
+* Hold fill percentage shown on various HUDs[/indent]
 
 
