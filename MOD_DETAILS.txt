@@ -1,0 +1,8 @@
+;MOD_ID|hev.IndustriesOfEnceladus
+;MOD_NAME|HevLib
+;MOD_ICON|https://raw.githubusercontent.com/rwqfsfasxc100/IndustriesOfEnceladusRewrite/refs/heads/main/icon.png
+;MOD_ZIP_NAME|IndustriesOfEnceladusRewrite.zip
+
+[b]Industries Of Enceladus Rewrite[/b]
+
+Description example text
