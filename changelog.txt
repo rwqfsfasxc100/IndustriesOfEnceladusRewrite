@@ -1,3 +1,10 @@
+[2.7.9]
+
+1="* Made the NDCI-80 considerably more likely to experience wear"
+2="* Added NameDriver"
+3="* Fixed MPU tuning default being affected by preprocessors with MPU speed modifiers"
+4="* Reduced harshness of the minimum ore content for preprocessors to operate on"
+
 [2.7.8]
 
 1="* Reworked preprocessors to have a maximum number of objects it can operate on at any given time"
