@@ -11,4 +11,3 @@ powerDrawPerKg = 2500
 self_remassEfficiency = 0.0
 modify_kgps_percent_multi = 185
 max_ores_processing = 25
-ore_swapover_time = 5.0

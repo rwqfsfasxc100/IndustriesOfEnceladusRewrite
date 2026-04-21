@@ -14,7 +14,6 @@ powerDrawPerKg = 250
 self_remassEfficiency = 0.15
 modify_kgps_percent_multi = 110
 max_ores_processing = 8
-ore_swapover_time = 5.0
 
 [node name="VentRemass" parent="." index="0"]
 position = Vector2( 32, 16 )

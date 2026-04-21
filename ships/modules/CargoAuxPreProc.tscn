@@ -34,21 +34,6 @@ color_ramp = SubResource( 2 )
 [node name="CargoAuxPreProc" instance=ExtResource( 1 )]
 position = Vector2( -32, 0 )
 script = ExtResource( 9 )
-ventTime = 0.5
-massDamageScale = 20.0
-self_kgps = 100.0
-powerDrawPerKg = 100
-modify_mineralEfficiency = 100
-self_remassEfficiency = 0.5
-modify_kgps_add = 0
-modify_kgps_percent_multi = 100
-tuneable_speed_min = 0.5
-tuneable_speed_max = 1.5
-minimum_filler_content = 0.3
-tunable_mpu_min = -15
-tunable_mpu_max = 15
-max_ores_processing = 10
-ore_swapover_time = 5.0
 enabled = true
 
 [node name="VentRemass" type="Particles2D" parent="." index="0"]

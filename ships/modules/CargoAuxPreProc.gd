@@ -12,7 +12,7 @@ export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 export (float) var tuneable_speed_min = 0.5
 export (float) var tuneable_speed_max = 1.5
 
-export (float,0.15,1.0,0.05) var minimum_filler_content = 0.25
+export (float,0.15,1.0,0.05) var minimum_filler_content = 0.30
 
 export (int,-50,50,1) var tunable_mpu_min = -15
 export (int,-50,50,1) var tunable_mpu_max = 15
@@ -35,7 +35,8 @@ func get_minimum_filler_content():
 	var dynamicKgps = get_preprocessor_kgps()
 	var ratio = dynamicKgps / self_kgps
 	base = pow(base,2.0 - ratio)
-	return clamp(base,0.15,1.0)
+	var b2 = base / 1.5
+	return clamp(b2,0.10,1.0)
 
 
 
