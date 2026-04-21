@@ -33,7 +33,7 @@ func getTuneables():
 			"min": float(bkgps) * 0.5, 
 			"max": float(bkgps) * 1.5, 
 			"step": ceil(float(bkgps) / 100), 
-			"default": kgps, 
+			"default": bkgps, 
 			"current": getKgps(false), 
 			"unit": "kg/s", 
 			"testProtocol": "cargo"
