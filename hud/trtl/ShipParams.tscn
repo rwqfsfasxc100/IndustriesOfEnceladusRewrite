@@ -18,6 +18,7 @@ margin_top = 108.0
 margin_right = 192.0
 margin_bottom = 122.0
 text = "   0.00"
+align = 2
 script = ExtResource( 3 )
 sensor = "hold.fill"
 format = "%7.1f"
