@@ -8,6 +8,10 @@ extends Node
 const TRANSLATIONS = {
 	"master_locale": "en",
 	"en": {
+		"SYSTEM_CARGO_AUX_FAB": {
+			"string": "SSE Voyager Fabricator",
+			"version_hash": 3275038314
+		},
 		"SYSTEM_CARGO_AUX_FAB_DESC": {
 			"string": "A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \\n\\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \\n\\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.",
 			"version_hash": 3265294764
@@ -36,6 +40,10 @@ const TRANSLATIONS = {
 			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard ammo and nanodrone storages. \\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \\nProduces nanodrone components from a 4:1 ratio of iron to platinum. \\nTakes up some space in the cargo bay.",
 			"version_hash": 3130609649
 		},
+		"SLOT_CARGO_MPU": {
+			"string": "Cargo Bay MPU",
+			"version_hash": 2419223679
+		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "Rusatom-Antonoff MPU Mk2",
 			"version_hash": 2471399476
@@ -59,6 +67,10 @@ const TRANSLATIONS = {
 		"SYSTEM_CARGO_MPU_BULK_SPECS": {
 			"string": "Cargo capacity: 10,000 kg / mineral (60,000 kg total) \\nProcessing capacity: 40 kg/s \\nPower draw: 100 MW / chunk \\nMineral processing efficiency: 70% \\nRemass processing efficiency: 20% \\nMass: 8,000 kg \\nManufacturer: Titan Heavy Industries",
 			"version_hash": 3199041299
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30": {
+			"string": "Rasamama RP-25",
+			"version_hash": 2391507102
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_DESC": {
 			"string": "The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \\n\\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.",
@@ -148,6 +160,10 @@ const TRANSLATIONS = {
 			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
 			"version_hash": 3197386114
 		},
+		"SYSTEM_CARGO_AUX_STORAGE_4K": {
+			"string": "Conlido Internal Storage Rack",
+			"version_hash": 3133945664
+		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
 			"string": "The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market. \\n\\nThe additional microholds for consumable goods were initially 3rd-party modifications, however their sheer popularity made Conlindo make a not so subtle incorporation into the base model.",
 			"version_hash": 3179117379
@@ -184,6 +200,10 @@ const TRANSLATIONS = {
 			"string": "The MPI Roving Silo is by far the largest ",
 			"version_hash": 2200710843
 		},
+		"SYSTEM_AMMO_200": {
+			"string": "Projectile clip",
+			"version_hash": 4122866846
+		},
 		"SYSTEM_AMMO_200_DESC": {
 			"string": "A set of extension rails for kinetic projectile weapons, capable of handling a variety of calibres. Ammunition is fed by a cost-effective rack-and-pinion actuator. Ports at their bases allow for manual and automatic reloading.",
 			"version_hash": 3564362393
@@ -215,6 +235,10 @@ const TRANSLATIONS = {
 		"SYSTEM_DND_100000_SPECS": {
 			"string": "Storage: 100,000 kg \\nDelivery: 100 kg/s \\nManufacturer: Nakamura Dynamics",
 			"version_hash": 263129209
+		},
+		"SLOT_CREW_MOD": {
+			"string": "Habitat Kits",
+			"version_hash": 1106608157
 		},
 		"HUD_CREW_QUALITY": {
 			"string": "habitat quality",
@@ -300,6 +324,10 @@ const TRANSLATIONS = {
 			"string": "Increases or decreases crew morale erosion per day of operation. \\nUnhappy crew may cause worse operational outcomes. \\nDoes not require power or reactor heat.",
 			"version_hash": 458050479
 		},
+		"SYSTEM_DND_HARVTUG": {
+			"string": "OT Hard-Stop Tug Drones",
+			"version_hash": 3769092629
+		},
 		"SYSTEM_DND_HARVTUG_DESC": {
 			"string": "The Obonto-Titan Hard-Stop nanodrone delivery system is a modification of THI's Harvester-class system, configured to bring high-albedo objects to a gentle stop relative to the rings. Originally manufactured for the OCP-209 as a proprietary equipment loss method, it has since seen distribution on the aftermarket following commerce agreements in the 2260s.",
 			"version_hash": 888894848
@@ -364,6 +392,10 @@ const TRANSLATIONS = {
 			"string": "An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \\n\\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \\n\\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.",
 			"version_hash": 4114062921
 		},
+		"DIALOG_PIRATE_BUSINESS_SHIP_TWIN": {
+			"string": "Some of the construction crew for Obonto Seven left one of their dual torch construction ships out, and never noticed them being \"collected.\" It's too unwieldy for our liking, so you can take a look for 500 grand.",
+			"version_hash": 2044666062
+		},
 		"DIALOG_PIRATE_BUSINESS_SHIP_PEEPER": {
 			"string": "Right here we have one of the most bizarre machines ever conceived, an OCK Peeper. Even more unwieldy than the OK720, she's yours for 250k.",
 			"version_hash": 1543415986
@@ -427,6 +459,10 @@ const TRANSLATIONS = {
 		"DIALOG_PIRATE_BUSINESS_SHIP_RAM": {
 			"string": "I've got a civilian modification to the K37 that provides several features from a Prospector class of ships. Very functional and good for mining, but kinda uncomfortable to fly. 250 grand for the vessel.",
 			"version_hash": 2237712289
+		},
+		"SLOT_CARGOBAY_MOD": {
+			"string": "Mineral Hold Kits",
+			"version_hash": 1868469807
 		},
 		"SYSTEM_CARGO_MOD_2K": {
 			"string": "SSE Saddlebags",
@@ -524,6 +560,10 @@ const TRANSLATIONS = {
 			"string": "Requires an MPU to properly utilise. \\nConverts the mineral hold storage volume to Dynamic. \\nIncreases or decreases total hold storage volume according to the conversion ratio. Percentage indicated in specification. \\nDoes not require power or reactor heat.",
 			"version_hash": 2677592350
 		},
+		"HUD_HOLD_CAP": {
+			"string": "total hold capacity",
+			"version_hash": 2058380254
+		},
 		"HUD_HOLD_FILL": {
 			"string": "hold fill level",
 			"version_hash": 3235534635
@@ -583,6 +623,10 @@ const TRANSLATIONS = {
 		"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP": {
 			"string": "Keybind used for the 11th equipment slot",
 			"version_hash": 3957858588
+		},
+		"SLOT_HULL_CONSUMABLEVAT": {
+			"string": "Consumable Vat",
+			"version_hash": 1532161049
 		},
 		"SYSTEM_HULLVAT_AMMO_1": {
 			"string": "MPI Mounted Ammunition Canister",
@@ -904,6 +948,10 @@ const TRANSLATIONS = {
 			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 2 \\nTurret Hardpoints: 2 \\nDrone Bays: 2 \\nDocking Bays: 2 \\nCrew: 6 \\nDry mass: 195,000 kg \\nCargo bay: 1,175 m^3 \\nProcessed cargo storage (per mineral): 45,000 kg",
 			"version_hash": 525647639
 		},
+		"SYSTEM_AUX_MPD_1400": {
+			"string": "OPG-14 StatPlasma",
+			"version_hash": 1526700951
+		},
 		"SYSTEM_AUX_MPD_1400_DESC": {
 			"string": "Extreme power requirements, such as the industrial furnaces of refinery stations, requires an extreme power solution, and Obonto Microengineering's StatPlasma is it. Enthusiasts and electrical engineers (though there is little distinction) have taken to calling it \"the pinecone\" due to its unusual helical conversion chamber that narrows towards the recovery outlet. \\n\\nNote: this unit may require a small period of warmup before reaching its full power output.",
 			"version_hash": 3587521427
@@ -924,6 +972,10 @@ const TRANSLATIONS = {
 			"string": "Power draw: 300 MW \\nThermal draw: 4 GW \\nPower (nominal): 2,000 MW \\nWarmup time: 15 s \\nMass: 16,660 kg \\nType: MPDG with recovery turbine assembly \\nManufacturer: Mars Power Industries",
 			"version_hash": 1850708562
 		},
+		"SYSTEM_AUX_SMES_10K": {
+			"string": "OPS-10 Capacitor Bank",
+			"version_hash": 2269000599
+		},
 		"SYSTEM_AUX_SMES_10K_DESC": {
 			"string": "Obonto Microengineering's backup power solution is, while inelegant, incredibly effective. Basically just a few extra-large ultracapacitors in a steel trenchcoat, the OPS-10 can deliver phenomenal power output at peak load while being about as affordable as their standard ultracapacitor range. \\n\\nAs it is not connected to internal cooling systems, the OPS-10 relies on a slow charge rate and a bulky radiative cooler to manage its temperature.",
 			"version_hash": 3928417371
@@ -931,6 +983,10 @@ const TRANSLATIONS = {
 		"SYSTEM_AUX_SMES_10K_SPECS": {
 			"string": "Capacity: 10,000 MJ \\nCharge power draw: 50 MW \\nDischarge power (peak): 10,000 MW \\nMass: 6,500 kg \\nType: High-density graphene fractal ultracapacitor array \\nManufacturer: Obonto Microengineering",
 			"version_hash": 3809545440
+		},
+		"SYSTEM_CAPACITOR_100": {
+			"string": "Light Ultracapacitor",
+			"version_hash": 2574788091
 		},
 		"SYSTEM_CAPACITOR_100_DESC": {
 			"string": "A graphene fractal ultracapacitor cylinder for storing excess generated power, for availability during peak usage. Compact unit at a reasonable price.",
@@ -964,6 +1020,10 @@ const TRANSLATIONS = {
 			"string": "Capacity: 1,400 MJ \\nPeak power: 10 GW \\nMass: 3,200 kg \\nManufacturer: Nakamura Dynamics",
 			"version_hash": 2423955514
 		},
+		"SYSTEM_RODS_1": {
+			"string": "1x SO6 fuel rod",
+			"version_hash": 1073794583
+		},
 		"SYSTEM_RODS_1_DESC": {
 			"string": "This Rusatom-Antonoff SO6 nuclear fuel rod, commonly called a \"sunshard\", is a standard fuel for early interplanetary NTR designs. The SO6 utilize a liquid thorium-based core encased in a solid shell. The stress and composition yield extremely high operating temperatures. \\n\\nThe perfect gift for the aspiring ship captain. Lead-lined wrapping material in a variety of designs and colours is available on request.",
 			"version_hash": 3850804419
@@ -971,6 +1031,10 @@ const TRANSLATIONS = {
 		"SYSTEM_RODS_1_SPECS": {
 			"string": "Manufacturer: Rusatom-Antonoff \\nOperating temperature: 3,500 K \\nFailure point: 4,500 K \\nMass: 400 kg \\nThermal power: 1 GW",
 			"version_hash": 1271101530
+		},
+		"SYSTEM_TURBINE_20": {
+			"string": "Thermocouple Array",
+			"version_hash": 1012257531
 		},
 		"SYSTEM_TURBINE_20_DESC": {
 			"string": "This simple thermocouple array utilises the thermal gradient between the vessel's reactor and propellant to generate electricity. A negligible amount of reaction mass is vented overboard in the process.",
@@ -1003,6 +1067,10 @@ const TRANSLATIONS = {
 		"SYSTEM_TURBINE_320_SPECS": {
 			"string": "Power (nominal): 320 MW \\nPropellant consumption: 320 g/s \\nMass: 1,200 kg \\nManufacturer: Boltzmann Waermerkraftmaschinen",
 			"version_hash": 2696187974
+		},
+		"SHIP_TSUKUYOMI_IOT": {
+			"string": "Tsukuyomi-Class Frigate (Decommissioned)",
+			"version_hash": 2331768936
 		},
 		"SHIP_TSUKUYOMI_IOT_DESC": {
 			"string": "The Tsukuyomi class of light frigates were designed in 2190 for military operations throughout the solar system. They were the first of their type and laid the groundwork for modern tactical frigates, with their quintuplet reactors serving as immense sources of power for their powerful thrusters. Following phase-out of nuclear saltwater rockets in military service, many were scrapped or sold off to private military contractors and corporations. \\n\\nCourtesy of the Sin Space Engineering shipyards, this unit has been fully demilitarised and refurbished for operations within the rings. Its saltwater reactors have been replaced with three modular containment vessels for modern NTR system retrofitting, and its bow torpedo tubes have been departitioned to expand its hold and add four auxiliary equipment bays.\\n\\nIt is worth pointing out that the Tsukiyomi is a warship by design, not a cargo hauler. In the same sense that a van has more cargo space than a tank, which is why it has a lower storage volume than one might expect from a ship of it's volume.",
@@ -1168,6 +1236,10 @@ const TRANSLATIONS = {
 			"string": "Make: Obonto Microengineering\\nHigh-Stress Hardpoints: 2\\nLow-Stress Hardpoints: 2\\nDocking Bays: 2\\nTurret Mounts: 2\\nCrew: 8\\nDry mass: 184,500 kg\\nCargo bay: 610 m^3\\nProcessed cargo storage (combined): 50,000 kg",
 			"version_hash": 2758248968
 		},
+		"SLOT_TURRET_LEFT": {
+			"string": "Left Turret Mount",
+			"version_hash": 3411916009
+		},
 		"SLOT_TURRET_RIGHT": {
 			"string": "Right Turret Mount",
 			"version_hash": 4152908156
@@ -1208,6 +1280,14 @@ const TRANSLATIONS = {
 			"string": "Overhaul content mod with over a dozen ships, 50 equipment items, and much more...",
 			"version_hash": 1435637786
 		},
+		"SLOT_CARGO_AUX": {
+			"string": "Cargo Bay Accessories",
+			"version_hash": 898983681
+		},
+		"SYSTEM_FUEL_1000000": {
+			"string": "2x Freighter propellant tank array",
+			"version_hash": 2936829597
+		},
 		"SYSTEM_FUEL_1000000_DESC": {
 			"string": "A doubled-up array of freighter-class propellant tanks that can hold up to 1,000,000 kg of propellant for thermal rockets. Honeycombed cells prevent mass shifts during maneuvers.",
 			"version_hash": 130411686
@@ -1227,6 +1307,10 @@ const TRANSLATIONS = {
 		"SYSTEM_FUEL_2000000_SPECS": {
 			"string": "Capacity: 2,000,000 kg \\nPropellant type: Thermal Rocket",
 			"version_hash": 901361093
+		},
+		"SYSTEM_THRUSTER_PIN150": {
+			"string": "RMS Pin-C50 thruster",
+			"version_hash": 503674612
 		},
 		"SYSTEM_THRUSTER_PIN150_DESC": {
 			"string": "The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. However, they do suffer extra stress while under acceleration, and will fail at considerably lower accelerations than conventional thrusters. \\n\\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.",
@@ -1260,6 +1344,10 @@ const TRANSLATIONS = {
 			"string": "Thrust: 450 kN \\nExhaust velocity: 5 km/s \\nPropellant consumption: 90.0 kg/s \\nPower consumption: 40 MW \\nThermal consumption: 1.8 GW \\nOperation mode: Pulsed thrust \\nVectored thrust angle: 60 deg \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 25 kg (per thruster) \\nManufacturer: Nakamura Dynamics",
 			"version_hash": 3803267296
 		},
+		"SYSTEM_SALVAGE_ARM_HEAVY": {
+			"string": "Rusatom-Antonoff ORD",
+			"version_hash": 3844473405
+		},
 		"SYSTEM_SALVAGE_ARM_HEAVY_DESC": {
 			"string": "Through the course of their collaboration on the KTA24, Rusatom-Antonoff quickly recognised the shortcomings of the Triskellion-Armstrong AR-1500. A slow and delicate device, its usage as an ore recovery tool quickly wears out its precision servos and carefully-constructed docking adapter. The ORD is their response to such shortcomings. \\n\\nWhile especially heavy and power-hungry on account of its bulky support structure, its hard-wearing motors and bearings offer a viable and durable alternative to its counterpart. ",
 			"version_hash": 4017619073
@@ -1291,6 +1379,10 @@ const TRANSLATIONS = {
 		"SYSTEM_SALVAGE_ARM_LONG_SPECS": {
 			"string": "Arm strength: 700 kN \\nReach: 60 m \\nPower draw (peak): 170 MW \\nMass: 7,750 kg \\nManufacturer: Triskelion-Armstrong",
 			"version_hash": 4230989901
+		},
+		"SYSTEM_MAIN_ENGINE_NANI": {
+			"string": "SSE NANI Torch Refit",
+			"version_hash": 102908080
 		},
 		"SYSTEM_MAIN_ENGINE_NANI_DESC": {
 			"string": "This comically impractical and completely disgusting main torch is the ultimate logical conclusion of many a night spent drinking and ruminating on life's purpose. Coming to the determination that there isn't one, the team at Sin Space Engineering put their heads together and produced this thing. \\n\\nDisclaimer: Omaewamou-Shindeiru thinks this is really funny and fully endorses the NANI's use as a propulsion solution. May void vessel warranty. Usage as main torch in some vessels may damage your reactor. Have fun!",
@@ -1384,6 +1476,10 @@ const TRANSLATIONS = {
 			"string": "Thrust: 3,000 kN \\nExhaust velocity: 3 km/s \\nPropellant consumption: 1,000 kg/s \\nPower consumption: 20 MW \\nThermal consumption: 4.5 GW \\nOperation mode: Variable thrust \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 250 kg \\nManufacturer: Nakamura Dynamics",
 			"version_hash": 285575969
 		},
+		"IOER_TRANSIT_TIP_1": {
+			"string": "Preprocessor units draw water out of a chunk before it meets the mineral processing unit to speed up the time it takes for the chunk to be processed.",
+			"version_hash": 1298930922
+		},
 		"IOER_TRANSIT_TIP_2": {
 			"string": "Preprocessors with mineral efficiency bonuses increase the amount of metal you can extract from a chunk.",
 			"version_hash": 2657296036
@@ -1436,6 +1532,10 @@ const TRANSLATIONS = {
 			"string": "Additional material cost from inefficiencies",
 			"version_hash": 2047110542
 		},
+		"SYSTEM_MWTIGHTBEAM": {
+			"string": "RA DMW Cannon",
+			"version_hash": 2618579005
+		},
 		"SYSTEM_MWTIGHTBEAM_DESC": {
 			"string": "Rusatom-Antonoff's Directed Microwave Cannon utilises a long, tubular waveguide to concentrate microwaves into a tight beam of irradiance. Its modular and unspecialised components are cheap and quick to repair, but are offset by high installation costs and middling power efficiency.",
 			"version_hash": 2758148380
@@ -1474,6 +1574,10 @@ const TRANSLATIONS = {
 		}
 	},
 	"ru_RU": {
+		"SYSTEM_CARGO_AUX_FAB": {
+			"string": "Фабрикатор SSE Voyager",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_AUX_FAB_DESC": {
 			"string": "Изготовленное на заказ и совершенно нелицензированное чудовище от Sin Space Engineering, ставшее популярным среди шахтёров кольца в 2260-х годах. Модуль-фабрикатор Voyager RSLS MPU был демонтирован и размещён выше в грузовом отсеке вместе с небольшим хранилищем минералов для замены специализированных загрузочных бункеров. \\n\\nВ связи с заменой шины питания на распределитель более низкого качества ожидается умеренное снижение энергоэффективности по сравнению со стандартным блоком. \\n\\nОтказ от ответственности: Nakamura Dynamics не предоставляет гарантию на этот блок и не считает его частью своего ассортимента продукции, явным или подразумеваемым. Использование модифицированного оборудования может привести к повреждениям и непредвиденным опасностям.",
 			"version_hash": 0
@@ -1498,6 +1602,10 @@ const TRANSLATIONS = {
 			"string": "Потребляемая мощность при печати: 210 МВт \\nВозможности печати: дроны, боеприпасы \\nВместимость боеприпасов: 5000 кг \\nВместимость дронов: 5000 кг \\nМасса: 10 500 кг \\nПроизводитель: Rasamama Material Solutions",
 			"version_hash": 0
 		},
+		"SLOT_CARGO_MPU": {
+			"string": "УПМ Грузового отсека",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "УПМ Rusatom-Antonoff Mk2",
 			"version_hash": 0
@@ -1520,6 +1628,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_CARGO_MPU_BULK_SPECS": {
 			"string": "Грузоподъемность: 10 000 кг/минерал (всего 60 000 кг) \\nСкорость переработки: 40 кг/с \\nЭнергопотребление: 100 МВт/осколок \\nЭффективность переработки минералов: 70% \\nЭффективность переработки топлива: 20% \\nМасса: 8 000 кг \\nПроизводитель: Titan Heavy Industries",
+			"version_hash": 0
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30": {
+			"string": "Rasamama RP-25",
 			"version_hash": 0
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_DESC": {
@@ -1598,6 +1710,10 @@ const TRANSLATIONS = {
 			"string": "Уменьшает массу льда в кусках на большой площади. \\nПополняет запас топлива. \\nОбрабатывает несколько кусков руды одновременно. \\nТребования к мощности и скорость обработки указаны на один кусок. \\nНе добывает минералы и не уничтожает куски.",
 			"version_hash": 0
 		},
+		"SYSTEM_CARGO_AUX_STORAGE_4K": {
+			"string": "Внутренний стеллаж для хранения от Conlido",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
 			"string": "Внутренний стеллаж для хранения от Conlido RVM, испытанный и использовавшийся шахтерами пояса астероидов в начале 22-го века, представляет собой относительно простую концепцию со сложной реализацией. Этот модульный комплект для модернизации позволяет подключать существующие устройства к трубопроводам перерабатываемых материалов большинства крупных судов, доступных на рынке. \\n\\nДополнительные микроотсеки для расходных материалов изначально были сторонними модификациями, однако их огромная популярность побудила Conlindo внедрить их в базовую модель хотя и не очень изящно.",
 			"version_hash": 0
@@ -1634,12 +1750,20 @@ const TRANSLATIONS = {
 			"string": "Силовой бункер MPI Roving — самый большой на сегодняшний день",
 			"version_hash": 0
 		},
+		"SYSTEM_AMMO_200": {
+			"string": "Обойма для снарядов",
+			"version_hash": 0
+		},
 		"SYSTEM_AMMO_200_DESC": {
 			"string": "Комплект удлинительных направляющих для кинетического оружия, совместимый с различными калибрами. Подача боеприпасов осуществляется экономичным реечным механизмом. Порты в основаниях позволяют производить ручную и автоматическую перезарядку.",
 			"version_hash": 0
 		},
 		"SYSTEM_AMMO_200_SPECS": {
 			"string": "Масса: 200 кг \\nПодача: 100 кг/с \\nПроизводитель: Rasamama Material Solutions",
+			"version_hash": 0
+		},
+		"SLOT_CREW_MOD": {
+			"string": "Комплекты жилых модулей",
 			"version_hash": 0
 		},
 		"HUD_CREW_QUALITY": {
@@ -1726,6 +1850,10 @@ const TRANSLATIONS = {
 			"string": "Увеличивает или уменьшает снижение морального духа экипажа за день эксплуатации. \\nНедовольство экипажа может привести к понжению качества работы. \\nНе требует электроэнергии или нагрева реактора.",
 			"version_hash": 0
 		},
+		"SYSTEM_DND_HARVTUG": {
+			"string": "Дроны-перехватчики Hard-Stop OT",
+			"version_hash": 0
+		},
 		"SYSTEM_DND_HARVTUG_DESC": {
 			"string": "Система доставки нанодронов Obonto-Titan Hard-Stop представляет собой модификацию системы класса Harvester компании THI, предназначенную для плавной остановки объектов с высоким альбедо относительно колец. Первоначально разработанная для OCP-209 в качестве запатентованного метода предотвращения потери оборудования, после заключения коммерческих соглашений в 2260-х годах она начала поставляться на рынок.",
 			"version_hash": 0
@@ -1788,6 +1916,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_EXODYN_ALT_DESC": {
 			"string": "Экспериментальный динамический вариант грузового контейнера THI, представленный публике в середине 2200-х годов. Для использования требуется установка переработки минералов. Приобретение грузового контейнера включает в себя аренду, покрывающую поставку новых контейнеров в течение всего срока действия лицензии владельца. \\n\\nDyna-Cargo — товарный знак Titan Heavy Industries. Все права защищены. n\\n\\Управление станции предупреждает: использование с определёнными РСУ в определённых конфигурациях может привести к перегревам микрореактора грузового контейнера. Капитаны несут всю ответственность за последствия таких инцидентов. \\n\\nЭта альтернативная версия для серии Prospector расположена в средней части судна для улучшения маневренности.",
+			"version_hash": 0
+		},
+		"SLOT_CARGOBAY_MOD": {
+			"string": "Комплекты для хранения минералов",
 			"version_hash": 0
 		},
 		"SYSTEM_CARGO_MOD_2K": {
@@ -1886,6 +2018,10 @@ const TRANSLATIONS = {
 			"string": "Для правильного использования требуется УПМ. \\nПреобразует объём хранилища минералов в Динамический. \\nУвеличивает или уменьшает общий объём хранилища в зависимости от коэффициента преобразования. Процент указан в спецификации. \\nНе требует электроэнергии или тепла реактора.",
 			"version_hash": 0
 		},
+		"HUD_HOLD_CAP": {
+			"string": "total hold capacity",
+			"version_hash": 0
+		},
 		"HUD_HOLD_FILL": {
 			"string": "hold fill level",
 			"version_hash": 0
@@ -1944,6 +2080,10 @@ const TRANSLATIONS = {
 		},
 		"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP": {
 			"string": "Keybind used for the 11th equipment slot",
+			"version_hash": 0
+		},
+		"SLOT_HULL_CONSUMABLEVAT": {
+			"string": "Consumable Vat",
 			"version_hash": 0
 		},
 		"SYSTEM_HULLVAT_AMMO_1": {
@@ -2254,6 +2394,10 @@ const TRANSLATIONS = {
 			"string": "Производитель: Conlindo / Obonto Microengineering \\nВысокопрочные подвесы: 1 \\nМалопрочные подвесы: 4 \\nЭкипаж: 4 \\nСухая масса: 101,400 kg \\nОбъём грузового отсека: 600 m^3 \\nХранилище переработанной руды (общее): 25,000 kg",
 			"version_hash": 0
 		},
+		"SYSTEM_AUX_MPD_1400": {
+			"string": "OPG-14 StatPlasma",
+			"version_hash": 0
+		},
 		"SYSTEM_AUX_MPD_1400_DESC": {
 			"string": "Для экстремальных условий эксплуатации, таких как промышленные печи перерабатывающих заводов, требуется решение с экстремальной мощностью, и StatPlasma от Obonto Microengineering — именно то, что нужно. Энтузиасты и инженеры-электрики (хотя различий мало) называют его «шишкой» из-за необычной винтовой камеры преобразования, которая сужается к выходному отверстию для сбора пара. \\n\\nПримечание: этому устройству может потребоваться небольшой прогрев для достижения полной выходной мощности.",
 			"version_hash": 0
@@ -2274,12 +2418,20 @@ const TRANSLATIONS = {
 			"string": "Энергопотребление: 300 МВт \\nПотребление тепла: 4 ГВт \\nМощность (номинальная): 2000 МВт \\nВремя прогрева: 15 с \\nМасса: 16 660 кг \\nТип: МПДГ с турбиной-утилизатором \\nПроизводитель: Mars Power Industries",
 			"version_hash": 0
 		},
+		"SYSTEM_AUX_SMES_10K": {
+			"string": "Конденсаторная батарея OPS-10",
+			"version_hash": 0
+		},
 		"SYSTEM_AUX_SMES_10K_DESC": {
 			"string": "Решение Obonto Microengineering для резервного питания, несмотря на свою неэлегантность, невероятно эффективно. По сути, OPS-10 представляет собой несколько сверхбольших ультраконденсаторов в стальном корпусе, он может обеспечивать феноменальную выходную мощность при пиковой нагрузке, оставаясь при этом примерно таким же доступным, как и стандартные ультраконденсаторы. \\n\\nПоскольку OPS-10 не подключен к внутренним системам охлаждения, для поддержания температуры в нём используются медленная зарядка и громоздкий радиатор.",
 			"version_hash": 0
 		},
 		"SYSTEM_AUX_SMES_10K_SPECS": {
 			"string": "Емкость: 10 000 МДж \\nЭнергопотребление: 50 МВт \\nВыходная мощность (пиковая): 10 000 МВт \\nМасса: 6 500 кг \\nТип: Массив фрактальных ультраконденсаторов на основе графена высокой плотности \\nПроизводитель: Obonto Microengineering",
+			"version_hash": 0
+		},
+		"SYSTEM_CAPACITOR_100": {
+			"string": "Лёгкий ультраконденсатор",
 			"version_hash": 0
 		},
 		"SYSTEM_CAPACITOR_100_DESC": {
@@ -2314,12 +2466,20 @@ const TRANSLATIONS = {
 			"string": "Емкость: 1400 МДж \\nПиковая мощность: 10 ГВт \\nМасса: 3200 кг \\nПроизводитель: Nakamura Dynamics",
 			"version_hash": 0
 		},
+		"SYSTEM_RODS_1": {
+			"string": "1 топливный стержень SO6",
+			"version_hash": 0
+		},
 		"SYSTEM_RODS_1_DESC": {
 			"string": "Этот топливный стержень SO6 производства Rusatom-Antonoff, обычно называемый «солнечным осколком», является стандартным топливом для ранних проектов межпланетных ядерных реакторов (ЯТР). В SO6 используется жидкое ядро ​​на основе тория, заключенное в твердую оболочку. Напряжение и состав обеспечивают чрезвычайно высокие рабочие температуры. \\n\\nИдеальный подарок для будущего капитана корабля. Свинцовая упаковка различных дизайнов и цветов доступна по запросу.",
 			"version_hash": 0
 		},
 		"SYSTEM_RODS_1_SPECS": {
 			"string": "Производитель: Rusatom-Antonoff \\nРабочая температура: 3,500 K \\nТочка отказа: 4,500 K \\nМасса: 400 kg \\nТеплоотдача: 1 GW",
+			"version_hash": 0
+		},
+		"SYSTEM_TURBINE_20": {
+			"string": "Термопарная установка",
 			"version_hash": 0
 		},
 		"SYSTEM_TURBINE_20_DESC": {
@@ -2352,6 +2512,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_TURBINE_320_SPECS": {
 			"string": "Мощность (номинальная): 320 МВт \\nРасход рабочего тела: 320 г/с \\nМасса: 1200 кг \\nПроизводитель: Boltzmann Waermerkraftmaschinen",
+			"version_hash": 0
+		},
+		"SHIP_TSUKUYOMI_IOT": {
+			"string": "Фрегат класса «Tsukuyomi» (списанный)",
 			"version_hash": 0
 		},
 		"SHIP_TSUKUYOMI_IOT_DESC": {
@@ -2518,6 +2682,10 @@ const TRANSLATIONS = {
 			"string": "Производитель: Obonto Microengineering \\nВысокопрочные подвесы: 2 \\nМалопрочные подвесы: 2 \\Стыковочных отсеки: 4 \\nЭкипаж: 8 \\nСухая масса: 184 500 кг \\nОбем грузового отсека: 610 м³ \\nХранилище переработанной руды (общее): 50 000 кг",
 			"version_hash": 0
 		},
+		"SLOT_TURRET_LEFT": {
+			"string": "Левая турельная установка",
+			"version_hash": 0
+		},
 		"SLOT_TURRET_RIGHT": {
 			"string": "Правая турельная установка",
 			"version_hash": 0
@@ -2558,6 +2726,14 @@ const TRANSLATIONS = {
 			"string": "Мод с переработанным контентом, включающий более десятка кораблей, 50 предметов снаряжения и многое другое...",
 			"version_hash": 0
 		},
+		"SLOT_CARGO_AUX": {
+			"string": "Модули для грузового отсека",
+			"version_hash": 0
+		},
+		"SYSTEM_FUEL_1000000": {
+			"string": "Двойнной бак грузового класса",
+			"version_hash": 0
+		},
 		"SYSTEM_FUEL_1000000_DESC": {
 			"string": "Двойнной топливный бак грузового класса, вмещающий до 1 000 000 кг топлива для тепловых ракет. Сотовые ячейки предотвращают сдвиги массы во время маневров.",
 			"version_hash": 0
@@ -2576,6 +2752,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_FUEL_2000000_SPECS": {
 			"string": "Вместимость: 2 000 000 кг \\nТип рабочего тела: Для тепловых ракет",
+			"version_hash": 0
+		},
+		"SYSTEM_THRUSTER_PIN150": {
+			"string": "Двигатель RMS Pin-C50",
 			"version_hash": 0
 		},
 		"SYSTEM_THRUSTER_PIN150_DESC": {
@@ -2610,6 +2790,10 @@ const TRANSLATIONS = {
 			"string": "Тяга: 450 кН \\nСкорость истечения: 5 км/с \\nРасход рабочего тела: 90,0 кг/с \\nЭнергопотребление: 40 МВт \\nПотребление тепла: 1,8 ГВт \\nРежим работы: Импульсная тяга \\nУгол поворота: 60 градусов \\nТопливо: Кислородо-водородная плазма \\nМасса: 25 кг (на каждый двигатель) \\nПроизводитель: Nakamura Dynamics",
 			"version_hash": 0
 		},
+		"SYSTEM_SALVAGE_ARM_HEAVY": {
+			"string": "Rusatom-Antonoff ORD",
+			"version_hash": 0
+		},
 		"SYSTEM_SALVAGE_ARM_HEAVY_DESC": {
 			"string": "В ходе совместной работы над проектом KTA24 Rusatom-Antonoff быстро выявил недостатки AR-1500 Triskellion-Armstrong. Это медленное и хрупкое устройство, использование которого в качестве инструмента для добычи руды быстро приводит к износу его прецизионных сервоприводов и тщательно спроектированного стыковочного адаптера. ORD — это ответ на эти недостатки. \\n\\nХотя этот аппарат особенно тяжёлый и энергоёмкий из-за громоздкой опорной конструкции, его износостойкие двигатели и подшипники представляют собой жизнеспособную и надёжную альтернативу аналогу.",
 			"version_hash": 0
@@ -2628,6 +2812,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_SALVAGE_ARM_LIGHT_SPECS": {
 			"string": "Нагрузка на манипулятор: 500 кН \\nДальность захвата: 35 м \\nЭнергопотребление (пиковая): 60 МВт \\nМасса: 2050 кг \\nПроизводитель: Runasimi Inc.",
+			"version_hash": 0
+		},
+		"SYSTEM_MAIN_ENGINE_NANI": {
+			"string": "SSE NANI Torch Refit",
 			"version_hash": 0
 		},
 		"SYSTEM_MAIN_ENGINE_NANI_DESC": {
@@ -2722,6 +2910,10 @@ const TRANSLATIONS = {
 			"string": "Тяга: 3000 кН \\nСкорость истечения: 3 км/с \\nРасход рабочего тела: 1000 кг/с \\nЭнергопотребление: 20 МВт \\nПотребление тепла: 4,5 ГВт \\nРежим работы: Изменяемая тяга \\nРабочее тело: Кислородно-водородная плазма \\nМасса: 250 кг \\nПроизводитель: Nakamura Dynamics",
 			"version_hash": 0
 		},
+		"SYSTEM_MWTIGHTBEAM": {
+			"string": "НМВ пушка RA",
+			"version_hash": 0
+		},
 		"SYSTEM_MWTIGHTBEAM_DESC": {
 			"string": "Направленная микроволновая пушка Rusatom-Antonoff использует длинный трубчатый волновод для концентрации микроволн в узкий пучок излучения. Модульные и неспециализированные компоненты пушки дешевы и просты в ремонте, но их преимущества компенсируются высокой стоимостью установки и средней энергоэффективностью.",
 			"version_hash": 0
@@ -2760,6 +2952,10 @@ const TRANSLATIONS = {
 		}
 	},
 	"uk_UA": {
+		"SYSTEM_CARGO_AUX_FAB": {
+			"string": "SSE Voyager Фабрикатор",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_AUX_FAB_DESC": {
 			"string": "Виготовлений на замовлення і повністю неліцензійний монстр від Sin Space Engineering, який став популярним серед шахтарів у 2260-х роках. Блок фабрикатора Voyager RSLS був вирваний і розміщений вище у вантажному відсіку, разом з невеликим об'ємом сховища мінералів, який замінив його спеціалізовані бункери для подачі. \\n\\nЧерез заміну шини живлення на розподільник нижчого класу слід очікувати помірних втрат енергоефективності порівняно зі стандартним блоком. \\n\\nЗастереження: Nakamura Dynamics не надає гарантії на цей пристрій і не визнає його частиною свого асортименту продукції, прямо чи опосередковано. Використання модифікованого обладнання може призвести до пошкоджень і становити несподівану небезпеку.",
 			"version_hash": 0
@@ -2784,6 +2980,10 @@ const TRANSLATIONS = {
 			"string": "Енергоспоживання фабрикатора: 210 MW \\nРецепти фабрикатора: Деталі дронів, Боєприпаси \\nМісткість боєприпасів: 5,000 кг \\nМісткість компонентів дронів: 5,000 кг \\nМаса: 10,500 кг \\nВиробник: Rasamama Material Solutions",
 			"version_hash": 0
 		},
+		"SLOT_CARGO_MPU": {
+			"string": "Установка Перерорбки Мінералів",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "Rusatom-Antonoff УПМ Mk2",
 			"version_hash": 0
@@ -2806,6 +3006,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_CARGO_MPU_BULK_SPECS": {
 			"string": "Місткість переробленого вантажу: 10,000 кг / мінерал (всього 60,000 кг ) \\nПотужність переробки: 40 кг/c \\nЕнергоспоживання: 100 MW / шматок \\nЕфективність переробки мінералів: 70% \\nЕфективність переробки рабочої маси: 20% \\nМаса: 8,000 кг \\nВиробник: Titan Heavy Industries",
+			"version_hash": 0
+		},
+		"SYSTEM_CARGO_AUX_PREPROC_0x30": {
+			"string": "Rasamama RP-25",
 			"version_hash": 0
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_DESC": {
@@ -2884,6 +3088,10 @@ const TRANSLATIONS = {
 			"string": "Зменшує масу льоду в шматках на великій площі. \\nПоповнює запаси рабочої маси. \\nОбробляє кілька шматків руди одночасно. \\nВимоги до потужності та швидкість обробки вказані для одного шматка. \\nНе видобуває мінерали та не руйнує шматки.",
 			"version_hash": 0
 		},
+		"SYSTEM_CARGO_AUX_STORAGE_4K": {
+			"string": "Внутрішня стелажна система Conlido",
+			"version_hash": 0
+		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
 			"string": "Внутрішня стелажна система Conlido RVM, випробувана шахтарями в астероїдному поясі протягом початку 22 століття, - це відносно проста концепція зі складним виконанням. Цей модульний комплект для модернізації дозволяє приєднувати існуючі блоки до ліній обробки матеріалів на більшості великих суден, доступних на ринку у кільці. \\n\\nДодаткові мікро-відсіки для витратних матеріалів спочатку були модифікаціями від сторонніх виробників, проте їхня шалена популярність змусила Conlindo не надто непомітно включити їх у базову модель.",
 			"version_hash": 0
@@ -2920,12 +3128,20 @@ const TRANSLATIONS = {
 			"string": "MPI Roving Silo є безумовно найбільшим ",
 			"version_hash": 0
 		},
+		"SYSTEM_AMMO_200": {
+			"string": "Обойма для боєприпасів",
+			"version_hash": 0
+		},
 		"SYSTEM_AMMO_200_DESC": {
 			"string": "Набір розширювальних рейок для кінетичної зброї, здатний працювати з різними калібрами. Боєприпаси подаються за допомогою економічного приводу з рейкою та шестернею. Порти на основі дозволяють ручне та автоматичне перезарядження.",
 			"version_hash": 0
 		},
 		"SYSTEM_AMMO_200_SPECS": {
 			"string": "Місткість: 200 кг \\nШвидкість подачі: 100 кг/с \\nВиробник: Rasamama Material Solutions",
+			"version_hash": 0
+		},
+		"SLOT_CREW_MOD": {
+			"string": "Набори для житла",
 			"version_hash": 0
 		},
 		"HUD_CREW_QUALITY": {
@@ -3012,6 +3228,10 @@ const TRANSLATIONS = {
 			"string": "Збільшує або зменшує щоденне зниження морального духу екіпажу під час експлуатації. \\nНезадоволений екіпаж може призвести до гірших результатів експлуатації. \\nНе вимагає енергії чи тепла реактора.",
 			"version_hash": 0
 		},
+		"SYSTEM_DND_HARVTUG": {
+			"string": "Дрони-буксири OT Hard-Stop",
+			"version_hash": 0
+		},
 		"SYSTEM_DND_HARVTUG_DESC": {
 			"string": "Система доставки нанодронів Obonto-Titan Hard-Stop є модифікацією системи класу Harvester від THI, налаштованою для м'якої зупинки об'єктів з високим альбедо відносно кілець. Спочатку вироблена для OCP-209 як власний метод запобігання втраті обладнання, ця система згодом була поширена на вторинному ринку після укладення комерційних угод у 2260-х роках.",
 			"version_hash": 0
@@ -3074,6 +3294,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_EXODYN_ALT_DESC": {
 			"string": "Експериментальний динамічний варіант вантажного контейнера THI, випущений у продаж в середині 2200-х років. Для функціонування бункеру необхідна Установка Переробки Мінералів. Придбання обладнання для експлуатації контейнеру супроводжується договором оренди, який покриває постачання нових автономних модулів протягом усього терміну дії ліцензії власника\\n\\nDyna-Cargo є товарним знаком Titan Heavy Industries. Усі права захищені. Адміністрація станції попереджає, що використання певних конфігурацій маневрових двигунів може призвести до перегріву мікрореактора вантажного контейнера. Всю відповідальність беруть на себе власники вантажного контейнера.  \\n\\nЦя альтернативна версія для серії Prospector розташовується в середній частині судна для покращеного маневрування.",
+			"version_hash": 0
+		},
+		"SLOT_CARGOBAY_MOD": {
+			"string": "Набори для утримання мінералів",
 			"version_hash": 0
 		},
 		"SYSTEM_CARGO_MOD_2K": {
@@ -3172,6 +3396,10 @@ const TRANSLATIONS = {
 			"string": "Для правильного використання потрібна Установка Переробки Мінералів. \\nПеретворює об'єм зберігання мінералів на Динамічний. \\nЗбільшує або зменшує загальний об'єм зберігання відповідно до коефіцієнта перетворення. Відсоток вказаний у характеристиках. \\nНе потребує енергії або тепла реактора.",
 			"version_hash": 0
 		},
+		"HUD_HOLD_CAP": {
+			"string": "загальна місткість обр. вантажу",
+			"version_hash": 0
+		},
 		"HUD_HOLD_FILL": {
 			"string": "рівень заповнення трюму",
 			"version_hash": 0
@@ -3230,6 +3458,10 @@ const TRANSLATIONS = {
 		},
 		"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP": {
 			"string": "Клавіша для 11-го слоту обладнання",
+			"version_hash": 0
+		},
+		"SLOT_HULL_CONSUMABLEVAT": {
+			"string": "Сховище витратних матеріалів",
 			"version_hash": 0
 		},
 		"SYSTEM_HULLVAT_AMMO_1": {
@@ -3540,6 +3772,10 @@ const TRANSLATIONS = {
 			"string": "Вироблено: Conlindo / Obonto Microengineering \\nВисокоміцні кріплення: 1 \\nНизькоміцні кріплення: 4 \\nЕкіпаж: 4 \\nСуха маса: 101,400 кг \\nВантажний відсік: 600 м^3 \\nСклад обробленого вантажу (сукупний): 25,000 кг",
 			"version_hash": 0
 		},
+		"SYSTEM_AUX_MPD_1400": {
+			"string": "OPG-14 StatPlasma",
+			"version_hash": 0
+		},
 		"SYSTEM_AUX_MPD_1400_DESC": {
 			"string": "Екстремальні вимоги до потужності, такі як промислові печі на переробних заводах, вимагають екстремальних рішень, і саме таким рішенням є StatPlasma від Obonto Microengineering. Ентузіасти та інженери-електрики (хоча різниця між ними невелика) називають її \"шишкою\" через її незвичайну гвинтову камеру перетворення, яка звужується до виходу рекуперації. \\n\\nПримітка: цей пристрій може потребувати невеликого періоду прогріву перед досягненням повної потужності.",
 			"version_hash": 0
@@ -3560,12 +3796,20 @@ const TRANSLATIONS = {
 			"string": "Енергоспоживання : 300 MW \\nТеплоспоживання: 4 GW \\nПотужність (номінальна): 2,000 MW \\nЧас прогріву: 15 с \\nМаса: 16,660 kg \\nТип: MPDG з рекуперативною турбінною установкою \\nВиробник: Mars Power Industries",
 			"version_hash": 0
 		},
+		"SYSTEM_AUX_SMES_10K": {
+			"string": "Банк конденсаторів OPS-10",
+			"version_hash": 0
+		},
 		"SYSTEM_AUX_SMES_10K_DESC": {
 			"string": "Резервне джерело живлення від Obonto Microengineering є, хоч і неелегантним, але надзвичайно ефективним рішенням. Фактично це кілька надвеликих ультраконденсаторів у сталевому корпусі. OPS-10 може забезпечувати феноменальну вихідну потужність при пікових навантаженнях, залишаючись при цьому настільки ж доступним, як і їхній стандартний асортимент ультраконденсаторів. \\n\\nЧерез те, що він не підключений до внутрішніх систем охолодження, OPS-10 покладається на повільну швидкість зарядки та громіздкий радіаційний охолоджувач для управління температурою.",
 			"version_hash": 0
 		},
 		"SYSTEM_AUX_SMES_10K_SPECS": {
 			"string": "Ємність: 10,000 MJ \\nЕнергоспоживання: 50 MW \\nВихідна потужніть (пікова): 10,000 MW \\nМаса: 6,500 kg \\nТип: Масив високощільних графенових фрактальних ультраконденсаторів \\nВиробник: Obonto Microengineering",
+			"version_hash": 0
+		},
+		"SYSTEM_CAPACITOR_100": {
+			"string": "Легкий ультраконденсатор",
 			"version_hash": 0
 		},
 		"SYSTEM_CAPACITOR_100_DESC": {
@@ -3600,12 +3844,20 @@ const TRANSLATIONS = {
 			"string": "Ємність: 1,400 MJ \\nПікова віддача: 10 GW \\nМаса: 3,200 кг \\nВиробник: Nakamura Dynamics",
 			"version_hash": 0
 		},
+		"SYSTEM_RODS_1": {
+			"string": "1 паливний стрижень SO6",
+			"version_hash": 0
+		},
 		"SYSTEM_RODS_1_DESC": {
 			"string": "Цей ядерний паливний стрижень Rusatom-Antonoff SO6, зазвичай званий \"сонячним променем\", є стандартним паливом для ранніх міжпланетних НТР-дизайнів. SO6 використовує рідкий торієвий сердечник, укладений у тверду оболонку. Напруження і склад забезпечують надзвичайно високі робочі температури. \\n\\nІдеальний подарунок для майбутнього капітана корабля. Свинцевий обгортковий матеріал у різноманітних дизайнах та кольорах доступний за запитом.",
 			"version_hash": 0
 		},
 		"SYSTEM_RODS_1_SPECS": {
 			"string": "Виробник: Rusatom-Antonoff \\nРобоча температура: 3,500 K \\nТочка відмови: 4,500 K \\nМаса: 400 кг \\nТепловіддача: 1 GW",
+			"version_hash": 0
+		},
+		"SYSTEM_TURBINE_20": {
+			"string": "Масив термопар",
 			"version_hash": 0
 		},
 		"SYSTEM_TURBINE_20_DESC": {
@@ -3638,6 +3890,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_TURBINE_320_SPECS": {
 			"string": "Потужність (номінальна): 320 MW \\nСпоживання робочої маси: 320 г/с \\nМаса: 1,200 кг \\nВиробник: Boltzmann Waermerkraftmaschinen",
+			"version_hash": 0
+		},
+		"SHIP_TSUKUYOMI_IOT": {
+			"string": "Фрегат класу \"Tsukuyomi\" (списаний)",
 			"version_hash": 0
 		},
 		"SHIP_TSUKUYOMI_IOT_DESC": {
@@ -3804,6 +4060,10 @@ const TRANSLATIONS = {
 			"string": "Виробник: Obonto Microengineering\\nКріплення високої міцності: 2\\nКріплення низької міцності: 2\\nДок-відсіки: 4\\nЕкіпаж: 8\\nСуха маса: 184,500 кг\\nВантажний відсік: 610 м^3\\nСховище переробленої руди (сукупний): 50,000 кг",
 			"version_hash": 0
 		},
+		"SLOT_TURRET_LEFT": {
+			"string": "Лівий турельний підвіс",
+			"version_hash": 0
+		},
 		"SLOT_TURRET_RIGHT": {
 			"string": "Правий турельний підвіс",
 			"version_hash": 0
@@ -3844,6 +4104,14 @@ const TRANSLATIONS = {
 			"string": "Контентний мод з понад дюжиною кораблів, 50 одиницями обладнання та багато іншого...",
 			"version_hash": 0
 		},
+		"SLOT_CARGO_AUX": {
+			"string": "Аксесуари для вантажного відсіку",
+			"version_hash": 0
+		},
+		"SYSTEM_FUEL_1000000": {
+			"string": "2x Масив баків пропеленту вантажного судна",
+			"version_hash": 0
+		},
 		"SYSTEM_FUEL_1000000_DESC": {
 			"string": "Подвоєний масив баків пропеленту класу вантажного судна, який може вмістити до 1 000 000 кг пропеленту для теплових ракет. Стільникові комірки запобігають зсуву маси під час маневрів.",
 			"version_hash": 0
@@ -3862,6 +4130,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_FUEL_2000000_SPECS": {
 			"string": "Місткість: 2 000 000 kg \\nТип робочої маси: Для теплових ракет",
+			"version_hash": 0
+		},
+		"SYSTEM_THRUSTER_PIN150": {
+			"string": "Маневровий двигун RMS Pin-C50",
 			"version_hash": 0
 		},
 		"SYSTEM_THRUSTER_PIN150_DESC": {
@@ -3896,6 +4168,10 @@ const TRANSLATIONS = {
 			"string": "Тяга: 450 kN \\nШвидкість вихлопу: 5 км/с \\nВитрата робочої маси: 90.0 кг/с \\nЕнергоспоживання: 40 MW \\nТеплоспоживання: 1.8 GW \\nРежим роботи: Імпульсна тяга \\nМаксимальне відхилення вектору тяги: 60 град \\nРобоча маса: Киснево-воднева плазма \\nМаса: 25 кг (на двигун) \\nВиробник: Nakamura Dynamics",
 			"version_hash": 0
 		},
+		"SYSTEM_SALVAGE_ARM_HEAVY": {
+			"string": "Rusatom-Antonoff ORD",
+			"version_hash": 0
+		},
 		"SYSTEM_SALVAGE_ARM_HEAVY_DESC": {
 			"string": "Протягом співпраці над KTA24 компанія Rusatom-Antonoff швидко визнала недоліки Triskellion-Armstrong AR-1500. Повільний і делікатний пристрій, який використовується як інструмент для видобутку руди, швидко зношує його точні сервоприводи і ретельно сконструйований докінг-адаптер. ORD - це їхня відповідь на ці недоліки. \\n\\nХоча він є особливо важким і енергоємним через свою громіздку опорну конструкцію, його зносостійкі двигуни і підшипники є життєздатною і довговічною альтернативою аналогам.",
 			"version_hash": 0
@@ -3914,6 +4190,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_SALVAGE_ARM_LIGHT_SPECS": {
 			"string": "Сила руки: 500 kN \\nДосяжність: 35 м \\nЕнергоспоживання (пікове): 60 MW \\nМаса: 2,050 кг \\nВиробник: Runasimi Inc.",
+			"version_hash": 0
+		},
+		"SYSTEM_MAIN_ENGINE_NANI": {
+			"string": "Модернізація двигуна SSE NANI",
 			"version_hash": 0
 		},
 		"SYSTEM_MAIN_ENGINE_NANI_DESC": {
@@ -4006,6 +4286,10 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_MAIN_ENGINE_PMS_SPECS": {
 			"string": "Тяга: 3,000 kN \\nШвидкість вихлопу: 3 км/с \\nВитрата робочої маси: 1,000 кг/с \\nЕнергоспоживання: 20 MW \\nТеплоспоживання: 4.5 GW \\nРежим роботи: Змінна тяга \\nРобоча маса: Киснево-воднева плазма \\nМаса: 250 кг \\nВиробник: Nakamura Dynamics",
+			"version_hash": 0
+		},
+		"SYSTEM_MWTIGHTBEAM": {
+			"string": "Направлена Микрохвильова Гармата RA",
 			"version_hash": 0
 		},
 		"SYSTEM_MWTIGHTBEAM_DESC": {
