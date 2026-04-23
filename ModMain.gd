@@ -75,135 +75,50 @@ func _ready():
 
 
 
-# helper script for translations
-# based on Za'krin's helper script!!
-func updateTL(locale:String, path:String = modPath + "i18n"):
-	l("Updating translations for locale %s" % locale)
+# Helper function to extend scripts
+# Loads the script you pass, checks what script is extended, and overrides it
+func installScriptExtension(path:String):
+	var childPath:String = str(modPath + path)
+	var childScript:Script = ResourceLoader.load(childPath,"",true)
 
-	# preprocess i18n directory files
-	var operatingPath = "%s/%s/" % [path, locale]
-	var dir = Directory.new()
-	if dir.open(operatingPath) == OK:
-		dir.list_dir_begin(true)
-		
-		var tlFile = File.new()
-		var marchDone = false
+	childScript.new()
 
-		var translation = Translation.new()
-		translation.locale = locale
-		
-		while not marchDone:
-			var fileName = dir.get_next()
-			
-			if fileName:
-				var tFileConcat = operatingPath + fileName
-				
-				tlFile.open(tFileConcat, File.READ)
-				
-				if verbose: l("Loaded translation file %s" % fileName)
-		
-				while tlFile.get_position() < tlFile.get_len():
-					var line = tlFile.get_line()
-					var split = line.split("|", false)
-					if split.size() == 2:
-						var key = split[0]
-						var val = tr(split[1]).c_unescape()
-						
-						translation.add_message(key, val)
-						if verbose: Debug.l("Added translation %s" % key)
-				
-				tlFile.close()
-			else:
-				marchDone = true
-				break
+	var parentScript:Script = childScript.get_base_script()
+	var parentPath:String = parentScript.resource_path
 
-		TranslationServer.add_translation(translation)
-	else:
-		l("ERROR! Couldn't find path '%s'!" % operatingPath)
+	l("Installing script extension: %s <- %s" % [parentPath, childPath])
 
-	l("Translations updated for locale %s" % locale)
+	childScript.take_over_path(parentPath)
+
+
+# Helper function to replace scenes
+# Can either be passed a single path, or two paths
+# With a single path, it will replace the vanilla scene in the same relative position
+func replaceScene(newPath:String, oldPath:String = ""):
+	l("Updating scene: %s" % newPath)
+
+	if oldPath.empty():
+		oldPath = str("res://" + newPath)
+
+	newPath = str(modPath + newPath)
+
+	var scene := ResourceLoader.load(newPath,"",true)
+	scene.take_over_path(oldPath)
+	_savedObjects.append(scene)
+	l("Finished updating: %s" % oldPath)
 
 
 # Instances Settings.gd, loads DLC, then frees the script.
 func loadDLC():
-	l("Preloading DLC")
-	var DLCLoader = load("res://Settings.gd").new()
+	l("Preloading DLC as workaround")
+	var DLCLoader:Settings = preload("res://Settings.gd").new()
 	DLCLoader.loadDLC()
 	DLCLoader.queue_free()
 	l("Finished loading DLC")
 
 
-# Helper function to replace scenes
-func replaceScene(path:String, oldPath:String = "none"):
-	if verbose: l("Updating scene %s" % path)
-	
-	var newScene
-	var oldScene
-
-	if oldPath == "none":
-		newScene = str(modPath + path)
-		oldScene = str("res://" + path)
-
-	else:
-		newScene = path
-		oldScene = oldPath
-
-	var scene = load(newScene)
-	scene.take_over_path(oldScene)
-	_savedObjects.append(scene)
-	
-	if verbose: l("Updated %s" % path)
-
-# Helper function to extend scripts
-func installScriptExtension(path:String , oldPath:String = "none"):
-	var childPath = str(modPath + path)
-	var childScript = ResourceLoader.load(childPath)
-
-	childScript.new()
-
-	var parentScript = childScript.get_base_script()
-	var parentPath = parentScript.resource_path
-
-	if verbose: l("Installing script extension (%s <- %s)" % [parentPath, childPath])
-
-	childScript.take_over_path(parentPath)
-
+# Func to print messages to the logs
 func l(msg:String, title:String = MOD_NAME, version:String = str(MOD_VERSION_MAJOR) + "." + str(MOD_VERSION_MINOR) + "." + str(MOD_VERSION_BUGFIX)):
 	if not MOD_VERSION_METADATA == "":
 		version = version + "-" + MOD_VERSION_METADATA
 	Debug.l("[%s V%s]: %s" % [title, version, msg])
-
-func updateTL_r(path:String, delim:String = ",", useRelativePath:bool = true, fullLogging:bool = true):
-	if useRelativePath:
-		path = str(modPath + path)
-	l("Adding translations from: %s" % path)
-	var tlFile:File = File.new()
-	tlFile.open(path, File.READ)
-
-	var translations := []
-	
-	var translationCount = 0
-	var csvLine := tlFile.get_line().split(delim)
-	if fullLogging:
-		l("Adding translations as: %s" % csvLine)
-	for i in range(1, csvLine.size()):
-		var translationObject := Translation.new()
-		translationObject.locale = csvLine[i]
-		translations.append(translationObject)
-
-	while not tlFile.eof_reached():
-		csvLine = tlFile.get_csv_line(delim)
-
-		if csvLine.size() > 1:
-			var translationID := csvLine[0]
-			for i in range(1, csvLine.size()):
-				translations[i - 1].add_message(translationID, csvLine[i].c_unescape())
-			if fullLogging:
-				l("Added translation: %s" % csvLine)
-			translationCount += 1
-
-	tlFile.close()
-
-	for translationObject in translations:
-		TranslationServer.add_translation(translationObject)
-	l("%s Translations Updated" % translationCount)
