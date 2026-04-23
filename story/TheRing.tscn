@@ -1,12 +1,16 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://story/HumongousHollowRock.gd" type="Script" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/story/FrigateConstruction/BigMoonletFrigate.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/story/FrigateConstruction/BigMoonletWreckage.tscn" type="PackedScene" id=2]
 [ext_resource path="res://story/TheRing.tscn" type="PackedScene" id=3]
 
 [node name="TheRing" instance=ExtResource( 3 )]
 
-[node name="FrigateRock" type="Node" parent="." index="61"]
+[node name="BigMoonletWreckage" type="Node" parent="." index="61"]
 script = ExtResource( 1 )
 rock = ExtResource( 2 )
+chaosLimit = 0.65
+pirateChance = 0.0
+crystalChance = 0.0
+angular = 0.0
 lockOutMyEvent = true

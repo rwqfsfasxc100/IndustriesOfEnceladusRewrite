@@ -1,7 +1,7 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://story/BigMoonlet.tscn" type="PackedScene" id=1]
-[ext_resource path="res://story/ai-sculpt/SculptIcosphere.tscn" type="PackedScene" id=2]
+[ext_resource path="res://asteroids/ice.phymat" type="PhysicsMaterial" id=2]
 [ext_resource path="res://story/big-moonlet-cave-segment-c.png" type="Texture" id=3]
 [ext_resource path="res://shader/ao-spec-difuse-fast.shader" type="Shader" id=4]
 [ext_resource path="res://story/big-moonlet-cave-segment-m.png" type="Texture" id=5]
@@ -21,14 +21,18 @@
 [ext_resource path="res://story/big-moonlet-crawl-pocket-c.png" type="Texture" id=19]
 [ext_resource path="res://story/big-moonlet-crawl-pocket-m.png" type="Texture" id=20]
 [ext_resource path="res://story/big-moonlet-crawl-pocket-n.png" type="Texture" id=21]
-[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=22]
-[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=23]
 [ext_resource path="res://ships/nival-cd.png" type="Texture" id=24]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=25]
 [ext_resource path="res://story/Discovery.tscn" type="PackedScene" id=26]
 [ext_resource path="res://tools/InsideMonitor.tscn" type="PackedScene" id=27]
 [ext_resource path="res://ships/nival-n.png" type="Texture" id=28]
 [ext_resource path="res://ships/nival-m.png" type="Texture" id=29]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/story/FrigateConstruction/HullSculpt.gd" type="Script" id=30]
+[ext_resource path="res://enceladus/Spotlight.tscn" type="PackedScene" id=32]
+[ext_resource path="res://story/cave_tunnels1-m.png" type="Texture" id=33]
+[ext_resource path="res://story/cave_tunnels1-n.png" type="Texture" id=34]
+[ext_resource path="res://story/cave_tunnels1-c.png" type="Texture" id=35]
+[ext_resource path="res://story/AreaEnableLights.gd" type="Script" id=36]
 
 [sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 4 )
@@ -108,24 +112,38 @@ shader_param/shine = 0.3
 shader_param/mipmapBias = 0.0
 shader_param/map = ExtResource( 20 )
 
-[sub_resource type="ShaderMaterial" id=17]
-shader = ExtResource( 22 )
-shader_param/maskScale = Vector2( 11, 1 )
-shader_param/frames = Vector2( 1, 1 )
-shader_param/paintJobFactor = 0.0
-shader_param/paintJobBrightAdjust = 16.0
+[sub_resource type="ShaderMaterial" id=18]
+shader = ExtResource( 4 )
 shader_param/maxval = 5.0
 shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 0.8, 0.8 )
-shader_param/sparkColor = Vector3( 50, 10, 100 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
-shader_param/ref = 0.1
+shader_param/scale = Vector2( 1, 1 )
+shader_param/coatColor = Vector3( 0.1, 0.1, 0.1 )
+shader_param/ref = 0.2
 shader_param/roughness = 0.5
-shader_param/reflectiveness = 0.25
-shader_param/shine = 1.0
-shader_param/charges = ExtResource( 23 )
+shader_param/reflectiveness = 16.0
+shader_param/shine = 0.1
+shader_param/mipmapBias = 0.0
 shader_param/map = ExtResource( 29 )
+
+[sub_resource type="OccluderPolygon2D" id=19]
+cull_mode = 1
+polygon = PoolVector2Array( -206, -1242, 206, -1242, 206, -1030, 192, -994, 192, -780, 218, -720, 218, -606, 190, -568, 190, -370, 150, -224, 150, -182, 332, -112, 346, -66, 364, 690, 352, 790, -352, 790, -364, 700, -346, -58, -332, -112, -150, -182, -150, -224, -190, -370, -190, -568, -218, -602, -218, -720, -190, -780, -192, -994, -206, -1030 )
+
+[sub_resource type="CircleShape2D" id=20]
+radius = 1000.0
+
+[sub_resource type="ShaderMaterial" id=21]
+shader = ExtResource( 4 )
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 2, 1 )
+shader_param/coatColor = Vector3( 1, 1, 1 )
+shader_param/ref = 0.5
+shader_param/roughness = 3.0
+shader_param/reflectiveness = 2.0
+shader_param/shine = 0.3
+shader_param/mipmapBias = 0.0
+shader_param/map = ExtResource( 33 )
 
 [sub_resource type="CircleShape2D" id=15]
 radius = 2000.0
@@ -154,13 +172,12 @@ polygon = PoolVector2Array( -2469.8, 936.376, -2696.8, 957.876, -3012.3, 1154.88
 radius = 7066.0
 height = 0.0
 
-[node name="BigMoonletCaves" instance=ExtResource( 1 )]
-crystal = ExtResource( 2 )
-crystalChance = 1.0
-crystalsMin = 10
-crystalsRand = 30
+[node name="BigMoonletWreckage" instance=ExtResource( 1 )]
+crystal = null
+bounty = null
 spawnRadius = 300
-pirateStory = "IceSculptor-%s"
+story = ""
+pirateStory = ""
 
 [node name="cave" type="Node2D" parent="." index="0"]
 modulate = Color( 0.0588235, 0.0588235, 0.0588235, 1 )
@@ -329,16 +346,306 @@ texture = ExtResource( 19 )
 normal_map = ExtResource( 21 )
 region_rect = Rect2( 164, 133, 1830, 1735 )
 
-[node name="Hull" type="Sprite" parent="cave" index="9"]
-material = SubResource( 17 )
-position = Vector2( -2520, -6348 )
-rotation = 2.7109
+[node name="HullSculpt" type="RigidBody2D" parent="cave" index="9"]
+position = Vector2( -2722, -6422 )
+rotation = -3.83972
+collision_mask = 7
+mode = 1
+mass = 2000.0
+physics_material_override = ExtResource( 2 )
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SculptHands" type="Sprite" parent="cave/HullSculpt" index="0"]
+light_mask = 262144
+position = Vector2( 0, -200 )
 scale = Vector2( 2, 2 )
-z_index = 26
+z_index = 100
+texture = ExtResource( 24 )
+region_enabled = true
+region_rect = Rect2( 312, 6, 368, 1042 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SculptHandsInterior" type="Sprite" parent="cave/HullSculpt/SculptHands" index="0"]
+light_mask = 262150
+material = SubResource( 18 )
+z_index = 1
 texture = ExtResource( 24 )
 normal_map = ExtResource( 28 )
 region_enabled = true
 region_rect = Rect2( 312, 6, 368, 1042 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="cave/HullSculpt" index="1"]
+position = Vector2( -140.348, -276.295 )
+z_index = 250
+node_a = NodePath("../../../..")
+node_b = NodePath("..")
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="cave/HullSculpt" index="2"]
+position = Vector2( 253.131, 264.754 )
+z_index = 250
+node_a = NodePath("../../../..")
+node_b = NodePath("..")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cave/HullSculpt" index="3"]
+polygon = PoolVector2Array( -206, -1242, 206, -1242, 206, -1030, 192, -994, 192, -780, 218, -720, 218, -606, 190, -568, 190, -370, 150, -224, 150, -182, 332, -112, 346, -66, 364, 690, 352, 790, -352, 790, -364, 700, -346, -58, -332, -112, -150, -182, -150, -224, -190, -370, -190, -568, -218, -602, -218, -720, -190, -780, -192, -994, -206, -1030 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="cave/HullSculpt" index="4"]
+light_mask = 7
+occluder = SubResource( 19 )
+light_mask = 7
+
+[node name="LightArea1" type="Area2D" parent="cave" index="10"]
+position = Vector2( -3721, -6724 )
+rotation = -0.72842
+collision_layer = 0
+collision_mask = 1048576
+monitorable = false
+script = ExtResource( 36 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cave/LightArea1" index="0"]
+light_mask = 0
+position = Vector2( 335.075, 292.066 )
+shape = SubResource( 20 )
+
+[node name="Spotlight1" parent="cave/LightArea1" index="1" instance=ExtResource( 32 )]
+position = Vector2( -618, -119 )
+rotation = 1.94099
+color = Color( 0.8, 0.776471, 1, 1 )
+energy = 12.0
+range_height = 127.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 2
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea1/Spotlight1" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea1/Spotlight1" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea1/Spotlight1/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+
+[node name="Spotlight2" parent="cave/LightArea1" index="2" instance=ExtResource( 32 )]
+position = Vector2( 100, -363 )
+rotation = 3.09792
+color = Color( 1, 0.784314, 0.568627, 1 )
+energy = 12.0
+range_height = 142.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 3
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea1/Spotlight2" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea1/Spotlight2" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea1/Spotlight2/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+
+[node name="LightArea2" type="Area2D" parent="cave" index="11"]
+position = Vector2( -1894, -6987 )
+rotation = -5.40698
+collision_layer = 0
+collision_mask = 1048576
+monitorable = false
+script = ExtResource( 36 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cave/LightArea2" index="0"]
+light_mask = 0
+shape = SubResource( 20 )
+
+[node name="Spotlight1" parent="cave/LightArea2" index="1" instance=ExtResource( 32 )]
+position = Vector2( -475.183, -215.736 )
+rotation = 2.35781
+color = Color( 0.8, 0.776471, 1, 1 )
+energy = 12.0
+range_height = 127.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 2
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea2/Spotlight1" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea2/Spotlight1" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea2/Spotlight1/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+
+[node name="Spotlight2" parent="cave/LightArea2" index="2" instance=ExtResource( 32 )]
+position = Vector2( 99.4131, -475.32 )
+rotation = 3.09792
+color = Color( 1, 0.784314, 0.568627, 1 )
+energy = 12.0
+range_height = 142.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 3
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea2/Spotlight2" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea2/Spotlight2" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea2/Spotlight2/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+
+[node name="LightArea6" type="Area2D" parent="cave" index="12"]
+position = Vector2( -2481, -4967 )
+rotation = 3.36117
+collision_layer = 0
+collision_mask = 1048576
+monitorable = false
+script = ExtResource( 36 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cave/LightArea6" index="0"]
+light_mask = 0
+position = Vector2( 64.2417, 683.782 )
+shape = SubResource( 20 )
+
+[node name="Spotlight1" parent="cave/LightArea6" index="1" instance=ExtResource( 32 )]
+position = Vector2( -541.638, -115.54 )
+rotation = 1.94099
+color = Color( 0.8, 0.776471, 1, 1 )
+energy = 12.0
+range_height = 127.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 2
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea6/Spotlight1" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea6/Spotlight1" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea6/Spotlight1/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+
+[node name="Spotlight2" parent="cave/LightArea6" index="2" instance=ExtResource( 32 )]
+position = Vector2( 99.4131, -475.32 )
+rotation = 3.09792
+color = Color( 1, 0.784314, 0.568627, 1 )
+energy = 12.0
+range_height = 142.7
+range_z_min = 0
+range_item_cull_mask = 6
+seconds = 0.0
+powerUpTime = 3
+flickering = true
+
+[node name="Sprite" parent="cave/LightArea6/Spotlight2" index="0"]
+light_mask = 262152
+
+[node name="SpotlightSprite" type="Sprite" parent="cave/LightArea6/Spotlight2" index="1"]
+light_mask = 262144
+scale = Vector2( 0.25, 0.25 )
+z_index = -8
+texture = ExtResource( 35 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SpotlightSpriteInterior" type="Sprite" parent="cave/LightArea6/Spotlight2/SpotlightSprite" index="0"]
+light_mask = 262150
+material = SubResource( 21 )
+z_index = 1
+texture = ExtResource( 35 )
+normal_map = ExtResource( 34 )
+region_enabled = true
+region_rect = Rect2( 288, 20, 124, 260 )
 
 [node name="Light2D" parent="." index="2"]
 position = Vector2( 1353, -3283 )
@@ -362,14 +669,14 @@ position = Vector2( 2148, 1825 )
 polygon = PoolVector2Array( -9216, 248, -8447, 376, -7935, 67, -7367, -198, -7270, 1, -7090, -71, -6985, -170, -6845, -201, -6901, -80, -7059, 215, -7424, 761, -7400, 1107, -7482, 1713, -7587, 2015, -7777, 2174, -8009, 2087, -8090, 1785, -8359, 1915, -8640, 1540, -8757, 921 )
 
 [node name="Discovery" parent="." index="8"]
-event = "BigMoonletCaves"
-supersede = "POI_ICE_SCULPTURE"
+event = "BigMoonletWreckage"
+supersede = "POI_WRECKAGE_UNKNOWN"
 supersedeUnique = false
 
 [node name="Discovery2" parent="." index="9" instance=ExtResource( 26 )]
 position = Vector2( -380, -4533 )
-poi = "POI_ICE_SCULPTURE"
-event = "BigMoonletCaves"
+poi = "POI_WRECKAGE_UNKNOWN"
+event = "BigMoonletWreckage"
 unique = false
 override = true
 overrideMatch = "POI_MOONLET|"
@@ -449,6 +756,12 @@ shadow_item_cull_mask = 262144
 position = Vector2( -63, 20 )
 shape = SubResource( 16 )
 
+[editable path="cave/LightArea1/Spotlight1"]
+[editable path="cave/LightArea1/Spotlight2"]
+[editable path="cave/LightArea2/Spotlight1"]
+[editable path="cave/LightArea2/Spotlight2"]
+[editable path="cave/LightArea6/Spotlight1"]
+[editable path="cave/LightArea6/Spotlight2"]
 [editable path="Discovery"]
 [editable path="Discovery2"]
 [editable path="Inside"]

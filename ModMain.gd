@@ -49,7 +49,7 @@ func _init(modLoader = ModLoader):
 	replaceScene("sfx/torch-PMS.tscn")
 	replaceScene("sfx/torch-ZUBRIN.tscn")
 	
-#	replaceScene("story/TheRing.tscn")
+	replaceScene("story/TheRing.tscn")
 	
 # replace weapons and WeaponSlot
 	

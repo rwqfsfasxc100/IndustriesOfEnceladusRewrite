@@ -1571,6 +1571,10 @@ const TRANSLATIONS = {
 		"SYSTEM_PDTL_SPECS": {
 			"string": "Effective range: 1,000 m \\nTargeting AI: Class-1 \\nPower consumption (peak): 80 MW \\nMass: 1,500 kg \\nManufacturer: Nakamura Dynamics, Coherent Light",
 			"version_hash": 1972137821
+		},
+		"POI_WRECKAGE_UNKNOWN": {
+			"string": "Mysterious Wreckage",
+			"version_hash": 3678810514
 		}
 	},
 	"ru_RU": {
