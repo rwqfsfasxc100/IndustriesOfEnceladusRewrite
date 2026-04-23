@@ -1,0 +1,19 @@
+
+IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW|Water Reduction Power Draw (per chunk)
+
+IOE_TUNE_PREPROC_RECLAIM|Ice Thawing Speed
+
+IOE_TUNE_PREPROC_RECLAIM_DESC|Increasing the processing speed of a preprocessor improves water melt speed by rerouting extra power to the unit. This decreases efficiency of the unit cuased by the overheating, however the additional heat produced by the unit combined with additional power provided to melting facilities (if applicable) cause chunks to lose more water.\n\nSlowing down the process enhances water capture efficiency and lowers power usage.
+
+IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY|Ice Remass Reclamation Efficiency
+
+IOE_TUNE_PARAMETER_PREPROC_CHUNK_WATER_MASS_CEILING|Minimum Chunk Water Content
+
+
+IOE_TUNE_FAB_SPEED|Fabrication Print Speed
+
+IOE_TUNE_FAB_SPEED_DESC|Modifies the rate at which the fabrication unit converts processed ore into consumables. Inefficiencies within the production line will scale with production rate, with an increased speed requiring more power and material in the process.
+
+IOE_TUNE_PARAMETER_PRINT_POWER_DRAW|Printing Power Draw
+
+IOE_TUNE_PARAMETER_PRINT_MATERIAL_EFFICIENCY|Additional material cost from inefficiencies
