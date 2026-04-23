@@ -49,7 +49,7 @@ func _init(modLoader = ModLoader):
 	replaceScene("sfx/torch-PMS.tscn")
 	replaceScene("sfx/torch-ZUBRIN.tscn")
 	
-	replaceScene("story/TheRing.tscn")
+#	replaceScene("story/TheRing.tscn")
 	
 # replace weapons and WeaponSlot
 	
@@ -62,10 +62,7 @@ func _init(modLoader = ModLoader):
 	
 	
 # install the Shipyard.gd script extension, which loads replacements + new ships
-	
-	replaceScene("enceladus/Upgrades.tscn")
-	# install CurrentGame.gd which loads new ships into the game
-	
+	installScriptExtension("enceladus/Upgrades.gd")
 	l("Initialised!", MOD_NAME)
 
 
