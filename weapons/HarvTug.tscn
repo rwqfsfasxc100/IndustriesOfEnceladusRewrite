@@ -39,7 +39,7 @@ droneTugPower = 20.0
 haulAccurancy = 0.96
 droneWeightKg = 0.1
 launchVector = Vector2( 0, -50 )
-builtInDroneStorage = 0
+builtInDroneStorage = 2500
 mass = 8000
 
 [node name="AudioFire" type="AudioStreamPlayer" parent="."]
