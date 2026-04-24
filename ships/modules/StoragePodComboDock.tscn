@@ -10,13 +10,8 @@ extents = Vector2( 200, 300 )
 radius = 1.0
 
 [node name="SYSTEM_EXODYN-R" instance=ExtResource( 1 )]
-__meta__ = {
-"_editor_description_": ""
-}
 hardLock = true
 timeAccelerationOverride = 2
-repairFixPrice = 30000
-repairReplacementPrice = 132500
 resetAi = true
 maxDist = 120
 conDist = 300
@@ -29,16 +24,21 @@ processedCargoTransferSpeed = 500
 processedCargoTransferBuffer = 500
 remassTransferSpeed = 100
 remassTransferBuffer = 5000
+powerLimit = 10000
 targetMassThrust = 25
 targetMassTorque = 20000
 fullThrust = 15000
+maxThrust = 25000
 easeDistance = 2
 torque = 20000.0
 targetRotation = 3.14
 autopilotRelease = false
 lights = false
-systemName = "SYSTEM_EXODYN"
+systemName = "SYSTEM_EXSTORAGE"
 angularVelocityScale = 0.1
+repairFixPrice = 30000
+repairReplacementPrice = 132500
+systemName = "SYSTEM_EXODYN"
 
 [node name="Arm" parent="." index="0"]
 rotation = 1.5708
