@@ -1,3 +1,14 @@
+[2.7.10]
+
+1="* Updated collider for the OCP Deep Dish"
+1.1="* This should now make getting ores into the processing area easier"
+2="* Translations are now handled by TranslationDriver"
+3="* Updated ModMain.gd to modern standards"
+4="* Fixed cargo fill level sensor value not being right aligned"
+5="* Enceladus's equipment menu parameters added by this mod now use a script instead of a scene replacement for their addition"
+6="* Removed all old translation and weaponslot files"
+7="* Fixed crash caused by dyna-cargo containers"
+
 [2.7.9]
 
 1="* Made the NDCI-80 considerably more likely to experience wear"
