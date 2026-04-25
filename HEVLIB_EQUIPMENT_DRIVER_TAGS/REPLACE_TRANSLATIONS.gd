@@ -1505,8 +1505,8 @@ const TRANSLATIONS = {
 			"version_hash": 3472595481
 		},
 		"IOE_TUNE_PREPROC_RECLAIM_DESC": {
-			"string": "Increasing the processing speed of a preprocessor improves water melt speed by rerouting extra power to the unit. This decreases efficiency of the unit cuased by the overheating, however the additional heat produced by the unit combined with additional power provided to melting facilities (if applicable) cause chunks to lose more water.\\n\\nSlowing down the process enhances water capture efficiency and lowers power usage.",
-			"version_hash": 367626968
+			"string": "Increasing the processing speed of a preprocessor improves water melt speed by rerouting extra power to the unit. This decreases efficiency of the unit caused by the overheating, however the additional heat produced by the unit combined with additional power provided to melting facilities (if applicable) cause chunks to lose more water.\n\nSlowing down the process enhances water capture efficiency and lowers power usage.",
+			"version_hash": 1742980184
 		},
 		"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": {
 			"string": "Ice Remass Reclamation Efficiency",
