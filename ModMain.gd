@@ -76,7 +76,7 @@ func _ready():
 # Loads the script you pass, checks what script is extended, and overrides it
 func installScriptExtension(path:String):
 	var childPath:String = str(modPath + path)
-	var childScript:Script = ResourceLoader.load(childPath,"",true)
+	var childScript:Script = load(childPath)
 
 	childScript.new()
 
@@ -99,7 +99,7 @@ func replaceScene(newPath:String, oldPath:String = ""):
 
 	newPath = str(modPath + newPath)
 
-	var scene := ResourceLoader.load(newPath,"",true)
+	var scene := load(newPath)
 	scene.take_over_path(oldPath)
 	_savedObjects.append(scene)
 	l("Finished updating: %s" % oldPath)
