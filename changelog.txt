@@ -1,3 +1,9 @@
+[2.7.11]
+
+1="* Fixed typos"
+2="* Conlido will now no longer be occasionally called Conlindo"
+3="* Pigeon Prospector now makes note of the uncomfortable conditions"
+
 [2.7.10]
 
 1="* Updated collider for the OCP Deep Dish"
