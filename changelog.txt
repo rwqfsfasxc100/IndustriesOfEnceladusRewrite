@@ -1,3 +1,7 @@
+[2.7.12]
+
+1="* Fixed issue that would prevent mods loaded later from modifying equipment scripts"
+
 [2.7.11]
 
 1="* Fixed typos"
