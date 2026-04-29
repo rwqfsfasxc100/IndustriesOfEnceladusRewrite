@@ -4,7 +4,7 @@
 ;AUTHOR|__hev
 ;MOD_ZIP_NAME|IndustriesOfEnceladusRewrite.zip
 
-[b]Industries Of Enceladus Rewrite[/b]
+[center][b]Industries Of Enceladus Rewrite[/b][/center]
 
 A large content mod for [i]ΔV: Rings of Saturn[/i]
 
