@@ -165,8 +165,8 @@ const TRANSLATIONS = {
 			"version_hash": 3133945664
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
-			"string": "The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market. \\n\\nThe additional microholds for consumable goods were initially 3rd-party modifications, however their sheer popularity made Conlindo make a not so subtle incorporation into the base model.",
-			"version_hash": 3179117379
+			"string": "The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market. \n\nThe additional microholds for consumable goods were initially 3rd-party modifications, however their sheer popularity made Conlido make a not so subtle incorporation into the base model.",
+			"version_hash": 3100542581
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_SPECS": {
 			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \\nAmmunition capacity: 3,000 kg \\nDrone capacity: 3,000 kg \\nPropellant capacity: 5,000 kg \\nMass: 3,000 kg \\nManufacturer: Conlido RVM",
@@ -673,8 +673,8 @@ const TRANSLATIONS = {
 			"version_hash": 1719166248
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC": {
-			"string": "A double coupling of Conlindo's AEK, with twice the potential capacity provided and twice the restrictions. Due to technical restraints, some additional mass had to be added to allow for two mechanisms to work simultaneously.",
-			"version_hash": 3212714301
+			"string": "A double coupling of Conlido's AEK, with twice the potential capacity provided and twice the restrictions. Due to technical restraints, some additional mass had to be added to allow for two mechanisms to work simultaneously.",
+			"version_hash": 2771221711
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS": {
 			"string": "Ammunition capacity modifier: +67% \\nAmmunition capacity: 2,000 kg \\nProcessed mineral hold reduction: 20% \\nDry mass: 20,000 kg \\nManufacturer: Antonoff",
@@ -761,12 +761,12 @@ const TRANSLATIONS = {
 			"version_hash": 3501193927
 		},
 		"SYSTEM_HULLVAT_PROP_1_DESC": {
-			"string": "Built off of Conlindo's research into dynamic propellant tank expanders, these smaller extender kits are intended for crews involved in research, search and rescue, or construction due to the abundance of space left available by unused processed storage, and is able to repurpose some of it for reactive mass. ",
-			"version_hash": 368150843
+			"string": "Built off of Conlido's research into dynamic propellant tank expanders, these smaller extender kits are intended for crews involved in research, search and rescue, or construction due to the abundance of space left available by unused processed storage, and is able to repurpose some of it for reactive mass. ",
+			"version_hash": 480660045
 		},
 		"SYSTEM_HULLVAT_PROP_1_SPECS": {
-			"string": "Propellant capacity: 10,000 kg \\nProcessed mineral hold reduction: 10% \\nDry mass: 1,500 kg \\nManufacturer: Conlindo RVM",
-			"version_hash": 2484480690
+			"string": "Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 1,500 kg \nManufacturer: Conlido RVM",
+			"version_hash": 3929640900
 		},
 		"SYSTEM_HULLVAT_PROP_MANUAL": {
 			"string": "Additional reaction mass for thrusters and turbines. \\nReactive mass sold separately at dive start. \\nHUD sensor displays may or may not display new values correctly.",
@@ -781,44 +781,44 @@ const TRANSLATIONS = {
 			"version_hash": 2342587130
 		},
 		"SYSTEM_HULLVAT_PROP_2_SPECS": {
-			"string": "Propellant capacity: 25,000 kg \\nProcessed mineral hold reduction: 22.5% \\nDry mass: 7,000 kg \\nManufacturer: Conlindo RVM",
-			"version_hash": 2826001823
+			"string": "Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5% \nDry mass: 7,000 kg \nManufacturer: Conlido RVM",
+			"version_hash": 3108579633
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_1": {
 			"string": "Reaction Mass Tank Expander",
 			"version_hash": 2491541107
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_1_DESC": {
-			"string": "Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.",
-			"version_hash": 3452912897
+			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.",
+			"version_hash": 3807540147
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS": {
-			"string": "Propellant capacity modifier: +25% \\nAmmunition magazine reduction: 17% \\nDrone part capacity reduction: 17% \\nDry mass: 3,000 kg \\nManufacturer: Conlindo RVM",
-			"version_hash": 35354334
+			"string": "Propellant capacity modifier: +25% \nAmmunition magazine reduction: 17% \nDrone part capacity reduction: 17% \nDry mass: 3,000 kg \nManufacturer: Conlido RVM",
+			"version_hash": 4088303632
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_2": {
 			"string": "2x Reaction Mass Tank Expander",
 			"version_hash": 284167773
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_2_DESC": {
-			"string": "Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\\n\\nA double fitting of this equipment allows for additional propellant storage for vessels that need it. ",
-			"version_hash": 702208023
+			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA double fitting of this equipment allows for additional propellant storage for vessels that need it. ",
+			"version_hash": 1897745097
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS": {
-			"string": "Propellant capacity modifier: +50% \\nAmmunition magazine reduction: 25% \\nDrone part capacity reduction: 25% \\nDry mass: 8,000 kg \\nManufacturer: Conlindo RVM",
-			"version_hash": 1245098335
+			"string": "Propellant capacity modifier: +50% \nAmmunition magazine reduction: 25% \nDrone part capacity reduction: 25% \nDry mass: 8,000 kg \nManufacturer: Conlido RVM",
+			"version_hash": 2332672881
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3": {
 			"string": "3x Reaction Mass Tank Expander",
 			"version_hash": 2861132286
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3_DESC": {
-			"string": "Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\\n\\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.",
-			"version_hash": 763784869
+			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.",
+			"version_hash": 219850007
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS": {
-			"string": "Propellant capacity modifier: +75% \\nAmmunition magazine reduction: 38% \\nDrone part capacity reduction: 38% \\nDry mass: 15,000 kg \\nManufacturer: Conlindo RVM",
-			"version_hash": 4057886620
+			"string": "Propellant capacity modifier: +75% \nAmmunition magazine reduction: 38% \nDrone part capacity reduction: 38% \nDry mass: 15,000 kg \nManufacturer: Conlido RVM",
+			"version_hash": 2339944014
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_1": {
 			"string": "Tetsuo SCARLETTE Delivery Driver",
@@ -881,8 +881,8 @@ const TRANSLATIONS = {
 			"version_hash": 216355051
 		},
 		"SHIP_CK65_SPECS": {
-			"string": "Make: Conlindo / Rusatom-Antonoff\\nLow-Stress Hardpoints: 2\\nDrone Hardpoints: 2\\nCrew: 12\\nDry mass: 82,000 kg \\nCargo bay: 55 m^3\\nProcessed cargo storage (per mineral): 37,500 kg",
-			"version_hash": 519260681
+			"string": "Make: Conlido / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 82,000 kg \nCargo bay: 55 m^3\nProcessed cargo storage (per mineral): 37,500 kg",
+			"version_hash": 718765947
 		},
 		"SHIP_CK65_DESC": {
 			"string": "The rise of mineral processors gave a need for ships that could carry significant quantities of it for interplanetary travel. The century-old venture of the Cothon class of ships showed the viability of automated ships to be used for travel, and the Eagles were chosen as the ship of choice to complete the new venture. A large portion of it's cargo bay was gutted to fit 6 ginormous bays to store processed cargo, alongside a luxury living quarter space to house 12 passengers. A large portion of the Eagle's hardware was left in for the convenience of captains, however the grinder was replaced with a standard excavator to ensure a more reliable experience.",
@@ -893,8 +893,8 @@ const TRANSLATIONS = {
 			"version_hash": 216355055
 		},
 		"SHIP_CK69_SPECS": {
-			"string": "Make: Conlindo / Rusatom-Antonoff\\nLow-Stress Hardpoints: 2\\nDrone Hardpoints: 2\\nCrew: 12\\nDry mass: 102,000 kg \\nCargo bay: 55 m^3\\nProcessed cargo storage (combined): 200,000 kg",
-			"version_hash": 463198791
+			"string": "Make: Conlido / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 102,000 kg \nCargo bay: 55 m^3\nProcessed cargo storage (combined): 200,000 kg",
+			"version_hash": 1892565817
 		},
 		"SHIP_CK69_DESC": {
 			"string": "The success of the CK-65 led to a more advanced CK-69 to handle any quantity of ore, at the cost of a slightly lower total hold. It saw its use during dips in throughput at Enceladus, where space would be wasted on a stock CK-65 due to the lack of a specific mineral, however was very popular among miners who could bring back large quantities of ore more reliably.",
@@ -933,8 +933,8 @@ const TRANSLATIONS = {
 			"version_hash": 1793612252
 		},
 		"SHIP_TRTL_PEEPER_SPECS": {
-			"string": "Make: Conlindo / Obonto Microengineering \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 4 \\nCrew: 4 \\nDry mass: 101,400 kg \\nCargo bay: 555 m^3 \\nProcessed cargo storage (combined): 55,000 kg",
-			"version_hash": 887217413
+			"string": "Make: Conlido / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 101,400 kg \nCargo bay: 555 m^3 \nProcessed cargo storage (combined): 55,000 kg",
+			"version_hash": 3733736855
 		},
 		"SHIP_MADCERF_CIV_INVERSE": {
 			"string": "MAD-CERF (Inverted Civilian Refit)",
@@ -1201,12 +1201,12 @@ const TRANSLATIONS = {
 			"version_hash": 3252310328
 		},
 		"SHIP_PROSPECTOR_PIGEON_DESC": {
-			"string": "What happens when a Pelican and a Vulture love eachother very much? They make this thing - or so it goes. The Pigeon's high price point is entirely on account of the incredible skill that went into its implementation; additional girding struts support a high-stress hardpoint to the fore of the vessel, the entire power and equipment feed system having been reworked to accommodate it. The bay has also been shortened to handle the stress, which has permitted reinstallation of a standard grinder.",
-			"version_hash": 2660847868
+			"string": "What happens when a Pelican and a Vulture love eachother very much? They make this thing - or so it goes. The Pigeon's high price point is entirely on account of the incredible skill that went into its implementation; additional girding struts support a high-stress hardpoint to the fore of the vessel, the entire power and equipment feed system having been reworked to accommodate it. The bay has also been shortened to handle the stress, which has permitted reinstallation of a standard grinder, however the shortened distance to the crew compartment makes for uncomfortably loud operations, even with the grinders' servos disabled.",
+			"version_hash": 3885822122
 		},
 		"SHIP_PROSPECTOR_PIGEON_SPECS": {
-			"string": "Make: Mitsudaya-Starbus / Conlindo RVM \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 2 \\nDrone Bays: 2 \\nCrew: 6 \\nDry mass: 42,300 kg \\nCargo bay: 180 m^3 \\nProcessed cargo storage (per mineral): 10,000 kg",
-			"version_hash": 1585204021
+			"string": "Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 42,300 kg \nCargo bay: 180 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
+			"version_hash": 4052098343
 		},
 		"SHIP_AT225_STUB": {
 			"string": "Antonoff-Titan K225-SH",
