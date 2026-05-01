@@ -1433,8 +1433,8 @@ const TRANSLATIONS = {
 			"version_hash": 1077983648
 		},
 		"SYSTEM_MAIN_ENGINE_PIN1200_DESC": {
-			"string": "The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \\n\\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, it was decided to include a micro fusion reactor for the power supply. Unlike equivalent fusion torches, this reactor is used solely for the purpose of providing heat, rather than being essential to the generation of thrust. A limited tank of fusion fuel limits burn time to roughly an hour and a half.",
-			"version_hash": 3023964548
+			"string": "The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-C50 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, it was decided to include a micro fusion reactor for the power supply. Unlike equivalent fusion torches, this reactor is used solely for the purpose of providing heat, rather than being essential to the generation of thrust. A limited tank of fusion fuel limits burn time to roughly an hour and a half.",
+			"version_hash": 1213295894
 		},
 		"SYSTEM_MAIN_ENGINE_PIN1200_SPECS": {
 			"string": "Thrust: 1,200 kN \\nExhaust velocity: 105 km/s \\nPropellant consumption: 11.4 kg/s \\nPower consumption: 550 MW \\nVectoring angle: 40 deg \\nOperation mode: Variable thrust \\nPropellant: Hydrogen plasma / uranium salt \\nBurn time: 90 minutes (est) \\nMass: 11,350 kg \\nManufacturer: Rasamama Material Solutions",
