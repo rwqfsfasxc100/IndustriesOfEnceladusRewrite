@@ -209,11 +209,14 @@ func modifyProcessor():
 	var newKGPS = int(max(om,5))
 	
 	var rt = (float(baseMineralEfficiency)/float(newMinEff)) if newMinEff > 0.0 else 1.0
-	var newPower = pow(basePowerDrawPerKg,2.0 - rt)
+	var newPower = pow(basePowerDrawPerKg / 10,2.0 - rt) * 10 * cc
 	
-	processor.setEfficiency(newMinEff)
-	processor.setKgps(newKGPS)
-	processor.setPower(newPower)
+	if modify_mineralEfficiency != 100:
+		processor.setEfficiency(newMinEff)
+	if modify_kgps_percent_multi != 100 or modify_kgps_add != 0:
+		processor.setKgps(newKGPS)
+	if rt != 1:
+		processor.setPower(newPower)
 
 var counter = 0.0
 var bayCount = 0
