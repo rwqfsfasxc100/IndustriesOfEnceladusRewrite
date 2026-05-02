@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/AuxHybrid.gd" type="Script" id=1]
+
+[node name="SYSTEM_IOE_AUX_HYBRID" type="Node2D"]
+script = ExtResource( 1 )
+repairReplacementPrice = 725000
+smesPowerDraw = 100000.0
+smesPowerSupply = 2e+06
+smesCapacity = 1.35e+07
+mpdgPowerDraw = 25000.0
+mpdgThermal = 250000.0
+mpdgPowerSupply = 200000.0
