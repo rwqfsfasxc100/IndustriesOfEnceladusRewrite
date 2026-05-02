@@ -1,3 +1,9 @@
+[2.8.0]
+
+1="* Added a new auxiliary power unit: RA MHFTR Hybrid Power Unit"
+1.1="* This is a MPDG/SMES hybrid unit, providing the capabilities of both with relatively mediocre results compared to dedicated MPDG or SMES units, especially considering the price point."
+2="* Preprocessors now properly make sure that the ship is setup before trying to modify a mineral processing unit"
+
 [2.7.13]
 
 1="* Fixed preprocessor power adjustments using more power than expected"
