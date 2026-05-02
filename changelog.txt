@@ -1,3 +1,9 @@
+[2.7.13]
+
+1="* Fixed preprocessor power adjustments using more power than expected"
+2="* Fixed Pin-M200 description"
+3="* Dynamic conversion kits no longer use stats from other equipment when determining mass increase"
+
 [2.7.12]
 
 1="* Fixed issue that would prevent mods loaded later from modifying equipment scripts"
