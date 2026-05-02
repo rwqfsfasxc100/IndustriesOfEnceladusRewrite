@@ -29,6 +29,6 @@ const MPI = {
 	"power_draw":300000,
 	"thermal":500000,
 	"power_supply":2000000,
-	"windup_time":15,
+	"windup_time":5,
 	"mass":16660
 }

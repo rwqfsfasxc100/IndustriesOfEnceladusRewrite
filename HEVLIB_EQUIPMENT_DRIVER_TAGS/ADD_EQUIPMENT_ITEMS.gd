@@ -395,8 +395,20 @@ const AUX_MPDG_1400 = {
 		"power_draw":50000,
 		"thermal":250000,
 		"power_supply":1400000,
-		"windup_time":5,
+		"windup_time":3,
 		"mass":12250
+	}
+}
+const AUX_HYBRID = {
+	"system":"SYSTEM_AUX_HYBRID",
+	"manual":"SYSTEM_AUX_HYBRID_MANUAL",
+	"price":725000,
+	"test_protocol":"bootup",
+	"slot_type":"AUX_POWER_SLOT",
+	"equipment_type":"POWER_AUX_POWER_SLOT",
+	"auxiliary_power_unit":{
+		"slots":["aux.power"],
+		"path":"res://IndustriesOfEnceladusRewrite/ships/modules/AuxHybrid.tscn"
 	}
 }
 const AUX_MPDG_2000 = {
