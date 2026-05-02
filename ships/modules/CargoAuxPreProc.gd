@@ -97,16 +97,15 @@ func _ready():
 	ship = getShip()
 	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
-	yield(CurrentGame.get_tree(),"idle_frame")
+	if not ship.setup:
+		yield(ship,"setup")
 	if current_aux == systemName:
-		if current_model != current_mpu:
-			current_model = current_mpu
 		var self_aux = systemName
-		for node in ship.get_children():
-			if "systemName" in node:
-				var nname = node.name
-				if node.systemName == current_mpu:
-					processor = node
+		var shipSystems = ship.getSystems()
+		for sys in shipSystems:
+			var node = shipSystems[sys]
+			if node.name == current_mpu:
+				processor = node.ref
 		if processor:
 			baseMineralEfficiency = processor.mineralEfficiency
 			basekgps = processor.kgps
@@ -119,10 +118,6 @@ onready var proStart = $ProStart
 onready var proStop = $ProStop
 
 var ventingMineral = 0.0
-
-var made_adjustment = false
-
-var current_model = ""
 
 var baseMineralEfficiency = 0
 var basekgps = 0
