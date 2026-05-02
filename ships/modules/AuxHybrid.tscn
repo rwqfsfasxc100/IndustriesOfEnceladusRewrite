@@ -4,10 +4,11 @@
 
 [node name="SYSTEM_IOE_AUX_HYBRID" type="Node2D"]
 script = ExtResource( 1 )
-repairReplacementPrice = 725000
+repairReplacementPrice = 915000
 smesPowerDraw = 100000.0
 smesPowerSupply = 2e+06
 smesCapacity = 1.35e+07
-mpdgPowerDraw = 25000.0
-mpdgThermal = 250000.0
-mpdgPowerSupply = 200000.0
+mpdgPowerDraw = 35000.0
+mpdgThermal = 750000.0
+mpdgPowerSupply = 475000.0
+mass = 7500.0

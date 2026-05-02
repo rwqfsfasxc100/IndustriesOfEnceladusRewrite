@@ -400,9 +400,9 @@ const AUX_MPDG_1400 = {
 	}
 }
 const AUX_HYBRID = {
-	"system":"SYSTEM_AUX_HYBRID",
-	"manual":"SYSTEM_AUX_HYBRID_MANUAL",
-	"price":725000,
+	"system":"SYSTEM_IOE_AUX_HYBRID",
+	"manual":"SYSTEM_IOE_AUX_HYBRID_MANUAL",
+	"price":915000,
 	"test_protocol":"bootup",
 	"slot_type":"AUX_POWER_SLOT",
 	"equipment_type":"POWER_AUX_POWER_SLOT",

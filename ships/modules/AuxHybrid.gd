@@ -17,7 +17,7 @@ export var mpdgThermal = 500000.0
 export var mpdgPowerSupply = 350000.0
 export var mpdgWindupTime = 2
 
-export var systemName = "SYSTEM_AUX_HYBRID"
+export var systemName = "SYSTEM_IOE_AUX_HYBRID"
 export var mass = 0.0
 
 var key

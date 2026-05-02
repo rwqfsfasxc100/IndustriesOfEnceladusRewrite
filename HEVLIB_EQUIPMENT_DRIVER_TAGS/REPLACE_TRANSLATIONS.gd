@@ -1575,6 +1575,22 @@ const TRANSLATIONS = {
 		"POI_WRECKAGE_UNKNOWN": {
 			"string": "Mysterious Wreckage",
 			"version_hash": 3678810514
+		},
+		"SYSTEM_IOE_AUX_HYBRID": {
+			"string": "RA MHFTR Hybrid Power Unit",
+			"version_hash": 1382394920
+		},
+		"SYSTEM_IOE_AUX_HYBRID_DESC": {
+			"string": "Originally intended for use within the failed K44 prototypes, a set of their MPD generators were left alone in warehouses and left untouched for decades. In an effort to clear out unused inventory, Rusatom set about a small workgroup to figure out how to make use of the old MPDGs, which one design team decided to try and bring back the original intent of a full replacement for a ship's typical power system, using current SMES technologies to provide short-term power storage.\n\nThe units were relatively costly to produce and too massive to outright replace the standard power unit - seemingly a fate riddled from the original K44 project - however, due to the pairing between the two technologies, it was able to keep a relatively low input power due to the recycling of it's power output, alongisde a small salt battery being able to provide the jumpstart needed after a reboot, which led itself to relatively high praise among tech enthusiasts and mining companies alike.",
+			"version_hash": 1374895143
+		},
+		"SYSTEM_IOE_AUX_HYBRID_SPECS": {
+			"string": "SMES Capacity: 13,500 MJ\nSMES Charge power draw: 100 MW\nSMES Discharge power (peak): 2,000 MW\nMPDG Power draw: 35 MW\nMPDG Thermal draw: 0.75 GW\nMPDG Power (nominal): 475 MW\nMass: 7,500 kg\nType: MPDG / SMES Hybrid\nManufacturer: Rusatom-Antonoff",
+			"version_hash": 3759590889
+		},
+		"SYSTEM_IOE_AUX_HYBRID_MANUAL": {
+			"string": "Produces a lot of electricity.\nStores a lot of electricity.\nConsumes heat.\nComputer damage will disrupt production, charging and discharging",
+			"version_hash": 3764219210
 		}
 	},
 	"ru_RU": {
