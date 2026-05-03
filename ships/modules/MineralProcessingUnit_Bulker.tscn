@@ -65,7 +65,7 @@ repairReplacementPrice = 1150000
 mass = 8000
 systemName = "SYSTEM_CARGO_MPU_BULK"
 kgps = 40
-powerDrawPerKg = 1000
+powerDrawPerKg = 2500
 mineralEfficiency = 0.7
 remassEfficiency = 0.2
 

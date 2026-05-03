@@ -68,7 +68,7 @@ repairFixPrice = 35000
 mass = 3000
 systemName = "SYSTEM_CARGO_MPU_FURN"
 kgps = 25
-powerDrawPerKg = 250
+powerDrawPerKg = 1000
 mineralEfficiency = 0.6
 remassEfficiency = 0.4
 
