@@ -1,3 +1,7 @@
+[2.8.2]
+
+1="* Fixed Bulker and RA MkII power draw"
+
 [2.8.1]
 
 1="* Fixed the Projectile Clip not having any mass or resell value"
