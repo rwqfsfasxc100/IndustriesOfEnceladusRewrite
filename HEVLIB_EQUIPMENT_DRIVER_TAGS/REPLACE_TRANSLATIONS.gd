@@ -77,8 +77,8 @@ const TRANSLATIONS = {
 			"version_hash": 1963002940
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS": {
-			"string": "Ice melt rate: 22.5 kg/s \\nPreprocessor remass processing efficiency: 45% \\nPreprocessor Power draw: 1,000 kW / chunk \\nSimultaneous ore processing limit: 15 \\nMPU processing speed change: -10 kg/s \\nMass: 750 kg \\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 289636246
+			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor Power draw: 1,000 kW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s \nMass: 750 kg \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 36993905
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
 			"string": "Nakamura Big MT",
@@ -89,8 +89,8 @@ const TRANSLATIONS = {
 			"version_hash": 937116593
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS": {
-			"string": "Ice melt rate: 25 kg/s \\nPreprocessor remass processing efficiency: 25% \\nPreprocessor Power draw: 750 kW / chunk \\nSimultaneous ore processing limit: 10 \\nMPU mineral efficiency multiplier: x115% \\nMPU processing speed change: 90% nominal speed \\nMass: 2,000 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 3795347951
+			"string": "Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 25% \nPreprocessor Power draw: 750 kW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x115% \nMPU processing speed change: 90% nominal speed \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics",
+			"version_hash": 2662063301
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20": {
 			"string": "Rusatom-Antonoff MPP-N1",
@@ -113,8 +113,8 @@ const TRANSLATIONS = {
 			"version_hash": 1943724378
 		},
 		"SYSTEM_CARGO_PREPROC_P15_SPECS": {
-			"string": "MPU processing speed factor: 100% MPU speed \\nSecondary MPU processing speed modifier: 25 kg/s \\nAdditional MPU power cost per chunk: minimal \\nAmbient power cost per chunk: 50 kW \\nSimultaneous ore processing limit: 18 \\nAmbient ice melt rate: 17.5 kg/s \\n Mass: 1,220 kg \\nManufacturer: Rusatom",
-			"version_hash": 146208155
+			"string": "MPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 25 kg/s \nAmbient power cost per chunk: 50 kW \nSimultaneous ore processing limit: 12 \nAmbient ice melt rate: 17.5 kg/s \n Mass: 1,220 kg \nManufacturer: Rusatom",
+			"version_hash": 2510179097
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed additively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
@@ -129,8 +129,8 @@ const TRANSLATIONS = {
 			"version_hash": 137988877
 		},
 		"SYSTEM_CARGO_PREPROC_M35_SPECS": {
-			"string": "MPU processing speed factor: 135% MPU speed \\nSecondary MPU processing speed modifier: 10 kg/s \\nIce melt rate: 12.5 kg/s \\nPreprocessor remass processing efficiency: 20% \\nPreprocessor Power draw: 550 kW / chunk \\nSimultaneous ore processing limit: 10 \\nMPU mineral efficiency multiplier: x110% \\n Mass: 4,780 kg \\nManufacturer: Machines Astro-Dynamiques",
-			"version_hash": 1291815174
+			"string": "MPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nIce melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 kW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \n Mass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
+			"version_hash": 1033283772
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nIncreases MPU efficiency multiplicatively. \\nIncreases MPU speed multiplicatively and additively. \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
@@ -145,8 +145,8 @@ const TRANSLATIONS = {
 			"version_hash": 3617932408
 		},
 		"SYSTEM_CARGO_PREPROC_M85_SPECS": {
-			"string": "MPU processing speed factor: 185% MPU speed \\nSecondary MPU processing speed modifier: 0 kg/s \\nGoverning AI: Class-1 \\nAmbient power cost per chunk: 2,500 kW \\nSimultaneous ore processing limit: 25 \\nMass: 12,550 kg \\nManufacturer: Mitsudaya-Starbus",
-			"version_hash": 3106017263
+			"string": "MPU processing speed factor: 185% MPU speed \nGoverning AI: Class-1 \nAmbient power cost per chunk: 2,500 kW \nSimultaneous ore processing limit: 20\nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
+			"version_hash": 2671192779
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed multiplicatively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
@@ -641,8 +641,8 @@ const TRANSLATIONS = {
 			"version_hash": 951120095
 		},
 		"SYSTEM_HULLVAT_AMMO_MANUAL": {
-			"string": "Additional ammunition for mass drivers. Compatible with mass drivers and railguns. \\nAmmunition delivery rate dependant on installed magazine. \\nAmmunition sold separately at dive start. \\nHUD sensor displays may or may not display new values correctly.",
-			"version_hash": 3806944180
+			"string": "Additional ammunition for mass drivers. Compatible with mass drivers and railguns. \nAmmunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start.\nAny consumable reductions will not apply for the first 1/3 of the storage. \nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your ammunition magazine.",
+			"version_hash": 1125439870
 		},
 		"SYSTEM_HULLVAT_AMMO_2": {
 			"string": "ND Hollowed Hull Ammunition Magazine",
@@ -705,8 +705,8 @@ const TRANSLATIONS = {
 			"version_hash": 3764967557
 		},
 		"SYSTEM_HULLVAT_NANO_MANUAL": {
-			"string": "Additional drone parts for nanodrone assembly units. Compatible with all drone launchers. \\nDrone part delivery rate dependant on installed magazine. \\nParts sold separately at dive start. \\nHUD sensor displays may or may not display new values correctly.",
-			"version_hash": 2979823451
+			"string": "Additional drone parts for nanodrone assembly units. Compatible with all drone launchers. \nDrone part delivery rate dependant on installed magazine. \nParts sold separately at dive start. \nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your drone parts storage.",
+			"version_hash": 1846628783
 		},
 		"SYSTEM_HULLVAT_NANO_2": {
 			"string": "Runasimi Hull-Fitted Nanodrone Locker",
@@ -769,8 +769,8 @@ const TRANSLATIONS = {
 			"version_hash": 3929640900
 		},
 		"SYSTEM_HULLVAT_PROP_MANUAL": {
-			"string": "Additional reaction mass for thrusters and turbines. \\nReactive mass sold separately at dive start. \\nHUD sensor displays may or may not display new values correctly.",
-			"version_hash": 2347273896
+			"string": "Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start. \nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your tank.",
+			"version_hash": 2307990323
 		},
 		"SYSTEM_HULLVAT_PROP_2": {
 			"string": "Propellant Can Mk. II",
