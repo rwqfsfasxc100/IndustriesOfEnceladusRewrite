@@ -127,12 +127,13 @@ func getDroneCost():
 
 func _ready():
 	var ship = getShip()
+	if not ship.setup:
+		yield(ship,"setup")
 	var processor
 	var reinstance = false
 	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
 	calculate_costs()
-	yield(CurrentGame.get_tree(),"idle_frame")
 	if current_aux == systemName:
 		if current_model != current_mpu:
 			reinstance = true
@@ -205,5 +206,6 @@ func modifyProcessor(processor,nodeKGPS,nodePower):
 	var powerFactor = float((float(newKGPS)/float(nodeKGPS)))
 	var newPower = int(nodePower * powerFactor)
 	
-	processor.set("powerDrawPerKg",newPower)
-	processor.set("kgps",newKGPS)
+	if newKGPS != 100.0 or modify_kgps_add != 0.0:
+		processor.set("powerDrawPerKg",newPower)
+		processor.set("kgps",newKGPS)

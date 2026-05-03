@@ -49,8 +49,8 @@ func _ready():
 		visible = true
 		if registerExternal:
 			ship.externalSystems.append(self)
-#	modify_shape()
-	yield(CurrentGame.get_tree(),"idle_frame")
+	if not ship.setup:
+		yield(ship,"setup")
 	make_mirror()
 	isready = true
 	

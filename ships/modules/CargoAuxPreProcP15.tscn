@@ -11,4 +11,4 @@ self_kgps = 17.5
 powerDrawPerKg = 50
 self_remassEfficiency = 0.0
 modify_kgps_add = 25
-max_ores_processing = 18
+max_ores_processing = 12

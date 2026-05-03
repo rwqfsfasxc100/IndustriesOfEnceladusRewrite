@@ -95,10 +95,10 @@ var processor = null
 
 func _ready():
 	ship = getShip()
-	var current_aux = ship.getConfig("cargo.aux")
-	var current_mpu = ship.getConfig("cargo.equipment")
 	if not ship.setup:
 		yield(ship,"setup")
+	var current_aux = ship.getConfig("cargo.aux")
+	var current_mpu = ship.getConfig("cargo.equipment")
 	if current_aux == systemName:
 		var self_aux = systemName
 		var shipSystems = ship.getSystems()
