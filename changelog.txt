@@ -1,3 +1,10 @@
+[2.8.1]
+
+1="* Fixed the Projectile Clip not having any mass or resell value"
+2="* Fixed missing or broken stats on all preprocessors"
+3="* Consumable Vats now list that they may not work with MVFS due to how it handles consumables, as well as stating minimum utilization for any reductions to happen"
+4="* Reduced the maximum processing count on several preprocessors due to current limits rarely being met in reality"
+
 [2.8.0]
 
 1="* Added a new auxiliary power unit: RA MHFTR Hybrid Power Unit"
