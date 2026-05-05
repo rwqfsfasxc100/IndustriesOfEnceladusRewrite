@@ -1397,8 +1397,8 @@ const TRANSLATIONS = {
 			"version_hash": 2716215589
 		},
 		"SYSTEM_MAIN_ENGINE_GEMINI_DESC": {
-			"string": "The NTR600-II, otherwise known as the \"Gemini\", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. The dual exhaust layout in combination of a basic thrust vectoring system also allows for additional vectoring potential, furthering the potential efficiency of the torch. \\n\\nDisclaimer: maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.",
-			"version_hash": 3220815468
+			"string": "The NTR600-II, otherwise known as the \"Gemini\", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. The dual exhaust layout in combination of a basic thrust vectoring system also allows for additional vectoring potential, furthering the potential efficiency of the torch. \n\nDisclaimer: Mitsudaya-Starbus warns that the MPD will stress the reactor due to the sheer power required by it, potentially causing failure at a significantly higher temperature than other consumer-grade torches. Maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.",
+			"version_hash": 1596119721
 		},
 		"SYSTEM_MAIN_ENGINE_GEMINI_SPECS": {
 			"string": "Thrust: 1,200 kN \\nExhaust velocity: 28 km/s \\nPropellant consumption: 52 kg/s \\nPower consumption: 250 MW \\nThermal consumption: 16.8 GW \\nVectored thrust angle: 60 deg \\nVectoring speed: 20 deg/s \\nOperation mode: Variable thrust \\nPropellant: Hydrogen plasma \\nMass: 4,350 kg \\nManufacturer: Mitsudaya-Starbus",
