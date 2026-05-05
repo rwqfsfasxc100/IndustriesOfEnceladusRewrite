@@ -19,6 +19,7 @@ export (int,-50,50,1) var tunable_mpu_max = 15
 
 export (int, 5, 75, 1) var max_ores_processing = 10
 export (float, 0,20,0.05) var ore_swapover_time = 5.0
+export (float) var ore_swapover_fade_time = 0.25
 
 export  var enabled = true
 
@@ -28,7 +29,9 @@ var power = 0
 func getStatus():
 	return 100
 func getPower():
-	return clamp(power, 0, 1)
+	var pv = clamp(power, 0, 1)
+	var sv = swapover_fade * 3.0
+	return clamp(pv - sv,0,1)
 
 func get_minimum_filler_content():
 	var base = minimum_filler_content
@@ -123,6 +126,10 @@ var baseMineralEfficiency = 0
 var basekgps = 0
 var basePowerDrawPerKg = 0
 
+var swapover_fade = 0.0
+var swapover_direction = false
+var swapover_time = 0.0
+
 func _physics_process(delta):
 	ventingMineral = max(0, ventingMineral - delta)
 	power = 0
@@ -135,7 +142,8 @@ func _physics_process(delta):
 			var current_kgps = get_preprocessor_kgps()
 			var current_powerdraw = get_power()
 			var current_remassefficiency = get_preprocessor_efficiency()
-			for p in get_processable_object(delta):
+			var forProcessing = get_processable_object(delta)
+			for p in forProcessing:
 				if Tool.claim(p):
 					if "fillerContent" in p:
 						if p.fillerContent > get_minimum_filler_content():
@@ -178,9 +186,18 @@ func _physics_process(delta):
 								power += 1.0
 								venting = (nrm - prm < st / 2)
 				Tool.release(p)
-							
-	ventRemass.emitting = venting
 	
+	ventRemass.emitting = venting
+	if swapover_direction:
+		if swapover_fade < ore_swapover_fade_time:
+			swapover_fade += delta
+		else:
+			swapover_direction = false
+	else:
+		if swapover_fade > 0.0:
+			swapover_fade -= delta
+	if swapover_time > 0.0:
+		swapover_time -= delta
 	if ship.isPlayerControlled():
 		if isproc:
 			if not processingA.playing:
@@ -224,19 +241,28 @@ func get_processable_object(delta):
 			var lucky = []
 			if s == bayCount:
 				counter += delta
-				if counter > ore_swapover_time:
+				if counter > (ore_swapover_time + ore_swapover_fade_time):
 					counter = 0.0
+					swapover_fade = delta
+					swapover_time = ore_swapover_fade_time
+					swapover_direction = true
 					current_indexes.shuffle()
 			else:
 				current_indexes = range(s)
 				current_indexes.shuffle()
 				bayCount = s
 				counter = 0.0
+				swapover_fade = delta
+				swapover_time = ore_swapover_fade_time
+				swapover_direction = true
 			for i in range(max_ores_processing):
 				lucky.append(cargo[current_indexes[i]])
 			return lucky
 		else:
 			counter = 0.0
+			swapover_fade = 0.0
+			swapover_time = 0.0
+			swapover_direction = false
 			return cargo
 	bayCount = 0
 	return []
