@@ -34,7 +34,7 @@ const Tsukuyomi_Decom = {
 			"mainLarge":"SYSTEM_MAIN_ENGINE_ZURBIN", 
 			"rcsLarge":"SYSTEM_MAIN_ENGINE_NDNTR",
 		}, 
-		"reactor":{"power":20.0}, 
+		"reactor":{"power":40.0}, 
 		"shielding":{"emp":0.0}, 
 		"turbine":{
 			"capacity":500.0, 
