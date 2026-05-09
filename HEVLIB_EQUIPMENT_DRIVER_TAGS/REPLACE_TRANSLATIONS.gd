@@ -853,8 +853,8 @@ const TRANSLATIONS = {
 			"version_hash": 318184807
 		},
 		"SHIP_YME_SPECS": {
-			"string": "Make: Angry Ex-Eon Interstellar Employees\\nHigh-Stress Hardpoints: 1\\nLow-Stress Hardpoints: 2\\nCrew: 5\\nDry mass: 34,500 kg \\nCargo bay: 140 m^3 \\nProcessed cargo storage (per mineral): 11,000 kg",
-			"version_hash": 1005610772
+			"string": "Make: Angry Ex-Eon Interstellar Employees\nHigh-Stress Hardpoints: 1\nLow-Stress Hardpoints: 2\nCrew: 5\nDry mass: 29,300 kg \nCargo bay: 140 m^3 \nProcessed cargo storage (per mineral): 11,000 kg",
+			"version_hash": 2674179350
 		},
 		"SHIP_YME_DESC": {
 			"string": "This ship was created by several annoyed employees of Eon Interstellar who split off due to how the company mismanaged both it's employees and PR. They banded together to create a more economically viable vessel, making the shining hull of the EIME more accessible to those outside of very well to do positions. \\n\\nDue to the nature of the EIME's original hull, a custom liquid-drum reactor had to be put in place, something many end-users wanted with the original vessel. An older reactor left over from K37s being decommissioned for Enceladus Prime's habitat constructions was used for the retrofit, being in common supply.",
@@ -869,8 +869,8 @@ const TRANSLATIONS = {
 			"version_hash": 2389090187
 		},
 		"SHIP_OCP-SALVAGE_SPECS": {
-			"string": "Make: Obonto Microengineering\\nBay-Fitted Manipulator Arms: 1\\nHigh-Stress Hardpoints: 2\\nLow-Stress Hardpoints: 2\\nTurret Mounts: 2\\nDrone Bays: 2\\nCrew: 8\\nDry mass: 184,500 kg\\nCargo bay: 150 m^3\\nProcessed cargo storage (combined): 50,000 kg",
-			"version_hash": 2670781181
+			"string": "Make: Obonto Microengineering\nBay-Fitted Manipulator Arms: 1\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nTurret Mounts: 2\nDrone Bays: 2\nCrew: 8\nDry mass: 214,000 kg\nCargo bay: 150 m^3\nProcessed cargo storage (combined): 50,000 kg",
+			"version_hash": 3111870258
 		},
 		"SHIP_OCP-SALVAGE_DESC": {
 			"string": "This ship was found in a back alley behind Sin Space Engineering. We asked if we could take it and the (unpaid) intern working the atrium said he didn't care so we did. The entire bay has been cut out and replaced with a manipulator arm, we believe partially to make a competitor to the MAD-CERF, and partially because Sin Space Engineering didn't know what to do with the rest of the OCP after making their OK720 line of ships.",
@@ -881,8 +881,8 @@ const TRANSLATIONS = {
 			"version_hash": 216355051
 		},
 		"SHIP_CK65_SPECS": {
-			"string": "Make: Conlido / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 82,000 kg \nCargo bay: 55 m^3\nProcessed cargo storage (per mineral): 37,500 kg",
-			"version_hash": 718765947
+			"string": "Make: Conlido / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 78,700 kg \nCargo bay: 55 m^3\nProcessed cargo storage (per mineral): 37,500 kg",
+			"version_hash": 487980583
 		},
 		"SHIP_CK65_DESC": {
 			"string": "The rise of mineral processors gave a need for ships that could carry significant quantities of it for interplanetary travel. The century-old venture of the Cothon class of ships showed the viability of automated ships to be used for travel, and the Eagles were chosen as the ship of choice to complete the new venture. A large portion of it's cargo bay was gutted to fit 6 ginormous bays to store processed cargo, alongside a luxury living quarter space to house 12 passengers. A large portion of the Eagle's hardware was left in for the convenience of captains, however the grinder was replaced with a standard excavator to ensure a more reliable experience.",
@@ -917,8 +917,8 @@ const TRANSLATIONS = {
 			"version_hash": 1918415372
 		},
 		"SHIP_OCP213_TWIN_SPECS": {
-			"string": "Make: Obonto Microengineering\\nHigh-Stress Hardpoints: 2\\nLow-Stress Hardpoints: 2\\nDocking Bays: 2\\nTurret Mounts: 2\\nCrew: 8\\nDry mass: 187,500 kg\\nCargo bay: 610 m^3\\nProcessed cargo storage (combined): 50,000 kg",
-			"version_hash": 2266644939
+			"string": "Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nDocking Bays: 2\nTurret Mounts: 2\nCrew: 8\nDry mass: 188,000 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",
+			"version_hash": 802088103
 		},
 		"SHIP_OCP213_TWIN_DESC": {
 			"string": "A minor modification to the stock OCP-209, the Twin adds a second torch fitting to allow for more varied maneuvers, especially when combining translation and rotation.",
@@ -933,20 +933,16 @@ const TRANSLATIONS = {
 			"version_hash": 1793612252
 		},
 		"SHIP_TRTL_PEEPER_SPECS": {
-			"string": "Make: Conlido / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 101,400 kg \nCargo bay: 555 m^3 \nProcessed cargo storage (combined): 55,000 kg",
-			"version_hash": 3733736855
-		},
-		"SHIP_MADCERF_CIV_INVERSE": {
-			"string": "MAD-CERF (Inverted Civilian Refit)",
-			"version_hash": 1382038879
+			"string": "Make: Conlido / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 115,700 kg \nCargo bay: 555 m^3 \nProcessed cargo storage (combined): 55,000 kg",
+			"version_hash": 3487503103
 		},
 		"SHIP_MADCERF_CIV_INVERSE_DESC": {
 			"string": "This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.\\n\\nA third party modification to the Civilian modification puts the autopilot and visual sensors to flip forwards and put it excavator-first.",
 			"version_hash": 1256606154
 		},
 		"SHIP_MADCERF_CIV_INVERSE_SPECS": {
-			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 2 \\nTurret Hardpoints: 2 \\nDrone Bays: 2 \\nDocking Bays: 2 \\nCrew: 6 \\nDry mass: 195,000 kg \\nCargo bay: 1,175 m^3 \\nProcessed cargo storage (per mineral): 45,000 kg",
-			"version_hash": 525647639
+			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 8\nDry mass: 241,300 kg \nCargo bay: 1,175 m^3 \nProcessed cargo storage (per mineral): 35,000 kg",
+			"version_hash": 2079811827
 		},
 		"SYSTEM_AUX_MPD_1400": {
 			"string": "OPG-14 StatPlasma",
@@ -1077,8 +1073,8 @@ const TRANSLATIONS = {
 			"version_hash": 2024833061
 		},
 		"SHIP_TSUKUYOMI_IOT_SPECS": {
-			"string": "Make: Sin Space Engineering / Nakamura Dynamics \\nHigh-Stress Hardpoints: 1 \\nTorpedo Tubes: 4 \\nDocking Bays: 4 \\nTurret Mounts: 2 \\nCrew: 16 \\nDry mass: 1,655,350 kg \\nCargo bay: 1,100 m^3 \\nProcessed cargo storage (per mineral): 81,000 kg",
-			"version_hash": 2957829385
+			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nTorpedo Tubes: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 1,351,900 kg \nCargo bay: 1,100 m^3 \nProcessed cargo storage (per mineral): 81,000 kg",
+			"version_hash": 2158498275
 		},
 		"SYSTEM_REACTOR_TSUYUKOMI_IOT-A": {
 			"string": "Tsukuyomi Reactor Core A",
@@ -1101,8 +1097,8 @@ const TRANSLATIONS = {
 			"version_hash": 3508886876
 		},
 		"SHIP_OCP209_DD_SPECS": {
-			"string": "Make: Obonto Microengineering \\nHigh-Stress Hardpoints: 2 \\nLow-Stress Hardpoints: 2 \\nDocking Bays: 2 \\nDrone Bays: 2 \\nCrew: 8 \\nDry mass: 190,500 kg\\nCargo bay: 675 m^3\\nProcessed cargo storage (combined): 36,000 kg",
-			"version_hash": 3462296591
+			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
+			"version_hash": 3118196040
 		},
 		"SHIP_OCP209_SNAP": {
 			"string": "OCP-207-SNAP \"Piranha\"",
@@ -1113,8 +1109,8 @@ const TRANSLATIONS = {
 			"version_hash": 2490761297
 		},
 		"SHIP_OCP209_SNAP_SPECS": {
-			"string": "Make: Obonto Microengineering \\nHigh-Stress Hardpoints: 2 \\nLow-Stress Hardpoints: 2 \\nDocking Bays: 2 \\nDrone Bays: 2 \\nCrew: 8 \\nDry mass: 184,500 kg\\nCargo bay: 610 m^3\\nProcessed cargo storage (combined): 50,000 kg",
-			"version_hash": 484226435
+			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",
+			"version_hash": 4089399417
 		},
 		"SHIP_COTHON_LUX": {
 			"string": "SSE Cothon-2200-XL",
@@ -1125,8 +1121,8 @@ const TRANSLATIONS = {
 			"version_hash": 1635273044
 		},
 		"SHIP_COTHON_LUX_SPECS": {
-			"string": "Make: Sin Space Engineering / Conlido RVM \\nLow-Stress Hardpoints: 4 \\nCrew: 6 \\nDry mass: 77,250 kg \\nCargo bay: 260 m^3 \\nProcessed cargo storage (per mineral): 25,000 kg",
-			"version_hash": 687850426
+			"string": "Make: Sin Space Engineering / Conlido RVM \nLow-Stress Hardpoints: 4 \nCrew: 6 \nDry mass: 92,000 kg \nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 25,000 kg",
+			"version_hash": 655279152
 		},
 		"SHIP_MADCERF_CIV": {
 			"string": "MAD-CERF (Civilian Refit)",
@@ -1137,8 +1133,8 @@ const TRANSLATIONS = {
 			"version_hash": 3053400826
 		},
 		"SHIP_MADCERF_CIV_SPECS": {
-			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 2 \\nTurret Hardpoints: 2 \\nDrone Bays: 2 \\nDocking Bays: 2 \\nCrew: 6 \\nDry mass: 195,000 kg \\nCargo bay: 1,175 m^3 \\nProcessed cargo storage (per mineral): 45,000 kg",
-			"version_hash": 525647639
+			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 8 \nDry mass: 241,300 kg \nCargo bay: 1,175 m^3 \nProcessed cargo storage (per mineral): 35,000 kg",
+			"version_hash": 1818843315
 		},
 		"SHIP_MADCERF_DESC": {
 			"string": "The Machines Astro-Dynamiques Cernunnos Modèle II, otherwise known as the MAD-CERF, is the staple ship of salvage companies within the rings of Saturn. Its heavily-armoured bow, rated for asteroid belt travel, is an inelegant but effective solution to the many hazards posed by interplanetary excursions. Twin reactors on either side of the vessel each power their own pair of torches and maneuvering thrusters.",
@@ -1153,8 +1149,8 @@ const TRANSLATIONS = {
 			"version_hash": 1354947949
 		},
 		"SHIP_OBERON_SPECS": {
-			"string": "Make: United Machine Cults / Custom-built \\nHigh-Stress Hardpoints: 2 \\nDrone Bays: 1 \\nCrew: 4 \\nDry mass: 26,400 kg \\nCargo bay: 50 m^3 \\nProcessed cargo storage (combined): 12,000 kg",
-			"version_hash": 3111129669
+			"string": "Make: United Machine Cults / Custom-built \nHigh-Stress Hardpoints: 2 \nDrone Bays: 1 \nCrew: 4 \nDry mass: 54,000 kg \nCargo bay: 50 m^3 \nProcessed cargo storage (combined): 12,000 kg",
+			"version_hash": 2288478114
 		},
 		"SYSTEM_REACTOR_OBERON": {
 			"string": "Oberon performance reactor",
@@ -1169,8 +1165,8 @@ const TRANSLATIONS = {
 			"version_hash": 2784651834
 		},
 		"SHIP_TRTL_RAM_SPECS": {
-			"string": "Make: Rusatom-Antonoff / Custom-built \\nHigh-Stress Hardpoints: 1 \\nLow-Stress Hardpoints: 2 \\nDrone Bays: 2 \\nCrew: 4 \\nDry mass: 42,920 kg \\nCargo bay: 110 m^3 \\nProcessed cargo storage (combined): 37,500 kg \\nEMP shielding: 50 MW",
-			"version_hash": 3933772008
+			"string": "Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 46,000 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 37,500 kg \nEMP shielding: 50 MW",
+			"version_hash": 2895770113
 		},
 		"SYSTEM_REACTOR_TNTRL_FORT": {
 			"string": "Braced K37 nuclear reactor",
@@ -1185,8 +1181,8 @@ const TRANSLATIONS = {
 			"version_hash": 1477509928
 		},
 		"SHIP_ATLAS_WASP_SPECS": {
-			"string": "Make: Sin Space Engineering / Nakamura Dynamics \\nLow-Stress Hardpoints: 2 \\nThruster mount gimbal: 36 deg \\nCrew: 3 \\nDry mass: 8,250 kg \\nCargo bay: 45 m^3 \\nProcessed cargo storage (per mineral): 500 kg \\nEMP shielding: 320 MW",
-			"version_hash": 2853678016
+			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nLow-Stress Hardpoints: 2 \nThruster mount gimbal: 36 deg \nCrew: 3 \nDry mass: 23,250 kg \nCargo bay: 45 m^3 \nProcessed cargo storage (per mineral): 500 kg \nEMP shielding: 320 MW",
+			"version_hash": 678981677
 		},
 		"SYSTEM_REACTOR_JURYRIG": {
 			"string": "Jury-rigged reactor",
@@ -1205,8 +1201,8 @@ const TRANSLATIONS = {
 			"version_hash": 3885822122
 		},
 		"SHIP_PROSPECTOR_PIGEON_SPECS": {
-			"string": "Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 42,300 kg \nCargo bay: 180 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
-			"version_hash": 4052098343
+			"string": "Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 22,700 kg \nCargo bay: 180 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
+			"version_hash": 4153657129
 		},
 		"SHIP_AT225_STUB": {
 			"string": "Antonoff-Titan K225-SH",
@@ -1217,8 +1213,8 @@ const TRANSLATIONS = {
 			"version_hash": 33006397
 		},
 		"SHIP_AT225_STUB_SPECS": {
-			"string": "Make: Antonoff-Titan Heavy Industries \\nLow-Stress Hardpoints: 2 \\nDrone Bays: 2 \\nDocking Bays: 4 \\nCrew: 12 \\nDry mass: 160,000 kg\\nCargo bay: 260 m^3 \\nProcessed cargo storage (per mineral): 5,000 kg",
-			"version_hash": 442198202
+			"string": "Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12 \nDry mass: 146,700 kg\nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
+			"version_hash": 4038862981
 		},
 		"SHIP_TRTL_OCP": {
 			"string": "SSE OK720 TNTRL",
@@ -1229,8 +1225,8 @@ const TRANSLATIONS = {
 			"version_hash": 903860750
 		},
 		"SHIP_TRTL_OCP_SPECS": {
-			"string": "Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \\nLow-Stress Hardpoints: 4 \\nCrew: 4 \\nDry mass: 86,600 kg \\nCargo bay: 620 m^3 \\nProcessed cargo storage (per mineral): 5,000 kg",
-			"version_hash": 2777086848
+			"string": "Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 85,700 kg \nCargo bay: 620 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
+			"version_hash": 3999817088
 		},
 		"SHIP_OCP209_SPECS": {
 			"string": "Make: Obonto Microengineering\\nHigh-Stress Hardpoints: 2\\nLow-Stress Hardpoints: 2\\nDocking Bays: 2\\nTurret Mounts: 2\\nCrew: 8\\nDry mass: 184,500 kg\\nCargo bay: 610 m^3\\nProcessed cargo storage (combined): 50,000 kg",

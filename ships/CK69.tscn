@@ -198,7 +198,7 @@ func _physics_process(delta):
 [node name="CK-69" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
 collision_mask = 7
-mass = 72.74
+mass = 88.84
 physics_material_override = ExtResource( 4 )
 continuous_cd = 2
 linear_damp = 0.0
@@ -704,7 +704,7 @@ margin_left = -30.0
 margin_top = -247.0
 margin_right = 30.0
 margin_bottom = -165.0
-color = Color( 1, 1, 0.75, 0.498039 )
+color = Color( 1, 1, 0.9, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, -50 )

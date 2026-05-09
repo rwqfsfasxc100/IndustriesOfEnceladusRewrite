@@ -535,12 +535,8 @@ const OCP_DD = {
 		"weaponSlot": {
 			"mainLeft":{"type":"SYSTEM_SALVAGE_ARM"},
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
-			"middleLeft":{"type":"SYSTEM_PDMWG"},
-			"middleRight":{"type":"SYSTEM_PDMWG"},
-			"leftBay1":{"type":"SYSTEM_NONE"}, 
-			"rightBay1":{"type":"SYSTEM_NONE"},
-			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
-			"rightBayRev1":{"type":"SYSTEM_NONE"},
+			"middleLeft":{"type":"SYSTEM_PDMWG-L"},
+			"middleRight":{"type":"SYSTEM_PDMWG-R"},
 		},
 	}},
 	"dealer":{
@@ -611,10 +607,6 @@ const OCP_TWIN = {
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
 			"middleLeft":{"type":"SYSTEM_PDMWG"},
 			"middleRight":{"type":"SYSTEM_PDMWG"},
-			"leftBay1":{"type":"SYSTEM_NONE"}, 
-			"rightBay1":{"type":"SYSTEM_NONE"},
-			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
-			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}},
 	"dealer":{
@@ -682,12 +674,8 @@ const OCP_SNAP = {
 		"weaponSlot": {
 			"mainLeft":{"type":"SYSTEM_SALVAGE_ARM"},
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
-			"middleLeft":{"type":"SYSTEM_PDMWG"},
-			"middleRight":{"type":"SYSTEM_PDMWG"},
-			"leftBay1":{"type":"SYSTEM_NONE"}, 
-			"rightBay1":{"type":"SYSTEM_NONE"},
-			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
-			"rightBayRev1":{"type":"SYSTEM_NONE"},
+			"middleLeft":{"type":"SYSTEM_PDMWG-L"},
+			"middleRight":{"type":"SYSTEM_PDMWG-R"},
 		},
 	}},
 	"dealer":{
