@@ -231,6 +231,7 @@ const RCS_PNTRM = {
 	"price":22750,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":0.9,
+	"warn_if_electric_below":40,
 	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
 	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
 }
@@ -240,7 +241,7 @@ const RCS_BLAST = {
 	"price":15500,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":3.0,
-	"warn_if_electric_below":35,
+	"warn_if_electric_below":72,
 	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
 	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
 }
@@ -250,7 +251,7 @@ const RCS_PIN150 = {
 	"price":31500,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":6.8,
-	"warn_if_electric_below":250,
+	"warn_if_electric_below":90,
 	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
 	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
 }
@@ -259,6 +260,7 @@ const TORCH_SOYUZ = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":35000,
 	"test_protocol":"autopilot",
+	"warn_if_electric_below":60,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -269,6 +271,7 @@ const TORCH_THUNDER = {
 	"test_protocol":"autopilot",
 	"story_flag":"ringrace",
 	"story_flag_min":1,
+	"warn_if_electric_below":100,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -278,7 +281,7 @@ const TORCH_GEMINI = {
 	"price":345000,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":5.6,
-	"warn_if_electric_below":100,
+	"warn_if_electric_below":250,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -288,6 +291,7 @@ const TORCH_PMS2 = {
 	"price":4000,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":4.5,
+	"warn_if_electric_below":20,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -296,6 +300,7 @@ const TORCH_NANI = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":425000,
 	"test_protocol":"autopilot",
+	"warn_if_electric_below":200,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -304,6 +309,7 @@ const TORCH_PIN1200 = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":1180000,
 	"test_protocol":"autopilot",
+	"warn_if_electric_below":550,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -312,6 +318,7 @@ const TORCH_CRACK = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":1575000,
 	"test_protocol":"autopilot",
+	"warn_if_electric_below":445,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
@@ -666,6 +673,7 @@ const LARGE_TORCH_ZURBIN = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":1100000,
 	"test_protocol":"autopilot",
+	"warn_if_electric_below":50,
 	"slot_type":"LARGE_TORCH",
 	"equipment_type":"THRUSTER_LARGE_MAIN_ENGINE"
 }

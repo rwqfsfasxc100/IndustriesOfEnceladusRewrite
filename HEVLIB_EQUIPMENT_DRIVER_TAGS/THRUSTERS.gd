@@ -281,6 +281,7 @@ const SYSTEM_MAIN_ENGINE_CRACK = {
 	"damage_choke_capacity":128000,
 	"damage_choke_threshold":96000,
 	"special_fuel_limit":1800,
+	"heat_cone":0.1,
 	"heat_fire_threshold":2000,
 	"max_misalignment":0.02,
 	"specific_impulse":1850,
