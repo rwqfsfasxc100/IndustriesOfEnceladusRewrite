@@ -1587,6 +1587,10 @@ const TRANSLATIONS = {
 		"SYSTEM_IOE_AUX_HYBRID_MANUAL": {
 			"string": "Produces a lot of electricity.\nStores a lot of electricity.\nConsumes heat.\nComputer damage will disrupt production, charging and discharging",
 			"version_hash": 3764219210
+		},
+		"SHIP_MADCERF_CIV_INVERSE": {
+			"string": "MAD-CERF (Inverted Civilian Refit)",
+			"version_hash": 1382038879
 		}
 	},
 	"ru_RU": {
