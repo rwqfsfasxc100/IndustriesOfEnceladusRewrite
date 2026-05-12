@@ -1313,8 +1313,8 @@ const TRANSLATIONS = {
 			"version_hash": 1349732115
 		},
 		"SYSTEM_THRUSTER_PIN150_SPECS": {
-			"string": "Thrust: 150 kN \\nExhaust velocity: 90 km/s \\nPropellant consumption: 1.6 kg/s \\nPower consumption: 90 MW \\nThermal consumption: 6.8 GW \\nOperation mode: Virtual variable thrust \\nVectored thrust angle: 36 deg \\nPropellant: Hydrogen plasma \\nMass: 185 kg (per thruster) \\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 1856467542
+			"string": "Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 1753116300
 		},
 		"SYSTEM_THRUSTER_BLAST": {
 			"string": "ERS-BlasTR 7200 thruster",

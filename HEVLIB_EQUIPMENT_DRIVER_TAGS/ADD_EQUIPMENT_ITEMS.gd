@@ -250,7 +250,6 @@ const RCS_PIN150 = {
 	"manual":"SYSTEM_THRUSTER_MANUAL",
 	"price":31500,
 	"test_protocol":"autopilot",
-	"warn_if_thermal_below":6.8,
 	"warn_if_electric_below":90,
 	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
 	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"

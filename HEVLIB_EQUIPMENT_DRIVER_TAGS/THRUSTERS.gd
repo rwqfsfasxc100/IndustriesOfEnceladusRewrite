@@ -28,6 +28,7 @@ const SYSTEM_THRUSTER_PIN150 = {
 	"gimbal_per_second":rad2deg(25.133),
 	"gimbal_vectored_thrust":true,
 	"pulse_engine":false,
+	"external_power":true,
 	"tune_thrust_max":1,
 	"mass":185,
 	"min_choke":0.05,
