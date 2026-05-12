@@ -1,6 +1,6 @@
 [2.8.3]
 
-1="* NTR600-II failure at higher temperatures is now stated in it's description"
+1="* NTR600-II failure at lower temperatures is now stated in it's description"
 2="* Preprocessors swapping over to different ores is now visualized on the OMS lists"
 3="* Made adjustments to the NDDFD torch:"
 3.1="* Now uses procedural thruster creation"
