@@ -1,3 +1,16 @@
+[2.8.3]
+
+1="* NTR600-II failure at higher temperatures is now stated in it's description"
+2="* Preprocessors swapping over to different ores is now visualized on the OMS lists"
+3="* Made adjustments to the NDDFD torch:"
+3.1="* Now uses procedural thruster creation"
+3.2="* Uses a thinner plume to reduce visibility issues and properly show the fact that it's a fusion drive"
+4="* Tsukuyomi now uses a Yama 16 core by default"
+5="* Fixed missing auxiliary power slot on the ATLAS Wasp"
+6="* Reevaluated ship masses, which now use the vanilla convention of dry mass from stock configuration"
+7="* Shortened the name of the Tetsuo RamDrive"
+8="* All thrusters now use an appropriate warning level for electrical power"
+
 [2.8.2]
 
 1="* Fixed Bulker and RA MkII power draw"
