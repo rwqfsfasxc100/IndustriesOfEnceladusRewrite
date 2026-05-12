@@ -837,8 +837,8 @@ const TRANSLATIONS = {
 			"version_hash": 1507662025
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2": {
-			"string": "Tetsuo RamDrive Consumable Delivery Efficiency Module",
-			"version_hash": 4226073739
+			"string": "Tetsuo RamDrive Delivery Module",
+			"version_hash": 2161624877
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_DESC": {
 			"string": "In conjunction with the consumer market release of their industrial-grade mass driver, the Tetsuo HMX 2000l, a previously industry-insider only module was made available to consumers looking to retrofit their vessels to be able to make use of it, especially for crews unable to make use of it's iron delivery system or could not afford a vessel capable of meeting it's requirements, this module makes heavy adjustments to the delivery systems of a vessel, and as a result can be used to retrofit a majority of magazines to be able to meet the HMX's absurd ammunition delivery requirements.",
