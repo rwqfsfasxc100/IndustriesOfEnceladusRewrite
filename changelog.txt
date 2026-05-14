@@ -1,3 +1,9 @@
+[2.8.4]
+
+1="* Removed Pin-C50 thermal draw"
+2="* Adjusted NDDFD plume to reduce sheer brightness"
+3="* Updated the descriptions of some consumable vats and the preprocessor tune descriptors to reflect changes to their respective systems that were not previously addressed"
+
 [2.8.3]
 
 1="* NTR600-II failure at lower temperatures is now stated in it's description"
