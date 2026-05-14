@@ -649,8 +649,8 @@ const TRANSLATIONS = {
 			"version_hash": 868049079
 		},
 		"SYSTEM_HULLVAT_AMMO_2_DESC": {
-			"string": "Originally based on smuggling mechanisms used during conflicts, the ND HHAM (frequently nicknamed by industry insiders the \"Ham\") makes use of spare space within the ship's hull alongside a large portion of the nanodrone cartridge space to fit in a whopping 15 tonnes of extra mass driver ammunition. Although commonly reserved for Vilcy-licensed specialists, the Ham made it's way onto the civillian market due to a recent reduction in required licensing to allow for those who suffer from a trigger finger to mine without as much issue, without causing Kessler syndrome in the process.",
-			"version_hash": 3624757113
+			"string": "Originally based on smuggling mechanisms used during conflicts, the ND HHAM (frequently nicknamed by industry insiders the \"Ham\") makes use of spare space within the ship's hull alongside a large portion of the nanodrone cartridge space to fit in a whopping 15 tonnes of extra mass driver ammunition. Although commonly reserved for Vilcy-licensed specialists, the Ham made it's way onto the civillian market due to recent reassesments to container limitations on small and medium-sized vessels. The modifications made to the ammunition feeds do remove any vibration dampening equipment, including those involved with COM preservation, making for an uncomfortable experience with many crews.",
+			"version_hash": 596263736
 		},
 		"SYSTEM_HULLVAT_AMMO_2_SPECS": {
 			"string": "Ammunition capacity: 15,000 kg \\nNanodrone storage loss: 50% \\nDry mass: 10,000 kg \\nManufacturer: Nakamura Dynamics ",
@@ -697,8 +697,8 @@ const TRANSLATIONS = {
 			"version_hash": 192326595
 		},
 		"SYSTEM_HULLVAT_NANO_1_DESC": {
-			"string": "Like a large number of Runasimi's commercial products, the DCV focuses on providing a small boost in the available nanodrone components. Originally designed as a backup compartment only available during emergencies, later models were unlocked to allow their contents to be used during nominal flight.",
-			"version_hash": 366366504
+			"string": "Like a large number of Runasimi's commercial products, the DCV focuses on providing a small boost in the available nanodrone components. Originally designed as a backup compartment only available during emergencies, later 3rd-party modifications allowed them to be hooked up to hoppers that connect to the ship's drone delivery feeds to assembly plants. Connecting hoppers do not make use of noise reduction.",
+			"version_hash": 2972814653
 		},
 		"SYSTEM_HULLVAT_NANO_1_SPECS": {
 			"string": "Drone part capacity: 6,000 kg \\nAmmunition magazine loss: 25% \\nDry mass: 4,500 kg \\nManufacturer: Runasimi ",
@@ -713,8 +713,8 @@ const TRANSLATIONS = {
 			"version_hash": 2890336819
 		},
 		"SYSTEM_HULLVAT_NANO_2_DESC": {
-			"string": "Based off of the success of the DCV, a larger unit was put into production to allow nanodrone-heavy users able to make good use of the often-unused mass driver magazine space to fit a considerably large portion of nanodrones. The lack of any dedicated safety units allowed for a greater parts-to-magazine space ratio than previous designs.",
-			"version_hash": 2165632712
+			"string": "Based off of the success of the DCV, a larger unit was put into production to allow nanodrone-heavy users able to make good use of the often-unused mass driver magazine space to fit a considerably large portion of nanodrones. The lack of any dedicated safety units allowed for a greater parts-to-magazine space ratio than previous designs, however were prone to being noisy during manoeuvres from an inefficiently-constructed mass balancer.",
+			"version_hash": 3524422214
 		},
 		"SYSTEM_HULLVAT_NANO_2_SPECS": {
 			"string": "Drone part capacity: 15,000 kg \\nAmmunition magazine loss: 50% \\nDry mass: 12,000 kg \\nManufacturer: Runasimi",
@@ -841,8 +841,8 @@ const TRANSLATIONS = {
 			"version_hash": 2161624877
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_DESC": {
-			"string": "In conjunction with the consumer market release of their industrial-grade mass driver, the Tetsuo HMX 2000l, a previously industry-insider only module was made available to consumers looking to retrofit their vessels to be able to make use of it, especially for crews unable to make use of it's iron delivery system or could not afford a vessel capable of meeting it's requirements, this module makes heavy adjustments to the delivery systems of a vessel, and as a result can be used to retrofit a majority of magazines to be able to meet the HMX's absurd ammunition delivery requirements.",
-			"version_hash": 1073192433
+			"string": "In conjunction with the consumer market release of their industrial-grade mass driver, the Tetsuo HMX 2000l, a previously industry-insider only module was made available to consumers looking to retrofit their vessels to be able to make use of it, especially for crews unable to make use of it's iron delivery system or could not afford a vessel capable of meeting it's requirements, this module makes heavy adjustments to the delivery systems of a vessel, and as a result can be used to retrofit a majority of magazines to be able to meet the HMX's absurd ammunition delivery requirements.\n\nSeveral operators have complained about the unit producing a lot of noise during regular operations, however Tetsuo has made no statement regarding the issue.",
+			"version_hash": 1824627807
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_SPECS": {
 			"string": "Consumable storage delivery speed: +150% \\nDry mass: 9,000 kg \\nManufacturer: Tetsuo Engineering",
@@ -1501,8 +1501,8 @@ const TRANSLATIONS = {
 			"version_hash": 3472595481
 		},
 		"IOE_TUNE_PREPROC_RECLAIM_DESC": {
-			"string": "Increasing the processing speed of a preprocessor improves water melt speed by rerouting extra power to the unit. This decreases efficiency of the unit caused by the overheating, however the additional heat produced by the unit combined with additional power provided to melting facilities (if applicable) cause chunks to lose more water.\n\nSlowing down the process enhances water capture efficiency and lowers power usage.",
-			"version_hash": 1742980184
+			"string": "Increasing the thawing speed of a preprocessor adjusts the rate at which melting mechanisms work with an increase in power consumption. The increased output rate reduces the reclaimed water content due to the reclaiming units getting oversaturated. A faster rate also raises the floor on an ore chunk's water content due to the cutting computer dictating how the ore is processed having to be less confident to preserve mineral output.\n\nSlowing down the process enhances the processing capability by providing more leeway for the reclaimation unit and cutting computer.",
+			"version_hash": 1166901174
 		},
 		"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": {
 			"string": "Ice Remass Reclamation Efficiency",
