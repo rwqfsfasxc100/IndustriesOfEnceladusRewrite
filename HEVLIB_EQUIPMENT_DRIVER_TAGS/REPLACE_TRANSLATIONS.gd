@@ -1549,8 +1549,8 @@ const TRANSLATIONS = {
 			"version_hash": 1054989203
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT_SPECS": {
-			"string": "Effective range: 2000 m \\n Targeting AI: Class-1 \\nPower consumption: 120 MW \\nOutput power: 90 MW \\nWavelength: 1 cm \\nMass: 3,000 kg \\nManufacturer: Rusatom",
-			"version_hash": 2660111544
+			"string": "Effective range: 800 m \n Targeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom",
+			"version_hash": 1892338382
 		},
 		"SYSTEM_PDTL": {
 			"string": "NDCL-80 Point Defence Laser Turret",
