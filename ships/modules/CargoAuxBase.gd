@@ -24,7 +24,7 @@ var set_rot = 0.0
 
 var preproc_default_shapes = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_default_shapes.gd")
 var preproc_ship_shape_mods = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_ship_shape_mods.gd")
-var DataFormat = preload("res://HevLib/pointers/DataFormat.gd")
+var pointers
 
 var ship
 var duped = false
@@ -40,6 +40,7 @@ var hs_modified = false
 var isready = false
 
 func _ready():
+	pointers = get_tree().get_root().get_node_or_null("HevLib~Pointers")
 	ship = getShip()
 	self.name = systemName
 	ship.registerCapability(slot, systemName)
@@ -96,7 +97,7 @@ func _physics_process(delta):
 func make_mirror():
 	self.rotation = -deg2rad(set_rot)
 	var current_pos = self.position
-	var new_position = DataFormat.__rotate_point(current_pos,set_rot)
+	var new_position = pointers.DataFormat.__rotate_point(current_pos,set_rot)
 	self.position = new_position
 	# flip the collider if it's requested
 	var has = ship.getConfig(slot) == systemName
@@ -130,7 +131,7 @@ func make_mirror():
 func modify_position() -> Vector2:
 	var selfPos = self.get_position()
 	var rv = (float(1)/float(2))*float(set_rot)
-	var nselfPos = DataFormat.__rotate_point(selfPos,rv)
+	var nselfPos = pointers.DataFormat.__rotate_point(selfPos,rv)
 	var modifyP = Vector2(nselfPos[0], nselfPos[1])
 	if mirrorVertical:
 		modifyP[1] = -modifyP[1]#*2
