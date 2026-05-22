@@ -17,8 +17,8 @@ const TRANSLATIONS = {
 			"version_hash": 3265294764
 		},
 		"SYSTEM_CARGO_AUX_FAB_SPECS": {
-			"string": "Print power draw: 120 MW \\nPrinting capability: drones, ammunition \\nCargo capacity: 2,000 kg / mineral (12,000 kg total) \\nPropellant capacity: 6,000 kg \\nMPU processing speed factor: 155% MPU speed \\nAdditional MPU power cost per chunk: ~55% \\nMass: 5,000 kg \\nManufacturer: Sin Space Engineering / Nakamura-Obonto",
-			"version_hash": 1512061771
+			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed factor: 155% MPU speed \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto",
+			"version_hash": 2289900393
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume and propellant tank size. \\nProcessed ore stored in seperate containers, with capacity limited per mineral type. \\nIncreases MPU speed by 55%. \\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \\nProduces nanodrone components from a 4:1 ratio of iron to platinum. \\nTakes up some space in the cargo bay.",
@@ -113,8 +113,8 @@ const TRANSLATIONS = {
 			"version_hash": 1943724378
 		},
 		"SYSTEM_CARGO_PREPROC_P15_SPECS": {
-			"string": "MPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 25 kg/s \nAmbient power cost per chunk: 50 kW \nSimultaneous ore processing limit: 12 \nAmbient ice melt rate: 17.5 kg/s \n Mass: 1,220 kg \nManufacturer: Rusatom",
-			"version_hash": 2510179097
+			"string": "Ice melt rate: 17.5 kg/s \nPreprocessor Power draw: : 50 kW / chunk\nMPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 25 kg/s \nSimultaneous ore processing limit: 12 \nMass: 1,220 kg \nManufacturer: Rusatom",
+			"version_hash": 2026896791
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed additively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
@@ -129,8 +129,8 @@ const TRANSLATIONS = {
 			"version_hash": 137988877
 		},
 		"SYSTEM_CARGO_PREPROC_M35_SPECS": {
-			"string": "MPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nIce melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 kW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \n Mass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
-			"version_hash": 1033283772
+			"string": "Ice melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 kW / chunk \nMPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \nMass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
+			"version_hash": 3878258332
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nIncreases MPU efficiency multiplicatively. \\nIncreases MPU speed multiplicatively and additively. \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
@@ -145,8 +145,8 @@ const TRANSLATIONS = {
 			"version_hash": 3617932408
 		},
 		"SYSTEM_CARGO_PREPROC_M85_SPECS": {
-			"string": "MPU processing speed factor: 185% MPU speed \nGoverning AI: Class-1 \nAmbient power cost per chunk: 2,500 kW \nSimultaneous ore processing limit: 20\nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
-			"version_hash": 2671192779
+			"string": "MPU processing speed factor: 185% MPU speed \nGoverning AI: Class-1 \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
+			"version_hash": 948241691
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL": {
 			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed multiplicatively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
