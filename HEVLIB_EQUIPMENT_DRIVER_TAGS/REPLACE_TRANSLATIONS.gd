@@ -17,12 +17,12 @@ const TRANSLATIONS = {
 			"version_hash": 3265294764
 		},
 		"SYSTEM_CARGO_AUX_FAB_SPECS": {
-			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed factor: 155% MPU speed \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto",
-			"version_hash": 2289900393
+			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto",
+			"version_hash": 1650052862
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume and propellant tank size. \\nProcessed ore stored in seperate containers, with capacity limited per mineral type. \\nIncreases MPU speed by 55%. \\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \\nProduces nanodrone components from a 4:1 ratio of iron to platinum. \\nTakes up some space in the cargo bay.",
-			"version_hash": 4294825695
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
+			"version_hash": 3768421638
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB": {
 			"string": "RMS-PAL Fabricator",
@@ -77,8 +77,8 @@ const TRANSLATIONS = {
 			"version_hash": 1963002940
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS": {
-			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor Power draw: 1,000 kW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s \nMass: 750 kg \nManufacturer: Rasamama Material Solutions",
-			"version_hash": 36993905
+			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor power draw: 1,000 KW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s \nMass: 750 kg \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 1922122609
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
 			"string": "Nakamura Big MT",
@@ -89,8 +89,8 @@ const TRANSLATIONS = {
 			"version_hash": 937116593
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS": {
-			"string": "Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 25% \nPreprocessor Power draw: 750 kW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x115% \nMPU processing speed change: 90% nominal speed \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics",
-			"version_hash": 2662063301
+			"string": "Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 25% \nPreprocessor power draw: 750 KW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x115% \nMPU processing speed change: 90% nominal MPU speed \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics",
+			"version_hash": 3169087575
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20": {
 			"string": "Rusatom-Antonoff MPP-N1",
@@ -101,8 +101,8 @@ const TRANSLATIONS = {
 			"version_hash": 2410067582
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS": {
-			"string": "Ice melt rate: 10 kg/s \\nPreprocessor remass processing efficiency: 20% \\nPreprocessor Power draw: 375 kW / chunk \\nSimultaneous ore processing limit: 5 \\nMPU mineral efficiency multiplier: x135% \\nMPU processing speed change: 80% nominal speed \\nMass: 6,500 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 1103219408
+			"string": "Ice melt rate: 10 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor power draw: 375 KW / chunk \nSimultaneous ore processing limit: 5 \nMPU mineral efficiency multiplier: x135% \nMPU processing speed change: 80% nominal MPU speed \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff",
+			"version_hash": 3547577602
 		},
 		"SYSTEM_CARGO_PREPROC_P15": {
 			"string": "Rusatom Chunk Cutter",
@@ -113,12 +113,12 @@ const TRANSLATIONS = {
 			"version_hash": 1943724378
 		},
 		"SYSTEM_CARGO_PREPROC_P15_SPECS": {
-			"string": "Ice melt rate: 17.5 kg/s \nPreprocessor Power draw: : 50 kW / chunk\nMPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 25 kg/s \nSimultaneous ore processing limit: 12 \nMass: 1,220 kg \nManufacturer: Rusatom",
-			"version_hash": 2026896791
+			"string": "Ice melt rate: 17.5 kg/s \nPreprocessor Power draw: 50 KW / chunk\nMPU processing speed change: +25 kg/s \nSimultaneous ore processing limit: 12 \nMass: 1,220 kg \nManufacturer: Rusatom",
+			"version_hash": 1043172955
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed additively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
-			"version_hash": 1299066323
+			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed additively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 4200107144
 		},
 		"SYSTEM_CARGO_PREPROC_M35": {
 			"string": "MAD Heating Coils",
@@ -129,36 +129,36 @@ const TRANSLATIONS = {
 			"version_hash": 137988877
 		},
 		"SYSTEM_CARGO_PREPROC_M35_SPECS": {
-			"string": "Ice melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 kW / chunk \nMPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \nMass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
-			"version_hash": 3878258332
+			"string": "Ice melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 KW / chunk \nMPU processing speed change: 135% nominal MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \nMass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
+			"version_hash": 4274758801
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nIncreases MPU efficiency multiplicatively. \\nIncreases MPU speed multiplicatively and additively. \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
-			"version_hash": 1724559994
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 60037967
 		},
 		"SYSTEM_CARGO_PREPROC_M85": {
 			"string": "MS Frakker",
 			"version_hash": 3604956203
 		},
 		"SYSTEM_CARGO_PREPROC_M85_DESC": {
-			"string": "Mitsudaya-Starbus's Frakker uses a combination of performance coils and pattern-recognition chips to optimise the melting and breaking through of ice. The use of pattern-recognition AI chips stems from a method of geological survey common in the early 21st century's heavy interest in LLM algorithms to observe and determine an optimal method to breaking apart ores without losing more minerals than the base unit. As a result, use of this unit comes with a heavy power cost attached, with the tracking of each ore chunk creating additional power consumption the entire time it is in the scanning area. \\n\\nHeat generated by this unit also induces melting of ore chunks, however no system was ever created to reclaim it into reaction mass.",
-			"version_hash": 3617932408
+			"string": "Mitsudaya-Starbus's Frakker uses a combination of performance coils and pattern-recognition chips to optimise the melting and breaking through of ice. The use of pattern-recognition AI chips stems from a method of geological survey common in the early 21st century's heavy interest in LLM algorithms to observe and determine an optimal method to breaking apart ores without losing more minerals than the base unit. As a result, use of this unit comes with a heavy power cost attached, with the tracking of each ore chunk creating additional power consumption the entire time it is in the scanning area. \n\nLater units adopted the use of dedicated melting lasers to help further increase the efficiency of processing, similar to those seen on preprocessor units. The per-chunk power consumption is considerably higher than other units, however boasts unparalleled processing capacity and can reduce the water content of ores further than other commercial units.",
+			"version_hash": 2377866015
 		},
 		"SYSTEM_CARGO_PREPROC_M85_SPECS": {
-			"string": "MPU processing speed factor: 185% MPU speed \nGoverning AI: Class-1 \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
-			"version_hash": 948241691
+			"string": "MPU processing speed factor: 185% MPU speed \nIce melt rate: 35 kg/s \nPreprocessor Power draw: 12.5 MW / chunk\nSimultaneous ore processing limit: 20 \nGoverning AI: Class-1 \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
+			"version_hash": 3606254131
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \\nIncreases MPU speed multiplicatively. \\nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
-			"version_hash": 2911325045
+			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed multiplicatively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 3383531242
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nIncreases MPU efficiency multiplicatively. \\nDecreases MPU processing speed multiplicatively \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nChanged MPU processing speed and power per chunk \\nDoes not extract minerals or destroy chunks.",
-			"version_hash": 4119025997
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 4266279682
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \\nReplenishes propellant. \\nProcesses multiple ore chunks simultaneously. \\nPower requirements and processing speed listed per chunk. \\nDoes not extract minerals or destroy chunks.",
-			"version_hash": 3197386114
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 202870071
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K": {
 			"string": "Conlido Internal Storage Rack",
