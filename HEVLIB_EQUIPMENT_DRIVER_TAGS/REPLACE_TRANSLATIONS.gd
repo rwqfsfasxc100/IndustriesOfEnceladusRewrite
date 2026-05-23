@@ -185,8 +185,8 @@ const TRANSLATIONS = {
 			"version_hash": 295114866
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_8K_SPECS": {
-			"string": "Cargo capacity: 8,000kg / mineral (48,000 kg total) \\nIce melt rate: 5 kg/s \\nPower draw: 250 kW / chunk (heating losses) \\nRemass processing efficiency: 15% \\nMPU processing speed change: 110% nominal speed \\nSimultaneous ore processing limit: 8\\nMPU power change: 10% increase \\nMass: 8,000 kg \\nManufacturer: Titan Heavy Industries",
-			"version_hash": 2473439469
+			"string": "Cargo capacity: 8,000kg / mineral (48,000 kg total) \nIce melt rate: 5 kg/s \nPreprocessor remass processing efficiency: 15% \nPreprocessor power draw: 250 KW / chunk\nMPU processing speed change: 110% nominal MPU speed \nSimultaneous ore processing limit: 8\nMass: 8,000 kg \nManufacturer: Titan Heavy Industries",
+			"version_hash": 2929608682
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume. \\nProcessed ore stored in seperate containers, with capacity limited per mineral type. \\nReduces ice mass of chunks within a small area. \\nTakes up some space in the cargo bay.",
