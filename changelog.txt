@@ -1,3 +1,13 @@
+[2.8.5]
+
+1="* Decluttered more unused files"
+2="* Fixed incorrect range stat on the DMW Turret"
+3="* Adjusted DMW turret range to allow it to better reach infront of ships"
+4="* Bay accessories now use the modern pointer system"
+5="* Unified preprocessor stat descriptions"
+6="* MS Frakker now properly states preprocessing capabilities and reduced ice melting speed from 100 kg/s to 35 kg/s"
+7="* Increased minimum HevLib version to 1.13.22"
+
 [2.8.4]
 
 1="* Removed Pin-C50 thermal draw"
