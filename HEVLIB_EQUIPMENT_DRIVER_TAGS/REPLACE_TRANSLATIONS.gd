@@ -21,8 +21,8 @@ const TRANSLATIONS = {
 			"version_hash": 1650052862
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
-			"version_hash": 3768421638
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nChanged MPU processing speed and power per chunk.\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
+			"version_hash": 783944584
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB": {
 			"string": "RMS-PAL Fabricator",
@@ -153,12 +153,12 @@ const TRANSLATIONS = {
 			"version_hash": 3383531242
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 4266279682
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively.\nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 2680313502
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 202870071
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 1926494841
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K": {
 			"string": "Conlido Internal Storage Rack",
@@ -189,8 +189,8 @@ const TRANSLATIONS = {
 			"version_hash": 2929608682
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume. \\nProcessed ore stored in seperate containers, with capacity limited per mineral type. \\nReduces ice mass of chunks within a small area. \\nTakes up some space in the cargo bay.",
-			"version_hash": 4176732217
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nReduces ice mass of chunks within a small area. \nChanged MPU processing speed and power per chunk.\nReplenishes propellant. \nTakes up some space in the cargo bay.",
+			"version_hash": 509096182
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_12K": {
 			"string": "MPI Roving Silo",
