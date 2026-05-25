@@ -1,3 +1,10 @@
+[2.8.6]
+
+1="* Rasamama RP-25, THI Mineral Tank Module, and SSE Voyager Fabricator now state they change MPU speed and power in their manuals"
+2="* Fixed some grammatical errors within preprocessor manuals"
+3="* Fixed DMW Turret attempting to fire further than the expected range"
+4="* MAD-CERFs now have unique reactor names"
+
 [2.8.5]
 
 1="* Decluttered more unused files"
