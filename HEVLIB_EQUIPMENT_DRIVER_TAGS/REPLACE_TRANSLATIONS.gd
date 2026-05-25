@@ -1591,6 +1591,10 @@ const TRANSLATIONS = {
 		"SHIP_MADCERF_CIV_INVERSE": {
 			"string": "MAD-CERF (Inverted Civilian Refit)",
 			"version_hash": 1382038879
+		},
+		"SYSTEM_REACTOR_IOECERF": {
+			"string": "MAD-CERF Nuclear Reactor",
+			"version_hash": 2167414238
 		}
 	},
 	"ru_RU": {
