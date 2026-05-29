@@ -331,7 +331,7 @@ rotationCabinOffsetPx = 170.0
 spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder", "Thrustrum", "ThrustrumBottom" )
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -150, -160, 300, 290 )
-cargoHoldOffset = Vector2( 0, 105 )
+cargoHoldOffset = Vector2( 0, 160 )
 
 [node name="Light2D3" type="Light2D" parent="."]
 position = Vector2( 348, 36 )
@@ -1010,10 +1010,10 @@ margin_left = -150.0
 margin_top = -160.0
 margin_right = 150.0
 margin_bottom = 130.0
-color = Color( 1, 1, 0.85, 0.498039 )
+color = Color( 1, 1, 0.65, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
-position = Vector2( 0, 105 )
+position = Vector2( 0, 160 )
 
 [node name="ReferenceRect" type="ReferenceRect" parent="CargoBayCoverageVisual/Center/Offset"]
 margin_left = -130.0
