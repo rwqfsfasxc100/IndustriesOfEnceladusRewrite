@@ -360,38 +360,6 @@ const TRANSLATIONS = {
 			"string": "Cargo capacity: 72,000 kg (combined) \\nPower usage (nominal): 20 MW \\nCradle mass: 500 kg \\nManufacturer: Titan Heavy Industries",
 			"version_hash": 4265992495
 		},
-		"SYSTEM_EXOBIG": {
-			"string": "THI Jumbo Cargo Container",
-			"version_hash": 3744310518
-		},
-		"SYSTEM_EXOBIG_DESC": {
-			"string": "The 'Jumbo' is a variant of the THI Cargo Container that",
-			"version_hash": 964822558
-		},
-		"SYSTEM_EXSTORAGE_ALT": {
-			"string": "THI Cargo Container (Alternate)",
-			"version_hash": 1146447658
-		},
-		"SYSTEM_EXSTORAGE_ALT_DESC": {
-			"string": "The Titan Heavy Industries Cargo Containers are fully autonomous storage pods that can relay processed minerals from a mining site. When the cradle is powered down, the pod will return to the designated station. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \\n\\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \\n\\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.",
-			"version_hash": 2964188618
-		},
-		"SYSTEM_EXMONO_ALT": {
-			"string": "THI Monocargo Container (Alternate)",
-			"version_hash": 2634471587
-		},
-		"SYSTEM_EXMONO_ALT_DESC": {
-			"string": "A single-ore variant of the standard THI Cargo Container for specialized mining runs that focus on the collection of only one mineral type. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \\n\\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \\n\\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.",
-			"version_hash": 2067486478
-		},
-		"SYSTEM_EXODYN_ALT": {
-			"string": "THI Dyna-Cargo Container (Alternate)",
-			"version_hash": 3697365635
-		},
-		"SYSTEM_EXODYN_ALT_DESC": {
-			"string": "An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \\n\\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \\n\\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.",
-			"version_hash": 4114062921
-		},
 		"DIALOG_PIRATE_BUSINESS_SHIP_TWIN": {
 			"string": "Some of the construction crew for Obonto Seven left one of their dual torch construction ships out, and never noticed them being \"collected.\" It's too unwieldy for our liking, so you can take a look for 500 grand.",
 			"version_hash": 2044666062
@@ -1910,38 +1878,6 @@ const TRANSLATIONS = {
 			"string": "Вместимость хранилища: 72 000 кг (общая) \\nЭнергопотребление (номинальное): 20 МВт \\nМасса пустого аппарата: 500 кг \\nПроизводитель: Titan Heavy Industries",
 			"version_hash": 0
 		},
-		"SYSTEM_EXOBIG": {
-			"string": "Грузовой контейнер THI Jumbo",
-			"version_hash": 0
-		},
-		"SYSTEM_EXOBIG_DESC": {
-			"string": "«Джамбо» — это модификация грузового контейнера THI, которая",
-			"version_hash": 0
-		},
-		"SYSTEM_EXSTORAGE_ALT": {
-			"string": "Грузовой контейнер THI (альт.)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXSTORAGE_ALT_DESC": {
-			"string": "Грузовые контейнеры Titan Heavy Industries, также известные как ТНІ-СС, представляют собой полностью автономные капсулы для хранения и транспортировки переработанной руды. После отключения подвеса капсула автоматически возвращается на указанную станцию. Для использования необходима установка переработки минералов. Покупка люльки сопровождается договором, покрывающим ремонт и пополнение запаса новых капсул на всё время действия лицензии. \\n\\nУправление станции предупреждает: использование с определёнными РСУ в определённых конфигурациях может привести к перегревам микрореактора грузового контейнера. Капитаны несут всю ответственность за последствия таких инцидентов. \\n\\nЭта альтернативная версия для серии Prospector расположена в средней части судна для улучшения маневренности.",
-			"version_hash": 0
-		},
-		"SYSTEM_EXMONO_ALT": {
-			"string": "Моногрузовой контейнер THI (альт.)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXMONO_ALT_DESC": {
-			"string": "Однорудный вариант стандартного грузового контейнера THI (THI-СС) для специализированных горных работ, сосредоточенных на сборе конкретного вида руды. Для использования требуется установка по переработке минералов. Покупка люльки сопровождается договором, покрывающим ремонт и пополнение запаса новых капсул на всё время действия лицензии. \\n\\nУправление станции предупреждает: использование с определёнными РСУ в определённых конфигурациях может привести к перегревам микрореактора грузового контейнера. Капитаны несут всю ответственность за последствия таких инцидентов. \\n\\nЭта альтернативная версия для серии Prospector расположена в средней части судна для улучшения маневренности.",
-			"version_hash": 0
-		},
-		"SYSTEM_EXODYN_ALT": {
-			"string": "Грузовой контейнер THI Dyna (альт.)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXODYN_ALT_DESC": {
-			"string": "Экспериментальный динамический вариант грузового контейнера THI, представленный публике в середине 2200-х годов. Для использования требуется установка переработки минералов. Приобретение грузового контейнера включает в себя аренду, покрывающую поставку новых контейнеров в течение всего срока действия лицензии владельца. \\n\\nDyna-Cargo — товарный знак Titan Heavy Industries. Все права защищены. n\\n\\Управление станции предупреждает: использование с определёнными РСУ в определённых конфигурациях может привести к перегревам микрореактора грузового контейнера. Капитаны несут всю ответственность за последствия таких инцидентов. \\n\\nЭта альтернативная версия для серии Prospector расположена в средней части судна для улучшения маневренности.",
-			"version_hash": 0
-		},
 		"SLOT_CARGOBAY_MOD": {
 			"string": "Комплекты для хранения минералов",
 			"version_hash": 0
@@ -3286,38 +3222,6 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_EXODYN_SPECS": {
 			"string": "Вантажність: 72,000 кг (сукупна) \\nЕнергоспоживання (номінальне): 20 MW \\nМаса контейнеру: 500 кг \\nВиробник: Titan Heavy Industries",
-			"version_hash": 0
-		},
-		"SYSTEM_EXOBIG": {
-			"string": "Вантажний контейнер THI Jumbo ",
-			"version_hash": 0
-		},
-		"SYSTEM_EXOBIG_DESC": {
-			"string": "'Jumbo' - це варіант вантажного контейнера THI, який",
-			"version_hash": 0
-		},
-		"SYSTEM_EXSTORAGE_ALT": {
-			"string": "Вантажний контейнер THI-CC (Альтернативний)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXSTORAGE_ALT_DESC": {
-			"string": "Вантажні контейнери Titan Heavy Industries - це повністю автономні бункери, здатні доставляти вантаж перероблених мінералів із зони видобутку на станцію. Контейнер самостійно поврнеться на станцію після від'єднання від корабля. Для функціонування бункеру необхідна Установка Переробки Мінералів. Придбання обладнання для експлуатації контейнеру супроводжується договором оренди, який покриває постачання нових автономних модулів протягом усього терміну дії ліцензії власника. \\n\\nАдміністрація станції попереджає, що використання певних конфігурацій маневрових двигунів може призвести до перегріву мікрореактора вантажного контейнера. Всю відповідальність беруть на себе власники вантажного контейнера. \\n\\nЦя альтернативна версія для серії Prospector розташовується в середній частині судна для покращеного маневрування.",
-			"version_hash": 0
-		},
-		"SYSTEM_EXMONO_ALT": {
-			"string": "Моновантажний контейнер THI (Альтернативний)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXMONO_ALT_DESC": {
-			"string": "Однорудний варіант стандартного вантажного контейнера THI для спеціалізованих видобувних рейсів, які зосереджуються на зборі лише одного типу мінералу. Для функціонування бункеру необхідна Установка Переробки Мінералів. Придбання обладнання для експлуатації контейнеру супроводжується договором оренди, який покриває постачання нових автономних модулів протягом усього терміну дії ліцензії власника \\n\\nАдміністрація станції попереджає, що використання певних конфігурацій маневрових двигунів може призвести до перегріву мікрореактора вантажного контейнера. Всю відповідальність беруть на себе власники вантажного контейнера. \\n\\nЦя альтернативна версія для серії Prospector розташовується в середній частині судна для покращеного маневрування.",
-			"version_hash": 0
-		},
-		"SYSTEM_EXODYN_ALT": {
-			"string": "Вантажний контейнер THI Dyna-Cargo (Альтернативний)",
-			"version_hash": 0
-		},
-		"SYSTEM_EXODYN_ALT_DESC": {
-			"string": "Експериментальний динамічний варіант вантажного контейнера THI, випущений у продаж в середині 2200-х років. Для функціонування бункеру необхідна Установка Переробки Мінералів. Придбання обладнання для експлуатації контейнеру супроводжується договором оренди, який покриває постачання нових автономних модулів протягом усього терміну дії ліцензії власника\\n\\nDyna-Cargo є товарним знаком Titan Heavy Industries. Усі права захищені. Адміністрація станції попереджає, що використання певних конфігурацій маневрових двигунів може призвести до перегріву мікрореактора вантажного контейнера. Всю відповідальність беруть на себе власники вантажного контейнера.  \\n\\nЦя альтернативна версія для серії Prospector розташовується в середній частині судна для покращеного маневрування.",
 			"version_hash": 0
 		},
 		"SLOT_CARGOBAY_MOD": {
