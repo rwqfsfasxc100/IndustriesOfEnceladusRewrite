@@ -1041,8 +1041,8 @@ const TRANSLATIONS = {
 			"version_hash": 2024833061
 		},
 		"SHIP_TSUKUYOMI_IOT_SPECS": {
-			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nTorpedo Tubes: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 1,351,900 kg \nCargo bay: 1,100 m^3 \nProcessed cargo storage (per mineral): 81,000 kg",
-			"version_hash": 2158498275
+			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 1,351,900 kg \nCargo bay: 1,100 m^3 \nProcessed cargo storage (per mineral): 81,000 kg",
+			"version_hash": 3519589506
 		},
 		"SYSTEM_REACTOR_TSUYUKOMI_IOT-A": {
 			"string": "Tsukuyomi Reactor Core A",
