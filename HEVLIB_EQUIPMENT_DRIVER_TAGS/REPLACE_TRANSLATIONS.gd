@@ -17,8 +17,8 @@ const TRANSLATIONS = {
 			"version_hash": 3265294764
 		},
 		"SYSTEM_CARGO_AUX_FAB_SPECS": {
-			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto",
-			"version_hash": 1650052862
+			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: SSE-Nakamura-Obonto",
+			"version_hash": 569737958
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nChanged MPU processing speed and power per chunk.\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
@@ -333,8 +333,8 @@ const TRANSLATIONS = {
 			"version_hash": 888894848
 		},
 		"SYSTEM_DND_HARVTUG_SPECS": {
-			"string": "Power draw: 120 MW \\nEffective range: 800 m (line of sight) \\nDrone launch capability: 100 dps \\nDrone wet mass: 0.1 kg \\nThrust: 1 kN (per drone) \\nMass: 8,000 kg \\nManufacturer: Obonto Micro Engineering / Titan Heavy Industries",
-			"version_hash": 3676722970
+			"string": "Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Obonto-Titan",
+			"version_hash": 1414975276
 		},
 		"SYSTEM_DND_HARVHAUL": {
 			"string": "THI Harvester-class Haul Drones",
@@ -453,8 +453,8 @@ const TRANSLATIONS = {
 			"version_hash": 323616069
 		},
 		"SYSTEM_CARGO_MOD_4K_SPECS": {
-			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \\nCompatibility: Divided and Dynamic \\nMass: 3,340 kg \\nManufacturer: N/A",
-			"version_hash": 1829407993
+			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 3,340 kg \nManufacturer: Enceladus Corporation",
+			"version_hash": 2973130527
 		},
 		"SYSTEM_CARGO_MOD_6K": {
 			"string": "Conlido freightReady Hoppers",
@@ -669,8 +669,8 @@ const TRANSLATIONS = {
 			"version_hash": 2972814653
 		},
 		"SYSTEM_HULLVAT_NANO_1_SPECS": {
-			"string": "Drone part capacity: 6,000 kg \\nAmmunition magazine loss: 25% \\nDry mass: 4,500 kg \\nManufacturer: Runasimi ",
-			"version_hash": 3764967557
+			"string": "Drone part capacity: 6,000 kg \nAmmunition magazine loss: 25% \nDry mass: 4,500 kg \nManufacturer: Runasimi Inc.",
+			"version_hash": 3347172749
 		},
 		"SYSTEM_HULLVAT_NANO_MANUAL": {
 			"string": "Additional drone parts for nanodrone assembly units. Compatible with all drone launchers. \nDrone part delivery rate dependant on installed magazine. \nParts sold separately at dive start. \nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your drone parts storage.",
@@ -685,8 +685,8 @@ const TRANSLATIONS = {
 			"version_hash": 3524422214
 		},
 		"SYSTEM_HULLVAT_NANO_2_SPECS": {
-			"string": "Drone part capacity: 15,000 kg \\nAmmunition magazine loss: 50% \\nDry mass: 12,000 kg \\nManufacturer: Runasimi",
-			"version_hash": 2849922589
+			"string": "Drone part capacity: 15,000 kg \nAmmunition magazine loss: 50% \nDry mass: 12,000 kg \nManufacturer: Runasimi Inc.",
+			"version_hash": 790726693
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_1": {
 			"string": "Antonoff Nano Storage Expansion",
@@ -957,8 +957,8 @@ const TRANSLATIONS = {
 			"version_hash": 684393582
 		},
 		"SYSTEM_CAPACITOR_100_SPECS": {
-			"string": "Capacity: 100 MJ \\nPeak power: 10 GW \\nMass: 400 kg  \\nManufacturer: Obonto Micro Engineering",
-			"version_hash": 1946620683
+			"string": "Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg  \nManufacturer: Obonto Microengineering",
+			"version_hash": 716198507
 		},
 		"SYSTEM_CAPACITOR_700": {
 			"string": "ND-iSMB",
@@ -1533,8 +1533,8 @@ const TRANSLATIONS = {
 			"version_hash": 1832670728
 		},
 		"SYSTEM_PDTL_SPECS": {
-			"string": "Effective range: 1,000 m \\nTargeting AI: Class-1 \\nPower consumption (peak): 80 MW \\nMass: 1,500 kg \\nManufacturer: Nakamura Dynamics, Coherent Light",
-			"version_hash": 1972137821
+			"string": "Effective range: 1,000 m \nTargeting AI: Class-1 \nPower consumption (peak): 80 MW \nMass: 1,500 kg \nManufacturer: Nakamura-Coherent",
+			"version_hash": 3220629262
 		},
 		"POI_WRECKAGE_UNKNOWN": {
 			"string": "Mysterious Wreckage",
