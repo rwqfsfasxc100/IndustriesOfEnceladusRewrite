@@ -1,3 +1,7 @@
+[2.8.9]
+
+1="* Fixed issues with frigate doors not being able to rotate"
+
 [2.8.8]
 
 1="* Frigate doors now are properly set as CHARACTER rigidbodies"
