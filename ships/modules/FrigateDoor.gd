@@ -28,8 +28,8 @@ export var snapBackDistance = 0.5
 onready var lastLinearVelocity = linear_velocity
 onready var lastAngularVelocity = angular_velocity
 func _integrate_forces(state):
-	if ship and ship.isPlayerControlled() and mode == MODE_RIGID:
-		mode = MODE_CHARACTER
+	if ship and ship.setup and mode == MODE_RIGID:
+		set_deferred("mode",MODE_CHARACTER)
 	if pinned and initialPosition.distance_to(position) > snapBackDistance:
 		position = initialPosition
 	
