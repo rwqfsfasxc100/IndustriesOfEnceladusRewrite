@@ -1,3 +1,16 @@
+[2.8.7]
+
+1="* Adjusted position of the EIME HUD's cargo display to center on the Peeper's COM"
+2="* Increased the mass of the Peeper's reaction wheel by 35 times"
+2.1="* This should make the ship a lot more stable to fly"
+3="* Removed references to alternate prospector-specific THICC descriptor texts that no longer are used"
+4="* Fixed the Tsukuyomi using the pre-rewrite slot names for it's low-stress hardpoints listed as torpedo tubes on it's stat sheet"
+5="* Standardized manufacturer naming conventions"
+6="* Enceladus Corp equipment now directly mentions E' as the manufacturer"
+7="* Updated all Nakamura-adjacent equipment and the DMW turret's naming convention to match the new conventions in experimental"
+8="* Extended the size of the tsukuyomi's excavator into the hull as another safeguard to prevent against clipping"
+9="* Removed old cargo accessory slot handler"
+
 [2.8.6]
 
 1="* Rasamama RP-25, THI Mineral Tank Module, and SSE Voyager Fabricator now state they change MPU speed and power in their manuals"
