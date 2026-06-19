@@ -1,3 +1,8 @@
+[2.8.8]
+
+1="* Frigate doors now are properly set as CHARACTER rigidbodies"
+2="* Additional OCP docking bays/drone mounts/turret mounts no longer need a WeaponSlot node instance and now can use the vanilla scene directly due to recent HevLib changes, reducing filesize slightly"
+
 [2.8.7]
 
 1="* Adjusted position of the EIME HUD's cargo display to center on the Peeper's COM"
