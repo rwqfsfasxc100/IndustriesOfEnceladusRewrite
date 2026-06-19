@@ -81,8 +81,8 @@ const TRANSLATIONS = {
 			"version_hash": 1922122609
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
-			"string": "Nakamura Big MT",
-			"version_hash": 3417865288
+			"string": "NDBMT",
+			"version_hash": 229172282
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10_DESC": {
 			"string": "Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing. \\n\\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \\n\\nDisclaimer: no Lobotomites were harmed in the development of this unit.",
@@ -613,12 +613,12 @@ const TRANSLATIONS = {
 			"version_hash": 1125439870
 		},
 		"SYSTEM_HULLVAT_AMMO_2": {
-			"string": "ND Hollowed Hull Ammunition Magazine",
-			"version_hash": 868049079
+			"string": "NDHHAM",
+			"version_hash": 3267927637
 		},
 		"SYSTEM_HULLVAT_AMMO_2_DESC": {
-			"string": "Originally based on smuggling mechanisms used during conflicts, the ND HHAM (frequently nicknamed by industry insiders the \"Ham\") makes use of spare space within the ship's hull alongside a large portion of the nanodrone cartridge space to fit in a whopping 15 tonnes of extra mass driver ammunition. Although commonly reserved for Vilcy-licensed specialists, the Ham made it's way onto the civillian market due to recent reassesments to container limitations on small and medium-sized vessels. The modifications made to the ammunition feeds do remove any vibration dampening equipment, including those involved with COM preservation, making for an uncomfortable experience with many crews.",
-			"version_hash": 596263736
+			"string": "Originally based on smuggling mechanisms used during conflicts, the Nakamura Dynamics Hollowed Hull Ammunition Magazine (frequently nicknamed by industry insiders the \"Ham\") makes use of spare space within the ship's hull alongside a large portion of the nanodrone cartridge space to fit in a whopping 15 tonnes of extra mass driver ammunition. Although commonly reserved for Vilcy-licensed specialists, the Ham made it's way onto the civillian market due to recent reassesments to container limitations on small and medium-sized vessels. The modifications made to the ammunition feeds do remove any vibration dampening equipment, including those involved with COM preservation, making for an uncomfortable experience with many crews.",
+			"version_hash": 1007879920
 		},
 		"SYSTEM_HULLVAT_AMMO_2_SPECS": {
 			"string": "Ammunition capacity: 15,000 kg \\nNanodrone storage loss: 50% \\nDry mass: 10,000 kg \\nManufacturer: Nakamura Dynamics ",
@@ -777,8 +777,8 @@ const TRANSLATIONS = {
 			"version_hash": 2332672881
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3": {
-			"string": "3x Reaction Mass Tank Expander",
-			"version_hash": 2861132286
+			"string": "Super Reaction Mass Tank Expander",
+			"version_hash": 251378402
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3_DESC": {
 			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.",
@@ -867,18 +867,6 @@ const TRANSLATIONS = {
 		"SHIP_CK69_DESC": {
 			"string": "The success of the CK-65 led to a more advanced CK-69 to handle any quantity of ore, at the cost of a slightly lower total hold. It saw its use during dips in throughput at Enceladus, where space would be wasted on a stock CK-65 due to the lack of a specific mineral, however was very popular among miners who could bring back large quantities of ore more reliably.",
 			"version_hash": 2638684179
-		},
-		"SHIP_PROSPECTOR_RAM": {
-			"string": "Prospector RAM",
-			"version_hash": 244615158
-		},
-		"SHIP_PROSPECTOR_RAM_DESC": {
-			"string": "Ringa Aftermarket Modification sacrifices cargo space for increased capabilities with salvages and counterfeit parts from various ship models. Vulture High-Stress Hardpoint modification, KR-37 electronics and sensors, Cothon Bender's variable processed resource storage, etc. RAM also has many original modification. The short wide cargo, the larger cargo door and larger grinder, reinforced and upgraded manipulator arm support, thrusters and torch turret system, reinforced reactor, etc. These come at the cost of very high ship mass for a ship its size, halved processed resource capacity, reduced crew capacity, and extremely high price. Prospector RAM can handle any situation in the ring, but its high mass and low capacity make it a mediocre mining ship.",
-			"version_hash": 3139384748
-		},
-		"SHIP_PROSPECTOR_RAM_SPECS": {
-			"string": "Maker: Unknown\\nHigh-Stress Hardpoints: 1\\nLow-Stress Hardpoints: 2\\nDrone Hardpoints: 2\\nCrew: 4\\nDry Mass: 54,380 kg\\nProcessed cargo storage (combined): 40,000 kg\\nEMP Shielding: 200 MW",
-			"version_hash": 1649548566
 		},
 		"SHIP_OCP213_TWIN": {
 			"string": "OCP-213 Twin",
@@ -1509,20 +1497,20 @@ const TRANSLATIONS = {
 			"version_hash": 4287019540
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT": {
-			"string": "RA DMW Cannon Turret",
-			"version_hash": 372221731
+			"string": "RADMW-8120",
+			"version_hash": 3416819864
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT_DESC": {
 			"string": "This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling. \\n\\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.",
 			"version_hash": 1054989203
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT_SPECS": {
-			"string": "Effective range: 800 m \n Targeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom",
-			"version_hash": 1892338382
+			"string": "Effective range: 800 m \nTargeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom",
+			"version_hash": 276371758
 		},
 		"SYSTEM_PDTL": {
-			"string": "NDCL-80 Point Defence Laser Turret",
-			"version_hash": 4025363180
+			"string": "NDCL-1080",
+			"version_hash": 194214876
 		},
 		"SYSTEM_PDTL_MANUAL": {
 			"string": "Automatically picks targets.\\nFires automatically.\\nCoordinates across multiple systems.\\nTargeting computer is imperfect.\\nDisable the hardpoint to prevent accidental friendly fire.\\nDeals thermal damage.",
@@ -2316,18 +2304,6 @@ const TRANSLATIONS = {
 		},
 		"SHIP_CK69_DESC": {
 			"string": "Успех CK-65 привёл к созданию более совершенной модели CK-69, способной обрабатывать любые объёмы руды, но ценой несколько меньшего общего объёма трюма. Он использовался во время спадов производительности на Энцеладе, когда стандартный CK-65 терял место из-за отсутствия определённого минерала. Тем не менее, он был очень популярен среди шахтёров, которые могли надёжнее добывать большие объёмы руды.",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM": {
-			"string": "Prospector RAM",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM_DESC": {
-			"string": "Модификационные решения Ringa Aftermarket приносят в жертву грузовое пространство ради расширения возможностей за счёт использования трофеев и поддельных деталей с различных моделей кораблей. RAM был модифицирован высокопрочными-подвесами от Vulture, электроникой и датчиками от KR-37, хранилищем переработанной руды от Cothon Bender и т. д. Кроме этого также установленно множество оригинальных модификаций. Короткий широкий грузовой отсек, увеличенная грузовая дверь и увеличенная дробилка, усиленная и модернизированная опора руки манипулятора, двигатели и система турелей-резаков, усиленный реактор и т. д. Это достигается за счёт очень большой массы корабля для корабля его размера, уменьшенной вдвое вместимости обрабатываемых ресурсов, уменьшенной вместимости экипажа и чрезвычайно высокой цены. Prospector RAM может справиться с любой ситуацией в кольце, но его большая масса и малая вместимость делают его посредственным горнодобывающим кораблём.",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM_SPECS": {
-			"string": "Производитель: Unknown\\nВысокопрочные подвесы: 1\\nМалопрочные подвесы: 2\\nПодвесы для дронов: 2\\nЭкипаж: 4\\nСухая масса: 54,380 kg\\nХранилище переработанной руды (общее): 40,000 kg\\n Защита от ЭМИ: 200 MW",
 			"version_hash": 0
 		},
 		"SHIP_OCP213_TWIN": {
@@ -3662,18 +3638,6 @@ const TRANSLATIONS = {
 		},
 		"SHIP_CK69_DESC": {
 			"string": "Успіх CK-65 привів до створення більш досконалого CK-69, здатного працювати з будь-якою кількістю руди, але за рахунок дещо меншої загальної місткості трюму. Він знайшов своє застосування під час спадів пропускної здатності на Енцеладі, коли простір на стандартному CK-65 марнувався б через відсутність певного мінералу, проте став дуже популярним серед шахтарів, які могли надійніше повертатися з великими обсягами руди.",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM": {
-			"string": "Prospector RAM",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM_DESC": {
-			"string": "\"Ringa Aftermarket Modification\" (RAM) жертвує вантажним простором заради розширених можливостей, використовуючи списані та контрафактні деталі від різних моделей кораблів. Модифікація високоміцного кріплення від Vulture, електроніка та сенсори KR-37, змінне сховище перероблених ресурсів від Cothon Bender тощо. \\n\\nRAM також має багато оригінальних модифікацій. Короткий широкий вантажний відсік, більші вантажні двері та більший подрібнювач, посилена та модернізована опора маніпулятора, система маневрових двигунів та турелі, посилений реактор тощо. Все це коштує дуже високої маси для судна такого розміру, зменшеної вдвічі місткості перероблених ресурсів, зменшеного екіпажу та надзвичайно високої ціни. Prospector RAM може впоратися з будь-якою ситуацією в кільці, але його велика маса і низька місткість роблять його посереднім шахтарським судном.",
-			"version_hash": 0
-		},
-		"SHIP_PROSPECTOR_RAM_SPECS": {
-			"string": "Виробник: Невідомий \\nВисокоміцні кріплення: 1 \\nНизькоміцні кріплення: 2 \\nКріплення дронів: 2 \\nЕкіпаж: 4 \\nСуха маса: 54,380 кг \\nСклад обробленого вантажу (сукупний): 40,000 кг \\nЗахист від ЕМІ: 200 MW",
 			"version_hash": 0
 		},
 		"SHIP_OCP213_TWIN": {
