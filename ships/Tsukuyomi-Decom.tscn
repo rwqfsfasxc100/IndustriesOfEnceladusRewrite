@@ -24,13 +24,13 @@
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=22]
 [ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=23]
 [ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=24]
-[ext_resource path="res://ships/MaterialReadout.gd" type="Script" id=25]
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=26]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=27]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=28]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=31]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/FrigateDoor.gd" type="Script" id=32]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=33]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=34]
 [ext_resource path="res://ships/excavator_open.wav" type="AudioStream" id=35]
@@ -324,15 +324,14 @@ stiffness = 64.0
 position = Vector2( -9, 0 )
 collision_layer = 2
 collision_mask = 7
-mode = 2
 physics_material_override = ExtResource( 13 )
-script = ExtResource( 25 )
-pinned = false
+continuous_cd = 2
+script = ExtResource( 32 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Left"]
 light_mask = 0
 position = Vector2( 9, 21 )
-polygon = PoolVector2Array( -117, -28, -8, -28, -8, -12, 20, -12, 20, 7, -117, 7 )
+polygon = PoolVector2Array( -133, -28, -8, -28, -8, -12, 20, -12, 20, 7, -126, 7, -126, 15, -133, 15 )
 
 [node name="LeftGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Left"]
 position = Vector2( -111, -50 )
@@ -416,15 +415,14 @@ stiffness = 64.0
 position = Vector2( 9, 0 )
 collision_layer = 2
 collision_mask = 7
-mode = 2
 physics_material_override = ExtResource( 13 )
-script = ExtResource( 25 )
-pinned = false
+continuous_cd = 2
+script = ExtResource( 32 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Right"]
 light_mask = 0
 position = Vector2( -9, 21 )
-polygon = PoolVector2Array( -6, -28, 116, -28, 116, 7, 22, 7, 22, -14, -6, -14 )
+polygon = PoolVector2Array( -6, -28, 130, -28, 130, 15, 123, 15, 123, 7, 22, 7, 22, -14, -6, -14 )
 
 [node name="RightGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Right"]
 position = Vector2( 111, -50 )
@@ -942,7 +940,7 @@ margin_left = -150.0
 margin_top = -1250.0
 margin_right = 150.0
 margin_bottom = -425.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.8, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, -600 )
