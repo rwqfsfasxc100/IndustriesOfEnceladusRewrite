@@ -1,3 +1,9 @@
+[2.8.11]
+
+1=* Fixed OCP SNAP's autopilot assist not rotating 90 degrees
+2=* Fixed IoE's MPU collider precision on the OCP variants to use integer positioning
+3=* Removed old code from node registers for previous versions of preprocessors that had processing areas
+
 [2.8.10]
 
 1=* Introduced the Autopilot Assist for Variable Geometry Ships tune to the OCP-207-SNAP and OCP-214-DD
