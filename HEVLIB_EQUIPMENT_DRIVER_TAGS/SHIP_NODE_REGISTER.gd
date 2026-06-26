@@ -354,60 +354,12 @@ const SHIP_MADCERF_CIV = {
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -420,30 +372,6 @@ const SHIP_MADCERF_CIV = {
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -462,90 +390,18 @@ const SHIP_MADCERF_CIV = {
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -568,12 +424,12 @@ const SHIP_MADCERF_CIV = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60],
+					"value":[-32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18, -154, -14, -146, -34, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 34, -146, 14, -146, 18, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[34, -68, 90, -74, 31.9996, -148, -32.0004, -148, -90, -74, -34, -68, -29.0002, -61.9999, 27.9998, -62.0001],
+					"value":[34, -68, 90, -74, 32, -148, -32, -148, -90, -74, -34, -68, -29, -62, 28, -62],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -591,30 +447,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
@@ -622,30 +454,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
@@ -653,30 +461,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -691,30 +475,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -736,30 +496,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
@@ -767,30 +503,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
@@ -798,30 +510,6 @@ const SHIP_MADCERF_CIV_INVERSE = {
 				"scale":[2],
 				"rotation":180
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -843,12 +531,12 @@ const SHIP_MADCERF_CIV_INVERSE = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60],
+					"value":[-32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18, -154, -14, -146, -34, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 34, -146, 14, -146, 18, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[34, -68, 90, -74, 31.9996, -148, -32.0004, -148, -90, -74, -34, -68, -29.0002, -61.9999, 27.9998, -62.0001],
+					"value":[34, -68, 90, -74, 32, -148, -32, -148, -90, -74, -34, -68, -29, -62, 28, -62],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -925,90 +613,18 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-23,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -1021,30 +637,6 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -1063,90 +655,18 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -1194,90 +714,18 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-23,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -1290,30 +738,6 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -1332,90 +756,18 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -1462,88 +814,16 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-28,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -1554,30 +834,6 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -1593,88 +849,16 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-32,-210]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -1717,60 +901,12 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[1.85]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-50,-201],
 				"scale":[1.45]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
@@ -1783,28 +919,6 @@ const SHIP_AT225B = {
 					"method":"arr2vec2arr",
 					"defer":true
 				},
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
 			}
 		},
 		"IOE_STORAGE_4K":{
@@ -1824,28 +938,6 @@ const SHIP_AT225B = {
 					"method":"arr2vec2arr",
 					"defer":true
 				},
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
 			}
 		},
 		"IOE_FABAUX_FAB":{
@@ -1877,30 +969,6 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[2.5]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
@@ -1913,28 +981,6 @@ const SHIP_AT225B = {
 					"method":"arr2vec2arr",
 					"defer":true
 				},
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
 			}
 		},
 		"IOE_ICEBREAKER_P15":{
@@ -1942,30 +988,6 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[3]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -1986,60 +1008,12 @@ const SHIP_PROSPECTOR_FAT = {
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
@@ -2142,24 +1116,6 @@ const SHIP_OCP209 = {
 				"polygon":{
 					"value":[0,25,0,-25,16,-12,12,-4,12,4,16,12]
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2174,24 +1130,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2206,24 +1144,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.66],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.66],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2252,24 +1172,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.57],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":25
 				}
@@ -2306,16 +1208,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2330,24 +1222,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.5],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.5],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2362,24 +1236,6 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
-#					"method":"arr2vec2arr",
-#					"defer":true
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"value":[0.5],
-#					"method":"arr2vec2"
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"value":[0.5],
-#					"method":"arr2vec2"
-#				},
 				"set_rot":{
 					"value":45
 				}
@@ -2678,7 +1534,7 @@ const SHIP_TRTL_OCP = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 0, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4, -92],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -2690,12 +1546,12 @@ const SHIP_TRTL_OCP = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 122, -24, 100, 3.99999, 72, 26, 38, 40, 0, 46, -38, 40, -72, 26, -100, 4.00001, -120, -20, -136, -56, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"value":[-106, -15, -84, 7, -46, 27, 0, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 122, -24, 100, 4, 72, 26, 38, 40, 0, 46, -38, 40, -72, 26, -100, 4, -120, -20, -136, -56, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -32.9324, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
+					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -33, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -2880,7 +1736,7 @@ const SHIP_TRTL_PEEPER = {
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -32.9324, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
+					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -33, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -3197,12 +2053,12 @@ const SHIP_EIME = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-53, -84, -25, -72, 3, -60, 17, -54, 9, -50, 3, -54, -27, -54, -35, -42, -17, 48, -8.99999, 56, 3.00001, 56, 9.00001, 48, 9, -14, 3, -18, 9, -24, 17, -18, 17, 56, 7.00001, 68, 7.00001, 78, -15, 62, -21, 58, -43, -42],
+					"value":[-53, -84, -25, -72, 3, -60, 17, -54, 9, -50, 3, -54, -27, -54, -35, -42, -17, 48, -9, 56, 3, 56, 9, 48, 9, -14, 3, -18, 9, -24, 17, -18, 17, 56, 7, 68, 7, 78, -15, 62, -21, 58, -43, -42],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[-15, 56, 9.00001, 56, 9, -54, -39, -54],
+					"value":[-15, 56, 9, 56, 9, -54, -39, -54],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
