@@ -1049,8 +1049,8 @@ const TRANSLATIONS = {
 			"version_hash": 2008633162
 		},
 		"SHIP_OCP209_DD_DESC": {
-			"string": "The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \\n\\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.\\n\\nDue to modifications made to the vessel, the autopilot is unable to receive feedback directly from the excavator, and autopilot rotation assistance is not available on this unit.",
-			"version_hash": 3508886876
+			"string": "The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.",
+			"version_hash": 202641460
 		},
 		"SHIP_OCP209_DD_SPECS": {
 			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
@@ -1061,8 +1061,8 @@ const TRANSLATIONS = {
 			"version_hash": 420116051
 		},
 		"SHIP_OCP209_SNAP_DESC": {
-			"string": "The 207-SNAP is a version of the OCP-209 that implements an excavator design that was considered during the prototype phase of development. Its heavy dual doors are better suited for crushing ringroids than its counterpart - and, unfortunately, the fragile equipment that it is designed to handle. \\n\\nDue to its unique configuration, autopilot rotation assistance is not available on this unit.",
-			"version_hash": 2490761297
+			"string": "The 207-SNAP is a version of the OCP-209 that implements an excavator design that was considered during the prototype phase of development. Its heavy dual doors are better suited for crushing ringroids than its counterpart - and, unfortunately, the fragile equipment that it is designed to handle.",
+			"version_hash": 1684185953
 		},
 		"SHIP_OCP209_SNAP_SPECS": {
 			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",

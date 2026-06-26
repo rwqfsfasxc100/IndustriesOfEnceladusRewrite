@@ -306,6 +306,7 @@ lifepod = ExtResource( 24 )
 evaOffset = Vector2( 30, -130 )
 maxMassAboard = 300
 autopilotRotationAssumption = 4.0
+autopilotRotationPartOffsetPath = NodePath("Bay/Bay")
 autopilotRotationPartOffsetScale = -0.611
 droneGatheringSpotRotation = 1.571
 spriteHullPaths = PoolStringArray( "Hull", "HullBay" )

@@ -233,6 +233,7 @@ lifepod = ExtResource( 24 )
 evaOffset = Vector2( 30, -130 )
 maxMassAboard = 300
 autopilotRotationAssumption = 4.0
+autopilotRotationPartOffsetPath = NodePath("Bay/Bay")
 autopilotRotationPartOffsetScale = -0.611
 droneGatheringSpotRotation = 1.571
 spriteHullPaths = PoolStringArray( "Hull", "HullBay" )
@@ -784,7 +785,7 @@ margin_left = -150.0
 margin_top = -165.0
 margin_right = 150.0
 margin_bottom = 165.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.8, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 105 )
