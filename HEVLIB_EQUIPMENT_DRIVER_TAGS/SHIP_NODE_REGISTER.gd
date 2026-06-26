@@ -8,90 +8,18 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-28,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -104,30 +32,6 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -146,90 +50,18 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 		"IOE_MPU_BULKER":{
@@ -399,7 +231,7 @@ const SHIP_OCP209_DD = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 24, -64, 32, -41, 32, 0, 32, 24, 24, 44, 4.52995e-06, 52, -24, 44, -32, 24, -32, 0, -32, -24, -36, -47, -32, -56, -24, -40, -14, -34],
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 24, -64, 32, -41, 32, 0, 32, 24, 24, 44, 0, 52, -24, 44, -32, 24, -32, 0, -32, -24, -36, -47, -32, -56, -24, -40, -14, -34],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -412,7 +244,7 @@ const SHIP_OCP209_DD = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 51, -57, 32, -24, 32, 46, 24, 64, 6.31809e-06, 72, -24, 64, -32, 46, -32, -24],
+					"value":[-24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 51, -57, 32, -24, 32, 46, 24, 64, 0, 72, -24, 64, -32, 46, -32, -24],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -444,7 +276,7 @@ const SHIP_OCP209_SNAP = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 0, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4, -92],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -462,12 +294,12 @@ const SHIP_OCP209_SNAP = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 2.99999, 72, 23, 36, 39, 1.96701e-06, 45, -36, 39, -70, 25, -100, 3.00001, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"value":[-106, -15, -84, 7, -46, 27, 0, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 3, 72, 23, 36, 39, 0, 45, -36, 39, -70, 25, -100, 3, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.44248e-06, -33, -110, -47, -118, -29, -76, 19],
+					"value":[0, 43, 76, 19, 118, -29, 110, -45, 0, -33, -110, -47, -118, -29, -76, 19],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -516,30 +348,6 @@ const SHIP_MADCERF_CIV = {
 				"position":[-240,-25],
 				"scale":[2]
 			},
-#			"properties":{
-#				"ProcessingArea/ZoneBottom/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneTop/position":{
-#					"method":"center_to_ship",
-#					"ignore_scaling":true
-#				},
-#				"ProcessingArea/ZoneBottom/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneTop/polygon":{
-#					"method":"copy",
-#					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
-#				},
-#				"ProcessingArea/ZoneBottom/scale":{
-#					"method":"invert_scaling",
-#				},
-#				"ProcessingArea/ZoneTop/scale":{
-#					"method":"invert_scaling",
-#				},
-#			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
@@ -2588,7 +2396,7 @@ const SHIP_OCP209 = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 0, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4, -92],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
@@ -2606,12 +2414,12 @@ const SHIP_OCP209 = {
 			},
 			"properties":{
 				"polygon":{
-					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 2.99999, 72, 23, 36, 39, 1.96701e-06, 45, -36, 39, -70, 25, -100, 3.00001, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"value":[-106, -15, -84, 7, -46, 27, 0, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 3, 72, 23, 36, 39, 0, 45, -36, 39, -70, 25, -100, 3, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
 				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
-					"value":[1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.44248e-06, -33, -110, -47, -118, -29, -76, 19],
+					"value":[0, 43, 76, 19, 118, -29, 110, -45, 0, -33, -110, -47, -118, -29, -76, 19],
 					"method":"arr2vec2arr",
 					"defer":true
 				},
