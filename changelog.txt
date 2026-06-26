@@ -1,3 +1,7 @@
+[2.8.10]
+
+1=* Introduced the Autopilot Assist for Variable Geometry Ships tune to the OCP-207-SNAP and OCP-214-DD
+
 [2.8.9]
 
 1="* Fixed issues with frigate doors not being able to rotate"
