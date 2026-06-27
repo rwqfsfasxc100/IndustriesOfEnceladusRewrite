@@ -1,3 +1,7 @@
+[2.8.12]
+
+1=* Fixed the cargo bay collider for the OK720 hull.
+
 [2.8.11]
 
 1=* Fixed OCP SNAP's autopilot assist not rotating 90 degrees

@@ -528,7 +528,6 @@ z_index = 50
 polygon = PoolVector2Array( 150, 0, 144, -40, 130, -76, 108, -104, 82, -126, 72, -132, 48, -144, 35, -137, 71, -120, 95, -100, 117, -72, 131, -38, 135, 0, 131, 38, 117, 72, 95, 100, 59, 128, 71, 133, 108, 104, 130, 76, 144, 40 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
-visible = false
 z_index = 50
 collision_layer = 524288
 collision_mask = 33
@@ -545,7 +544,6 @@ polygon = PoolVector2Array( 20, -180, -20, -180, -20, -258, -9, -293, 9, -293, 2
 shape = SubResource( 7 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
-visible = false
 position = Vector2( 0, 40 )
 z_index = 50
 collision_layer = 0
@@ -556,7 +554,7 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldAreaHull"]
-polygon = PoolVector2Array( -64, -268, -58, -242, -30, -244, -28, -262, -10, -302, 10, -302, 28, -262, 30, -244, 58, -242, 64, -268, 70, -240, 70, 61, 70, 154, 64, 192, 58, 154, -58, 154, -64, 192, -70, 154, -70, -240 )
+polygon = PoolVector2Array( -64, -268, -58, -241, -29, -241, -11, -295, 11, -295, 28, -241, 58, -241, 64, -268, 70, -240, 68, 145, 79, 150, 79, 156, 69, 160, 68, 196, 18, 191, 22, 208, 18, 215, -18, 215, -21, 208, -18, 190, -68, 195, -69, 159, -79, 156, -79, 150, -69, 147, -70, -240 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CargoHoldAreaHull"]
 position = Vector2( 0, -40 )
@@ -910,7 +908,7 @@ margin_left = -150.0
 margin_top = -210.0
 margin_right = 150.0
 margin_bottom = 150.0
-color = Color( 1, 1, 0.65, 0.498039 )
+color = Color( 1, 1, 0.85, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 105 )
