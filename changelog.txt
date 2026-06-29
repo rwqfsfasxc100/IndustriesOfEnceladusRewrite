@@ -1,3 +1,10 @@
+[2.8.13]
+
+1=* Removed old code for the standard excavator on the KX37-RAM
+1.1=* This was leftover from when the ship instanced the KX37, and wasn't required when changing over to a unique scene.
+1.2=* Since the excavator wasn't removed from the scene before the ship and nanodrone emitters saw it as the primary excavator (due to it being higher in the tree than the grinders), it would reference it as the excavator and crash when trying to refer to it when using drones.
+2=* Increased minimum HevLib version to 1.14.8 to prevent issues with zeroed PoolVector2Arrays
+
 [2.8.12]
 
 1=* Fixed the cargo bay collider for the OK720 hull.
