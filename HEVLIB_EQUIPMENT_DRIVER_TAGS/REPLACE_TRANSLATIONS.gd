@@ -17,8 +17,8 @@ const TRANSLATIONS = {
 			"version_hash": 3265294764
 		},
 		"SYSTEM_CARGO_AUX_FAB_SPECS": {
-			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: SSE-Nakamura-Obonto",
-			"version_hash": 569737958
+			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition\nAmmunition print speed: 2.5 kg / s\nDrone print speed: 7.14 kg / s\nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: SSE-Nakamura-Obonto",
+			"version_hash": 1787039626
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nChanged MPU processing speed and power per chunk.\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
@@ -33,8 +33,8 @@ const TRANSLATIONS = {
 			"version_hash": 4156368412
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_SPECS": {
-			"string": "Print power draw: 210 MW \\nPrinting capability: drones, ammunition \\nAmmunition capacity: 5,000 kg \\nDrone capacity: 5,000 kg \\nMass: 10,500 kg \\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 2294594665
+			"string": "Print power draw: 210 MW \nPrinting capability: drones, ammunition\nAmmunition print speed: 5.56 kg / s\nDrone print speed: 20 kg / s\nAmmunition capacity: 5,000 kg \nDrone capacity: 5,000 kg \nMass: 10,500 kg \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 441347358
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard ammo and nanodrone storages. \\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \\nProduces nanodrone components from a 4:1 ratio of iron to platinum. \\nTakes up some space in the cargo bay.",
@@ -1551,6 +1551,14 @@ const TRANSLATIONS = {
 		"SYSTEM_REACTOR_IOECERF": {
 			"string": "MAD-CERF Nuclear Reactor",
 			"version_hash": 2167414238
+		},
+		"IOE_TUNE_PARAMETER_PRINT_AMMO_SPEED": {
+			"string": "Ammunition print speed",
+			"version_hash": 1211355364
+		},
+		"IOE_TUNE_PARAMETER_PRINT_DND_SPEED": {
+			"string": "Drone print speed",
+			"version_hash": 1044549179
 		}
 	},
 	"ru_RU": {
