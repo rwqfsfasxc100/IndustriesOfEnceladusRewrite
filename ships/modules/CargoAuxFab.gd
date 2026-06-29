@@ -102,6 +102,13 @@ func getParameters():
 	var out = {}
 	var powerDrawKw = get_power()
 	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
+	var speedRatio = float(fabricationRate / get_fabrication_rate())
+	var bpt = (bulletPrintTime*speedRatio)
+	var dpt = (dronePrintTime*speedRatio)
+	var ammoSpeed = (1/bpt) * massDriverUnit
+	var droneSpeed = (1/dpt) * droneUnit
+	out.merge({"IOE_TUNE_PARAMETER_PRINT_AMMO_SPEED":["%.1f" % ammoSpeed, "kg/s"]})
+	out.merge({"IOE_TUNE_PARAMETER_PRINT_DND_SPEED":["%.1f" % droneSpeed, "kg/s"]})
 	out.merge({"IOE_TUNE_PARAMETER_PRINT_POWER_DRAW": powerDrawHuman})
 	out.merge({"IOE_TUNE_PARAMETER_PRINT_MATERIAL_EFFICIENCY":["%.1f" % material_efficiency(), "%"]})
 	return out 
@@ -162,33 +169,44 @@ func _physics_process(delta):
 	if enabled:
 		if Tool.claim(ship):
 			var pwr = get_power()
-			var speedRatio = fabricationRate / get_fabrication_rate()
+			var speedRatio = float(fabricationRate / get_fabrication_rate())
+			var newBulletPrintTime = (bulletPrintTime*speedRatio)
+			var newDronePrintTime = (dronePrintTime*speedRatio)
 			
-			if ship.droneParts + droneUnit <= ship.dronePartsMax and pwr > 0:
-				if dronePrintCtr < dronePrintTime:
+			var scaledBulletUnit = massDriverUnit
+			var scaledDroneUnit = droneUnit
+			
+			if newBulletPrintTime < delta:
+				scaledBulletUnit *= (delta/newBulletPrintTime)
+			if newDronePrintTime < delta:
+				scaledDroneUnit *= (delta/newDronePrintTime)
+			
+			
+			if ship.droneParts + scaledDroneUnit <= ship.dronePartsMax and pwr > 0:
+				if dronePrintCtr < newDronePrintTime:
 					var p = pwr * delta
 					if ship.drawEnergy(p) >= p * 0.9:
 						dronePrintCtr += delta
 						
-			if ship.massDriverAmmo + massDriverUnit <= ship.massDriverAmmoMax and pwr > 0:
-				if bulletPrintCtr < bulletPrintTime:
+			if ship.massDriverAmmo + scaledBulletUnit <= ship.massDriverAmmoMax and pwr > 0:
+				if bulletPrintCtr < newBulletPrintTime:
 					var p = pwr * delta
 					if ship.drawEnergy(p) >= p * 0.9:
 						bulletPrintCtr += delta
 					
-			if bulletPrintTime > 0 and bulletPrintCtr >= bulletPrintTime:
-				if tryToDraw(getAmmoCost(), massDriverUnit):
-					ship.addAmmo(massDriverUnit)
-					bulletPrintCtr -= bulletPrintTime
-					if bulletPrintTime > 1:
+			if newBulletPrintTime > 0 and bulletPrintCtr >= newBulletPrintTime:
+				if tryToDraw(getAmmoCost(), scaledBulletUnit):
+					ship.addAmmo(scaledBulletUnit)
+					bulletPrintCtr -= newBulletPrintTime
+					if newBulletPrintTime > 1:
 						if ship.isPlayerControlled() and printA:
 							printA.play()
 							
-			if dronePrintTime > 0 and dronePrintCtr >= dronePrintTime:
-				if tryToDraw(getDroneCost(), droneUnit):
-					ship.addDrones(droneUnit)
-					dronePrintCtr -= dronePrintTime
-					if dronePrintTime > 1:
+			if newDronePrintTime > 0 and dronePrintCtr >= newDronePrintTime:
+				if tryToDraw(getDroneCost(), scaledDroneUnit):
+					ship.addDrones(scaledDroneUnit)
+					dronePrintCtr -= newDronePrintTime
+					if newDronePrintTime > 1:
 						if ship.isPlayerControlled() and printA:
 							printA.play()
 							
