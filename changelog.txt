@@ -1,3 +1,10 @@
+[2.8.14]
+
+1=* Fixed fabricators not adjusting the actual print speed when tuning
+2=* Fabricators now will process at the correct speed when below 72 FPS
+3=* Added display containing the print speed of consumables to the fabricator tuning option.
+4=* Added base print speed of consumables to the stat texts of both fabricators.
+
 [2.8.13]
 
 1=* Removed old code for the standard excavator on the KX37-RAM
