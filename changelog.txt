@@ -1,3 +1,7 @@
+[2.8.15]
+
+1=* Fixed MS Frakker jamming the door closed when having a relatively full hold on any OCP vessel
+
 [2.8.14]
 
 1=* Fixed fabricators not adjusting the actual print speed when tuning
