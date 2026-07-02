@@ -1222,6 +1222,11 @@ const SHIP_OCP209 = {
 				"mirrorVertical":{
 					"value":true
 				},
+				"polygon":{
+					"value":[0,50,0,-24,15,3,16,41,22,53,17,58],
+					"method":"arr2vec2arr",
+					"defer":true
+				},
 				"set_rot":{
 					"value":45
 				}
