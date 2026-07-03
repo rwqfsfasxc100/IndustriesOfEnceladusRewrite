@@ -1,3 +1,8 @@
+[2.8.16]
+
+1=* Moved baffles from mineral hold kit slot to cargo bay slot on the KTA24 to prevent phantom forces when installed alongside an MPU. Any equipped baffles can be resold for a full refund.
+2=* Added 3-Clause BSD NON-AI license.
+
 [2.8.15]
 
 1=* Fixed MS Frakker jamming the door closed when having a relatively full hold on any OCP vessel
