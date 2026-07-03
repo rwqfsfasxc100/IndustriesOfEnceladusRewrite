@@ -19,7 +19,7 @@ const SHIP_TRTL_T = {
 			"path":"CargoBaffles",
 			"property":"slot",
 			"recurse_to_variants":true,
-			"value":"cargo.modifierDivided"
+			"value":"cargo.equipment"
 		}
 	]
 }
