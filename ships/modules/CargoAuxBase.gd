@@ -24,7 +24,7 @@ var set_rot = 0.0
 
 var preproc_default_shapes = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_default_shapes.gd")
 var preproc_ship_shape_mods = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_ship_shape_mods.gd")
-var pointers
+var pointers = ModLoader._savedObjects[0]
 
 var ship
 var duped = false
@@ -40,7 +40,6 @@ var hs_modified = false
 var isready = false
 
 func _ready():
-	pointers = get_tree().get_root().get_node_or_null("HevLib~Pointers")
 	ship = getShip()
 	self.name = systemName
 	ship.registerCapability(slot, systemName)
