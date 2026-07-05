@@ -141,7 +141,7 @@ func modify_position() -> Vector2:
 
 func make_poly() -> PoolVector2Array:
 	var poly = self.polygon
-	var newPoly = PoolVector2Array([])
+	var newPoly = PoolVector2Array()
 	for vec in poly:
 		if mirrorVertical:
 			var newVec = Vector2(vec[0],-vec[1])
@@ -160,38 +160,6 @@ func getShip():
 		c = c.get_parent()
 	return c
 
-func convert_arr_to_vec2arr(array:Array) -> PoolVector2Array:
-	var converted = PoolVector2Array([])
-	var size = array.size()
-	if size % 2 == 1:
-		Debug.l("Cannot convert array to PoolVector2Array with an odd number of entries")
-		return PoolVector2Array([])
-	var index = 0
-	while index < size:
-		var a = array[index]
-		var b = array[index + 1]
-		var atype = typeof(a)
-		var btype = typeof(b)
-		if atype == TYPE_INT:
-			pass
-		elif atype == TYPE_REAL:
-			pass
-		else:
-			Debug.l("Cannot convert type %s for PoolVector2Array" % atype)
-			return PoolVector2Array([])
-		if btype == TYPE_INT:
-			pass
-		elif btype == TYPE_REAL:
-			pass
-		else:
-			Debug.l("Cannot convert type %s for PoolVector2Array" % btype)
-			return PoolVector2Array([])
-		var pooling = Vector2(a,b)
-		converted.append(pooling)
-		index += 2
-#	breakpoint
-	return converted
-
 
 
 
@@ -206,21 +174,21 @@ func adjust(data):
 		self.position = Vector2(a,b)
 #		breakpoint
 	if "shape" in data:
-		var shape = convert_arr_to_vec2arr(data["shape"])
+		var shape = pointers.DataFormat.__convert_arr_to_vec2arr(data["shape"])
 		self.polygon = shape
 	
 	if "scale" in data:
 		if data["scale"].size() >= 2:
 			var x = data["scale"][0]
 			var y = data["scale"][1]
-			var poly = PoolVector2Array([])
+			var poly = PoolVector2Array()
 			for p in self.polygon:
 				var v = Vector2(p[0]*x,p[1]*y)
 				poly.append(v)
 			self.polygon = poly
 		else:
 			var x = data["scale"][0]
-			var poly = PoolVector2Array([])
+			var poly = PoolVector2Array()
 			for p in self.polygon:
 				var v = Vector2(p[0]*x,p[1]*x)
 				poly.append(v)
