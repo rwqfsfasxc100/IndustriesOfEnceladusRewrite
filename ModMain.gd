@@ -27,10 +27,9 @@ func _init(modLoader = ModLoader):
 # Must load DLC early for it to properly function.
 	# Modify Settings.gd first so we can load config and DLC
 	
-	var ConfigDriver = load("res://HevLib/pointers/ConfigDriver.gd")
 	loadDLC()
 	
-	verbose = ConfigDriver.__get_value("IndustriesOfEnceladusRewrite","IOE_CONFIG_OPTIONS","verbose_logging")
+	verbose = ModLoader._savedObjects[0].ConfigDriver.__get_value("IndustriesOfEnceladusRewrite","IOE_CONFIG_OPTIONS","verbose_logging")
 	
 	var self_path = self.get_script().get_path()
 	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
