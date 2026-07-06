@@ -12,7 +12,7 @@ height = 120.0
 
 [node name="SYSTEM_SALVAGE_ARM_LONG" instance=ExtResource( 5 )]
 scale = Vector2( 0.5, 0.5 )
-actuationPitchFactor = 3.0
+actuationPitchFactor = 2.2
 massLimit = 700
 response = 0.9
 repairFixPrice = 25000

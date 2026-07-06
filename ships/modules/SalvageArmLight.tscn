@@ -12,7 +12,7 @@ height = 120.0
 
 [node name="SYSTEM_SALVAGE_ARM_LIGHT" instance=ExtResource( 5 )]
 scale = Vector2( 0.5, 0.5 )
-actuationPitchFactor = 3.0
+actuationPitchFactor = 1.5
 massLimit = 500
 response = 0.9
 repairFixPrice = 4000
@@ -60,7 +60,7 @@ region_rect = Rect2( 448, 23, 62, 79 )
 
 [node name="Beam" type="Sprite" parent="Arm/A/B" index="0"]
 material = ExtResource( 2 )
-position = Vector2( -208, 0 )
+position = Vector2( -201, 0 )
 rotation = -1.5708
 scale = Vector2( 2, 2.8 )
 z_index = -1
@@ -70,13 +70,15 @@ region_enabled = true
 region_rect = Rect2( 884, 258, 24, 131 )
 
 [node name="Arm" parent="Arm/A/B" index="1"]
-position = Vector2( -388, 0.00158691 )
+position = Vector2( -370, 0 )
 
 [node name="Strobe" parent="Arm/A/B" index="2"]
+visible = false
 position = Vector2( -388, 0.000244141 )
 
 [node name="Spotlight" parent="Arm/A/B" index="3"]
-position = Vector2( -386, -0.998352 )
+visible = true
+position = Vector2( -370, 0 )
 
 [node name="Beam" type="Sprite" parent="Arm/A" index="2"]
 material = ExtResource( 2 )
@@ -94,7 +96,6 @@ position = Vector2( 0, -484 )
 rotation = 1.5708
 
 [node name="CollisionShape2D" parent="DockArea" index="0"]
-visible = true
 position = Vector2( 0, 1.43051e-06 )
 shape = SubResource( 1 )
 
