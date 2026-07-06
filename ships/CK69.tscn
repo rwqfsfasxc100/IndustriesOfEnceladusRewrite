@@ -229,6 +229,7 @@ cargoHoldOffset = Vector2( 0, -50 )
 
 [node name="Front Bumper" parent="." instance=ExtResource( 25 )]
 position = Vector2( 1, -225 )
+closeForce = 20000
 
 [node name="Claw Right" parent="Front Bumper/Claw Holder" index="0"]
 position = Vector2( 23, -22 )
@@ -704,7 +705,7 @@ margin_left = -30.0
 margin_top = -247.0
 margin_right = 30.0
 margin_bottom = -165.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.65, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, -50 )
