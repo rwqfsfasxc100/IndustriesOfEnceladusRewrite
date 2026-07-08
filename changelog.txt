@@ -1,3 +1,14 @@
+[2.8.17]
+
+1=* Updated how several scripts fetch pointers, some of which should improve boot time
+2=* Cargo bay accessories now use `DataFormat`.`__convert_arr_to_vec2arr` instead of their own internal equivalent, which should fix a couple of issues with units that had a second polygon
+3=* Doubled closing force on CK-series excavators
+3.1=* This should make flying the ship with a few chunks of ore in the bay feel much less flimsy than before
+4=* Lowered the pitch of two manipulators:
+4.1=* Runasimi KRB-500 - Halved the factor that adjusted actuation pitch
+4.2=* TR-60 Extended Manipulator - Reduced pitch factor by 11/15ths
+5=* Fixed Runasimi KRB-500's grabber being visually misaligned with whatever it's grabbing
+
 [2.8.16]
 
 1=* Moved baffles from mineral hold kit slot to cargo bay slot on the KTA24 to prevent phantom forces when installed alongside an MPU. Any equipped baffles can be resold for a full refund.
