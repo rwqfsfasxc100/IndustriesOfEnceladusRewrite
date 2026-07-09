@@ -93,14 +93,6 @@ uk_UA="70%"
 
 [configs]
 
-IOE_CONFIG_OPTIONS={
-	"verbose_logging":{
-		"name":"IOE_CONFIG_VERBOSE_LOGGING",
-		"description":"IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP",
-		"type":"bool",
-		"default":true
-	}
-}
 IOE_CONFIG_INPUTS={
 	"ship_slot_9":{
 		"name":"IOE_CONFIG_SHIP_SLOT_9",
@@ -137,3 +129,4 @@ HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite/main/Mod.manifest"
 changelog_path="changelog.txt"
+modlet_priority=-99
