@@ -30,8 +30,9 @@ var power = 0.0
 func getStatus():
 	return 100
 func getPower():
-	if power:
-		var pv = clamp(power / min(current_indexes.size(),max_ores_processing), 0, 1)
+	var ci = current_indexes.size()
+	if ci:
+		var pv = clamp(power / min(ci,max_ores_processing), 0, 1)
 		var sv = swapover_fade * swapover_color_fade_scale
 		return clamp(pv - (sv * pv),0,1)
 	return 0.0
@@ -199,6 +200,7 @@ func _physics_process(delta):
 					Tool.release(p)
 				conserved_isproc = isproc
 				power = pvCache
+	else: power = 0.0
 	
 	ventRemass.emitting = venting and not Settings.particlesForbidden
 	ventMineral.emitting = ventingMineral > 0 and not Settings.particlesForbidden
