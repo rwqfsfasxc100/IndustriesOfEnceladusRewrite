@@ -414,7 +414,17 @@ const AUX_HYBRID = {
 	"equipment_type":"POWER_AUX_POWER_SLOT",
 	"auxiliary_power_unit":{
 		"slots":["aux.power"],
-		"path":"res://IndustriesOfEnceladusRewrite/ships/modules/AuxHybrid.tscn"
+#		"path":"res://IndustriesOfEnceladusRewrite/ships/modules/AuxHybrid.tscn"
+		"type":"AUX_HYBRID",
+		"system":"SYSTEM_IOE_AUX_HYBRID",
+		"price":915000,
+		"smes_power_draw":100000,
+		"smes_power_supply":2000000,
+		"smes_capacity":13500000,
+		"mpdg_power_draw":35000,
+		"mpdg_thermal":750000,
+		"mpdg_power_supply":475000,
+		"mass":7500,
 	}
 }
 const AUX_MPDG_2000 = {
