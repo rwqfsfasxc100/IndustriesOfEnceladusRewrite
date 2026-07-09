@@ -19,19 +19,22 @@ export (int,-50,50,1) var tunable_mpu_max = 15
 
 export (int, 5, 75, 1) var max_ores_processing = 10
 export (float, 0,20,0.05) var ore_swapover_time = 5.0
-export (float) var ore_swapover_fade_time = 0.25
+export (float) var ore_swapover_fade_time = 0.33
+export (float) var swapover_color_fade_scale = 3.0
 
 export  var enabled = true
 
 
-var power = 0
+var power = 0.0
 
 func getStatus():
 	return 100
 func getPower():
-	var pv = clamp(power, 0, 1)
-	var sv = swapover_fade * 3.0
-	return clamp(pv - sv,0,1)
+	if power:
+		var pv = clamp(power / min(current_indexes.size(),max_ores_processing), 0, 1)
+		var sv = swapover_fade * swapover_color_fade_scale
+		return clamp(pv - (sv * pv),0,1)
+	return 0.0
 
 func get_minimum_filler_content():
 	var base = minimum_filler_content
@@ -116,9 +119,11 @@ func _ready():
 			modifyProcessor()
 
 onready var ventRemass = $VentRemass
+onready var ventMineral = $VentMineral
 onready var processingA = $Processing
 onready var proStart = $ProStart
 onready var proStop = $ProStop
+onready var swap = $Swap
 
 var ventingMineral = 0.0
 
@@ -130,64 +135,74 @@ var swapover_fade = 0.0
 var swapover_direction = false
 var swapover_time = 0.0
 
+var conserved_isproc = false
+
 func _physics_process(delta):
 	ventingMineral = max(0, ventingMineral - delta)
-	power = 0
 
 	var venting = false
 	var isproc = false
 	
 	if enabled:
-		if self_remassEfficiency > 0.0 or self_kgps > 0.0:
+		if (self_remassEfficiency > 0.0 or self_kgps > 0.0):
 			var current_kgps = get_preprocessor_kgps()
 			var current_powerdraw = get_power()
 			var current_remassefficiency = get_preprocessor_efficiency()
 			var forProcessing = get_processable_object(delta)
-			for p in forProcessing:
-				if Tool.claim(p):
-					if "fillerContent" in p:
-						if p.fillerContent > get_minimum_filler_content():
-							var fillerMass = p.fillerContent * p.mass
-							var mineralMass = p.mineralContent * p.mass
-							var procDelta = min(fillerMass, delta * current_kgps / 1000)
-							var requiredPower = procDelta * current_powerdraw * 100
-							var gotPower = ship.drawEnergy(requiredPower)
-							if gotPower / requiredPower > 0.9:
-								var nm = max(mineralMass, p.mass - procDelta)
-								
-								if nm > 0:
-									p.mass = nm
-									p.mineralContent = mineralMass / nm
-								
-								p.fillerContent = 1 - p.mineralContent
-								var newMass = max(mineralMass, p.mass - procDelta)
-								var massChange = p.mass - newMass
-								var shipRemass = ship.reactiveMass
-								var procRemass = massChange * 1000 * current_remassefficiency
-								var newRemass = clamp(shipRemass + procRemass, 0, ship.reactiveMassMax)
-								ship.reactiveMass = newRemass
-								isproc = true
-								power += 1.0
-								venting = (newRemass - shipRemass < procRemass / 2)
-								ship.cargoMass = max(ship.cargoMass - massChange * 1000, 0)
-					else :
-						if p.has_method("getScan") and p.getScan() == "H2O" and p.has_method("applyEnergyDamage"):
-							var mad = max(1, p.mass / massDamageScale)
-							var proc = min(p.mass, delta * current_kgps / 1000) * mad
-							var requiredPower = proc * current_powerdraw * 1000 * delta * 60
-							var gotPower = ship.drawEnergy(requiredPower)
-							var prm = ship.reactiveMass
-							if gotPower / requiredPower > 0.9:
-								p.applyEnergyDamage(gotPower, p.global_position, delta)
-								var st = current_remassefficiency * proc * 1000
-								var nrm = clamp(prm + st, 0, ship.reactiveMassMax)
-								ship.reactiveMass = nrm
-								isproc = true
-								power += 1.0
-								venting = (nrm - prm < st / 2)
-				Tool.release(p)
+			var minFillContent = get_minimum_filler_content()
+			if not swapover_time > 0.0:
+				var pvCache = 0.0
+				for p in forProcessing:
+					if Tool.claim(p):
+						if "fillerContent" in p:
+							if p.fillerContent > minFillContent:
+								var fillerMass = p.fillerContent * p.mass
+								var mineralMass = p.mineralContent * p.mass
+								var procDelta = min(fillerMass, delta * current_kgps / 1000)
+								var requiredPower = procDelta * current_powerdraw * 100
+								var gotPower = ship.drawEnergy(requiredPower)
+								if gotPower / requiredPower > 0.9:
+									var nm = max(mineralMass, p.mass - procDelta)
+									
+									if nm > 0:
+										p.mass = nm
+										p.mineralContent = mineralMass / nm
+									
+									p.fillerContent = 1 - p.mineralContent
+									if p.fillerContent <= minFillContent:
+										ventingMineral = ventTime
+									var newMass = max(mineralMass, p.mass - procDelta)
+									var massChange = p.mass - newMass
+									var shipRemass = ship.reactiveMass
+									var procRemass = massChange * 1000 * current_remassefficiency
+									var newRemass = clamp(shipRemass + procRemass, 0, ship.reactiveMassMax)
+									ship.reactiveMass = newRemass
+									isproc = true
+									pvCache += 1.0
+									venting = (newRemass - shipRemass < procRemass / 2)
+									ship.cargoMass = max(ship.cargoMass - massChange * 1000, 0)
+						else :
+							if p.has_method("getScan") and p.getScan() == "H2O" and p.has_method("applyEnergyDamage"):
+								var mad = max(1, p.mass / massDamageScale)
+								var proc = min(p.mass, delta * current_kgps / 1000) * mad
+								var requiredPower = proc * current_powerdraw * 1000 * delta * 60
+								var gotPower = ship.drawEnergy(requiredPower)
+								var prm = ship.reactiveMass
+								if gotPower / requiredPower > 0.9:
+									p.applyEnergyDamage(gotPower, p.global_position, delta)
+									var st = current_remassefficiency * proc * 1000
+									var nrm = clamp(prm + st, 0, ship.reactiveMassMax)
+									ship.reactiveMass = nrm
+									isproc = true
+									pvCache += 1.0
+									venting = (nrm - prm < st / 2)
+					Tool.release(p)
+				conserved_isproc = isproc
+				power = pvCache
 	
-	ventRemass.emitting = venting
+	ventRemass.emitting = venting and not Settings.particlesForbidden
+	ventMineral.emitting = ventingMineral > 0 and not Settings.particlesForbidden
+	
 	if swapover_direction:
 		if swapover_fade < ore_swapover_fade_time:
 			swapover_fade += delta
@@ -198,8 +213,8 @@ func _physics_process(delta):
 			swapover_fade -= delta
 	if swapover_time > 0.0:
 		swapover_time -= delta
-	if ship.isPlayerControlled():
-		if isproc:
+	elif ship.isPlayerControlled():
+		if conserved_isproc:
 			if not processingA.playing:
 				processingA.play()
 				proStart.play()
@@ -247,6 +262,8 @@ func get_processable_object(delta):
 					swapover_time = ore_swapover_fade_time
 					swapover_direction = true
 					current_indexes.shuffle()
+					if conserved_isproc:
+						swap.play()
 			else:
 				current_indexes = range(s)
 				current_indexes.shuffle()
@@ -255,6 +272,8 @@ func get_processable_object(delta):
 				swapover_fade = delta
 				swapover_time = ore_swapover_fade_time
 				swapover_direction = true
+				if conserved_isproc:
+					swap.play()
 			for i in range(max_ores_processing):
 				lucky.append(cargo[current_indexes[i]])
 			return lucky
@@ -263,6 +282,7 @@ func get_processable_object(delta):
 			swapover_fade = 0.0
 			swapover_time = 0.0
 			swapover_direction = false
+			current_indexes = range(cargo.size())
 			return cargo
 	bayCount = 0
 	return []
