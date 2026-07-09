@@ -1,3 +1,21 @@
+[2.9.0]
+
+1=* Industries of Enceladus Rewrite is now a modlet.
+1.1=* This means it's now a lot easier to be disabled/re-enabled as you can now do so through the Mod Menu.
+1.2=* Removed mod checker scripts as they are now no longer necessary.
+1.3=* Adjusted mod's game display name to match it's actual name.
+1.3.1=* This mod hasn't kept the 1:1 feature mirror of the original mod for a while.
+1.3.2=* Feature set has deviated far enough to no longer reasonably keep it a "port".
+2=* Gave preprocessors some audiovisual upgrades.
+2.1=* Made processing start, stop, and loop sounds loud enough to hear, and increased their pitch enough to differentiate from turbine or MPU loops.
+2.2=* Added particle effect that happens when a preprocessor reaches the point where it's no longer able to process an ore chunk.
+2.3=* Added sound effect that plays when the preprocessor enters swapover (where it chooses new targets within the cargo bay).
+2.4=* Swapover now has an actual impact on gameplay, where it now halts all processing until it's finished.
+2.5=* Increased swapover period from 0.25s -> 0.33s. The 5 second time spent processing ores normally has not been touched.
+2.6=* Improved the efficiency of preprocessors when handling larger numbers of ores.
+3=* RA MHFTR Hybrid aux unit now used HevLib dynamic aux creation instead of a dedicated scene.
+4=* Removed verbose toggles due to them having not been functional for a while.
+
 [2.8.17]
 
 1=* Updated how several scripts fetch pointers, some of which should improve boot time

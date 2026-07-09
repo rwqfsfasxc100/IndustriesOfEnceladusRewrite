@@ -282,7 +282,7 @@ func get_processable_object(delta):
 			swapover_fade = 0.0
 			swapover_time = 0.0
 			swapover_direction = false
-			current_indexes = range(cargo.size())
+			current_indexes = cargo
 			return cargo
 	bayCount = 0
 	return []
