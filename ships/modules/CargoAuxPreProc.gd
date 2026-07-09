@@ -30,9 +30,8 @@ var power = 0.0
 func getStatus():
 	return 100
 func getPower():
-	var ci = current_indexes.size()
-	if ci:
-		var pv = clamp(power / min(ci,max_ores_processing), 0, 1)
+	if bayCount:
+		var pv = clamp(power / min(bayCount,max_ores_processing), 0, 1)
 		var sv = swapover_fade * swapover_color_fade_scale
 		return clamp(pv - (sv * pv),0,1)
 	return 0.0
