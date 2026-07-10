@@ -32,7 +32,6 @@ extends Node
 # OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-# 
 # [/license]
 
 const TRANSLATIONS = {
@@ -1255,8 +1254,8 @@ const TRANSLATIONS = {
 			"version_hash": 4107040235
 		},
 		"IOE_MOD_DESCRIPTION": {
-			"string": "This port of the Industries of Enceladus mod aims to bring full compatability with the content of IoE with that of other equipment mods. \\n\\nCompatability with saves using the original IoE isn't supported (yet)",
-			"version_hash": 3666305633
+			"string": "This port of the Industries of Enceladus mod aims to bring full compatability with the content of IoE with that of other equipment mods.\n\nCompatability with saves using the original IoE isn't supported (yet)",
+			"version_hash": 4100364353
 		},
 		"IOE_MOD_BRIEF": {
 			"string": "Overhaul content mod with over a dozen ships, 50 equipment items, and much more...",
