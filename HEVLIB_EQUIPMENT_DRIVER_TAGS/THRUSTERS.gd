@@ -36,6 +36,7 @@ const SYSTEM_THRUSTER_PIN150 = {
 	"plume_offset":[-32,0],
 	"flare_override_color":"bb7eff",
 	"flare_energy":4,
+	"position":[0,22.5],
 	"scale":[0.25,0.6],
 }
 const SYSTEM_THRUSTER_PNTRM = {
