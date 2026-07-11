@@ -1,3 +1,10 @@
+[2.9.2]
+
+1=* Added `MODIFY_SHIP_BUILDS.gd` along with some example configs for K37s
+2=* Fixed positioning of the Pin-C50 RCS
+3=* Fixed unformatted newlines in the mod's description
+4=* Improved efficiency of the preprocessor's power state code
+
 [2.9.1]
 
 1=* Fixed crash caused by emptying the cargo bay with a preprocessor installed
