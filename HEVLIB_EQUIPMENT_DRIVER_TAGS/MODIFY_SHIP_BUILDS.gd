@@ -109,18 +109,21 @@ const SHIP_TRTL = {
 	"recurse_for_alias":true,
 	"if_equipment_in_slot":[
 		{
-			"slot":"weaponSlot.left.type",
-			"system":"SYSTEM_EMD14",
+			"slot":"weaponSlot.left.type&&weaponSlot.right.type",
+			"system":"SYSTEM_DND_HARVHAUL",
 			"dont_add_if":{
 				"weaponSlot.main.type":[
-					"SYSTEM_RAILTOR"
+					"SYSTEM_SALVAGE_ARM_LIGHT",
+					"SYSTEM_SALVAGE_ARM_LONG",
+					"SYSTEM_SALVAGE_ARM",
+					"SYSTEM_SALVAGE_ARM_HEAVY",
 				]
 			},
 			"chance":0.25,
 		},
 		{
 			"slot":"weaponSlot.left.type",
-			"system":"SYSTEM_EMD14",
+			"system":"SYSTEM_MWTIGHTBEAM_PDT-L",
 			"do_add_if":{
 				"weaponSlot.right.type":[
 					"SYSTEM_MWG"
@@ -186,15 +189,103 @@ const SHIP_TRTL = {
 		{
 			"slot":"weaponSlot.main.type",
 			"system":"SYSTEM_SALVAGE_ARM_LIGHT",
-			"chance":0.25
+			"chance":0.2
 		},
 		{
-			"slot":"weaponSlot.main.type",
-			"system":"SYSTEM_SALVAGE_ARM_LIGHT-L",
+			"slot":"ammo.capacity",
+			"system":100.0,
+			"check_numerics":{
+				"ammo.capacity":{
+					"operation":"<",
+					"comparison":1000.0,
+				}
+			},
+			"chance":0.5
 		},
 		{
-			"slot":"weaponSlot.main.type",
-			"system":"SYSTEM_SALVAGE_ARM_LIGHT-R",
+			"slot":"propulsion.main",
+			"system":"SYSTEM_MAIN_ENGINE_PIN1200",
+			"chance":0.05
+		},
+		{
+			"slot":"reactor.power",
+			"system":1.0,
+			"chance":0.01
+		},
+		{
+			"slot":"propulsion.main",
+			"system":"SYSTEM_MAIN_ENGINE_NANI",
+			"chance":0.033
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
+			"chance":0.025
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":"SYSTEM_HULLVAT_NANO_EXTEND_1",
+			"chance":0.025
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_1",
+			"chance":0.05
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_2",
+			"chance":0.025
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":"SYSTEM_HULLVAT_PROP_2",
+			"chance":0.025
+		},
+		{
+			"slot":"propulsion.rcs",
+			"system":"SYSTEM_THRUSTER_BLAST",
+			"chance":0.05
+		},
+		{
+			"slot":"propulsion.rcs",
+			"system":"SYSTEM_THRUSTER_PNTRM",
+			"chance":0.05
+		},
+		{
+			"slot":"propulsion.rcs",
+			"system":"SYSTEM_THRUSTER_PIN150",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_ADD_BUNK",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_ADD_BUNK2",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_MOD_HOME",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_ADD_CAPSULE",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_MOD_KMX",
+			"chance":0.05
+		},
+		{
+			"slot":"crew.modifier",
+			"system":"SYSTEM_CREW_MOD_OCM",
+			"chance":0.05
 		},
 	],
 	"if_equipment":[
@@ -223,15 +314,15 @@ const SHIP_TRTL = {
 			"dont_add_if":[
 				"EQUIPMENT_MASS_DRIVERS"
 			],
-			"chance":1.0,
+			"chance":0.05,
 		},
 		{
-			"slot":"weaponSlot.right.type",
+			"slot":"weaponSlot.right.type && weaponSlot.left.type && weaponSlot.middle.type",
 			"system":"SYSTEM_DND_HARVTUG",
 			"check_numerics":{
 				"drones.capacity":{
-					"operation":"!==",
-					"comparison":0.0,
+					"operation":">=",
+					"comparison":5000.0,
 				}
 			},
 			"do_add_if":[
