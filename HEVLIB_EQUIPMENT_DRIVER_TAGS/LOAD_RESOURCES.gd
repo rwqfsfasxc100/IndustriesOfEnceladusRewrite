@@ -8,7 +8,7 @@ const LOAD_RESOURCES = {
 	"sfx/torch-PMS.tscn":{"load_type":"scene"},
 	"sfx/torch-ZUBRIN.tscn":{"load_type":"scene","original_path":"res://sfx/torch-ZUBRIN.tscn"},
 	"weapons/railgun_tor.tscn":{"load_type":"resource","original_path":"res://weapons/railgun_tor.tscn"},
-	"enceladus/Dealer.tscn":{"load_type":"scene"},
+	"enceladus/Dealer.gd":{"load_type":"script"},
 	"enceladus/Upgrades.gd":{"load_type":"script"},
 	"comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn":{"load_type":"scene","onready":true}
 }
