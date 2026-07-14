@@ -42,12 +42,12 @@ const TRANSLATIONS = {
 			"version_hash": 3275038314
 		},
 		"SYSTEM_CARGO_AUX_FAB_DESC": {
-			"string": "A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \\n\\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \\n\\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.",
-			"version_hash": 3265294764
+			"string": "A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \n\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \n\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.",
+			"version_hash": 2811765356
 		},
 		"SYSTEM_CARGO_AUX_FAB_SPECS": {
-			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition\nAmmunition print speed: 2.5 kg / s\nDrone print speed: 7.14 kg / s\nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg \nManufacturer: SSE-Nakamura-Obonto",
-			"version_hash": 1787039626
+			"string": "Print power draw: 120 MW \nPrinting capability: drones, ammunition\nAmmunition print speed: 2.5 kg / s\nDrone print speed: 7.14 kg / s\nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nPropellant capacity: 6,000 kg \nMPU processing speed change: 155% nominal MPU speed \nMass: 5,000 kg\nManufacturer: SSE-Nakamura-Obonto",
+			"version_hash": 571134218
 		},
 		"SYSTEM_CARGO_AUX_FAB_MANUAL": {
 			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume and propellant tank size. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nIncreases MPU speed multiplicatively. \nChanged MPU processing speed and power per chunk.\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
@@ -58,16 +58,16 @@ const TRANSLATIONS = {
 			"version_hash": 1206647390
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_DESC": {
-			"string": "Rasamama Material Solutions' Portable Assembly Line is a true marvel of automation, incorporating two Class-1 AIs (ARTEMIS and APOLLO) that oversee eachother's work in an adversarial relationship. Its remarkable production speed is entirely owed to the two's constant situational optimisations, and its large output hoppers can be connected to vessels' internal magazines as auxiliary consumable storage units. \\n\\nDisclaimer: AI specifications comply with Class-1 categorisation as per the Los Angeles Convention of 2184. Neither ARTEMIS nor APOLLO are intended to be capable of sapience or communication. Report any aberrant behaviour to ATLAS immediately.",
-			"version_hash": 4156368412
+			"string": "Rasamama Material Solutions' Portable Assembly Line is a true marvel of automation, incorporating two Class-1 AIs (ARTEMIS and APOLLO) that oversee eachother's work in an adversarial relationship. Its remarkable production speed is entirely owed to the two's constant situational optimisations, and its large output hoppers can be connected to vessels' internal magazines as auxiliary consumable storage units. \n\nDisclaimer: AI specifications comply with Class-1 categorisation as per the Los Angeles Convention of 2184. Neither ARTEMIS nor APOLLO are intended to be capable of sapience or communication. Report any aberrant behaviour to ATLAS immediately.",
+			"version_hash": 3039338460
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_SPECS": {
 			"string": "Print power draw: 210 MW \nPrinting capability: drones, ammunition\nAmmunition print speed: 5.56 kg / s\nDrone print speed: 20 kg / s\nAmmunition capacity: 5,000 kg \nDrone capacity: 5,000 kg \nMass: 10,500 kg \nManufacturer: Rasamama Material Solutions",
 			"version_hash": 441347358
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard ammo and nanodrone storages. \\nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \\nProduces nanodrone components from a 4:1 ratio of iron to platinum. \\nTakes up some space in the cargo bay.",
-			"version_hash": 3130609649
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard ammo and nanodrone storages. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
+			"version_hash": 1621372241
 		},
 		"SLOT_CARGO_MPU": {
 			"string": "Cargo Bay MPU",
@@ -82,144 +82,144 @@ const TRANSLATIONS = {
 			"version_hash": 2643942531
 		},
 		"SYSTEM_CARGO_MPU_FURN_SPECS": {
-			"string": "Processing capacity: 25 kg/s \\nPower draw: 25 MW / chunk \\nMineral processing efficiency: 60% \\nRemass processing efficiency: 40% \\nMass: 3,000 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 243502311
+			"string": "Processing capacity: 25 kg/s \nPower draw: 25 MW / chunk \nMineral processing efficiency: 60% \nRemass processing efficiency: 40% \nMass: 3,000 kg\nManufacturer: Rusatom-Antonoff",
+			"version_hash": 3043746311
 		},
 		"SYSTEM_CARGO_MPU_BULK": {
 			"string": "THI Bulker MPU",
 			"version_hash": 2229332609
 		},
 		"SYSTEM_CARGO_MPU_BULK_DESC": {
-			"string": "The Titan Heavy Industries \"Bulker\" MPU was introduced to the market in the mid-2200s, but has only seen distribution among Enceladian miners following trade agreements in the 2260s. Its simple design is a classic example of THI's \"less is more\" approach to engineering. \\n\\nHeavy and awkward to load compared to other MPUs, what makes the Bulker unique is its inbuilt storage capacity. The internals of a THI-CC drone have been incorporated beneath the processing area; while the bins have been reduced in size, they can still dramatically increase the mineral capacity of any vessel they're installed in.",
-			"version_hash": 2062725161
+			"string": "The Titan Heavy Industries \"Bulker\" MPU was introduced to the market in the mid-2200s, but has only seen distribution among Enceladian miners following trade agreements in the 2260s. Its simple design is a classic example of THI's \"less is more\" approach to engineering.\n\nHeavy and awkward to load compared to other MPUs, what makes the Bulker unique is its inbuilt storage capacity. The internals of a THI-CC drone have been incorporated beneath the processing area; while the bins have been reduced in size, they can still dramatically increase the mineral capacity of any vessel they're installed in.",
+			"version_hash": 3962860489
 		},
 		"SYSTEM_CARGO_MPU_BULK_SPECS": {
-			"string": "Cargo capacity: 10,000 kg / mineral (60,000 kg total) \\nProcessing capacity: 40 kg/s \\nPower draw: 100 MW / chunk \\nMineral processing efficiency: 70% \\nRemass processing efficiency: 20% \\nMass: 8,000 kg \\nManufacturer: Titan Heavy Industries",
-			"version_hash": 3199041299
+			"string": "Cargo capacity: 10,000 kg / mineral (60,000 kg total) \nProcessing capacity: 40 kg/s \nPower draw: 100 MW / chunk \nMineral processing efficiency: 70% \nRemass processing efficiency: 20% \nMass: 8,000 kg\nManufacturer: Titan Heavy Industries",
+			"version_hash": 262388787
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30": {
 			"string": "Rasamama RP-25",
 			"version_hash": 2391507102
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_DESC": {
-			"string": "The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \\n\\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.",
-			"version_hash": 1963002940
+			"string": "The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function.\n\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.",
+			"version_hash": 2781581084
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS": {
-			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor power draw: 1,000 KW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s \nMass: 750 kg \nManufacturer: Rasamama Material Solutions",
-			"version_hash": 1922122609
+			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor power draw: 1,000 KW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s\n\nMass: 750 kg\nManufacturer: Rasamama Material Solutions",
+			"version_hash": 266170427
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
 			"string": "NDBMT",
 			"version_hash": 229172282
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10_DESC": {
-			"string": "Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing. \\n\\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \\n\\nDisclaimer: no Lobotomites were harmed in the development of this unit.",
-			"version_hash": 937116593
+			"string": "Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing.\n\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \n\nDisclaimer: no Lobotomites were harmed in the development of this unit.",
+			"version_hash": 1452141553
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS": {
-			"string": "Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 25% \nPreprocessor power draw: 750 KW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x115% \nMPU processing speed change: 90% nominal MPU speed \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics",
-			"version_hash": 3169087575
+			"string": "Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 25% \nPreprocessor power draw: 750 KW / chunk \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x115%\nMPU processing speed change: 90% nominal MPU speed \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics",
+			"version_hash": 2292237463
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20": {
 			"string": "Rusatom-Antonoff MPP-N1",
 			"version_hash": 2547585297
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20_DESC": {
-			"string": "The MPP-N1 is one of the best mineral preprocessors on the market, offering excellent efficiency gains and propellant reclamation yields with a magnetohydrodynamic system. \\n\\nThe unit repurposes reactor powerplant exhaust as its heat source, emitting it into the bay through a bulb at its centre. Electromagnetic coils surrounding the bulb control temperatures through inductive heating. \\n\\nProcess steam and trace minerals are recovered by a baffled condenser. Replacement of the condenser assembly is recommended after 320 flight-hours to ensure maximum efficiency.",
-			"version_hash": 2410067582
+			"string": "The MPP-N1 is one of the best mineral preprocessors on the market, offering excellent efficiency gains and propellant reclamation yields with a magnetohydrodynamic system.\n\nThe unit repurposes reactor powerplant exhaust as its heat source, emitting it into the bay through a bulb at its centre. Electromagnetic coils surrounding the bulb control temperatures through inductive heating. \n\nProcess steam and trace minerals are recovered by a baffled condenser. Replacement of the condenser assembly is recommended after 320 flight-hours to ensure maximum efficiency.",
+			"version_hash": 663972734
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS": {
-			"string": "Ice melt rate: 10 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor power draw: 375 KW / chunk \nSimultaneous ore processing limit: 5 \nMPU mineral efficiency multiplier: x135% \nMPU processing speed change: 80% nominal MPU speed \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff",
-			"version_hash": 3547577602
+			"string": "Ice melt rate: 10 kg/s \nPreprocessor remass processing efficiency: 20%\nPreprocessor power draw: 375 KW / chunk \nSimultaneous ore processing limit: 5 \nMPU mineral efficiency multiplier: x135% \nMPU processing speed change: 80% nominal MPU speed \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff",
+			"version_hash": 3897150114
 		},
 		"SYSTEM_CARGO_PREPROC_P15": {
 			"string": "Rusatom Chunk Cutter",
 			"version_hash": 3627447616
 		},
 		"SYSTEM_CARGO_PREPROC_P15_DESC": {
-			"string": "The RCC was produced in the earlier days of bay modification technology, and unlike most companies at the time, focused on the ability to put ore through a processor, rather the efficiency at which ore came out of them. Using a constant, but fine, coating of magnesium lit by the ignition lasers from the processor, water is melted off artificially, and reducing the time at which a chunk takes to go through a processor. The additional heat produced by the ignitions produces slight further melting, however the extreme impurities created during the process makes it unsuitable for propellant reclaimation. \\n\\nMagnesium powder refills available for free at Enceladus prime.",
-			"version_hash": 1943724378
+			"string": "The RCC was produced in the earlier days of bay modification technology, and unlike most companies at the time, focused on the ability to put ore through a processor, rather the efficiency at which ore came out of them. Using a constant, but fine, coating of magnesium lit by the ignition lasers from the processor, water is melted off artificially, and reducing the time at which a chunk takes to go through a processor. The additional heat produced by the ignitions produces slight further melting, however the extreme impurities created during the process makes it unsuitable for propellant reclaimation.\n\nMagnesium powder refills available for free at Enceladus prime.",
+			"version_hash": 3900349306
 		},
 		"SYSTEM_CARGO_PREPROC_P15_SPECS": {
-			"string": "Ice melt rate: 17.5 kg/s \nPreprocessor Power draw: 50 KW / chunk\nMPU processing speed change: +25 kg/s \nSimultaneous ore processing limit: 12 \nMass: 1,220 kg \nManufacturer: Rusatom",
-			"version_hash": 1043172955
+			"string": "Ice melt rate: 17.5 kg/s \nPreprocessor Power draw: 50 KW / chunk\nMPU processing speed change: +25 kg/s \nSimultaneous ore processing limit: 12 \nMass: 1,220 kg\nManufacturer: Rusatom",
+			"version_hash": 549556827
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed additively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 4200107144
+			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed additively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered.\nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 709281800
 		},
 		"SYSTEM_CARGO_PREPROC_M35": {
 			"string": "MAD Heating Coils",
 			"version_hash": 378451025
 		},
 		"SYSTEM_CARGO_PREPROC_M35_DESC": {
-			"string": "This specialized processing unit utilizes patterned melting of ore chunks entering the bay to create a more fragile ice structure. This unit also comes with a secondary efficiency unit that is to be strapped onto the MPU unit itself to produce a higher processing speed and mineral reclaimation rate. \\n\\nThis unit does receive major criticism for companies using it for long periods of time, as the proprietary components lead to quick decomposition after a few months of use.",
-			"version_hash": 137988877
+			"string": "This specialized processing unit utilizes patterned melting of ore chunks entering the bay to create a more fragile ice structure. This unit also comes with a secondary efficiency unit that is to be strapped onto the MPU unit itself to produce a higher processing speed and mineral reclaimation rate.\n\nThis unit does receive major criticism for companies using it for long periods of time, as the proprietary components lead to quick decomposition after a few months of use.",
+			"version_hash": 2940725549
 		},
 		"SYSTEM_CARGO_PREPROC_M35_SPECS": {
-			"string": "Ice melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 KW / chunk \nMPU processing speed change: 135% nominal MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \nMass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
-			"version_hash": 4274758801
+			"string": "Ice melt rate: 12.5 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 550 KW / chunk \nMPU processing speed change: 135% nominal MPU speed\nSecondary MPU processing speed modifier: 10 kg/s \nSimultaneous ore processing limit: 7 \nMPU mineral efficiency multiplier: x110% \nMass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques",
+			"version_hash": 2475637041
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 60037967
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively.\nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 2275502767
 		},
 		"SYSTEM_CARGO_PREPROC_M85": {
 			"string": "MS Frakker",
 			"version_hash": 3604956203
 		},
 		"SYSTEM_CARGO_PREPROC_M85_DESC": {
-			"string": "Mitsudaya-Starbus's Frakker uses a combination of performance coils and pattern-recognition chips to optimise the melting and breaking through of ice. The use of pattern-recognition AI chips stems from a method of geological survey common in the early 21st century's heavy interest in LLM algorithms to observe and determine an optimal method to breaking apart ores without losing more minerals than the base unit. As a result, use of this unit comes with a heavy power cost attached, with the tracking of each ore chunk creating additional power consumption the entire time it is in the scanning area. \n\nLater units adopted the use of dedicated melting lasers to help further increase the efficiency of processing, similar to those seen on preprocessor units. The per-chunk power consumption is considerably higher than other units, however boasts unparalleled processing capacity and can reduce the water content of ores further than other commercial units.",
-			"version_hash": 2377866015
+			"string": "Mitsudaya-Starbus's Frakker uses a combination of performance coils and pattern-recognition chips to optimise the melting and breaking through of ice. The use of pattern-recognition AI chips stems from a method of geological survey common in the early 21st century's heavy interest in LLM algorithms to observe and determine an optimal method to breaking apart ores without losing more minerals than the base unit. As a result, use of this unit comes with a heavy power cost attached, with the tracking of each ore chunk creating additional power consumption the entire time it is in the scanning area.\n\nLater units adopted the use of dedicated melting lasers to help further increase the efficiency of processing, similar to those seen on preprocessor units. The per-chunk power consumption is considerably higher than other units, however boasts unparalleled processing capacity and can reduce the water content of ores further than other commercial units.",
+			"version_hash": 3954154303
 		},
 		"SYSTEM_CARGO_PREPROC_M85_SPECS": {
-			"string": "MPU processing speed factor: 185% MPU speed \nIce melt rate: 35 kg/s \nPreprocessor Power draw: 12.5 MW / chunk\nSimultaneous ore processing limit: 20 \nGoverning AI: Class-1 \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus",
-			"version_hash": 3606254131
+			"string": "MPU processing speed factor: 185% MPU speed \nIce melt rate: 35 kg/s \nPreprocessor Power draw: 12.5 MW / chunk\nSimultaneous ore processing limit: 20 \nGoverning AI: Class-1 \nMass: 12,550 kg\nManufacturer: Mitsudaya-Starbus",
+			"version_hash": 4053516819
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed multiplicatively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 3383531242
+			"string": "Reduces ice mass of chunks within a large area. \nIncreases MPU speed multiplicatively. \nOre chunks in the cargo bay have their water mass reduced while this unit is powered.\nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 3157397034
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively.\nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 2680313502
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively.\nDecreases MPU processing speed multiplicatively.\nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 3525517822
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL": {
-			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
-			"version_hash": 1926494841
+			"string": "Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously.\nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk.\nDoes not extract minerals or destroy chunks.\nTakes up some space in the cargo bay.",
+			"version_hash": 2478441497
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K": {
 			"string": "Conlido Internal Storage Rack",
 			"version_hash": 3133945664
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_DESC": {
-			"string": "The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market. \n\nThe additional microholds for consumable goods were initially 3rd-party modifications, however their sheer popularity made Conlido make a not so subtle incorporation into the base model.",
-			"version_hash": 3100542581
+			"string": "The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market.\n\nThe additional microholds for consumable goods were initially 3rd-party modifications, however their sheer popularity made Conlido make a not so subtle incorporation into the base model.",
+			"version_hash": 3406312981
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_4K_SPECS": {
-			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \\nAmmunition capacity: 3,000 kg \\nDrone capacity: 3,000 kg \\nPropellant capacity: 5,000 kg \\nMass: 3,000 kg \\nManufacturer: Conlido RVM",
-			"version_hash": 2492262423
+			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nAmmunition capacity: 3,000 kg \nDrone capacity: 3,000 kg \nPropellant capacity: 5,000 kg \nMass: 3,000 kg\nManufacturer: Conlido RVM",
+			"version_hash": 979951095
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume. \\nProcessed ore stored in seperate containers, with capacity limited per mineral type. \\nTakes up some space in the cargo bay. \\nDoes not require power or reactor heat.",
-			"version_hash": 3354652891
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type.\nTakes up some space in the cargo bay. \nDoes not require power or reactor heat.",
+			"version_hash": 1109945275
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_8K": {
 			"string": "THI Mineral Tank Module",
 			"version_hash": 3193540710
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_8K_DESC": {
-			"string": "Titan Heavy Industries' internal storage solution is as experimental as it is novel. By tapping reactor heat from the vessel's radiators, processed materials can be held in a liquid state indefinitely, increasing storage efficiency by up to 20%. \\n\\nSome miners have taken to using the unit as a rudimentary ore preprocessor, as the relatively thin insulation bleeds heat into the space between the tanks. THI does not endorse nor recommend usage in this manner.",
-			"version_hash": 295114866
+			"string": "Titan Heavy Industries' internal storage solution is as experimental as it is novel. By tapping reactor heat from the vessel's radiators, processed materials can be held in a liquid state indefinitely, increasing storage efficiency by up to 20%.\n\nSome miners have taken to using the unit as a rudimentary ore preprocessor, as the relatively thin insulation bleeds heat into the space between the tanks. THI does not endorse nor recommend usage in this manner.",
+			"version_hash": 3863630450
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_8K_SPECS": {
-			"string": "Cargo capacity: 8,000kg / mineral (48,000 kg total) \nIce melt rate: 5 kg/s \nPreprocessor remass processing efficiency: 15% \nPreprocessor power draw: 250 KW / chunk\nMPU processing speed change: 110% nominal MPU speed \nSimultaneous ore processing limit: 8\nMass: 8,000 kg \nManufacturer: Titan Heavy Industries",
-			"version_hash": 2929608682
+			"string": "Cargo capacity: 8,000kg / mineral (48,000 kg total) \nIce melt rate: 5 kg/s \nPreprocessor remass processing efficiency: 15%\nPreprocessor power draw: 250 KW / chunk\nMPU processing speed change: 110% nominal MPU speed \nSimultaneous ore processing limit: 8\nMass: 8,000 kg \nManufacturer: Titan Heavy Industries",
+			"version_hash": 1192052042
 		},
 		"SYSTEM_CARGO_AUX_STORPROC_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nReduces ice mass of chunks within a small area. \nChanged MPU processing speed and power per chunk.\nReplenishes propellant. \nTakes up some space in the cargo bay.",
-			"version_hash": 509096182
+			"string": "Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type.\nReduces ice mass of chunks within a small area. \nChanged MPU processing speed and power per chunk.\nReplenishes propellant. \nTakes up some space in the cargo bay.",
+			"version_hash": 2664281654
 		},
 		"SYSTEM_CARGO_AUX_STORAGE_12K": {
 			"string": "MPI Roving Silo",
@@ -238,8 +238,8 @@ const TRANSLATIONS = {
 			"version_hash": 3564362393
 		},
 		"SYSTEM_AMMO_200_SPECS": {
-			"string": "Storage: 200 kg \\nDelivery: 100 kg/s \\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 789017528
+			"string": "Storage: 200 kg \nDelivery: 100 kg/s\nManufacturer: Rasamama Material Solutions",
+			"version_hash": 1728307928
 		},
 		"SYSTEM_AMMO_100000": {
 			"string": "Shipyard-class projectile magazine",
@@ -250,8 +250,8 @@ const TRANSLATIONS = {
 			"version_hash": 551948646
 		},
 		"SYSTEM_AMMO_100000_SPECS": {
-			"string": "Storage: 100,000 kg \\nDelivery: 1,000 kg/s \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 1205813461
+			"string": "Storage: 100,000 kg \nDelivery: 1,000 kg/s\nManufacturer: Nakamura Dynamics",
+			"version_hash": 534276821
 		},
 		"SYSTEM_DND_100000": {
 			"string": "Shipyard-class nanodrone storage",
@@ -262,8 +262,8 @@ const TRANSLATIONS = {
 			"version_hash": 35071661
 		},
 		"SYSTEM_DND_100000_SPECS": {
-			"string": "Storage: 100,000 kg \\nDelivery: 100 kg/s \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 263129209
+			"string": "Storage: 100,000 kg \nDelivery: 100 kg/s\nManufacturer: Nakamura Dynamics",
+			"version_hash": 3544326521
 		},
 		"SLOT_CREW_MOD": {
 			"string": "Habitat Kits",
@@ -278,80 +278,80 @@ const TRANSLATIONS = {
 			"version_hash": 1778006662
 		},
 		"SYSTEM_CREW_ADD_BUNK_DESC": {
-			"string": "The simplest and cheapest crew accommodation expansion kit money can buy, this set includes one surface-mounted mixed-g bed that implements a memory foam base with basic textile covers and fire-safe insulation. They're surprisingly comfortable, but the lack of private quarters is sure to be a point of contention between crewmembers. \\n\\nStation control reminds captains that regulations require at least 3x the allotted provisions for each crewmember over the planned length of excursions into the rings. Failure to do so may result in fines from appropriate regulatory bodies.",
-			"version_hash": 2472515037
+			"string": "The simplest and cheapest crew accommodation expansion kit money can buy, this set includes one surface-mounted mixed-g bed that implements a memory foam base with basic textile covers and fire-safe insulation. They're surprisingly comfortable, but the lack of private quarters is sure to be a point of contention between crewmembers.\n\nStation control reminds captains that regulations require at least 3x the allotted provisions for each crewmember over the planned length of excursions into the rings. Failure to do so may result in fines from appropriate regulatory bodies.",
+			"version_hash": 3010839357
 		},
 		"SYSTEM_CREW_ADD_BUNK_SPECS": {
-			"string": "Crew capacity: +1 \\nCrew morale erosion per day: +30% (very poor) \\nMass: 250 kg \\nMass per crewmember capacity: 15 kg \\nManufacturer: Conlido RVM",
-			"version_hash": 3218276506
+			"string": "Crew capacity: +1 \nCrew morale erosion per day: +30% (very poor) \nMass: 250 kg\nMass per crewmember capacity: 15 kg \nManufacturer: Conlido RVM",
+			"version_hash": 3302638490
 		},
 		"SYSTEM_CREW_ADD_BUNK2": {
 			"string": "Conlido bunkX2",
 			"version_hash": 1778006663
 		},
 		"SYSTEM_CREW_ADD_BUNK2_DESC": {
-			"string": "One more, same box! The bunkX2 is essentially two bunkX1 units shipped in a far more efficient configuration, but that's about where its benefits end. \\n\\nMost potential hires would turn away if they saw one of these in a vessel, let alone two. Regardless, they are certainly an option for increasing crew capacity, and are often used in bulk by small interlunar transit vessels where volume and convenience is more important than passenger comforts.",
-			"version_hash": 1189280816
+			"string": "One more, same box! The bunkX2 is essentially two bunkX1 units shipped in a far more efficient configuration, but that's about where its benefits end.\n\nMost potential hires would turn away if they saw one of these in a vessel, let alone two. Regardless, they are certainly an option for increasing crew capacity, and are often used in bulk by small interlunar transit vessels where volume and convenience is more important than passenger comforts.",
+			"version_hash": 913173296
 		},
 		"SYSTEM_CREW_ADD_BUNK2_SPECS": {
-			"string": "Crew capacity: +2 \\nCrew morale erosion per day: +40% (very poor) \\nMass: 500 kg \\nMass per crewmember capacity: 35 kg \\nManufacturer: Conlido RVM",
-			"version_hash": 3111855996
+			"string": "Crew capacity: +2 \nCrew morale erosion per day: +40% (very poor) \nMass: 500 kg\nMass per crewmember capacity: 35 kg \nManufacturer: Conlido RVM",
+			"version_hash": 2669481436
 		},
 		"SYSTEM_CREW_ADD_CAPSULE": {
 			"string": "Runasimi Habitation Capsules",
 			"version_hash": 659907056
 		},
 		"SYSTEM_CREW_ADD_CAPSULE_DESC": {
-			"string": "Runasimi's option in the crew habitation market has been something of a staple in the low-end hospitality market, consisting of a light, pressure-tight block with two internal capsule beds, a basic en-suite toilet, and stowage for crew belongings and provisions. An internal oxygen reservoir and pressure suit racks ensure that hull breaches won't immediately disable crew during off-hours. \\n\\nPressure suits sold separately. Check reservoir pressure regularly and perform containment check as outlined in manual at least once per week. Runasimi Inc. is not liable for damages incurred by poorly-maintained equipment.",
-			"version_hash": 2777046929
+			"string": "Runasimi's option in the crew habitation market has been something of a staple in the low-end hospitality market, consisting of a light, pressure-tight block with two internal capsule beds, a basic en-suite toilet, and stowage for crew belongings and provisions. An internal oxygen reservoir and pressure suit racks ensure that hull breaches won't immediately disable crew during off-hours.\n\nPressure suits sold separately. Check reservoir pressure regularly and perform containment check as outlined in manual at least once per week. Runasimi Inc. is not liable for damages incurred by poorly-maintained equipment.",
+			"version_hash": 4278800497
 		},
 		"SYSTEM_CREW_ADD_CAPSULE_SPECS": {
-			"string": "Crew capacity: +2 \\nCrew morale erosion per day: +25% (poor) \\nMass: 1,000 kg \\nMass per crewmember capacity: 60 kg \\nManufacturer: Runasimi Inc.",
-			"version_hash": 3389278370
+			"string": "Crew capacity: +2 \nCrew morale erosion per day: +25% (poor) \nMass: 1,000 kg\nMass per crewmember capacity: 60 kg \nManufacturer: Runasimi Inc.",
+			"version_hash": 746481602
 		},
 		"SYSTEM_CREW_ADD_MANUAL": {
-			"string": "Increases or decreases total crew capacity. \\n Increases or decreases crew morale erosion per day of operation. \\nUnhappy crew may cause worse operational outcomes. \\nDoes not require power or reactor heat.",
-			"version_hash": 514964407
+			"string": "Increases or decreases total crew capacity. \n Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes.\nDoes not require power or reactor heat.",
+			"version_hash": 1498043543
 		},
 		"SYSTEM_CREW_MOD_HOME": {
 			"string": "Conlido mgHome Kit",
 			"version_hash": 512073234
 		},
 		"SYSTEM_CREW_MOD_HOME_DESC": {
-			"string": "Conlido's mgHome is a simple modular kit marketed towards family vessels and light transports. It includes a shared multi-channel entertainment system for crew quarters, a refrigerator and improved food preparation unit for the galley, and several adjustments to the washroom such as a multi-mode showerhead and memory foam toilet cushioning. \\n\\nNote: showerhead mister is not appropriate for zero-g usage. For best results, do not wash surfaces or cushions with bleach-based cleaners.",
-			"version_hash": 68332384
+			"string": "Conlido's mgHome is a simple modular kit marketed towards family vessels and light transports. It includes a shared multi-channel entertainment system for crew quarters, a refrigerator and improved food preparation unit for the galley, and several adjustments to the washroom such as a multi-mode showerhead and memory foam toilet cushioning.\n\nNote: showerhead mister is not appropriate for zero-g usage. For best results, do not wash surfaces or cushions with bleach-based cleaners.",
+			"version_hash": 1541538016
 		},
 		"SYSTEM_CREW_MOD_HOME_SPECS": {
-			"string": "Crew morale erosion per day: -10% (good) \\nMass: 200 kg \\nMass per crewmember capacity: 75 kg \\nManufacturer: Conlido RVM",
-			"version_hash": 429836063
+			"string": "Crew morale erosion per day: -10% (good) \nMass: 200 kg\nMass per crewmember capacity: 75 kg \nManufacturer: Conlido RVM",
+			"version_hash": 484209855
 		},
 		"SYSTEM_CREW_MOD_KMX": {
 			"string": "Antonoff KMX Upfit",
 			"version_hash": 1009235224
 		},
 		"SYSTEM_CREW_MOD_KMX_DESC": {
-			"string": "The Antonoff KMX is advertised as a long-term flight comfort system intended for interlunar cargo crews and passenger vessels. \\n\\nWith a full water reclamation system, a range of improvements to the galley, lavatory, and recreaction deck (and retrofit to introduce them on most common hull patterns, should any not exist), and breathable upholstery for most standard seating, crews generally find flying with the KMX upfit preferable to flying without.",
-			"version_hash": 3276984242
+			"string": "The Antonoff KMX is advertised as a long-term flight comfort system intended for interlunar cargo crews and passenger vessels.\n\nWith a full water reclamation system, a range of improvements to the galley, lavatory, and recreaction deck (and retrofit to introduce them on most common hull patterns, should any not exist), and breathable upholstery for most standard seating, crews generally find flying with the KMX upfit preferable to flying without.",
+			"version_hash": 634832562
 		},
 		"SYSTEM_CREW_MOD_KMX_SPECS": {
-			"string": "Crew capacity: -1 \\nCrew morale erosion per day: -20% (good) \\nMass: 500 kg \\nMass per crewmember capacity: 150 kg \\nManufacturer: Antonoff",
-			"version_hash": 3931711052
+			"string": "Crew capacity: -1 \nCrew morale erosion per day: -20% (good) \nMass: 500 kg\nMass per crewmember capacity: 150 kg \nManufacturer: Antonoff",
+			"version_hash": 590740684
 		},
 		"SYSTEM_CREW_MOD_OCM": {
 			"string": "OCM-36 Upfit",
 			"version_hash": 2866422882
 		},
 		"SYSTEM_CREW_MOD_OCM_DESC": {
-			"string": "Obonto Microengineering's OCM-36 completely overhauls ship habitats with modern luxuries that will feel very familiar to those who have visited or lived on their stations. This purchase covers the full cost of Obonto (or otherwise licensed) renovators' labour, which includes the use of a Nakamura Dynamics Class 2 AI system to optimise for varying internal geometries. \\n\\nIf the divided crew quarters with adjustable bedding, independent entertainment systems and en-suite bathrooms aren't enough, there's always the full Yamato-brand kitchenette in the galley, the diverse and expansive recreation area, and the modern, sleek cockpit overhaul - not to mention the pleasing wall cladding and low-profile handholds for zero-g navigation.",
-			"version_hash": 4137802998
+			"string": "Obonto Microengineering's OCM-36 completely overhauls ship habitats with modern luxuries that will feel very familiar to those who have visited or lived on their stations. This purchase covers the full cost of Obonto (or otherwise licensed) renovators' labour, which includes the use of a Nakamura Dynamics Class 2 AI system to optimise for varying internal geometries.\n\nIf the divided crew quarters with adjustable bedding, independent entertainment systems and en-suite bathrooms aren't enough, there's always the full Yamato-brand kitchenette in the galley, the diverse and expansive recreation area, and the modern, sleek cockpit overhaul - not to mention the pleasing wall cladding and low-profile handholds for zero-g navigation.",
+			"version_hash": 3448327638
 		},
 		"SYSTEM_CREW_MOD_OCM_SPECS": {
-			"string": "Crew capacity: -2 \\nCrew morale erosion per day: -50% (excellent) \\nMass: 700 kg \\nMass per crewmember capacity: 200 kg \\nManufacturer: Obonto Microengineering",
-			"version_hash": 4249652420
+			"string": "Crew capacity: -2 \nCrew morale erosion per day: -50% (excellent) \nMass: 700 kg\nMass per crewmember capacity: 200 kg \nManufacturer: Obonto Microengineering",
+			"version_hash": 4045491044
 		},
 		"SYSTEM_CREW_MOD_MANUAL": {
-			"string": "Increases or decreases crew morale erosion per day of operation. \\nUnhappy crew may cause worse operational outcomes. \\nDoes not require power or reactor heat.",
-			"version_hash": 458050479
+			"string": "Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes.\nDoes not require power or reactor heat.",
+			"version_hash": 1090907183
 		},
 		"SYSTEM_DND_HARVTUG": {
 			"string": "OT Hard-Stop Tug Drones",
@@ -362,8 +362,8 @@ const TRANSLATIONS = {
 			"version_hash": 888894848
 		},
 		"SYSTEM_DND_HARVTUG_SPECS": {
-			"string": "Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Obonto-Titan",
-			"version_hash": 1414975276
+			"string": "Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg\nManufacturer: Obonto-Titan",
+			"version_hash": 3178522476
 		},
 		"SYSTEM_DND_HARVHAUL": {
 			"string": "THI Harvester-class Haul Drones",
@@ -374,20 +374,20 @@ const TRANSLATIONS = {
 			"version_hash": 1989403555
 		},
 		"SYSTEM_DND_HARVHAUL_SPECS": {
-			"string": "Power draw: 120 MW \\nEffective range: 800 m (line of sight) \\nDrone launch capability: 100 dps \\nDrone wet mass: 0.1 kg \\nThrust: 1 kN (per drone) \\nMass: 8,000 kg \\nManufacturer: Titan Heavy Industries",
-			"version_hash": 2575506069
+			"string": "Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg\nManufacturer: Titan Heavy Industries",
+			"version_hash": 3675108725
 		},
 		"SYSTEM_EXODYN": {
 			"string": "THI Dyna-Cargo Container",
 			"version_hash": 4041067218
 		},
 		"SYSTEM_EXODYN_DESC": {
-			"string": "An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \\n\\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability.",
-			"version_hash": 867224129
+			"string": "An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license.\n\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability.",
+			"version_hash": 2045859745
 		},
 		"SYSTEM_EXODYN_SPECS": {
-			"string": "Cargo capacity: 72,000 kg (combined) \\nPower usage (nominal): 20 MW \\nCradle mass: 500 kg \\nManufacturer: Titan Heavy Industries",
-			"version_hash": 4265992495
+			"string": "Cargo capacity: 72,000 kg (combined) \nPower usage (nominal): 20 MW \nCradle mass: 500 kg\nManufacturer: Titan Heavy Industries",
+			"version_hash": 2179654831
 		},
 		"DIALOG_PIRATE_BUSINESS_SHIP_TWIN": {
 			"string": "Some of the construction crew for Obonto Seven left one of their dual torch construction ships out, and never noticed them being \"collected.\" It's too unwieldy for our liking, so you can take a look for 500 grand.",
@@ -470,8 +470,8 @@ const TRANSLATIONS = {
 			"version_hash": 576496090
 		},
 		"SYSTEM_CARGO_MOD_2K_SPECS": {
-			"string": "Cargo capacity: 2,000 kg / mineral (12,000 kg total) \\nCompatibility: Divided and Dynamic \\nMass: 1,620 kg \\nManufacturer: Sin Space Engineering",
-			"version_hash": 1723238486
+			"string": "Cargo capacity: 2,000 kg / mineral (12,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 1,620 kg\nManufacturer: Sin Space Engineering",
+			"version_hash": 3992873750
 		},
 		"SYSTEM_CARGO_MOD_4K": {
 			"string": "E-Prime Hold Rejoin",
@@ -482,24 +482,24 @@ const TRANSLATIONS = {
 			"version_hash": 323616069
 		},
 		"SYSTEM_CARGO_MOD_4K_SPECS": {
-			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 3,340 kg \nManufacturer: Enceladus Corporation",
-			"version_hash": 2973130527
+			"string": "Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 3,340 kg\nManufacturer: Enceladus Corporation",
+			"version_hash": 3179442623
 		},
 		"SYSTEM_CARGO_MOD_6K": {
 			"string": "Conlido freightReady Hoppers",
 			"version_hash": 1561821356
 		},
 		"SYSTEM_CARGO_MOD_6K_DESC": {
-			"string": "A set of hull-embedded mineral containers that implement patented Never-Void technology to ensure that all possible space is utilised to its fullest extent. Comes with warranty addendum. This product was tested by REAL miners doing REAL work in REAL SPACE ENVIRONMENTS! \\n\\nNotice: vessels with installations more recent than 2237 are not able to claim workplace injury compensation involving the operation / maintenance / installation / removal / utilisation of, or visual / auditory / gustatory / olfactory / physical / mental contact with, Conlido freightReady Hoppers. Familiarise yourself and coworkers with proper operational procedures before undertaking duties involving Conlido freightReady Hoppers.",
-			"version_hash": 83632436
+			"string": "A set of hull-embedded mineral containers that implement patented Never-Void technology to ensure that all possible space is utilised to its fullest extent. Comes with warranty addendum. This product was tested by REAL miners doing REAL work in REAL SPACE ENVIRONMENTS!\n\nNotice: vessels with installations more recent than 2237 are not able to claim workplace injury compensation involving the operation / maintenance / installation / removal / utilisation of, or visual / auditory / gustatory / olfactory / physical / mental contact with, Conlido freightReady Hoppers. Familiarise yourself and coworkers with proper operational procedures before undertaking duties involving Conlido freightReady Hoppers.",
+			"version_hash": 4226783348
 		},
 		"SYSTEM_CARGO_MOD_6K_SPECS": {
-			"string": "Cargo capacity: 6,000 kg / mineral (36,000 kg total) \\nCompatibility: Divided and Dynamic \\nMass: 5,560 kg \\nManufacturer: Conlido RVM",
-			"version_hash": 2600091971
+			"string": "Cargo capacity: 6,000 kg / mineral (36,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 5,560 kg\nManufacturer: Conlido RVM",
+			"version_hash": 1729976643
 		},
 		"SYSTEM_CARGO_MOD_BOTH_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nPassively increases onboard processed cargo volume.",
-			"version_hash": 1634567209
+			"string": "Requires an MPU to properly utilise.\nPassively increases onboard processed cargo volume.",
+			"version_hash": 3337760521
 		},
 		"SYSTEM_CARGO_MOD_BOLTS": {
 			"string": "Locking Bolts",
@@ -510,24 +510,24 @@ const TRANSLATIONS = {
 			"version_hash": 2550121865
 		},
 		"SYSTEM_CARGO_MOD_BOLTS_SPECS": {
-			"string": "Conversion mode: Dynamic to Divided \\nConversion ratio: 1:1 (no reduction) \\nMass reduction: 2,650 kg",
-			"version_hash": 2014312027
+			"string": "Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)\nMass reduction: 2,650 kg",
+			"version_hash": 2493003163
 		},
 		"SYSTEM_CARGO_MOD_BOLTS_MANUAL": {
-			"string": "Converts the mineral hold storage volume to Divided. \\nDivisions are equally divided into sixths of the total combined capacity. \\nDoes not require power or reactor heat.",
-			"version_hash": 515379061
+			"string": "Converts the mineral hold storage volume to Divided.\nDivisions are equally divided into sixths of the total combined capacity. \nDoes not require power or reactor heat.",
+			"version_hash": 4000447061
 		},
 		"SYSTEM_CARGO_MOD_AMORPH4": {
 			"string": "Conlido aMorphIV",
 			"version_hash": 3774452211
 		},
 		"SYSTEM_CARGO_MOD_AMORPH4_DESC": {
-			"string": "While the Cothon-217's experimental storage geometry was met with limited success, Conlido RVM was still keen on the concept. Agreements were made between ship manufacturers for trials and, false starts and missed deadlines not withstanding, the aMorphIV Hold Conversion Kit eventually entered the market. \\n\\nIts modular parts can be retrofitted to all ship systems currently available on the market, and employs the same fundamental principles as its vessel of origin.",
-			"version_hash": 2250764598
+			"string": "While the Cothon-217's experimental storage geometry was met with limited success, Conlido RVM was still keen on the concept. Agreements were made between ship manufacturers for trials and, false starts and missed deadlines not withstanding, the aMorphIV Hold Conversion Kit eventually entered the market.\n\nIts modular parts can be retrofitted to all ship systems currently available on the market, and employs the same fundamental principles as its vessel of origin.",
+			"version_hash": 579976662
 		},
 		"SYSTEM_CARGO_MOD_AMORPH4_SPECS": {
-			"string": "Conversion mode: Divided to Dynamic \\nConversion ratio: 2:1 (50% reduction) \\nMass: 1,500 kg \\nMechanism mass: 20 kg per tonne of processed space lost \\nManufacturer: Conlido RVM",
-			"version_hash": 2497420218
+			"string": "Conversion mode: Divided to Dynamic \nConversion ratio: 2:1 (50% reduction) \nMass: 1,500 kg \nMechanism mass: 20 kg per tonne of processed space lost\nManufacturer: Conlido RVM",
+			"version_hash": 157192314
 		},
 		"SYSTEM_CARGO_MOD_AMORPH5": {
 			"string": "THI MD-5",
@@ -538,8 +538,8 @@ const TRANSLATIONS = {
 			"version_hash": 113879615
 		},
 		"SYSTEM_CARGO_MOD_AMORPH5_SPECS": {
-			"string": "Conversion mode: Divided to Dynamic \\nConversion ratio: 3:2 (33% reduction) \\nMass: 2,500 kg \\nMechanism mass: 75 kg per tonne of processed space lost \\nManufacturer: Titan Heavy Industries",
-			"version_hash": 1955618322
+			"string": "Conversion mode: Divided to Dynamic \nConversion ratio: 3:2 (33% reduction) \nMass: 2,500 kg\nMechanism mass: 75 kg per tonne of processed space lost \nManufacturer: Titan Heavy Industries",
+			"version_hash": 3672340114
 		},
 		"SYSTEM_CARGO_MOD_AMORPH6": {
 			"string": "NDSBH",
@@ -550,12 +550,12 @@ const TRANSLATIONS = {
 			"version_hash": 867446996
 		},
 		"SYSTEM_CARGO_MOD_AMORPH6_SPECS": {
-			"string": "Conversion mode: Divided to Dynamic \\nConversion ratio: 6:5 (17% reduction) \\nMass: 3,750 kg \\nMechanism mass: 165 kg per tonne of processed space lost \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 2798818099
+			"string": "Conversion mode: Divided to Dynamic \nConversion ratio: 6:5 (17% reduction) \nMass: 3,750 kg\nMechanism mass: 165 kg per tonne of processed space lost \nManufacturer: Nakamura Dynamics",
+			"version_hash": 2625558195
 		},
 		"SYSTEM_CARGO_MOD_AMORPH_MANUAL": {
-			"string": "Requires an MPU to properly utilise. \\nConverts the mineral hold storage volume to Dynamic. \\nIncreases or decreases total hold storage volume according to the conversion ratio. Percentage indicated in specification. \\nDoes not require power or reactor heat.",
-			"version_hash": 2677592350
+			"string": "Requires an MPU to properly utilise. \nConverts the mineral hold storage volume to Dynamic. \nIncreases or decreases total hold storage volume according to the conversion ratio. Percentage indicated in specification.\nDoes not require power or reactor heat.",
+			"version_hash": 1241524766
 		},
 		"HUD_HOLD_CAP": {
 			"string": "total hold capacity",
@@ -574,12 +574,12 @@ const TRANSLATIONS = {
 			"version_hash": 1586129654
 		},
 		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
-			"string": "Developer: Mitsudaya-Starbus \\nCapabilities: Antipodal Reaction Limiter \\nAdaptive Angular Thrust \\nFly-By-Wire \\nLIDAR overlay",
-			"version_hash": 3248938369
+			"string": "Developer: Mitsudaya-Starbus \nCapabilities: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire\nLIDAR overlay",
+			"version_hash": 3229071553
 		},
 		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
-			"string": "Displays LIDAR circle around your ship. \\nARL: Cancels out opposite thrusters, conserving fuel. \\nFBW: Routes all manual thruster input through the autopilot. \\nCan use gimballed thrusters and engines. \\nAAT: Observes cargo mass shifts and thruster damage to compute minimum thrust required for maneuver. \\nReboot onboard computer to clear adaptation data.",
-			"version_hash": 981050865
+			"string": "Displays LIDAR circle around your ship. \nARL: Cancels out opposite thrusters, conserving fuel.\nFBW: Routes all manual thruster input through the autopilot. \nCan use gimballed thrusters and engines. \nAAT: Observes cargo mass shifts and thruster damage to compute minimum thrust required for maneuver. \nReboot onboard computer to clear adaptation data.",
+			"version_hash": 74773169
 		},
 		"IOE_CONFIG_VERBOSE_LOGGING": {
 			"string": "Verbose logging",
@@ -634,12 +634,12 @@ const TRANSLATIONS = {
 			"version_hash": 179636556
 		},
 		"SYSTEM_HULLVAT_AMMO_1_SPECS": {
-			"string": "Ammunition capacity: 6,000 kg \\nNanodrone storage loss: 25% \\nDry mass: 3,000 kg \\nManufacturer: Mars Power Industries ",
-			"version_hash": 951120095
+			"string": "Ammunition capacity: 6,000 kg \nNanodrone storage loss: 25% \nDry mass: 3,000 kg\nManufacturer: Mars Power Industries ",
+			"version_hash": 3108622655
 		},
 		"SYSTEM_HULLVAT_AMMO_MANUAL": {
-			"string": "Additional ammunition for mass drivers. Compatible with mass drivers and railguns. \nAmmunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start.\nAny consumable reductions will not apply for the first 1/3 of the storage. \nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your ammunition magazine.",
-			"version_hash": 1125439870
+			"string": "Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\nAmmunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start.\nAny consumable reductions will not apply for the first 1/3 of the storage. \nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your ammunition magazine.",
+			"version_hash": 2099048926
 		},
 		"SYSTEM_HULLVAT_AMMO_2": {
 			"string": "NDHHAM",
@@ -650,8 +650,8 @@ const TRANSLATIONS = {
 			"version_hash": 1007879920
 		},
 		"SYSTEM_HULLVAT_AMMO_2_SPECS": {
-			"string": "Ammunition capacity: 15,000 kg \\nNanodrone storage loss: 50% \\nDry mass: 10,000 kg \\nManufacturer: Nakamura Dynamics ",
-			"version_hash": 140690425
+			"string": "Ammunition capacity: 15,000 kg \nNanodrone storage loss: 50% \nDry mass: 10,000 kg\nManufacturer: Nakamura Dynamics ",
+			"version_hash": 424271257
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_1": {
 			"string": "Antonoff Ammunition Expansion Kit",
@@ -662,8 +662,8 @@ const TRANSLATIONS = {
 			"version_hash": 2860227491
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS": {
-			"string": "Ammunition capacity modifier: +33% \\nAmmunition capacity: 1,000 kg \\nProcessed mineral hold reduction: 10% \\nDry mass: 9,000 kg \\nManufacturer: Antonoff",
-			"version_hash": 2850977805
+			"string": "Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 9,000 kg\nManufacturer: Antonoff",
+			"version_hash": 2756158797
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_2": {
 			"string": "Antonoff 2x Ammunition Expansion Kit",
@@ -674,8 +674,8 @@ const TRANSLATIONS = {
 			"version_hash": 2771221711
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS": {
-			"string": "Ammunition capacity modifier: +67% \\nAmmunition capacity: 2,000 kg \\nProcessed mineral hold reduction: 20% \\nDry mass: 20,000 kg \\nManufacturer: Antonoff",
-			"version_hash": 2669338879
+			"string": "Ammunition capacity modifier: +67% \nAmmunition capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg\nManufacturer: Antonoff",
+			"version_hash": 753476287
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_3": {
 			"string": "Obonto Projectile Extendo+",
@@ -686,8 +686,8 @@ const TRANSLATIONS = {
 			"version_hash": 2006291509
 		},
 		"SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS": {
-			"string": "Ammunition capacity modifier: +100% \\nAmmunition capacity: 1,000 kg \\nPropellant tank reduction: 33% \\nDry mass: 35,000 kg \\nManufacturer: Obonto Microengineering",
-			"version_hash": 157822687
+			"string": "Ammunition capacity modifier: +100% \nAmmunition capacity: 1,000 kg \nPropellant tank reduction: 33% \nDry mass: 35,000 kg\nManufacturer: Obonto Microengineering",
+			"version_hash": 913558175
 		},
 		"SYSTEM_HULLVAT_NANO_1": {
 			"string": "Runasimi Drone Component Vat",
@@ -698,8 +698,8 @@ const TRANSLATIONS = {
 			"version_hash": 2972814653
 		},
 		"SYSTEM_HULLVAT_NANO_1_SPECS": {
-			"string": "Drone part capacity: 6,000 kg \nAmmunition magazine loss: 25% \nDry mass: 4,500 kg \nManufacturer: Runasimi Inc.",
-			"version_hash": 3347172749
+			"string": "Drone part capacity: 6,000 kg \nAmmunition magazine loss: 25% \nDry mass: 4,500 kg\nManufacturer: Runasimi Inc.",
+			"version_hash": 3272993773
 		},
 		"SYSTEM_HULLVAT_NANO_MANUAL": {
 			"string": "Additional drone parts for nanodrone assembly units. Compatible with all drone launchers. \nDrone part delivery rate dependant on installed magazine. \nParts sold separately at dive start. \nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your drone parts storage.",
@@ -714,8 +714,8 @@ const TRANSLATIONS = {
 			"version_hash": 3524422214
 		},
 		"SYSTEM_HULLVAT_NANO_2_SPECS": {
-			"string": "Drone part capacity: 15,000 kg \nAmmunition magazine loss: 50% \nDry mass: 12,000 kg \nManufacturer: Runasimi Inc.",
-			"version_hash": 790726693
+			"string": "Drone part capacity: 15,000 kg \nAmmunition magazine loss: 50% \nDry mass: 12,000 kg\nManufacturer: Runasimi Inc.",
+			"version_hash": 1373418373
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_1": {
 			"string": "Antonoff Nano Storage Expansion",
@@ -726,8 +726,8 @@ const TRANSLATIONS = {
 			"version_hash": 2714536047
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_1_SPECS": {
-			"string": "Drone part capacity modifier: +33% \\nDrone part capacity: 1,000 kg \\nProcessed mineral hold reduction: 10% \\nDry mass: 10,500 kg \\nManufacturer: Antonoff",
-			"version_hash": 2814801590
+			"string": "Drone part capacity modifier: +33% \nDrone part capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 10,500 kg\nManufacturer: Antonoff",
+			"version_hash": 2336784630
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_2": {
 			"string": "Antonoff Dual Nano Storage Expansion",
@@ -738,8 +738,8 @@ const TRANSLATIONS = {
 			"version_hash": 4235882865
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_2_SPECS": {
-			"string": "Drone part capacity modifier: +67% \\nDrone part capacity: 2,000 kg \\nProcessed mineral hold reduction: 20% \\nDry mass: 25,000 kg \\nManufacturer: Antonoff",
-			"version_hash": 348862304
+			"string": "Drone part capacity modifier: +67% \nDrone part capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 25,000 kg\nManufacturer: Antonoff",
+			"version_hash": 2510244896
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_3": {
 			"string": "Obonto Liquid Nanobot Hold",
@@ -750,8 +750,8 @@ const TRANSLATIONS = {
 			"version_hash": 3081086819
 		},
 		"SYSTEM_HULLVAT_NANO_EXTEND_3_SPECS": {
-			"string": "Drone part capacity modifier: +100% \\nDrone part capacity: 1,000 kg \\nPropellant tank reduction: 33% \\nDry mass: 40,000 kg \\nManufacturer: Obonto Microengineering",
-			"version_hash": 907301783
+			"string": "Drone part capacity modifier: +100% \nDrone part capacity: 1,000 kg \nPropellant tank reduction: 33% \nDry mass: 40,000 kg\nManufacturer: Obonto Microengineering",
+			"version_hash": 141875351
 		},
 		"SYSTEM_HULLVAT_PROP_1": {
 			"string": "Propellant Can Mk. I",
@@ -762,12 +762,12 @@ const TRANSLATIONS = {
 			"version_hash": 480660045
 		},
 		"SYSTEM_HULLVAT_PROP_1_SPECS": {
-			"string": "Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 1,500 kg \nManufacturer: Conlido RVM",
-			"version_hash": 3929640900
+			"string": "Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 1,500 kg\nManufacturer: Conlido RVM",
+			"version_hash": 4086044900
 		},
 		"SYSTEM_HULLVAT_PROP_MANUAL": {
-			"string": "Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start. \nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your tank.",
-			"version_hash": 2307990323
+			"string": "Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start.\nAny consumable reductions will not apply for the first 1/3 of the storage.\nHUD sensor displays may or may not display new values correctly.\nMinding Virtual Flight Service may not respect this equipment due to strict operational limits, providing only the exact amount listed on your tank.",
+			"version_hash": 4229656179
 		},
 		"SYSTEM_HULLVAT_PROP_2": {
 			"string": "Propellant Can Mk. II",
@@ -778,8 +778,8 @@ const TRANSLATIONS = {
 			"version_hash": 2342587130
 		},
 		"SYSTEM_HULLVAT_PROP_2_SPECS": {
-			"string": "Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5% \nDry mass: 7,000 kg \nManufacturer: Conlido RVM",
-			"version_hash": 3108579633
+			"string": "Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5%\nDry mass: 7,000 kg \nManufacturer: Conlido RVM",
+			"version_hash": 4228987441
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_1": {
 			"string": "Reaction Mass Tank Expander",
@@ -790,8 +790,8 @@ const TRANSLATIONS = {
 			"version_hash": 3807540147
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS": {
-			"string": "Propellant capacity modifier: +25% \nAmmunition magazine reduction: 17% \nDrone part capacity reduction: 17% \nDry mass: 3,000 kg \nManufacturer: Conlido RVM",
-			"version_hash": 4088303632
+			"string": "Propellant capacity modifier: +25% \nAmmunition magazine reduction: 17% \nDrone part capacity reduction: 17% \nDry mass: 3,000 kg\nManufacturer: Conlido RVM",
+			"version_hash": 2398896048
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_2": {
 			"string": "2x Reaction Mass Tank Expander",
@@ -802,20 +802,20 @@ const TRANSLATIONS = {
 			"version_hash": 1897745097
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS": {
-			"string": "Propellant capacity modifier: +50% \nAmmunition magazine reduction: 25% \nDrone part capacity reduction: 25% \nDry mass: 8,000 kg \nManufacturer: Conlido RVM",
-			"version_hash": 2332672881
+			"string": "Propellant capacity modifier: +50% \nAmmunition magazine reduction: 25% \nDrone part capacity reduction: 25% \nDry mass: 8,000 kg\nManufacturer: Conlido RVM",
+			"version_hash": 3256748785
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3": {
 			"string": "Super Reaction Mass Tank Expander",
 			"version_hash": 251378402
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3_DESC": {
-			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.",
-			"version_hash": 219850007
+			"string": "Focusing on consistent interplanetary travel, Conlido designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way. \n\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.",
+			"version_hash": 3734981527
 		},
 		"SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS": {
-			"string": "Propellant capacity modifier: +75% \nAmmunition magazine reduction: 38% \nDrone part capacity reduction: 38% \nDry mass: 15,000 kg \nManufacturer: Conlido RVM",
-			"version_hash": 2339944014
+			"string": "Propellant capacity modifier: +75% \nAmmunition magazine reduction: 38% \nDrone part capacity reduction: 38% \nDry mass: 15,000 kg\nManufacturer: Conlido RVM",
+			"version_hash": 2866517550
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_1": {
 			"string": "Tetsuo SCARLETTE Delivery Driver",
@@ -826,12 +826,12 @@ const TRANSLATIONS = {
 			"version_hash": 730057691
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_1_SPECS": {
-			"string": "Consumable storage delivery speed: +75% \\nDry mass: 3,800 kg \\nManufacturer: Tetsuo Engineering",
-			"version_hash": 4144113310
+			"string": "Consumable storage delivery speed: +75%\nDry mass: 3,800 kg \nManufacturer: Tetsuo Engineering",
+			"version_hash": 1444740798
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL": {
-			"string": "Speeds up the delivery speed of applicable consumable storages by a percentage. \\nBest if used in conjunction with industrial-grade equipment. ",
-			"version_hash": 1507662025
+			"string": "Speeds up the delivery speed of applicable consumable storages by a percentage.\nBest if used in conjunction with industrial-grade equipment. ",
+			"version_hash": 2167944361
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2": {
 			"string": "Tetsuo RamDrive Delivery Module",
@@ -842,8 +842,8 @@ const TRANSLATIONS = {
 			"version_hash": 1824627807
 		},
 		"SYSTEM_HULLVAT_CONSUMABLESPEED_2_SPECS": {
-			"string": "Consumable storage delivery speed: +150% \\nDry mass: 9,000 kg \\nManufacturer: Tetsuo Engineering",
-			"version_hash": 3077402918
+			"string": "Consumable storage delivery speed: +150% \nDry mass: 9,000 kg\nManufacturer: Tetsuo Engineering",
+			"version_hash": 3987213318
 		},
 		"SHIP_YME": {
 			"string": "Y-ME Fission Retrofit",
@@ -854,8 +854,8 @@ const TRANSLATIONS = {
 			"version_hash": 2674179350
 		},
 		"SHIP_YME_DESC": {
-			"string": "This ship was created by several annoyed employees of Eon Interstellar who split off due to how the company mismanaged both it's employees and PR. They banded together to create a more economically viable vessel, making the shining hull of the EIME more accessible to those outside of very well to do positions. \\n\\nDue to the nature of the EIME's original hull, a custom liquid-drum reactor had to be put in place, something many end-users wanted with the original vessel. An older reactor left over from K37s being decommissioned for Enceladus Prime's habitat constructions was used for the retrofit, being in common supply.",
-			"version_hash": 3765453195
+			"string": "This ship was created by several annoyed employees of Eon Interstellar who split off due to how the company mismanaged both it's employees and PR. They banded together to create a more economically viable vessel, making the shining hull of the EIME more accessible to those outside of very well to do positions.\n\nDue to the nature of the EIME's original hull, a custom liquid-drum reactor had to be put in place, something many end-users wanted with the original vessel. An older reactor left over from K37s being decommissioned for Enceladus Prime's habitat constructions was used for the retrofit, being in common supply.",
+			"version_hash": 2278782411
 		},
 		"SYSTEM_REACTOR_EIME_REFIT": {
 			"string": "Liquid drum replacement reactor",
@@ -914,56 +914,56 @@ const TRANSLATIONS = {
 			"version_hash": 3422338455
 		},
 		"SHIP_TRTL_PEEPER_DESC": {
-			"string": "A custom-fit modification of Sin Space Engineering's OK720. The crew habitat has been moved behind the cargo bay to make for a safer operation to keep impacts induced by mining be further away from where it could cause potential injury. The unorthodox shape of the front of the ship pushes the hardpoints vastly off-center, however the additional structural fittings on the bay permit for a high-stress hardpoint to be placed along the spine. \\n\\nDue to the nature of the repositioned crew habitat, a large lead radiation shield has been installed in between, alongside a free 150 mg per day supply of Ketron Isoboost being supplied to crews during and a month following a flight on this vessel.",
-			"version_hash": 1793612252
+			"string": "A custom-fit modification of Sin Space Engineering's OK720. The crew habitat has been moved behind the cargo bay to make for a safer operation to keep impacts induced by mining be further away from where it could cause potential injury. The unorthodox shape of the front of the ship pushes the hardpoints vastly off-center, however the additional structural fittings on the bay permit for a high-stress hardpoint to be placed along the spine.\n\nDue to the nature of the repositioned crew habitat, a large lead radiation shield has been installed in between, alongside a free 150 mg per day supply of Ketron Isoboost being supplied to crews during and a month following a flight on this vessel.",
+			"version_hash": 1103260156
 		},
 		"SHIP_TRTL_PEEPER_SPECS": {
-			"string": "Make: Conlido / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 115,700 kg \nCargo bay: 555 m^3 \nProcessed cargo storage (combined): 55,000 kg",
-			"version_hash": 3487503103
+			"string": "Make: Conlido / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 115,700 kg \nCargo bay: 555 m^3\nProcessed cargo storage (combined): 55,000 kg",
+			"version_hash": 2092457439
 		},
 		"SHIP_MADCERF_CIV_INVERSE_DESC": {
-			"string": "This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.\\n\\nA third party modification to the Civilian modification puts the autopilot and visual sensors to flip forwards and put it excavator-first.",
-			"version_hash": 1256606154
+			"string": "This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.\n\nA third party modification to the Civilian modification puts the autopilot and visual sensors to flip forwards and put it excavator-first.",
+			"version_hash": 2286313866
 		},
 		"SHIP_MADCERF_CIV_INVERSE_SPECS": {
-			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 8\nDry mass: 241,300 kg \nCargo bay: 1,175 m^3 \nProcessed cargo storage (per mineral): 35,000 kg",
-			"version_hash": 2079811827
+			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2\nDocking Bays: 2 \nCrew: 8\nDry mass: 241,300 kg \nCargo bay: 1,175 m^3\nProcessed cargo storage (per mineral): 35,000 kg",
+			"version_hash": 1827786035
 		},
 		"SYSTEM_AUX_MPD_1400": {
 			"string": "OPG-14 StatPlasma",
 			"version_hash": 1526700951
 		},
 		"SYSTEM_AUX_MPD_1400_DESC": {
-			"string": "Extreme power requirements, such as the industrial furnaces of refinery stations, requires an extreme power solution, and Obonto Microengineering's StatPlasma is it. Enthusiasts and electrical engineers (though there is little distinction) have taken to calling it \"the pinecone\" due to its unusual helical conversion chamber that narrows towards the recovery outlet. \\n\\nNote: this unit may require a small period of warmup before reaching its full power output.",
-			"version_hash": 3587521427
+			"string": "Extreme power requirements, such as the industrial furnaces of refinery stations, requires an extreme power solution, and Obonto Microengineering's StatPlasma is it. Enthusiasts and electrical engineers (though there is little distinction) have taken to calling it \"the pinecone\" due to its unusual helical conversion chamber that narrows towards the recovery outlet.\n\nNote: this unit may require a small period of warmup before reaching its full power output.",
+			"version_hash": 2076272883
 		},
 		"SYSTEM_AUX_MPD_1400_SPECS": {
-			"string": "Power draw: 200 MW \\nThermal draw: 2.5 GW \\nPower (nominal): 1,400 MW \\nWarmup time: 5 s \\nMass: 12,250 kg \\nType: MPDG \\nManufacturer: Obonto Microengineering",
-			"version_hash": 3479454563
+			"string": "Power draw: 200 MW \nThermal draw: 2.5 GW \nPower (nominal): 1,400 MW \nWarmup time: 5 s \nMass: 12,250 kg\nType: MPDG \nManufacturer: Obonto Microengineering",
+			"version_hash": 1292112867
 		},
 		"SYSTEM_AUX_MPD_2000": {
 			"string": "MPI City-class MPDG",
 			"version_hash": 2751514767
 		},
 		"SYSTEM_AUX_MPD_2000_DESC": {
-			"string": "This godforsaken monster of an MPDG literally can't fit in the hull of most vessels, having to be mounted externally and interfaced via multiple feed lines. The ultimate power plant of large settlements on Mars and beyond. \\n\\nNote: This unit requires a significant period of warmup before reaching its full power output. MPI strongly advises that you do not remove any sigils, engravings, or other marks on the unit.",
-			"version_hash": 1727776522
+			"string": "This godforsaken monster of an MPDG literally can't fit in the hull of most vessels, having to be mounted externally and interfaced via multiple feed lines. The ultimate power plant of large settlements on Mars and beyond.\n\nNote: This unit requires a significant period of warmup before reaching its full power output. MPI strongly advises that you do not remove any sigils, engravings, or other marks on the unit.",
+			"version_hash": 3322090922
 		},
 		"SYSTEM_AUX_MPD_2000_SPECS": {
-			"string": "Power draw: 300 MW \\nThermal draw: 4 GW \\nPower (nominal): 2,000 MW \\nWarmup time: 15 s \\nMass: 16,660 kg \\nType: MPDG with recovery turbine assembly \\nManufacturer: Mars Power Industries",
-			"version_hash": 1850708562
+			"string": "Power draw: 300 MW \nThermal draw: 4 GW \nPower (nominal): 2,000 MW \nWarmup time: 15 s \nMass: 16,660 kg\nType: MPDG with recovery turbine assembly \nManufacturer: Mars Power Industries",
+			"version_hash": 3145271346
 		},
 		"SYSTEM_AUX_SMES_10K": {
 			"string": "OPS-10 Capacitor Bank",
 			"version_hash": 2269000599
 		},
 		"SYSTEM_AUX_SMES_10K_DESC": {
-			"string": "Obonto Microengineering's backup power solution is, while inelegant, incredibly effective. Basically just a few extra-large ultracapacitors in a steel trenchcoat, the OPS-10 can deliver phenomenal power output at peak load while being about as affordable as their standard ultracapacitor range. \\n\\nAs it is not connected to internal cooling systems, the OPS-10 relies on a slow charge rate and a bulky radiative cooler to manage its temperature.",
-			"version_hash": 3928417371
+			"string": "Obonto Microengineering's backup power solution is, while inelegant, incredibly effective. Basically just a few extra-large ultracapacitors in a steel trenchcoat, the OPS-10 can deliver phenomenal power output at peak load while being about as affordable as their standard ultracapacitor range.\n\nAs it is not connected to internal cooling systems, the OPS-10 relies on a slow charge rate and a bulky radiative cooler to manage its temperature.",
+			"version_hash": 912523547
 		},
 		"SYSTEM_AUX_SMES_10K_SPECS": {
-			"string": "Capacity: 10,000 MJ \\nCharge power draw: 50 MW \\nDischarge power (peak): 10,000 MW \\nMass: 6,500 kg \\nType: High-density graphene fractal ultracapacitor array \\nManufacturer: Obonto Microengineering",
-			"version_hash": 3809545440
+			"string": "Capacity: 10,000 MJ \nCharge power draw: 50 MW \nDischarge power (peak): 10,000 MW \nMass: 6,500 kg\nType: High-density graphene fractal ultracapacitor array \nManufacturer: Obonto Microengineering",
+			"version_hash": 4056781120
 		},
 		"SYSTEM_CAPACITOR_100": {
 			"string": "Light Ultracapacitor",
@@ -974,8 +974,8 @@ const TRANSLATIONS = {
 			"version_hash": 684393582
 		},
 		"SYSTEM_CAPACITOR_100_SPECS": {
-			"string": "Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg  \nManufacturer: Obonto Microengineering",
-			"version_hash": 716198507
+			"string": "Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg\nManufacturer: Obonto Microengineering",
+			"version_hash": 3802359083
 		},
 		"SYSTEM_CAPACITOR_700": {
 			"string": "ND-iSMB",
@@ -986,8 +986,8 @@ const TRANSLATIONS = {
 			"version_hash": 3284585865
 		},
 		"SYSTEM_CAPACITOR_700_SPECS": {
-			"string": "Capacity: 700 MJ \\nPeak power: 10 GW \\nMass: 1,800 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 2004262628
+			"string": "Capacity: 700 MJ \nPeak power: 10 GW \nMass: 1,800 kg\nManufacturer: Nakamura Dynamics",
+			"version_hash": 1657466468
 		},
 		"SYSTEM_CAPACITOR_1400": {
 			"string": "ND-iSMB Dual Coupling",
@@ -998,20 +998,20 @@ const TRANSLATIONS = {
 			"version_hash": 1268707516
 		},
 		"SYSTEM_CAPACITOR_1400_SPECS": {
-			"string": "Capacity: 1,400 MJ \\nPeak power: 10 GW \\nMass: 3,200 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 2423955514
+			"string": "Capacity: 1,400 MJ \nPeak power: 10 GW \nMass: 3,200 kg\nManufacturer: Nakamura Dynamics",
+			"version_hash": 4053885882
 		},
 		"SYSTEM_RODS_1": {
 			"string": "1x SO6 fuel rod",
 			"version_hash": 1073794583
 		},
 		"SYSTEM_RODS_1_DESC": {
-			"string": "This Rusatom-Antonoff SO6 nuclear fuel rod, commonly called a \"sunshard\", is a standard fuel for early interplanetary NTR designs. The SO6 utilize a liquid thorium-based core encased in a solid shell. The stress and composition yield extremely high operating temperatures. \\n\\nThe perfect gift for the aspiring ship captain. Lead-lined wrapping material in a variety of designs and colours is available on request.",
-			"version_hash": 3850804419
+			"string": "This Rusatom-Antonoff SO6 nuclear fuel rod, commonly called a \"sunshard\", is a standard fuel for early interplanetary NTR designs. The SO6 utilize a liquid thorium-based core encased in a solid shell. The stress and composition yield extremely high operating temperatures.\n\nThe perfect gift for the aspiring ship captain. Lead-lined wrapping material in a variety of designs and colours is available on request.",
+			"version_hash": 524843267
 		},
 		"SYSTEM_RODS_1_SPECS": {
-			"string": "Manufacturer: Rusatom-Antonoff \\nOperating temperature: 3,500 K \\nFailure point: 4,500 K \\nMass: 400 kg \\nThermal power: 1 GW",
-			"version_hash": 1271101530
+			"string": "Manufacturer: Rusatom-Antonoff \nOperating temperature: 3,500 K \nFailure point: 4,500 K \nMass: 400 kg\nThermal power: 1 GW",
+			"version_hash": 2761789210
 		},
 		"SYSTEM_TURBINE_20": {
 			"string": "Thermocouple Array",
@@ -1022,8 +1022,8 @@ const TRANSLATIONS = {
 			"version_hash": 2395727699
 		},
 		"SYSTEM_TURBINE_20_SPECS": {
-			"string": "Power (nominal): 20 MW \\nPropellant consumption: 20 g/s \\nMass: 100 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 2160090719
+			"string": "Power (nominal): 20 MW \nPropellant consumption: 20 g/s \nMass: 100 kg\nManufacturer: Rusatom-Antonoff",
+			"version_hash": 3551155359
 		},
 		"SYSTEM_TURBINE_160": {
 			"string": "Laminar Turbine",
@@ -1034,8 +1034,8 @@ const TRANSLATIONS = {
 			"version_hash": 272358522
 		},
 		"SYSTEM_TURBINE_160_SPECS": {
-			"string": "Power (nominal): 160 MW \\nPropellant consumption: 160 g/s \\nMass: 600 kg \\nManufacturer: Boltzmann Waermerkraftmaschinen",
-			"version_hash": 425762513
+			"string": "Power (nominal): 160 MW \nPropellant consumption: 160 g/s \nMass: 600 kg\nManufacturer: Boltzmann Waermerkraftmaschinen",
+			"version_hash": 830340465
 		},
 		"SYSTEM_TURBINE_320": {
 			"string": "Dual Laminar Turbine",
@@ -1046,20 +1046,20 @@ const TRANSLATIONS = {
 			"version_hash": 255502870
 		},
 		"SYSTEM_TURBINE_320_SPECS": {
-			"string": "Power (nominal): 320 MW \\nPropellant consumption: 320 g/s \\nMass: 1,200 kg \\nManufacturer: Boltzmann Waermerkraftmaschinen",
-			"version_hash": 2696187974
+			"string": "Power (nominal): 320 MW \nPropellant consumption: 320 g/s \nMass: 1,200 kg\nManufacturer: Boltzmann Waermerkraftmaschinen",
+			"version_hash": 283092582
 		},
 		"SHIP_TSUKUYOMI_IOT": {
 			"string": "Tsukuyomi-Class Frigate (Decommissioned)",
 			"version_hash": 2331768936
 		},
 		"SHIP_TSUKUYOMI_IOT_DESC": {
-			"string": "The Tsukuyomi class of light frigates were designed in 2190 for military operations throughout the solar system. They were the first of their type and laid the groundwork for modern tactical frigates, with their quintuplet reactors serving as immense sources of power for their powerful thrusters. Following phase-out of nuclear saltwater rockets in military service, many were scrapped or sold off to private military contractors and corporations. \\n\\nCourtesy of the Sin Space Engineering shipyards, this unit has been fully demilitarised and refurbished for operations within the rings. Its saltwater reactors have been replaced with three modular containment vessels for modern NTR system retrofitting, and its bow torpedo tubes have been departitioned to expand its hold and add four auxiliary equipment bays.\\n\\nIt is worth pointing out that the Tsukiyomi is a warship by design, not a cargo hauler. In the same sense that a van has more cargo space than a tank, which is why it has a lower storage volume than one might expect from a ship of it's volume.",
-			"version_hash": 2024833061
+			"string": "The Tsukuyomi class of light frigates were designed in 2190 for military operations throughout the solar system. They were the first of their type and laid the groundwork for modern tactical frigates, with their quintuplet reactors serving as immense sources of power for their powerful thrusters. Following phase-out of nuclear saltwater rockets in military service, many were scrapped or sold off to private military contractors and corporations.\n\nCourtesy of the Sin Space Engineering shipyards, this unit has been fully demilitarised and refurbished for operations within the rings. Its saltwater reactors have been replaced with three modular containment vessels for modern NTR system retrofitting, and its bow torpedo tubes have been departitioned to expand its hold and add four auxiliary equipment bays.\n\nIt is worth pointing out that the Tsukiyomi is a warship by design, not a cargo hauler. In the same sense that a van has more cargo space than a tank, which is why it has a lower storage volume than one might expect from a ship of it's volume.",
+			"version_hash": 1890888933
 		},
 		"SHIP_TSUKUYOMI_IOT_SPECS": {
-			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 1,351,900 kg \nCargo bay: 1,100 m^3 \nProcessed cargo storage (per mineral): 81,000 kg",
-			"version_hash": 3519589506
+			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nDocking Bays: 4 \nTurret Mounts: 2\nCrew: 16 \nDry mass: 1,351,900 kg \nCargo bay: 1,100 m^3 \nProcessed cargo storage (per mineral): 81,000 kg",
+			"version_hash": 1262598562
 		},
 		"SYSTEM_REACTOR_TSUYUKOMI_IOT-A": {
 			"string": "Tsukuyomi Reactor Core A",
@@ -1078,12 +1078,12 @@ const TRANSLATIONS = {
 			"version_hash": 2008633162
 		},
 		"SHIP_OCP209_DD_DESC": {
-			"string": "The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.",
-			"version_hash": 202641460
+			"string": "The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories.\n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.",
+			"version_hash": 2746927220
 		},
 		"SHIP_OCP209_DD_SPECS": {
-			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
-			"version_hash": 3118196040
+			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2\nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
+			"version_hash": 2657881000
 		},
 		"SHIP_OCP209_SNAP": {
 			"string": "OCP-207-SNAP \"Piranha\"",
@@ -1094,20 +1094,20 @@ const TRANSLATIONS = {
 			"version_hash": 1684185953
 		},
 		"SHIP_OCP209_SNAP_SPECS": {
-			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2 \nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",
-			"version_hash": 4089399417
+			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2\nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",
+			"version_hash": 3629084377
 		},
 		"SHIP_COTHON_LUX": {
 			"string": "SSE Cothon-2200-XL",
 			"version_hash": 4266600797
 		},
 		"SHIP_COTHON_LUX_DESC": {
-			"string": "This unofficial \"modernised\" variant of the Cothon-213 Triplet features an additional 'crew compartment' (lifepod), an additional pair of translatory thrusters, and a handful of \"premium\" features such as a combination lounge and mess, upholstered breathable-fabric seating, and a functioning washroom. The two pods are mated together at their base docking ports and secured to the frame with standard emergency quick-release hardware. The XL stands for \"Extra Love\". \\n\\nSin Space Engineering does not offer any warranty of any kind, express or implied.",
-			"version_hash": 1635273044
+			"string": "This unofficial \"modernised\" variant of the Cothon-213 Triplet features an additional 'crew compartment' (lifepod), an additional pair of translatory thrusters, and a handful of \"premium\" features such as a combination lounge and mess, upholstered breathable-fabric seating, and a functioning washroom. The two pods are mated together at their base docking ports and secured to the frame with standard emergency quick-release hardware. The XL stands for \"Extra Love\".\n\nSin Space Engineering does not offer any warranty of any kind, express or implied.",
+			"version_hash": 343966100
 		},
 		"SHIP_COTHON_LUX_SPECS": {
-			"string": "Make: Sin Space Engineering / Conlido RVM \nLow-Stress Hardpoints: 4 \nCrew: 6 \nDry mass: 92,000 kg \nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 25,000 kg",
-			"version_hash": 655279152
+			"string": "Make: Sin Space Engineering / Conlido RVM \nLow-Stress Hardpoints: 4 \nCrew: 6\nDry mass: 92,000 kg \nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 25,000 kg",
+			"version_hash": 1532414608
 		},
 		"SHIP_MADCERF_CIV": {
 			"string": "MAD-CERF (Civilian Refit)",
@@ -1118,8 +1118,8 @@ const TRANSLATIONS = {
 			"version_hash": 3053400826
 		},
 		"SHIP_MADCERF_CIV_SPECS": {
-			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 8 \nDry mass: 241,300 kg \nCargo bay: 1,175 m^3 \nProcessed cargo storage (per mineral): 35,000 kg",
-			"version_hash": 1818843315
+			"string": "Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 8\nDry mass: 241,300 kg \nCargo bay: 1,175 m^3 \nProcessed cargo storage (per mineral): 35,000 kg",
+			"version_hash": 2079811827
 		},
 		"SHIP_MADCERF_DESC": {
 			"string": "The Machines Astro-Dynamiques Cernunnos Modèle II, otherwise known as the MAD-CERF, is the staple ship of salvage companies within the rings of Saturn. Its heavily-armoured bow, rated for asteroid belt travel, is an inelegant but effective solution to the many hazards posed by interplanetary excursions. Twin reactors on either side of the vessel each power their own pair of torches and maneuvering thrusters.",
@@ -1130,12 +1130,12 @@ const TRANSLATIONS = {
 			"version_hash": 230539627
 		},
 		"SHIP_OBERON_DESC": {
-			"string": "The Oberon MLP-60 is a curious vessel manufactured by the United Machine Cults. Originally an autonomous vehicle launched by electromagnetic rail cannons for orbital racing events, it was outmoded by later fusion-propelled units, but enthusiasts quickly bought up the remaining stock and it eventually found its way to the rings. Six belt radiators, three at either side, cool its high-performance reactor and partially shield its exposed fuel tanks, though are hardly needed due to the vessel's comical number of translatory thrusters. \\n\\nMultiple modifications have been undertaken to make the vessel appropriate for operation within the rings: its magnetic contacts have been cleverly retrofitted into two high-stress hardpoints, interface infrastructure has been built into the small cargo bay in the bow to support mineral processing units (barely, and with meager onboard space allotted to support them), and a HAL-9001 luxury lifepod serves as a comfortable cockpit and crew compartment.",
-			"version_hash": 1354947949
+			"string": "The Oberon MLP-60 is a curious vessel manufactured by the United Machine Cults. Originally an autonomous vehicle launched by electromagnetic rail cannons for orbital racing events, it was outmoded by later fusion-propelled units, but enthusiasts quickly bought up the remaining stock and it eventually found its way to the rings. Six belt radiators, three at either side, cool its high-performance reactor and partially shield its exposed fuel tanks, though are hardly needed due to the vessel's comical number of translatory thrusters.\n\nMultiple modifications have been undertaken to make the vessel appropriate for operation within the rings: its magnetic contacts have been cleverly retrofitted into two high-stress hardpoints, interface infrastructure has been built into the small cargo bay in the bow to support mineral processing units (barely, and with meager onboard space allotted to support them), and a HAL-9001 luxury lifepod serves as a comfortable cockpit and crew compartment.",
+			"version_hash": 495024941
 		},
 		"SHIP_OBERON_SPECS": {
-			"string": "Make: United Machine Cults / Custom-built \nHigh-Stress Hardpoints: 2 \nDrone Bays: 1 \nCrew: 4 \nDry mass: 54,000 kg \nCargo bay: 50 m^3 \nProcessed cargo storage (combined): 12,000 kg",
-			"version_hash": 2288478114
+			"string": "Make: United Machine Cults / Custom-built \nHigh-Stress Hardpoints: 2 \nDrone Bays: 1\nCrew: 4 \nDry mass: 54,000 kg \nCargo bay: 50 m^3 \nProcessed cargo storage (combined): 12,000 kg",
+			"version_hash": 2350388226
 		},
 		"SYSTEM_REACTOR_OBERON": {
 			"string": "Oberon performance reactor",
@@ -1146,12 +1146,12 @@ const TRANSLATIONS = {
 			"version_hash": 1990258218
 		},
 		"SHIP_TRTL_RAM_DESC": {
-			"string": "The \"Ringa Aftermarket Modification\" variant of the KX37, typically just called the \"Ram\", is a modification pattern that gained popularity in 2269 after its distribution by a RingChan user going by the handle 'BLKCandy'. The pattern sacrifices a moderate amount of mineral hold capacity to introduce power and feed rails for two drone hardpoints on the tail-end of the vessel's spines, replaces the fixed thruster mounts with gimballing variants, and reworks the RCS blisters for enhanced mobility. \\n\\nIts most notable feature is its Prospector-type grinder, obtained direct from the salvage market. Its installation makes only minor concessions to crew comforts, being remarkably noisy during operation and slightly reducing the recreation area's floor space.",
-			"version_hash": 2784651834
+			"string": "The \"Ringa Aftermarket Modification\" variant of the KX37, typically just called the \"Ram\", is a modification pattern that gained popularity in 2269 after its distribution by a RingChan user going by the handle 'BLKCandy'. The pattern sacrifices a moderate amount of mineral hold capacity to introduce power and feed rails for two drone hardpoints on the tail-end of the vessel's spines, replaces the fixed thruster mounts with gimballing variants, and reworks the RCS blisters for enhanced mobility.\n\nIts most notable feature is its Prospector-type grinder, obtained direct from the salvage market. Its installation makes only minor concessions to crew comforts, being remarkably noisy during operation and slightly reducing the recreation area's floor space.",
+			"version_hash": 2164652602
 		},
 		"SHIP_TRTL_RAM_SPECS": {
-			"string": "Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 46,000 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 37,500 kg \nEMP shielding: 50 MW",
-			"version_hash": 2895770113
+			"string": "Make: Rusatom-Antonoff / Custom-built\nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2\nCrew: 4 \nDry mass: 46,000 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 37,500 kg \nEMP shielding: 50 MW",
+			"version_hash": 86090113
 		},
 		"SYSTEM_REACTOR_TNTRL_FORT": {
 			"string": "Braced K37 nuclear reactor",
@@ -1162,12 +1162,12 @@ const TRANSLATIONS = {
 			"version_hash": 2881116469
 		},
 		"SHIP_ATLAS_WASP_DESC": {
-			"string": "Manufactured in the mid-2200s, the Nakamura Dynamics Wasp-class of automated tactical scouts utilise [REDACTED] as their power source and [REDACTED], delivering a constant [REDACTED] megawatts of electrical energy as long as the vehicle's [REDACTED] is [REDACTED]. A Faraday cage mesh insulates much of the vehicle, protecting it from static discharges in dense space environments and providing a convenient charge dissipation vector for the [REDACTED]. \\n\\nNow wasn't that fun? This version, coming to you exclusive from the Sin Space Engineering shipyards, is totally declassified, decommissioned, and probably deillegaled, with a range of nice benefits like a performance propellant-remass reaction wheel, a \"Reactor Housing\" where the redacted-whatever was torn out (it was like that when we got it), and a probably-functional cargo bay, all topped with the Conlido Classic™ converted lifepod for her pleasure. \\n\\nWarranty? Hell no. Fly the goddamn ship, ringa. And, if anyone asks where you got this thing, give us a call and send your logs for 25% off your next purchase.",
-			"version_hash": 1477509928
+			"string": "Manufactured in the mid-2200s, the Nakamura Dynamics Wasp-class of automated tactical scouts utilise [REDACTED] as their power source and [REDACTED], delivering a constant [REDACTED] megawatts of electrical energy as long as the vehicle's [REDACTED] is [REDACTED]. A Faraday cage mesh insulates much of the vehicle, protecting it from static discharges in dense space environments and providing a convenient charge dissipation vector for the [REDACTED].\n\nNow wasn't that fun? This version, coming to you exclusive from the Sin Space Engineering shipyards, is totally declassified, decommissioned, and probably deillegaled, with a range of nice benefits like a performance propellant-remass reaction wheel, a \"Reactor Housing\" where the redacted-whatever was torn out (it was like that when we got it), and a probably-functional cargo bay, all topped with the Conlido Classic™ converted lifepod for her pleasure. \n\nWarranty? Hell no. Fly the goddamn ship, ringa. And, if anyone asks where you got this thing, give us a call and send your logs for 25% off your next purchase.",
+			"version_hash": 3099079112
 		},
 		"SHIP_ATLAS_WASP_SPECS": {
-			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nLow-Stress Hardpoints: 2 \nThruster mount gimbal: 36 deg \nCrew: 3 \nDry mass: 23,250 kg \nCargo bay: 45 m^3 \nProcessed cargo storage (per mineral): 500 kg \nEMP shielding: 320 MW",
-			"version_hash": 678981677
+			"string": "Make: Sin Space Engineering / Nakamura Dynamics \nLow-Stress Hardpoints: 2 \nThruster mount gimbal: 36 deg \nCrew: 3 \nDry mass: 23,250 kg\nCargo bay: 45 m^3 \nProcessed cargo storage (per mineral): 500 kg \nEMP shielding: 320 MW",
+			"version_hash": 1946998285
 		},
 		"SYSTEM_REACTOR_JURYRIG": {
 			"string": "Jury-rigged reactor",
@@ -1186,8 +1186,8 @@ const TRANSLATIONS = {
 			"version_hash": 3885822122
 		},
 		"SHIP_PROSPECTOR_PIGEON_SPECS": {
-			"string": "Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 22,700 kg \nCargo bay: 180 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
-			"version_hash": 4153657129
+			"string": "Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6\nDry mass: 22,700 kg \nCargo bay: 180 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
+			"version_hash": 277331401
 		},
 		"SHIP_AT225_STUB": {
 			"string": "Antonoff-Titan K225-SH",
@@ -1198,24 +1198,24 @@ const TRANSLATIONS = {
 			"version_hash": 33006397
 		},
 		"SHIP_AT225_STUB_SPECS": {
-			"string": "Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12 \nDry mass: 146,700 kg\nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
-			"version_hash": 4038862981
+			"string": "Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12\nDry mass: 146,700 kg\nCargo bay: 260 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
+			"version_hash": 4195005669
 		},
 		"SHIP_TRTL_OCP": {
 			"string": "SSE OK720 TNTRL",
 			"version_hash": 2216868439
 		},
 		"SHIP_TRTL_OCP_DESC": {
-			"string": "\"Oh, dear God, what is that?\", they said. \"That won't fly,\" they said. \"Stop calling us or we'll press charges,\" both Antonoff and Obonto said, in unison. It was in this chorus of naysaying and whining that we created the miracle that is the OK720 TNTRL. \\n\\nTwo spare bay halves from Obonto surplus and the resectioned corpse of a K37 come together to create this masterpiece, originally a \"joke\" posted to the RingChan /dreamship/ board by user snownukitro. With a truly enormous cargo bay and support hardware for OCP-standard MPUs and accessories, four low-stress equipment hardpoints, and incredibly low mass for the volume of its bay, this monster is perfectly suited for ring mining - as long as it doesn't hit anything. \\n\\nLimited warranty applies. We won't replace it if you get stuck in a tight space, but we'll sell you replacement panels.",
-			"version_hash": 903860750
+			"string": "\"Oh, dear God, what is that?\", they said. \"That won't fly,\" they said. \"Stop calling us or we'll press charges,\" both Antonoff and Obonto said, in unison. It was in this chorus of naysaying and whining that we created the miracle that is the OK720 TNTRL.\n\nTwo spare bay halves from Obonto surplus and the resectioned corpse of a K37 come together to create this masterpiece, originally a \"joke\" posted to the RingChan /dreamship/ board by user snownukitro. With a truly enormous cargo bay and support hardware for OCP-standard MPUs and accessories, four low-stress equipment hardpoints, and incredibly low mass for the volume of its bay, this monster is perfectly suited for ring mining - as long as it doesn't hit anything. \n\nLimited warranty applies. We won't replace it if you get stuck in a tight space, but we'll sell you replacement panels.",
+			"version_hash": 774365902
 		},
 		"SHIP_TRTL_OCP_SPECS": {
-			"string": "Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 85,700 kg \nCargo bay: 620 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
-			"version_hash": 3999817088
+			"string": "Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 4\nCrew: 4 \nDry mass: 85,700 kg \nCargo bay: 620 m^3 \nProcessed cargo storage (per mineral): 5,000 kg",
+			"version_hash": 1670466016
 		},
 		"SHIP_OCP209_SPECS": {
-			"string": "Make: Obonto Microengineering\\nHigh-Stress Hardpoints: 2\\nLow-Stress Hardpoints: 2\\nDocking Bays: 2\\nTurret Mounts: 2\\nCrew: 8\\nDry mass: 184,500 kg\\nCargo bay: 610 m^3\\nProcessed cargo storage (combined): 50,000 kg",
-			"version_hash": 2758248968
+			"string": "Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nDocking Bays: 2\nTurret Mounts: 2\nCrew: 8\nDry mass: 184,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg",
+			"version_hash": 2227034216
 		},
 		"SLOT_TURRET_LEFT": {
 			"string": "Left Turret Mount",
@@ -1224,26 +1224,6 @@ const TRANSLATIONS = {
 		"SLOT_TURRET_RIGHT": {
 			"string": "Right Turret Mount",
 			"version_hash": 4152908156
-		},
-		"SLOT_TUBE_LEFT_UP": {
-			"string": "Left Upper Torpedo Vestibule",
-			"version_hash": 2604802860
-		},
-		"SLOT_TUBE_RIGHT_UP": {
-			"string": "Right Upper Torpedo Vestibule",
-			"version_hash": 2629625311
-		},
-		"SLOT_TUBE_LEFT_DN": {
-			"string": "Left Lower Torpedo Vestibule",
-			"version_hash": 1443765577
-		},
-		"SLOT_TUBE_RIGHT_DN": {
-			"string": "Right Lower Torpedo Vestibule",
-			"version_hash": 1468588028
-		},
-		"SLOT_DRONE": {
-			"string": "Drone Mount",
-			"version_hash": 3658239856
 		},
 		"SLOT_MAIN_LARGE": {
 			"string": "Large Main Propulsion",
@@ -1274,8 +1254,8 @@ const TRANSLATIONS = {
 			"version_hash": 130411686
 		},
 		"SYSTEM_FUEL_1000000_SPECS": {
-			"string": "Capacity: 1,000,000 kg \\nPropellant type: Thermal Rocket",
-			"version_hash": 3150131236
+			"string": "Capacity: 1,000,000 kg\nPropellant type: Thermal Rocket",
+			"version_hash": 2783018436
 		},
 		"SYSTEM_FUEL_2000000": {
 			"string": "Frigate propellant tank array",
@@ -1286,20 +1266,20 @@ const TRANSLATIONS = {
 			"version_hash": 1601193690
 		},
 		"SYSTEM_FUEL_2000000_SPECS": {
-			"string": "Capacity: 2,000,000 kg \\nPropellant type: Thermal Rocket",
-			"version_hash": 901361093
+			"string": "Capacity: 2,000,000 kg\nPropellant type: Thermal Rocket",
+			"version_hash": 2871664421
 		},
 		"SYSTEM_THRUSTER_PIN150": {
 			"string": "RMS Pin-C50 thruster",
 			"version_hash": 503674612
 		},
 		"SYSTEM_THRUSTER_PIN150_DESC": {
-			"string": "The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. However, they do suffer extra stress while under acceleration, and will fail at considerably lower accelerations than conventional thrusters. \\n\\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.",
-			"version_hash": 1349732115
+			"string": "The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. However, they do suffer extra stress while under acceleration, and will fail at considerably lower accelerations than conventional thrusters.\n\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.",
+			"version_hash": 1271884051
 		},
 		"SYSTEM_THRUSTER_PIN150_SPECS": {
-			"string": "Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions",
-			"version_hash": 1753116300
+			"string": "Thrust: 150 kN \nExhaust velocity: 90 km/s\nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 913236076
 		},
 		"SYSTEM_THRUSTER_BLAST": {
 			"string": "ERS-BlasTR 7200 thruster",
@@ -1310,44 +1290,44 @@ const TRANSLATIONS = {
 			"version_hash": 1965070975
 		},
 		"SYSTEM_THRUSTER_BLAST_SPECS": {
-			"string": "Thrust: 450 kN \\nExhaust velocity: 22 km/s \\nPropellant consumption: 20.5 kg/s \\nPower consumption: 72 MW \\nThermal consumption: 5.0 GW \\nOperation mode: Variable thrust \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 145 kg (per thruster) \\nManufacturer: Electro Ride Systems",
-			"version_hash": 1023832149
+			"string": "Thrust: 450 kN\nExhaust velocity: 22 km/s \nPropellant consumption: 20.5 kg/s \nPower consumption: 72 MW \nThermal consumption: 5.0 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 145 kg (per thruster) \nManufacturer: Electro Ride Systems",
+			"version_hash": 187101429
 		},
 		"SYSTEM_THRUSTER_PNTRM": {
 			"string": "ND-PNTRm thruster",
 			"version_hash": 1339790742
 		},
 		"SYSTEM_THRUSTER_PNTRM_DESC": {
-			"string": "The remarkable success of the PNTR indicated to Nakamura Dynamics that the age-old problem of delicate gimbal mounts could be entirely sidestepped with solid-state thrust vectoring technology, and the company quickly set to work on effectively downscaling the system for use as RCS thrusters.  \\n\\nDespite its poor exhaust velocity as a pure NTR, the Pulsed Nuclear Thermal Rocket (Micro) makes up for it with the largest effective thrust vectoring range on the market today. Its low operational cost and fast warmup makes it ideal for heavier ships with limited RCS thruster layouts.",
-			"version_hash": 2424136332
+			"string": "The remarkable success of the PNTR indicated to Nakamura Dynamics that the age-old problem of delicate gimbal mounts could be entirely sidestepped with solid-state thrust vectoring technology, and the company quickly set to work on effectively downscaling the system for use as RCS thrusters.\n\nDespite its poor exhaust velocity as a pure NTR, the Pulsed Nuclear Thermal Rocket (Micro) makes up for it with the largest effective thrust vectoring range on the market today. Its low operational cost and fast warmup makes it ideal for heavier ships with limited RCS thruster layouts.",
+			"version_hash": 3905767052
 		},
 		"SYSTEM_THRUSTER_PNTRM_SPECS": {
-			"string": "Thrust: 450 kN \\nExhaust velocity: 5 km/s \\nPropellant consumption: 90.0 kg/s \\nPower consumption: 40 MW \\nThermal consumption: 1.8 GW \\nOperation mode: Pulsed thrust \\nVectored thrust angle: 60 deg \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 25 kg (per thruster) \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 3803267296
+			"string": "Thrust: 450 kN\nExhaust velocity: 5 km/s \nPropellant consumption: 90.0 kg/s \nPower consumption: 40 MW \nThermal consumption: 1.8 GW \nOperation mode: Pulsed thrust \nVectored thrust angle: 60 deg \nPropellant: Oxygen-Hydrogen plasma \nMass: 25 kg (per thruster) \nManufacturer: Nakamura Dynamics",
+			"version_hash": 1889676704
 		},
 		"SYSTEM_SALVAGE_ARM_HEAVY": {
 			"string": "Rusatom-Antonoff ORD",
 			"version_hash": 3844473405
 		},
 		"SYSTEM_SALVAGE_ARM_HEAVY_DESC": {
-			"string": "Through the course of their collaboration on the KTA24, Rusatom-Antonoff quickly recognised the shortcomings of the Triskellion-Armstrong AR-1500. A slow and delicate device, its usage as an ore recovery tool quickly wears out its precision servos and carefully-constructed docking adapter. The ORD is their response to such shortcomings. \\n\\nWhile especially heavy and power-hungry on account of its bulky support structure, its hard-wearing motors and bearings offer a viable and durable alternative to its counterpart. ",
-			"version_hash": 4017619073
+			"string": "Through the course of their collaboration on the KTA24, Rusatom-Antonoff quickly recognised the shortcomings of the Triskellion-Armstrong AR-1500. A slow and delicate device, its usage as an ore recovery tool quickly wears out its precision servos and carefully-constructed docking adapter. The ORD is their response to such shortcomings.\n\nWhile especially heavy and power-hungry on account of its bulky support structure, its hard-wearing motors and bearings offer a viable and durable alternative to its counterpart. ",
+			"version_hash": 2319603105
 		},
 		"SYSTEM_SALVAGE_ARM_HEAVY_SPECS": {
-			"string": "Arm strength: 3,200 kN \\nReach: 40 m \\nPower draw (peak): 220 MW \\nMounting Location: High-stress only \\nMass: 14,000 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 14878473
+			"string": "Arm strength: 3,200 kN \nReach: 40 m \nPower draw (peak): 220 MW \nMounting Location: High-stress only \nMass: 14,000 kg\nManufacturer: Rusatom-Antonoff",
+			"version_hash": 890191113
 		},
 		"SYSTEM_SALVAGE_ARM_LIGHT": {
 			"string": "Runasimi KRB-500",
 			"version_hash": 3632982126
 		},
 		"SYSTEM_SALVAGE_ARM_LIGHT_DESC": {
-			"string": "The Runasimi KRB-500 Sample Manipulator was originally developed for the vessels of lesser-funded research organisations, but has recently found a new niche in the mining sector as a convenient alternative to nanodrone systems. \\n\\nThe manipulator's actuators use fluid couplings with brake discs to simulate the precision of stepper or servo motors, a novel implementation that minimises maintenance expenses and overall mass. In addition, its claw can be magnetised to clamp to the outer hull of small ferromagnetic objects such as drone hulls, but its holding strength may be inadequate for larger vessels. \\n\\nNote: analysis and experiment packages are available as a separate purchase.",
-			"version_hash": 2076300310
+			"string": "The Runasimi KRB-500 Sample Manipulator was originally developed for the vessels of lesser-funded research organisations, but has recently found a new niche in the mining sector as a convenient alternative to nanodrone systems.\n\nThe manipulator's actuators use fluid couplings with brake discs to simulate the precision of stepper or servo motors, a novel implementation that minimises maintenance expenses and overall mass. In addition, its claw can be magnetised to clamp to the outer hull of small ferromagnetic objects such as drone hulls, but its holding strength may be inadequate for larger vessels. \n\nNote: analysis and experiment packages are available as a separate purchase.",
+			"version_hash": 3810894454
 		},
 		"SYSTEM_SALVAGE_ARM_LIGHT_SPECS": {
-			"string": "Arm strength: 500 kN \\nReach: 35 m \\nPower draw (peak): 60 MW \\nMass: 2,050 kg \\nManufacturer: Runasimi Inc.",
-			"version_hash": 2860574801
+			"string": "Arm strength: 500 kN \nReach: 35 m \nPower draw (peak): 60 MW \nMass: 2,050 kg\nManufacturer: Runasimi Inc.",
+			"version_hash": 431506001
 		},
 		"SYSTEM_SALVAGE_ARM_LONG": {
 			"string": "TR-60 Extended Manipulator",
@@ -1358,44 +1338,44 @@ const TRANSLATIONS = {
 			"version_hash": 2981052471
 		},
 		"SYSTEM_SALVAGE_ARM_LONG_SPECS": {
-			"string": "Arm strength: 700 kN \\nReach: 60 m \\nPower draw (peak): 170 MW \\nMass: 7,750 kg \\nManufacturer: Triskelion-Armstrong",
-			"version_hash": 4230989901
+			"string": "Arm strength: 700 kN \nReach: 60 m \nPower draw (peak): 170 MW \nMass: 7,750 kg\nManufacturer: Triskelion-Armstrong",
+			"version_hash": 705504333
 		},
 		"SYSTEM_MAIN_ENGINE_NANI": {
 			"string": "SSE NANI Torch Refit",
 			"version_hash": 102908080
 		},
 		"SYSTEM_MAIN_ENGINE_NANI_DESC": {
-			"string": "This comically impractical and completely disgusting main torch is the ultimate logical conclusion of many a night spent drinking and ruminating on life's purpose. Coming to the determination that there isn't one, the team at Sin Space Engineering put their heads together and produced this thing. \\n\\nDisclaimer: Omaewamou-Shindeiru thinks this is really funny and fully endorses the NANI's use as a propulsion solution. May void vessel warranty. Usage as main torch in some vessels may damage your reactor. Have fun!",
-			"version_hash": 1452558551
+			"string": "This comically impractical and completely disgusting main torch is the ultimate logical conclusion of many a night spent drinking and ruminating on life's purpose. Coming to the determination that there isn't one, the team at Sin Space Engineering put their heads together and produced this thing.\n\nDisclaimer: Omaewamou-Shindeiru thinks this is really funny and fully endorses the NANI's use as a propulsion solution. May void vessel warranty. Usage as main torch in some vessels may damage your reactor. Have fun!",
+			"version_hash": 29273335
 		},
 		"SYSTEM_MAIN_ENGINE_NANI_SPECS": {
-			"string": "Thrust: 3,450 kN \\nExhaust velocity: 132 km/s \\nPropellant consumption: 0.5 kg/s \\nPower consumption: 200 MW \\nThermal consumption: 2 GW \\nPropellant: Supercritical liquid uranium salt \\nBurn time: 1 minute (est) \\nMass: 10,000 kg \\nManufacturer: Sin Space Engineering / Omaewamou-Shindeiru",
-			"version_hash": 2648206337
+			"string": "Thrust: 3,450 kN \nExhaust velocity: 132 km/s \nPropellant consumption: 0.5 kg/s \nPower consumption: 200 MW \nThermal consumption: 2 GW \nPropellant: Supercritical liquid uranium salt\nBurn time: 1 minute (est) \nMass: 10,000 kg \nManufacturer: Sin Space Engineering / Omaewamou-Shindeiru",
+			"version_hash": 846653473
 		},
 		"SYSTEM_MAIN_ENGINE_GEMINI": {
 			"string": "MA-NTR600-II dual engine",
 			"version_hash": 2716215589
 		},
 		"SYSTEM_MAIN_ENGINE_GEMINI_DESC": {
-			"string": "The NTR600-II, otherwise known as the \"Gemini\", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. The dual exhaust layout in combination of a basic thrust vectoring system also allows for additional vectoring potential, furthering the potential efficiency of the torch. \n\nDisclaimer: Mitsudaya-Starbus warns that the MPD will stress the reactor due to the sheer power required by it, potentially causing failure at a significantly higher temperature than other consumer-grade torches. Maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.",
-			"version_hash": 1596119721
+			"string": "The NTR600-II, otherwise known as the \"Gemini\", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. The dual exhaust layout in combination of a basic thrust vectoring system also allows for additional vectoring potential, furthering the potential efficiency of the torch.\n\nDisclaimer: Mitsudaya-Starbus warns that the MPD will stress the reactor due to the sheer power required by it, potentially causing failure at a significantly higher temperature than other consumer-grade torches. Maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.",
+			"version_hash": 4245011721
 		},
 		"SYSTEM_MAIN_ENGINE_GEMINI_SPECS": {
-			"string": "Thrust: 1,200 kN \\nExhaust velocity: 28 km/s \\nPropellant consumption: 52 kg/s \\nPower consumption: 250 MW \\nThermal consumption: 16.8 GW \\nVectored thrust angle: 60 deg \\nVectoring speed: 20 deg/s \\nOperation mode: Variable thrust \\nPropellant: Hydrogen plasma \\nMass: 4,350 kg \\nManufacturer: Mitsudaya-Starbus",
-			"version_hash": 3065622450
+			"string": "Thrust: 1,200 kN \nExhaust velocity: 28 km/s \nPropellant consumption: 52 kg/s \nPower consumption: 250 MW \nThermal consumption: 16.8 GW \nVectored thrust angle: 60 deg \nVectoring speed: 20 deg/s \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma\nMass: 4,350 kg \nManufacturer: Mitsudaya-Starbus",
+			"version_hash": 359774482
 		},
 		"SYSTEM_MAIN_ENGINE_SOYUZ": {
 			"string": "RA-TNTRL-R44 quad engine",
 			"version_hash": 3205954369
 		},
 		"SYSTEM_MAIN_ENGINE_SOYUZ_DESC": {
-			"string": "It's by no stretch of the imagination that this \"torch\" exists. Rusatom-Antonoff aimed to compete with other multiple-torch assemblies by introducing their own, but development was slow, and by the end of the 22nd century, many prototypes had been tried and failed with no viable solutions. \\n\\nMyths of its invention process vary, but generally suggest that the lead designer on the project was visited in a dream by the ghost of legendary Soviet rocket engineer Valentin Glushko. He spoke one word, 'Soyuz', and then departed, leaving the K44 RCS thruster at the designer's feet. \\n\\nProduction of these combined units continues to this day, and is part of the reason why the K44 thruster is still so abundant.",
-			"version_hash": 1366834651
+			"string": "It's by no stretch of the imagination that this \"torch\" exists. Rusatom-Antonoff aimed to compete with other multiple-torch assemblies by introducing their own, but development was slow, and by the end of the 22nd century, many prototypes had been tried and failed with no viable solutions.\n\nMyths of its invention process vary, but generally suggest that the lead designer on the project was visited in a dream by the ghost of legendary Soviet rocket engineer Valentin Glushko. He spoke one word, 'Soyuz', and then departed, leaving the K44 RCS thruster at the designer's feet. \n\nProduction of these combined units continues to this day, and is part of the reason why the K44 thruster is still so abundant.",
+			"version_hash": 2622262715
 		},
 		"SYSTEM_MAIN_ENGINE_SOYUZ_SPECS": {
-			"string": "Thrust: 1,600 kN \\nExhaust velocity: 15 km/s \\nPropellant consumption: 106.4 kg/s \\nPower consumption: 60 MW \\nThermal consumption: 12.0 GW \\nOperation mode: Pulsed thrust \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 650 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 98769096
+			"string": "Thrust: 1,600 kN \nExhaust velocity: 15 km/s \nPropellant consumption: 106.4 kg/s \nPower consumption: 60 MW \nThermal consumption: 12.0 GW\nOperation mode: Pulsed thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 650 kg \nManufacturer: Rusatom-Antonoff",
+			"version_hash": 1658291400
 		},
 		"SYSTEM_MAIN_ENGINE_THUNDER": {
 			"string": "RA-K69V quad engine",
@@ -1406,32 +1386,32 @@ const TRANSLATIONS = {
 			"version_hash": 2146529517
 		},
 		"SYSTEM_MAIN_ENGINE_THUNDER_SPECS": {
-			"string": "Thrust: 1,600 kN \\nExhaust velocity: 12 km/s \\nPropellant consumption: 133.2 kg/s \\nPower consumption: 100 MW \\nThermal consumption: 14.4 GW \\nGimbal angle: 25 deg \\nGimbal speed: 360 deg/s \\nOperation mode: Pulsed thrust, gimballed \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 950 kg \\nManufacturer: Custom-built / Rusatom-Antonoff",
-			"version_hash": 3513946357
+			"string": "Thrust: 1,600 kN \nExhaust velocity: 12 km/s \nPropellant consumption: 133.2 kg/s \nPower consumption: 100 MW \nThermal consumption: 14.4 GW \nGimbal angle: 25 deg \nGimbal speed: 360 deg/s \nOperation mode: Pulsed thrust, gimballed\nPropellant: Oxygen-Hydrogen plasma \nMass: 950 kg \nManufacturer: Custom-built / Rusatom-Antonoff",
+			"version_hash": 2233516597
 		},
 		"SYSTEM_MAIN_ENGINE_PIN1200": {
 			"string": "RMS Pin-M200 engine",
 			"version_hash": 1077983648
 		},
 		"SYSTEM_MAIN_ENGINE_PIN1200_DESC": {
-			"string": "The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-C50 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, it was decided to include a micro fusion reactor for the power supply. Unlike equivalent fusion torches, this reactor is used solely for the purpose of providing heat, rather than being essential to the generation of thrust. A limited tank of fusion fuel limits burn time to roughly an hour and a half.",
-			"version_hash": 1213295894
+			"string": "The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-C50 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data.\n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, it was decided to include a micro fusion reactor for the power supply. Unlike equivalent fusion torches, this reactor is used solely for the purpose of providing heat, rather than being essential to the generation of thrust. A limited tank of fusion fuel limits burn time to roughly an hour and a half.",
+			"version_hash": 2466078966
 		},
 		"SYSTEM_MAIN_ENGINE_PIN1200_SPECS": {
-			"string": "Thrust: 1,200 kN \\nExhaust velocity: 105 km/s \\nPropellant consumption: 11.4 kg/s \\nPower consumption: 550 MW \\nVectoring angle: 40 deg \\nOperation mode: Variable thrust \\nPropellant: Hydrogen plasma / uranium salt \\nBurn time: 90 minutes (est) \\nMass: 11,350 kg \\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 3613207065
+			"string": "Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 550 MW\nVectoring angle: 40 deg \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma / uranium salt \nBurn time: 90 minutes (est) \nMass: 11,350 kg \nManufacturer: Rasamama Material Solutions",
+			"version_hash": 1830654905
 		},
 		"SYSTEM_MAIN_ENGINE_CRACK": {
 			"string": "NDDFD engine",
 			"version_hash": 4036807547
 		},
 		"SYSTEM_MAIN_ENGINE_CRACK_DESC": {
-			"string": "The Directed Fusion Detonation engine by Nakamura Dynamics is one of the most powerful - and earliest! - fusion propulsion solutions still on the market. Popularised by a now-infamous 2214 advertisement backed by the Vengaboys' \"Boom, Boom, Boom, Boom\", the NDDFD utilises powerful electromagnets to crush remass-heated ferromagnetic shells containing pressurised deuterium and tritium, then direct the resultant detonation out of its cage-like nozzle assembly. \\n\\nUnlike its competitor, the NDDFD requires a enormous and continuous supply of power to maintain propulsion, and its relatively large pellets and specialised feed hardware dramatically limits its fuel capacity in small vessels.",
-			"version_hash": 1952062653
+			"string": "The Directed Fusion Detonation engine by Nakamura Dynamics is one of the most powerful - and earliest! - fusion propulsion solutions still on the market. Popularised by a now-infamous 2214 advertisement backed by the Vengaboys' \"Boom, Boom, Boom, Boom\", the NDDFD utilises powerful electromagnets to crush remass-heated ferromagnetic shells containing pressurised deuterium and tritium, then direct the resultant detonation out of its cage-like nozzle assembly.\n\nUnlike its competitor, the NDDFD requires a enormous and continuous supply of power to maintain propulsion, and its relatively large pellets and specialised feed hardware dramatically limits its fuel capacity in small vessels.",
+			"version_hash": 1795382237
 		},
 		"SYSTEM_MAIN_ENGINE_CRACK_SPECS": {
-			"string": "Thrust: 1,800 kN \\nExhaust velocity: 1,850 km/s \\nPropellant consumption: 1 kg/s \\nPower consumption: 445 MW \\nOperation mode: Pulsed thrust \\n Propellant: Hydrogen plasma \\nFusion fuel: D-T \\nBurn time: 30 minutes (est) \\nMass: 4,650 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 1438267236
+			"string": "Thrust: 1,800 kN \nExhaust velocity: 1,850 km/s \nPropellant consumption: 1 kg/s\nPower consumption: 445 MW \nOperation mode: Pulsed thrust \n Propellant: Hydrogen plasma \nFusion fuel: D-T \nBurn time: 30 minutes (est) \nMass: 4,650 kg \nManufacturer: Nakamura Dynamics",
+			"version_hash": 919709828
 		},
 		"SYSTEM_MAIN_ENGINE_ZURBIN": {
 			"string": "ND ZURBIN engine",
@@ -1442,8 +1422,8 @@ const TRANSLATIONS = {
 			"version_hash": 601565468
 		},
 		"SYSTEM_MAIN_ENGINE_ZURBIN_SPECS": {
-			"string": "Thrust: 6,900 kN \\nExhaust velocity: 66 km/s \\nPropellant consumption: 104.5 kg/s \\nPower consumption: 50 MW \\nOperation mode: Variable thrust \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 10,000 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 1881930709
+			"string": "Thrust: 6,900 kN \nExhaust velocity: 66 km/s \nPropellant consumption: 104.5 kg/s \nPower consumption: 50 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 10,000 kg\nManufacturer: Nakamura Dynamics",
+			"version_hash": 1441569589
 		},
 		"SYSTEM_MAIN_ENGINE_PMS": {
 			"string": "ND PMS engine",
@@ -1454,8 +1434,8 @@ const TRANSLATIONS = {
 			"version_hash": 2154944331
 		},
 		"SYSTEM_MAIN_ENGINE_PMS_SPECS": {
-			"string": "Thrust: 3,000 kN \\nExhaust velocity: 3 km/s \\nPropellant consumption: 1,000 kg/s \\nPower consumption: 20 MW \\nThermal consumption: 4.5 GW \\nOperation mode: Variable thrust \\nPropellant: Oxygen-Hydrogen plasma \\nMass: 250 kg \\nManufacturer: Nakamura Dynamics",
-			"version_hash": 285575969
+			"string": "Thrust: 3,000 kN \nExhaust velocity: 3 km/s \nPropellant consumption: 1,000 kg/s \nPower consumption: 20 MW\nThermal consumption: 4.5 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 250 kg \nManufacturer: Nakamura Dynamics",
+			"version_hash": 2901639713
 		},
 		"IOER_TRANSIT_TIP_1": {
 			"string": "Preprocessor units draw water out of a chunk before it meets the mineral processing unit to speed up the time it takes for the chunk to be processed.",
@@ -1522,36 +1502,36 @@ const TRANSLATIONS = {
 			"version_hash": 2758148380
 		},
 		"SYSTEM_MWTIGHTBEAM_SPECS": {
-			"string": "Effective range: 800 m \\nPower consumption: 120 MW \\nOutput power: 90 MW \\nWavelength: 1 cm \\nMass: 400 kg \\nManufacturer: Rusatom-Antonoff",
-			"version_hash": 4287019540
+			"string": "Effective range: 800 m \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 400 kg\nManufacturer: Rusatom-Antonoff",
+			"version_hash": 298178068
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT": {
 			"string": "RADMW-8120",
 			"version_hash": 3416819864
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT_DESC": {
-			"string": "This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling. \\n\\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.",
-			"version_hash": 1054989203
+			"string": "This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling.\n\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.",
+			"version_hash": 3292718291
 		},
 		"SYSTEM_MWTIGHTBEAM_PDT_SPECS": {
-			"string": "Effective range: 800 m \nTargeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom",
-			"version_hash": 276371758
+			"string": "Effective range: 800 m \nTargeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg\nManufacturer: Rusatom",
+			"version_hash": 3649933006
 		},
 		"SYSTEM_PDTL": {
 			"string": "NDCL-1080",
 			"version_hash": 194214876
 		},
 		"SYSTEM_PDTL_MANUAL": {
-			"string": "Automatically picks targets.\\nFires automatically.\\nCoordinates across multiple systems.\\nTargeting computer is imperfect.\\nDisable the hardpoint to prevent accidental friendly fire.\\nDeals thermal damage.",
-			"version_hash": 2781923848
+			"string": "Automatically picks targets.\nFires automatically.\nCoordinates across multiple systems.\nTargeting computer is imperfect.\nDisable the hardpoint to prevent. accidental friendly fire.\nDeals thermal damage.",
+			"version_hash": 2892698806
 		},
 		"SYSTEM_PDTL_DESC": {
-			"string": "A small laser attached to a turret base allows for a wide coverage from the hardpoint's point of view. The lower power makes for a bit of extra work on the laser to break rocks, however it prevents as much damage dealt to targets. It fires automatically, so users are warned to have proper control over their governing IFF systems to prevent unwanted conflict. \\n\\nTHE HARDWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE USER ASSUMES ALL LIABILITY WITH THE USE OF THIS EQUIPMENT",
-			"version_hash": 1832670728
+			"string": "A small laser attached to a turret base allows for a wide coverage from the hardpoint's point of view. The lower power makes for a bit of extra work on the laser to break rocks, however it prevents as much damage dealt to targets. It fires automatically, so users are warned to have proper control over their governing IFF systems to prevent unwanted conflict.\n\nTHE HARDWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE USER ASSUMES ALL LIABILITY WITH THE USE OF THIS EQUIPMENT",
+			"version_hash": 3049125296
 		},
 		"SYSTEM_PDTL_SPECS": {
-			"string": "Effective range: 1,000 m \nTargeting AI: Class-1 \nPower consumption (peak): 80 MW \nMass: 1,500 kg \nManufacturer: Nakamura-Coherent",
-			"version_hash": 3220629262
+			"string": "Effective range: 1,000 m \nTargeting AI: Class-1 \nPower consumption (peak): 80 MW \nMass: 1,500 kg\nManufacturer: Nakamura-Coherent",
+			"version_hash": 2684378606
 		},
 		"POI_WRECKAGE_UNKNOWN": {
 			"string": "Mysterious Wreckage",
@@ -1588,6 +1568,18 @@ const TRANSLATIONS = {
 		"IOE_TUNE_PARAMETER_PRINT_DND_SPEED": {
 			"string": "Drone print speed",
 			"version_hash": 1044549179
+		},
+		"SHIP_EIME_B": {
+			"string": "Eon Interstellar Model B \"Bubba\"",
+			"version_hash": 3626000883
+		},
+		"SHIP_EIME_B_SPECS": {
+			"string": "Make: Eon Interstellar\nHigh-Stress Hardpoints: 1\nLow-Stress Hardpoints: 2\nCrew: 5\nDry mass: 27,240 kg\nCargo bay: 140 m^3\nProcessed cargo storage (per mineral): 11,000 kg",
+			"version_hash": 919535865
+		},
+		"SHIP_EIME_B_DESC": {
+			"string": "A predecessor to the currently-infamous Model E, the Model B (nicknamed \"Bubba\") attempted to draw from the ever-reliable thruster design of the K37-series of vessels. Initial tests were successful, and much praise was given, however it was soon discovered that the layout proved to be unstable, and would impart forces against her reactor beyond what was recommended for nominal use, and was discontinued to the drawing board. Several vessels still remain due to a subset of pilots who enjoyed the freedom of the original design, and were careful enough pilots to overcome the instability.",
+			"version_hash": 1810821042
 		}
 	},
 	"ru_RU": {
@@ -2661,26 +2653,6 @@ const TRANSLATIONS = {
 		},
 		"SLOT_TURRET_RIGHT": {
 			"string": "Правая турельная установка",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_LEFT_UP": {
-			"string": "Левый верхний торпедный отсек",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_RIGHT_UP": {
-			"string": "Правый верхний торпедный отсек",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_LEFT_DN": {
-			"string": "Левый нижний торпедный отсек",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_RIGHT_DN": {
-			"string": "Правый нижний торпедный отсек",
-			"version_hash": 0
-		},
-		"SLOT_DRONE": {
-			"string": "Отсек для дрона",
 			"version_hash": 0
 		},
 		"SLOT_MAIN_LARGE": {
@@ -3995,26 +3967,6 @@ const TRANSLATIONS = {
 		},
 		"SLOT_TURRET_RIGHT": {
 			"string": "Правий турельний підвіс",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_LEFT_UP": {
-			"string": "Лівий верхній торпедний апарат",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_RIGHT_UP": {
-			"string": "Правий верхній торпедний апарат",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_LEFT_DN": {
-			"string": "Лівий нижній торпедний апарат",
-			"version_hash": 0
-		},
-		"SLOT_TUBE_RIGHT_DN": {
-			"string": "Правий нижній торпедний апарат",
-			"version_hash": 0
-		},
-		"SLOT_DRONE": {
-			"string": "Підвіс для дронів",
 			"version_hash": 0
 		},
 		"SLOT_MAIN_LARGE": {

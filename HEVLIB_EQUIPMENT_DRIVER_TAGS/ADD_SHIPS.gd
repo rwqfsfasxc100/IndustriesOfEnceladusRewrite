@@ -1059,6 +1059,74 @@ const YME = {
 		"chaos":0.25
 	},
 }
+const EIME_B = {
+	"name":"EIME-B",
+	"specific_derelict_name":"IOER_DerelictEIME_B",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/EIME-B.tscn",
+	"alias":"EIME",
+	"config":{
+		"config":{
+			"fuel":{
+				"capacity":30000.0, 
+				"initial":30000.0, 
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_EIZAP", 
+				"rcs":"SYSTEM_THRUSTER_AGILE"
+			}, 
+			"weaponSlot":{
+				"main":{
+					"type":"SYSTEM_NONE"
+				}, 
+				"left":{
+					"type":"SYSTEM_NONE"
+				}, 
+				"right":{
+					"type":"SYSTEM_NONE"
+				}, 
+			}, 
+			"ammo":{
+				"capacity":0.0, 
+				"initial":0.0
+			}, 
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK4"
+			}, 
+			"capacitor":{
+				"capacity":1000.0
+			}, 
+			"turbine":{
+				"power":500.0
+			},
+			"reactor":{
+				"power": 30.0
+			},
+		}
+	},
+	"dealer":{
+		"age":1,
+		"weight":1,
+	},
+	"derelict":{
+		"chance":0.3,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"rescue":false,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
+}
 
 const OCP_SALVAGE = {
 	"name":"OCP-SALVAGE",
