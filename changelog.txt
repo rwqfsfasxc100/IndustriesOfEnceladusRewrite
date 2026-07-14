@@ -1,3 +1,10 @@
+[2.9.4]
+
+1=* Added new ship: the EIMB "Bubba"
+1.1=* A variant to the EIME, instead using a K37-like thruster layout as best fitted to a Model E
+2=* Non-K37 variants can now be randomly equipped with IoE torches
+3=* Consumable vats now are only fitted to a ship when it makes sense to use them
+
 [2.9.3]
 
 1=* Fixed issue that caused the Tsukuyomi, Oberon, Wasp, and CERFs being unable to be previewed in the fleet and dealership menus

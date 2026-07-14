@@ -219,31 +219,13 @@ const SHIP_TRTL = { # Example configs for specifically K37s & variants
 		},
 		{
 			"slot":"weaponSlot.main.type",
-			"system":"SYSTEM_SALVAGE_ARM_HEAVY",
-		},
-		{
-			"slot":"weaponSlot.main.type",
-			"system":"SYSTEM_SALVAGE_ARM_LONG",
-		},
-		{
-			"slot":"weaponSlot.main.type",
-			"system":"SYSTEM_SALVAGE_ARM_LIGHT",
-			"chance":0.2
-		},
-		{
-			"slot":"propulsion.main",
-			"system":["SYSTEM_MAIN_ENGINE_GEMINI","SYSTEM_MAIN_ENGINE_THUNDER","SYSTEM_MAIN_ENGINE_SOYUZ"],
-			"chance":0.15
-		},
-		{
-			"slot":"propulsion.main",
-			"system":["SYSTEM_MAIN_ENGINE_PIN1200","SYSTEM_MAIN_ENGINE_CRACK","SYSTEM_MAIN_ENGINE_PMS"],
-			"chance":0.1
-		},
-		{
-			"slot":"propulsion.main",
-			"system":"SYSTEM_MAIN_ENGINE_NANI",
-			"chance":0.05
+			"system":[
+				"SYSTEM_SALVAGE_ARM_HEAVY",
+				"SYSTEM_SALVAGE_ARM_LONG",
+				"SYSTEM_SALVAGE_ARM_LIGHT",
+				"SYSTEM_SALVAGE_ARM",
+			],
+			"chance":0.0875
 		},
 	],
 	"if_equipment":[
@@ -290,6 +272,55 @@ const SHIP_TRTL = { # Example configs for specifically K37s & variants
 	],
 }
 
+const TORCH_SHIPS = {
+	"ship_name":PoolStringArray([
+		"TRTL",
+		"PROSPECTOR",
+		"EIME",
+		"COTHON",
+		"AT225",
+		"OCP209",
+		"MADCERF",
+		"OBERON",
+	]),
+	"recurse_to_variants":true,
+	"random":[
+		{
+			"slot":"propulsion.main",
+			"system":[
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_GEMINI",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_THUNDER",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_SOYUZ",
+				"SYSTEM_MAIN_ENGINE_PMS",
+				"SYSTEM_MAIN_ENGINE_PMS",
+				"SYSTEM_MAIN_ENGINE_PMS",
+				"SYSTEM_MAIN_ENGINE_PMS",
+				"SYSTEM_MAIN_ENGINE_PIN1200",
+				"SYSTEM_MAIN_ENGINE_PIN1200",
+				"SYSTEM_MAIN_ENGINE_CRACK",
+				"SYSTEM_MAIN_ENGINE_CRACK",
+				"SYSTEM_MAIN_ENGINE_NANI",
+			],
+			"chance":0.2
+		},
+	]
+}
+
 const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitted to all ships
 	"ship_name":PoolStringArray([
 		"TRTL",
@@ -303,36 +334,94 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 		"ATLAS-WASP",
 		"MADCERF",
 		"OBERON",
-		
 	]),
 	"recurse_to_variants":true,
-	"random":[
+	"if_equipment":[
+		{
+			"slot":"cargo.consumableVat",
+			"system":PoolStringArray(["SYSTEM_HULLVAT_CONSUMABLESPEED_1","SYSTEM_HULLVAT_CONSUMABLESPEED_2"]),
+			"chance":0.2,
+			"do_add_if":[
+				"SYSTEM_DND_HARVTUG",
+				"SYSTEM_DND_HARVHAUL",
+				"SYSTEM_IROH",
+				"SYSTEM_EMD17RF",
+			],
+		},
+	],
+	"if_tag":[
 		{
 			"slot":"cargo.consumableVat",
 			"system":PoolStringArray([
 				"SYSTEM_HULLVAT_AMMO_1",
 				"SYSTEM_HULLVAT_AMMO_2",
-				"SYSTEM_HULLVAT_AMMO_EXTEND_1",
-				"SYSTEM_HULLVAT_AMMO_EXTEND_2",
-				"SYSTEM_HULLVAT_AMMO_EXTEND_3",
-				"SYSTEM_HULLVAT_NANO_1",
-				"SYSTEM_HULLVAT_NANO_2",
-				"SYSTEM_HULLVAT_NANO_EXTEND_1",
-				"SYSTEM_HULLVAT_NANO_EXTEND_2",
-				"SYSTEM_HULLVAT_NANO_EXTEND_3",
-				"SYSTEM_HULLVAT_PROP_1",
-				"SYSTEM_HULLVAT_PROP_2",
-				"SYSTEM_HULLVAT_PROP_EXTEND_1",
-				"SYSTEM_HULLVAT_PROP_EXTEND_2",
-				"SYSTEM_HULLVAT_PROP_EXTEND_3",
 			]),
-			"chance":0.3
+			"do_add_if":[
+				"EQUIPMENT_MASS_DRIVERS"
+			],
+			"check_numerics":{
+				"ammo.capacity":{
+					"operation":"<",
+					"comparison":2000.0,
+				}
+			},
+			"chance":0.5
 		},
 		{
 			"slot":"cargo.consumableVat",
-			"system":PoolStringArray(["SYSTEM_HULLVAT_CONSUMABLESPEED_1","SYSTEM_HULLVAT_CONSUMABLESPEED_2"]),
-			"chance":0.15
+			"system":PoolStringArray([
+				"SYSTEM_HULLVAT_AMMO_EXTEND_1",
+				"SYSTEM_HULLVAT_AMMO_EXTEND_2",
+				"SYSTEM_HULLVAT_AMMO_EXTEND_3",
+			]),
+			"do_add_if":[
+				"EQUIPMENT_MASS_DRIVERS"
+			],
+			"check_numerics":{
+				"ammo.capacity":{
+					"operation":">",
+					"comparison":1000.0,
+				}
+			},
+			"chance":0.2
 		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":PoolStringArray([
+				"SYSTEM_HULLVAT_NANO_1",
+				"SYSTEM_HULLVAT_NANO_2",
+			]),
+			"do_add_if":[
+				"EQUIPMENT_NANODRONES"
+			],
+			"check_numerics":{
+				"drones.capacity":{
+					"operation":"<",
+					"comparison":5000.0,
+				}
+			},
+			"chance":0.5
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":PoolStringArray([
+				"SYSTEM_HULLVAT_NANO_EXTEND_1",
+				"SYSTEM_HULLVAT_NANO_EXTEND_2",
+				"SYSTEM_HULLVAT_NANO_EXTEND_3",
+			]),
+			"do_add_if":[
+				"EQUIPMENT_NANODRONES"
+			],
+			"check_numerics":{
+				"ammo.capacity":{
+					"operation":">",
+					"comparison":1000.0,
+				}
+			},
+			"chance":0.2
+		},
+	],
+	"random":[
 		{
 			"slot":"propulsion.rcs",
 			"system":PoolStringArray([
@@ -340,6 +429,35 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				"SYSTEM_THRUSTER_PNTRM",
 				"SYSTEM_THRUSTER_PIN150",
 			]),
+			"chance":0.2
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":PoolStringArray([
+				"SYSTEM_HULLVAT_PROP_1",
+				"SYSTEM_HULLVAT_PROP_2",
+			]),
+			"check_numerics":{
+				"fuel.capacity":{
+					"operation":"<",
+					"comparison":30000.0,
+				}
+			},
+			"chance":0.5
+		},
+		{
+			"slot":"cargo.consumableVat",
+			"system":PoolStringArray([
+				"SYSTEM_HULLVAT_PROP_EXTEND_1",
+				"SYSTEM_HULLVAT_PROP_EXTEND_2",
+				"SYSTEM_HULLVAT_PROP_EXTEND_3",
+			]),
+			"check_numerics":{
+				"fuel.capacity":{
+					"operation":">",
+					"comparison":50000.0,
+				}
+			},
 			"chance":0.2
 		},
 		{
@@ -357,12 +475,12 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 		{
 			"slot":"reactor.power",
 			"system":1.0,
-			"chance":0.075
+			"chance":0.0375
 		},
 		{
 			"slot":"turbine.power&&turbine.capacity",
 			"system":20.0,
-			"chance":0.075
+			"chance":0.0375
 		},
 		{
 			"slot":"turbine.power && turbine.capacity",
@@ -387,7 +505,8 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.3,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"turbine.power && turbine.capacity",
@@ -399,7 +518,8 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.5,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"turbine.power && turbine.capacity",
@@ -411,12 +531,13 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.3,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"capacitor.capacity",
 			"system":100.0,
-			"chance":0.01
+			"chance":0.0025
 		},
 		{
 			"slot":"capacitor.capacity",
@@ -428,7 +549,8 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.4,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"capacitor.capacity",
@@ -440,7 +562,8 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.3,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"ammo.capacity && ammo.initial",
@@ -452,7 +575,8 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 				}
 			},
 			"chance":0.5,
-			"priority":10
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"cargo.equipment",
@@ -480,8 +604,9 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 					"POWER_AUX_POWER_SLOT"
 				]
 			},
-			"chance":0.5,
-			"priority":10
+			"chance":0.4,
+			"priority":10,
+			"weight":2
 		},
 		{
 			"slot":"aux.power",
@@ -502,8 +627,9 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 					"POWER_AUX_POWER_SLOT"
 				]
 			},
-			"chance":0.5,
-			"priority":10
+			"chance":0.4,
+			"priority":10,
+			"weight":3
 		},
 		{
 			"slot":"cargo.equipment",
@@ -513,8 +639,9 @@ const GENERIC_SHIPS = { # This adds potential for IoE equipment that can be fitt
 					"CARGO_BAY"
 				]
 			},
-			"chance":0.5,
-			"priority":10
+			"chance":0.25,
+			"priority":10,
+			"weight":2
 		},
 	],
 }
