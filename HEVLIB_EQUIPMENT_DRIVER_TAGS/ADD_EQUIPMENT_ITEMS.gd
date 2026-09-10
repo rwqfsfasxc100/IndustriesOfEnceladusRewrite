@@ -29,6 +29,7 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # [/license]
+
 const _000 = {
 	"system":"SYSTEM_SALVAGE_ARM_LIGHT",
 	"price":87500,
@@ -714,14 +715,6 @@ const _063 = {
 }
 
 const _064 = {
-	"system":"SYSTEM_AUTOPILOT_337MOD",
-	"price":42500,
-	"test_protocol":"autopilot",
-	"slot_type":"AUTOPILOT",
-	"equipment_type":"COMPUTER_AUTOPILOT",
-}
-
-const _065 = {
 	"system":"SYSTEM_CREW_ADD_BUNK",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":4000,
@@ -730,7 +723,7 @@ const _065 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _066 = {
+const _065 = {
 	"system":"SYSTEM_CREW_ADD_BUNK2",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":7500,
@@ -739,7 +732,7 @@ const _066 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _067 = {
+const _066 = {
 	"system":"SYSTEM_CREW_MOD_HOME",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":35000,
@@ -748,7 +741,7 @@ const _067 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _068 = {
+const _067 = {
 	"system":"SYSTEM_CREW_ADD_CAPSULE",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":67500,
@@ -757,7 +750,7 @@ const _068 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _069 = {
+const _068 = {
 	"system":"SYSTEM_CREW_MOD_KMX",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":120000,
@@ -766,7 +759,7 @@ const _069 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _070 = {
+const _069 = {
 	"system":"SYSTEM_CREW_MOD_OCM",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
 	"price":485000,
@@ -775,7 +768,7 @@ const _070 = {
 	"equipment_type":"CREW_MODIFIER",
 }
 
-const _071 = {
+const _070 = {
 	"system":"SYSTEM_MAIN_ENGINE_ZURBIN",
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":1100000,
@@ -785,7 +778,7 @@ const _071 = {
 	"equipment_type":"THRUSTER_LARGE_MAIN_ENGINE",
 }
 
-const _072 = {
+const _071 = {
 	"system":"SYSTEM_HULLVAT_AMMO_1",
 	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":105000,
@@ -794,7 +787,7 @@ const _072 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _073 = {
+const _072 = {
 	"system":"SYSTEM_HULLVAT_AMMO_2",
 	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":400000,
@@ -803,7 +796,7 @@ const _073 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _074 = {
+const _073 = {
 	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_1",
 	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":675000,
@@ -812,7 +805,7 @@ const _074 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _075 = {
+const _074 = {
 	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
 	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":900000,
@@ -821,7 +814,7 @@ const _075 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _076 = {
+const _075 = {
 	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_3",
 	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":1400000,
@@ -830,7 +823,7 @@ const _076 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _077 = {
+const _076 = {
 	"system":"SYSTEM_HULLVAT_NANO_1",
 	"manual":"SYSTEM_HULLVAT_NANO_MANUAL",
 	"price":250000,
@@ -839,7 +832,7 @@ const _077 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _078 = {
+const _077 = {
 	"system":"SYSTEM_HULLVAT_NANO_2",
 	"manual":"SYSTEM_HULLVAT_NANO_MANUAL",
 	"price":750000,
@@ -848,7 +841,7 @@ const _078 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _079 = {
+const _078 = {
 	"system":"SYSTEM_HULLVAT_NANO_EXTEND_1",
 	"manual":"SYSTEM_HULLVAT_NANO_MANUAL",
 	"price":1000000,
@@ -857,7 +850,7 @@ const _079 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _080 = {
+const _079 = {
 	"system":"SYSTEM_HULLVAT_NANO_EXTEND_2",
 	"manual":"SYSTEM_HULLVAT_NANO_MANUAL",
 	"price":1500000,
@@ -866,7 +859,7 @@ const _080 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _081 = {
+const _080 = {
 	"system":"SYSTEM_HULLVAT_NANO_EXTEND_3",
 	"manual":"SYSTEM_HULLVAT_NANO_MANUAL",
 	"price":2250000,
@@ -875,7 +868,7 @@ const _081 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _082 = {
+const _081 = {
 	"system":"SYSTEM_HULLVAT_PROP_1",
 	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
 	"price":45000,
@@ -884,7 +877,7 @@ const _082 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _083 = {
+const _082 = {
 	"system":"SYSTEM_HULLVAT_PROP_2",
 	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
 	"price":120000,
@@ -893,7 +886,7 @@ const _083 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _084 = {
+const _083 = {
 	"system":"SYSTEM_HULLVAT_PROP_EXTEND_1",
 	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
 	"price":300000,
@@ -902,7 +895,7 @@ const _084 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _085 = {
+const _084 = {
 	"system":"SYSTEM_HULLVAT_PROP_EXTEND_2",
 	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
 	"price":450000,
@@ -911,7 +904,7 @@ const _085 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _086 = {
+const _085 = {
 	"system":"SYSTEM_HULLVAT_PROP_EXTEND_3",
 	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
 	"price":550000,
@@ -920,7 +913,7 @@ const _086 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _087 = {
+const _086 = {
 	"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_1",
 	"manual":"SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL",
 	"price":130000,
@@ -929,7 +922,7 @@ const _087 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _088 = {
+const _087 = {
 	"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_2",
 	"manual":"SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL",
 	"price":210000,
@@ -938,7 +931,7 @@ const _088 = {
 	"equipment_type":"CONSUMABLE_VAT",
 }
 
-const _089 = {
+const _088 = {
 	"system":"SYSTEM_SALVAGE_ARM_LONG",
 	"price":195000,
 	"manual":"SYSTEM_SALVAGE_ARM_MANUAL",
@@ -949,7 +942,7 @@ const _089 = {
 	"alignment":"ALIGNMENT_CENTER",
 }
 
-const _090 = {
+const _089 = {
 	"system":"SYSTEM_SALVAGE_ARM_LONG-L",
 	"price":195000,
 	"name_override":"SYSTEM_SALVAGE_ARM_LONG",
@@ -961,7 +954,7 @@ const _090 = {
 	"alignment":"ALIGNMENT_LEFT",
 }
 
-const _091 = {
+const _090 = {
 	"system":"SYSTEM_SALVAGE_ARM_LONG-R",
 	"price":195000,
 	"name_override":"SYSTEM_SALVAGE_ARM_LONG",

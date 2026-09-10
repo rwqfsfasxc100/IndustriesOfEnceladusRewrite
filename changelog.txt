@@ -1,3 +1,10 @@
+[2.10.2]
+
+1=* Fixed double newline in the RP-25's stat sheet
+2=* Unified names of the PNTRm thrusters, Zurbin engines, PMS engines, and DMW canon names to match the change to ND naming schemes that were missed from the original pass
+3=* Reverted change to the CERF turret point positioning due to the new (current) position being completely unfeasible in reality.
+4=* Removed MA-337-MAX autopilot due to it being completely nonfunctional
+
 [2.10.1]
 
 1=* Disabled currently WIP code that made its way into release.

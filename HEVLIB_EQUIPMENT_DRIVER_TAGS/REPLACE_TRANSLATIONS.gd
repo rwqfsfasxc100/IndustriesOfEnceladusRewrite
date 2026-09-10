@@ -70,10 +70,6 @@ const TRANSLATIONS = {
 			"string": "Requires an MPU to properly utilise. \nPassively increases onboard ammo and nanodrone storages. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.",
 			"version_hash": 1621372241
 		},
-		"SLOT_CARGO_MPU": {
-			"string": "Cargo Bay MPU",
-			"version_hash": 2419223679
-		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "Rusatom-Antonoff MPU Mk2",
 			"version_hash": 2471399476
@@ -107,8 +103,8 @@ const TRANSLATIONS = {
 			"version_hash": 2781581084
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS": {
-			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor power draw: 1,000 KW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s\n\nMass: 750 kg\nManufacturer: Rasamama Material Solutions",
-			"version_hash": 266170427
+			"string": "Ice melt rate: 22.5 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor power draw: 1,000 KW / chunk \nSimultaneous ore processing limit: 10 \nMPU processing speed change: -10 kg/s\nMass: 750 kg\nManufacturer: Rasamama Material Solutions",
+			"version_hash": 1096350833
 		},
 		"SYSTEM_CARGO_AUX_PREPROC_20x10": {
 			"string": "NDBMT",
@@ -565,22 +561,6 @@ const TRANSLATIONS = {
 		"HUD_HOLD_FILL": {
 			"string": "hold fill level",
 			"version_hash": 3235534635
-		},
-		"SYSTEM_AUTOPILOT_337MOD": {
-			"string": "MA-337-MAX Autopilot",
-			"version_hash": 507901553
-		},
-		"SYSTEM_AUTOPILOT_337MOD_DESC": {
-			"string": "The MAX is a software upgrade to the MA-337 autopilot that integrates fly-by-wire input vectors into its neural network.",
-			"version_hash": 1586129654
-		},
-		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
-			"string": "Developer: Mitsudaya-Starbus \nCapabilities: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire\nLIDAR overlay",
-			"version_hash": 3229071553
-		},
-		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
-			"string": "Displays LIDAR circle around your ship. \nARL: Cancels out opposite thrusters, conserving fuel.\nFBW: Routes all manual thruster input through the autopilot. \nCan use gimballed thrusters and engines. \nAAT: Observes cargo mass shifts and thruster damage to compute minimum thrust required for maneuver. \nReboot onboard computer to clear adaptation data.",
-			"version_hash": 74773169
 		},
 		"IOE_CONFIG_VERBOSE_LOGGING": {
 			"string": "Verbose logging",
@@ -1295,8 +1275,8 @@ const TRANSLATIONS = {
 			"version_hash": 187101429
 		},
 		"SYSTEM_THRUSTER_PNTRM": {
-			"string": "ND-PNTRm thruster",
-			"version_hash": 1339790742
+			"string": "NDPNTRm thruster",
+			"version_hash": 4253495241
 		},
 		"SYSTEM_THRUSTER_PNTRM_DESC": {
 			"string": "The remarkable success of the PNTR indicated to Nakamura Dynamics that the age-old problem of delicate gimbal mounts could be entirely sidestepped with solid-state thrust vectoring technology, and the company quickly set to work on effectively downscaling the system for use as RCS thrusters.\n\nDespite its poor exhaust velocity as a pure NTR, the Pulsed Nuclear Thermal Rocket (Micro) makes up for it with the largest effective thrust vectoring range on the market today. Its low operational cost and fast warmup makes it ideal for heavier ships with limited RCS thruster layouts.",
@@ -1415,8 +1395,8 @@ const TRANSLATIONS = {
 			"version_hash": 919709828
 		},
 		"SYSTEM_MAIN_ENGINE_ZURBIN": {
-			"string": "ND ZURBIN engine",
-			"version_hash": 3993811975
+			"string": "NDZB Zurbin engine",
+			"version_hash": 3398639427
 		},
 		"SYSTEM_MAIN_ENGINE_ZURBIN_DESC": {
 			"string": "The Zurbin engine is the high-performance main engine of the Tsukuyuomi class of frigates. Now decomissioned, these engines see use still aboard the frigates, albeit long gone from the days of combat involvement. Nakamura Dynamics did make a push to reuse any from scrapped frigates, putting them to use in their Phage class of autonomous stations.",
@@ -1427,8 +1407,8 @@ const TRANSLATIONS = {
 			"version_hash": 1441569589
 		},
 		"SYSTEM_MAIN_ENGINE_PMS": {
-			"string": "ND PMS engine",
-			"version_hash": 3240131645
+			"string": "NDPMS engine",
+			"version_hash": 677259581
 		},
 		"SYSTEM_MAIN_ENGINE_PMS_DESC": {
 			"string": "The PMS is an early predecessor to the NTTR thruster. Nakamura Dynamics's first large NTR type thruster holds an abysmal propellant economy and sub-par thrust for a raw NTR, it still holds out for it's sheer reliability. Able to operate under stresses far-exceeding any other thruster on the market, and being incredibly sturdy for it's power, the PMS still keeps up with demand for a thruster able to keep running, even in situations that would be considered dire using alternatives.",
@@ -1495,8 +1475,8 @@ const TRANSLATIONS = {
 			"version_hash": 2047110542
 		},
 		"SYSTEM_MWTIGHTBEAM": {
-			"string": "RA DMW Cannon",
-			"version_hash": 2618579005
+			"string": "RADMW Cannon",
+			"version_hash": 2355580189
 		},
 		"SYSTEM_MWTIGHTBEAM_DESC": {
 			"string": "Rusatom-Antonoff's Directed Microwave Cannon utilises a long, tubular waveguide to concentrate microwaves into a tight beam of irradiance. Its modular and unspecialised components are cheap and quick to repair, but are offset by high installation costs and middling power efficiency.",
@@ -1622,10 +1602,6 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_CARGO_AUX_BIGFAB_SPECS": {
 			"string": "Потребляемая мощность при печати: 210 МВт \nВозможности печати: дроны, боеприпасы \nВместимость боеприпасов: 5000 кг \nВместимость дронов: 5000 кг \nМасса: 10 500 кг \nПроизводитель: Rasamama Material Solutions",
-			"version_hash": 0
-		},
-		"SLOT_CARGO_MPU": {
-			"string": "УПМ Грузового отсека",
 			"version_hash": 0
 		},
 		"SYSTEM_CARGO_MPU_FURN": {
@@ -2014,22 +1990,6 @@ const TRANSLATIONS = {
 		},
 		"HUD_HOLD_FILL": {
 			"string": "hold fill level",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD": {
-			"string": "Автопилот MA-337-MAX",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_DESC": {
-			"string": "MAX — это программное обновление автопилота MA-337, которое интегрирует входные векторы электродистанционного управления в нейронную сеть.",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
-			"string": "Разработчик: Mitsudaya-Starbus \nВозможности: Контр-поворотный регулятор \nАдаптивная угловая тяга \nЭлектродистанционная система управления \nЛИДАР-оверлей",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
-			"string": "Отображает окружность ЛИДАРа вокруг вашего корабля. \nКПР: отключает противоположные движетели, экономя рабочее тело. \nЭДСУ: Перенаправляет любые ручные маневры через автопилот. \nЭффективно использует двигатели с изменяемым вектором тяги. \nАУТ: Наблюдает за смещением массы груза и повреждениями двигателей для вычисления минимальной тяги, необходимой для маневра. \nПерезагрузите бортовой компьютер, чтобы очистить данные адаптации.",
 			"version_hash": 0
 		},
 		"IOE_CONFIG_VERBOSE_LOGGING": {
@@ -2938,10 +2898,6 @@ const TRANSLATIONS = {
 			"string": "Енергоспоживання фабрикатора: 210 MW \nРецепти фабрикатора: Деталі дронів, Боєприпаси \nМісткість боєприпасів: 5,000 кг \nМісткість компонентів дронів: 5,000 кг \nМаса: 10,500 кг \nВиробник: Rasamama Material Solutions",
 			"version_hash": 0
 		},
-		"SLOT_CARGO_MPU": {
-			"string": "Установка Перерорбки Мінералів",
-			"version_hash": 0
-		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "Rusatom-Antonoff УПМ Mk2",
 			"version_hash": 0
@@ -3328,22 +3284,6 @@ const TRANSLATIONS = {
 		},
 		"HUD_HOLD_FILL": {
 			"string": "рівень заповнення трюму",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD": {
-			"string": "Автопілот MA-337-MAX",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_DESC": {
-			"string": "MAX - це програмне оновлення для автопілота MA-337, яке інтегрує вектори керування fly-by-wire в його нейронну мережу.",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
-			"string": "Розробник: Mitsudaya-Starbus \nМожливості: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire \nLIDAR-оверлей",
-			"version_hash": 0
-		},
-		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
-			"string": "Відображає круг LIDAR навколо вашого корабля. \nARL: Вимикає протилежні двигуни, заощаджуючи паливо. \nFBW: Направляє всі ручні введення двигуна через автопілот. \nМоже ефективно використовувати рухомі двигуни. \nAAT: Спостерігає за зміною маси вантажу та пошкодженням двигуна, щоб обчислити мінімальну тягу, необхідну для маневру. \nПерезавантажте бортовий комп'ютер, щоб очистити дані адаптації.",
 			"version_hash": 0
 		},
 		"IOE_CONFIG_VERBOSE_LOGGING": {
@@ -4256,10 +4196,6 @@ const TRANSLATIONS = {
 			"string": "需要MPU才能正常使用。 \n被动增加舰载弹药和纳米无人机的储量。 \n以铁（Fe）与钒（V）9:1的比例生产动能弹药。 \n以铁（Fe）与铂（Pt）4:1的比例生产纳米无人机组件。 \n占用部分货舱空间。",
 			"version_hash": 1621372241
 		},
-		"SLOT_CARGO_MPU": {
-			"string": "货舱MPU",
-			"version_hash": 2419223679
-		},
 		"SYSTEM_CARGO_MPU_FURN": {
 			"string": "俄原-安东诺夫MPU Mk2",
 			"version_hash": 2471399476
@@ -4751,22 +4687,6 @@ const TRANSLATIONS = {
 		"HUD_HOLD_FILL": {
 			"string": "保持填充水平",
 			"version_hash": 3235534635
-		},
-		"SYSTEM_AUTOPILOT_337MOD": {
-			"string": "MA-337-MAX自动驾驶",
-			"version_hash": 507901553
-		},
-		"SYSTEM_AUTOPILOT_337MOD_DESC": {
-			"string": "MAX变体是MA-337自动驾驶系统的软件升级版，它将电传操纵输入向量集成到其神经网络中。",
-			"version_hash": 1586129654
-		},
-		"SYSTEM_AUTOPILOT_337MOD_SPECS": {
-			"string": "开发者：三田屋-星际客车\n功能：反足反应限制器\n自适应角推力\n电传操纵\n激光雷达叠加层",
-			"version_hash": 3229071553
-		},
-		"SYSTEM_AUTOPILOT_337MOD_MANUAL": {
-			"string": "在你的船只周围显示激光雷达圈。 \nARL：自动抵消相反的推进器推力，节约燃料。\nFBW：让所有手动驾驶指令都通过自动驾驶系统进行路由。\n允许使用万向推进器和引擎。 \nAAT：监控货物质量位移和推进器损坏，以计算进行机动所需的最小推力。\n重启舰载计算机以清除适配数据。",
-			"version_hash": 74773169
 		},
 		"IOE_CONFIG_VERBOSE_LOGGING": {
 			"string": "详细日志",
