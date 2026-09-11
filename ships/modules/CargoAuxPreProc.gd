@@ -307,7 +307,7 @@ func get_processable_object(delta):
 				swapover_direction = true
 				if conserved_isproc:
 					swap.play()
-			for i in range(max_ores_processing):
+			for i in max_ores_processing:
 				lucky.append(cargo[current_indexes[i]])
 			return lucky
 		else:
