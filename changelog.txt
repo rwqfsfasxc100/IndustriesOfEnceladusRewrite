@@ -1,3 +1,7 @@
+[2.10.3]
+
+1=* Updated translations
+
 [2.10.2]
 
 1=* Fixed double newline in the RP-25's stat sheet
