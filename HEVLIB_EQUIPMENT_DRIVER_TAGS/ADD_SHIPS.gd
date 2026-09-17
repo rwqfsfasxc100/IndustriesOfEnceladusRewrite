@@ -363,6 +363,9 @@ const MAD_CERF_CIV = {
 			"main":"SYSTEM_MAIN_ENGINE_CHEVAL", 
 			"rcs":"SYSTEM_THRUSTER_MADTX4"
 		}, 
+		"aux":{
+			"power":"SYSTEM_AUX_SMES_MK2"
+		},
 		"reactor":{	"power": 16.0},
 		"turbine":{"power":200.0}, 
 		"weaponSlot":{
@@ -425,6 +428,9 @@ const MAD_CERF_CIV_INVERSE = {
 			"main":"SYSTEM_MAIN_ENGINE_CHEVAL", 
 			"rcs":"SYSTEM_THRUSTER_MADTX4"
 		}, 
+		"aux":{
+			"power":"SYSTEM_AUX_SMES_MK2"
+		},
 		"reactor":{	"power": 16.0},
 		"turbine":{"power":200.0}, 
 		"weaponSlot":{
@@ -1169,8 +1175,8 @@ const OCP_SALVAGE = {
 				"type":"SYSTEM_HUD_OCP209"
 			}, 
 			"aux":{
-				"power":"SYSTEM_AUX_SMES"
-				}, 
+				"power":"SYSTEM_AUX_SMES_MK2"
+			},
 			"weaponSlot":{
 				"mainLeft":{
 					"type":"SYSTEM_SALVAGE_ARM"
