@@ -705,15 +705,15 @@ slot = "middleRight"
 toggleCommand = "ship_slot_3"
 
 [node name="turret-fore-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 330, 380 )
-rotation = 2.44346
+position = Vector2( 250, 380 )
+rotation = 3.14159
 z_index = 44
 slot = "turretLeft"
 toggleCommand = "ship_slot_4"
 
 [node name="turret-fore-stbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -330, 380 )
-rotation = 3.83972
+position = Vector2( -250, 380 )
+rotation = 3.14159
 z_index = 44
 slot = "turretRight"
 toggleCommand = "ship_slot_5"
@@ -1065,7 +1065,7 @@ margin_left = -250.0
 margin_top = -120.0
 margin_right = 250.0
 margin_bottom = 160.0
-color = Color( 1, 1, 0.6, 0.498039 )
+color = Color( 1, 1, 0.85, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 200 )
