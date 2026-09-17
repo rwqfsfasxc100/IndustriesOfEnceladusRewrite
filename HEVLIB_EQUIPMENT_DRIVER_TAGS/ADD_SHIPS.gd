@@ -103,9 +103,6 @@ const Tsukuyomi_Decom = {
 		"rescue":false,
 		"chaos":0.65
 	},
-#	"miner":{
-#		"chaos":0.4
-#	},
 }
 
 const AT225_STUB = {
