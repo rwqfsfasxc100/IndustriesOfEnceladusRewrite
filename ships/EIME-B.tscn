@@ -809,13 +809,13 @@ position = Vector2( -60, 120 )
 command = "f"
 
 [node name="thruster-lt" parent="." instance=ExtResource( 54 )]
-position = Vector2( -120, -10 )
-rotation = -3.14159
+position = Vector2( -130, -10 )
+rotation = -3.66519
 command = "b"
 
 [node name="thruster-rt" parent="." instance=ExtResource( 54 )]
-position = Vector2( 120, -10 )
-rotation = -3.14159
+position = Vector2( 130, -10 )
+rotation = -2.61799
 command = "b"
 
 [node name="thruster-rb" parent="." instance=ExtResource( 54 )]
