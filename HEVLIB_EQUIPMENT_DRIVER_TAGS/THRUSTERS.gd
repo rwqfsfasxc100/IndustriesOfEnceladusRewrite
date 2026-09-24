@@ -221,20 +221,20 @@ const SYSTEM_MAIN_ENGINE_THUNDER = {
 	"tune_thrust_max":2,
 	"mass":950,
 	"max_volume":-15,
-	"position":[0,10],
+	"position":[0,-20],
 	"scale":[0.75,0.75],
 	"nozzle":{
-		"position":[0,-29.333],
+		"position":[0,10],
 		"scale":[0.4,0.45],
 	},
 	"extra_nozzles":[
 		{
-			"position":[13,-29.333],
+			"position":[13,10],
 			"scale":[0.4,0.45],
 			"order":"before"
 		},
 		{
-			"position":[-13,-29.333],
+			"position":[-13,10],
 			"scale":[0.4,0.45],
 			"order":"before"
 		},

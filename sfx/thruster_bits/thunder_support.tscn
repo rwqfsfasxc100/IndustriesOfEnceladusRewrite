@@ -4,7 +4,7 @@
 [ext_resource path="res://ships/cothon-n.png" type="Texture" id=2]
 
 [node name="support" type="Sprite"]
-position = Vector2( 0, -40 )
+rotation = 3.14159
 scale = Vector2( 0.5, 0.8 )
 texture = ExtResource( 1 )
 normal_map = ExtResource( 2 )
