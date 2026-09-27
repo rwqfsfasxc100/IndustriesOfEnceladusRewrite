@@ -445,11 +445,12 @@ polygon = PoolVector2Array( -24, 24, 20, 24, 22, -8, -24, -8 )
 [node name="AuxSlot" parent="." instance=ExtResource( 18 )]
 
 [node name="reactor" parent="." instance_placeholder="res://ships/modules/NuclearReactor.tscn"]
-position = Vector2( -2.38419e-07, 27 )
+position = Vector2( 0, -16 )
 rotation = -3.14159
 z_index = 20
 texture = SubResource( 11 )
 hframes = 11
+region_enabled = false
 region_rect = Rect2( 0, 63, 2816, 236 )
 repairReplacementPrice = 120000
 repairReplacementTime = 36
@@ -522,7 +523,6 @@ shape = SubResource( 6 )
 
 [node name="CargoBayCoverageVisual" type="CanvasLayer" parent="."]
 layer = 128
-visible = false
 script = SubResource( 13 )
 
 [node name="Center" type="Node2D" parent="CargoBayCoverageVisual"]
@@ -532,7 +532,7 @@ margin_left = -36.0
 margin_top = -250.0
 margin_right = 36.0
 margin_bottom = -100.0
-color = Color( 1, 1, 0.9, 0.498039 )
+color = Color( 1, 1, 0.8, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, -20 )
