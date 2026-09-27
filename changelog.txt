@@ -1,4 +1,4 @@
-[1.10.6]
+[2.10.6]
 
 1=* Fixed radiator glow on the UMC Oberon
 2=* Fixed positioning of the Pin C50 RCS
