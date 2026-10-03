@@ -297,7 +297,7 @@ func _physics_process(delta):
 position = Vector2( 0, 19 )
 collision_layer = 530
 collision_mask = 7
-mass = 90.0
+mass = 130.0
 physics_material_override = ExtResource( 20 )
 continuous_cd = 2
 linear_damp = 0.0
@@ -320,8 +320,8 @@ shipName = "SHIP_AT225_EIME"
 baseShipName = "SHIP_AT225"
 shipType = "fission"
 crew = 12
-hullPrice = 1674500
-processedCargoCapacity = 5000
+hullPrice = 5023500
+processedCargoCapacity = 10000
 inside = -1
 lifepod = ExtResource( 33 )
 evaOffset = Vector2( -38, -282 )
@@ -1313,7 +1313,7 @@ margin_left = -150.0
 margin_top = -610.0
 margin_right = 150.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.65, 0.498039 )
+color = Color( 1, 1, 0.7, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 
