@@ -243,6 +243,7 @@ position = Vector2( 0, -132 )
 light_mask = 5
 material = SubResource( 1 )
 position = Vector2( 0, -279 )
+z_index = 26
 texture = ExtResource( 5 )
 normal_map = ExtResource( 4 )
 hframes = 12
@@ -414,24 +415,6 @@ position = Vector2( 104, -126 )
 rotation = -1.5708
 z_index = 15
 command = "<l"
-
-[node name="thruster-ml" parent="." instance=ExtResource( 15 )]
-visible = false
-position = Vector2( -104, 6 )
-rotation = 1.5708
-z_index = 15
-notAThruster = true
-type = ""
-default = "NULL"
-
-[node name="thruster-mr" parent="." instance=ExtResource( 15 )]
-visible = false
-position = Vector2( 104, 6 )
-rotation = -1.5708
-z_index = 15
-notAThruster = true
-type = ""
-default = "NULL"
 
 [node name="thruster-bl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -104, 90 )
@@ -966,7 +949,7 @@ margin_left = -40.0
 margin_top = -355.0
 margin_right = 40.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.8, 0.498039 )
+color = Color( 1, 1, 0.65, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 
