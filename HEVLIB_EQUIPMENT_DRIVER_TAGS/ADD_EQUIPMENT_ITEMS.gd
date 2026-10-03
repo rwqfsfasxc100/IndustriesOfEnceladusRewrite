@@ -628,8 +628,9 @@ const _054 = {
 	"system":"SYSTEM_CARGO_PREPROC_P15",
 	"price":55000,
 	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"equipment_type":"EQUIPMENT_MASS_DRIVERS",
+	"equipment_type":"CARGO_ACCESSORIES",
 	"slot_type":"CARGO_ACCESSORIES",
 }
 
@@ -637,6 +638,7 @@ const _055 = {
 	"system":"SYSTEM_CARGO_PREPROC_M35",
 	"price":815000,
 	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
 	"equipment_type":"CARGO_ACCESSORIES",
 	"slot_type":"CARGO_ACCESSORIES",
@@ -644,74 +646,82 @@ const _055 = {
 
 const _056 = {
 	"system":"SYSTEM_CARGO_PREPROC_M85",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL",
 	"price":2750000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _057 = {
 	"system":"SYSTEM_CARGO_AUX_PREPROC_0x30",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL",
 	"price":32000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _058 = {
 	"system":"SYSTEM_CARGO_AUX_STORAGE_4K",
-	"manual":"SYSTEM_CARGO_AUX_STORAGE_MANUAL",
 	"price":175000,
+	"manual":"SYSTEM_CARGO_AUX_STORAGE_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _059 = {
 	"system":"SYSTEM_CARGO_AUX_PREPROC_20x10",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
 	"price":225000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _060 = {
 	"system":"SYSTEM_CARGO_AUX_STORPROC_8K",
-	"manual":"SYSTEM_CARGO_AUX_STORPROC_MANUAL",
 	"price":435000,
+	"manual":"SYSTEM_CARGO_AUX_STORPROC_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _061 = {
 	"system":"SYSTEM_CARGO_AUX_PREPROC_40x20",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
 	"price":770000,
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _062 = {
 	"system":"SYSTEM_CARGO_AUX_FAB",
-	"manual":"SYSTEM_CARGO_AUX_FAB_MANUAL",
 	"price":2500000,
+	"manual":"SYSTEM_CARGO_AUX_FAB_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _063 = {
 	"system":"SYSTEM_CARGO_AUX_BIGFAB",
-	"manual":"SYSTEM_CARGO_AUX_BIGFAB_MANUAL",
 	"price":3650000,
+	"manual":"SYSTEM_CARGO_AUX_BIGFAB_MANUAL",
+	"capability_lock":true,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES",
+	"slot_type":"CARGO_ACCESSORIES",
 }
 
 const _064 = {
