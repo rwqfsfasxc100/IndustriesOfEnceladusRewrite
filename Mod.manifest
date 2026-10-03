@@ -84,7 +84,7 @@ IOE_CONFIG_INPUTS={
 manifest_version=2.2
 dependancy_mod_ids=[ {
 "blocking": true,
-"minimum_version": [ 1, 16, 14 ],
+"minimum_version": [ 1, 16, 20 ],
 "mod_id": "hev.LIBRARY"
 } ]
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite/main/Mod.manifest"

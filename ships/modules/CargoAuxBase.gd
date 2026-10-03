@@ -69,12 +69,13 @@ func _ready():
 	make_mirror()
 
 func make_mirror():
-	self.rotation = -deg2rad(set_rot)
-	var current_pos = self.position
-	var new_position = pointers.DataFormat.__rotate_point(current_pos,set_rot)
-	self.position = new_position
-	var has = ship.getConfig(slot) == systemName
-	if has and mirrorCollider:
+	if ship.getConfig(slot) == systemName and mirrorCollider:
+		if set_rot != 0.0:
+			self.rotation = -deg2rad(set_rot)
+			var current_pos = self.position
+			var new_position = pointers.DataFormat.__rotate_point(current_pos,set_rot)
+			self.position = new_position
+		
 		var colliderName = systemName + "_COLLIDER_MIRROR"
 		var node = ship.get_node_or_null(colliderName)
 		var selfScale = self.scale

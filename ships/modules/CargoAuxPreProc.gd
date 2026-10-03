@@ -132,6 +132,8 @@ func getTuneables():
 var processor = null
 
 func _ready():
+	if not ship.setup:
+		yield(ship,"setup")
 	var shipSystems = ship.getSystems()
 	var current_mpu = ship.getConfig("cargo.equipment")
 	for sys in shipSystems:

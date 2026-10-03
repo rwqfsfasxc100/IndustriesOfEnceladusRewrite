@@ -144,6 +144,66 @@ const AT225_STUB = {
 	}},
 	"dealer":{
 		"age":60,
+		"weight":2,
+	},
+	"derelict":{
+		"chance":0.3,
+		"minimum_chance":0.1,
+		"money":2000000,
+		"stock_chance":0.2,
+		"allow_damage":true,
+		"cause_extra_damage":true,
+		"rock_cluster_chance":0.3,
+		"rock_cluster_count":33,
+		"clump":false,
+		"clump_velocity":25,
+		"ring_storm_chance":0.3,
+		"pirate_chance":0.3,
+		"rescue":false,
+		"chaos":0.5
+	},
+	"miner":{
+		"chaos":0.25
+	},
+}
+
+const AT225_EIME = {
+	"name":"IOE-AT225-EIME",
+	"alias":"AT225",
+	"specific_derelict_name":"IOER_DerelictTitanEIME",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/ATK225-EIME.tscn",
+	"config":{"config": {
+		"ammo": {
+			"capacity": 1000.0,
+			"initial": 1000.0
+		},
+		"autopilot": {"type":"SYSTEM_AUTOPILOT_MK2"},
+		"capacitor":{"capacity":500.0}, 
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPUFSO"
+		}, 
+		"fuel": {
+			"capacity": 80000.0,
+			"initial": 80000.0
+		},
+		"hud":{"type":"SYSTEM_HUD_AT225"}, 
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_BWMT535", 
+			"rcs":"SYSTEM_THRUSTER_K37"
+		}, 
+		"reactor":{"power":16.0},
+		"turbine":{"power":500.0},
+		"weaponSlot":{
+			"middleLeft":{"type":"SYSTEM_NONE"}, 
+			"middleRight":{"type":"SYSTEM_EMD14"}, 
+			"leftDrone":{"type":"SYSTEM_NONE"},
+			"rightDrone":{"type":"SYSTEM_NONE"},
+			"leftBay3":{"type":"SYSTEM_EXSTORAGE-L"}, 
+			"rightBay3":{"type":"SYSTEM_EXSTORAGE-R"}, 
+		}, 
+	}},
+	"dealer":{
+		"age":60,
 		"weight":1,
 	},
 	"derelict":{

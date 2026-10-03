@@ -163,6 +163,8 @@ func getDroneCost():
 
 
 func _ready():
+	if not ship.setup:
+		yield(ship,"setup")
 	var processor
 	var current_mpu = ship.getConfig("cargo.equipment")
 	calculate_costs()
