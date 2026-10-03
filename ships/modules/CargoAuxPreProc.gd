@@ -132,23 +132,17 @@ func getTuneables():
 var processor = null
 
 func _ready():
-	ship = getShip()
-	if not ship.setup:
-		yield(ship,"setup")
-	var current_aux = ship.getConfig("cargo.aux")
+	var shipSystems = ship.getSystems()
 	var current_mpu = ship.getConfig("cargo.equipment")
-	if current_aux == systemName:
-		var self_aux = systemName
-		var shipSystems = ship.getSystems()
-		for sys in shipSystems:
-			var node = shipSystems[sys]
-			if node.name == current_mpu:
-				processor = node.ref
-		if processor:
-			baseMineralEfficiency = processor.mineralEfficiency
-			basekgps = processor.kgps
-			basePowerDrawPerKg = processor.powerDrawPerKg
-			modifyProcessor()
+	for sys in shipSystems:
+		var node = shipSystems[sys]
+		if node.name == current_mpu:
+			processor = node.ref
+	if processor:
+		baseMineralEfficiency = processor.mineralEfficiency
+		basekgps = processor.kgps
+		basePowerDrawPerKg = processor.powerDrawPerKg
+		modifyProcessor()
 
 onready var ventRemass = $VentRemass
 onready var ventMineral = $VentMineral

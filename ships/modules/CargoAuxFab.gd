@@ -84,8 +84,6 @@ var made_adjustment = false
 
 var has_modified = false
 
-var current_model = ""
-
 var baseMineralEfficiency = 0
 var basekgps = 0
 var basePowerDrawPerKg = 0
@@ -165,18 +163,10 @@ func getDroneCost():
 
 
 func _ready():
-	var ship = getShip()
-	if not ship.setup:
-		yield(ship,"setup")
 	var processor
-	var reinstance = false
-	var current_aux = ship.getConfig("cargo.aux")
 	var current_mpu = ship.getConfig("cargo.equipment")
 	calculate_costs()
-	if current_aux == systemName:
-		if current_model != current_mpu:
-			reinstance = true
-			current_model = current_mpu
+	if ship.getConfig("cargo.aux") == systemName:
 		var self_aux = systemName
 		for node in ship.get_children():
 			if "systemName" in node:
@@ -184,16 +174,10 @@ func _ready():
 				if node.systemName == current_mpu:
 					processor = node
 		if processor:
-			if not has_modified:
-				baseMineralEfficiency = processor.mineralEfficiency
-				basekgps = processor.kgps
-				basePowerDrawPerKg = processor.powerDrawPerKg
-				modifyProcessor(processor,basekgps,basePowerDrawPerKg)
-				has_modified = true
-			else:
-				modifyProcessor(processor,basekgps,basePowerDrawPerKg)
-			
-#				breakpoint
+			baseMineralEfficiency = processor.mineralEfficiency
+			basekgps = processor.kgps
+			basePowerDrawPerKg = processor.powerDrawPerKg
+			modifyProcessor(processor,basekgps,basePowerDrawPerKg)
 	
 
 func _physics_process(delta):
