@@ -243,6 +243,7 @@ position = Vector2( 0, -132 )
 light_mask = 5
 material = SubResource( 1 )
 position = Vector2( 0, -279 )
+z_index = 26
 texture = ExtResource( 5 )
 normal_map = ExtResource( 4 )
 hframes = 12
@@ -415,24 +416,6 @@ rotation = -1.5708
 z_index = 15
 command = "<l"
 
-[node name="thruster-ml" parent="." instance=ExtResource( 15 )]
-visible = false
-position = Vector2( -104, 6 )
-rotation = 1.5708
-z_index = 15
-notAThruster = true
-type = ""
-default = "NULL"
-
-[node name="thruster-mr" parent="." instance=ExtResource( 15 )]
-visible = false
-position = Vector2( 104, 6 )
-rotation = -1.5708
-z_index = 15
-notAThruster = true
-type = ""
-default = "NULL"
-
 [node name="thruster-bl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -104, 90 )
 rotation = 1.5708
@@ -531,14 +514,10 @@ polygon = PoolVector2Array( -35, -87, -3.37474, -55.3747, 0, -49, 2, -42.1517, 2
 position = Vector2( 0, -132 )
 
 [node name="weapon-left" parent="." instance=ExtResource( 12 )]
-visible = false
 position = Vector2( -92, -378 )
 z_index = 25
 slot = "middleLeft"
 toggleCommand = "ship_slot_1"
-
-[node name="SYSTEM_PDMWG-L" parent="weapon-left" index="13"]
-visible = true
 
 [node name="SYSTEM_ACTEMD14" parent="weapon-left" index="19"]
 pivotPath = NodePath("Pivot")
@@ -561,7 +540,6 @@ rotation = 0.174533
 position = Vector2( -69, -71 )
 
 [node name="weapon-right" parent="." instance=ExtResource( 12 )]
-visible = false
 position = Vector2( 92, -378 )
 z_index = 25
 slot = "middleRight"
@@ -594,26 +572,20 @@ slot = "leftBay1"
 toggleCommand = "ship_slot_5"
 
 [node name="SYSTEM_DND_TS" parent="weapon-left-back" index="6"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
 [node name="SYSTEM_DND_HAUL" parent="weapon-left-back" index="7"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
 [node name="SYSTEM_DND_FIX" parent="weapon-left-back" index="8"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
 [node name="SYSTEM_PDMWG-L" parent="weapon-left-back" index="13"]
 position = Vector2( -200, 81 )
 z_index = 27
-
-[node name="SYSTEM_EXSTORAGE-L" parent="weapon-left-back" index="15"]
-visible = true
 
 [node name="SYSTEM_ACTEMD14" parent="weapon-left-back" index="19"]
 pivotPath = NodePath("Pivot")
@@ -643,17 +615,14 @@ slot = "rightBay1"
 toggleCommand = "ship_slot_6"
 
 [node name="SYSTEM_DND_TS" parent="weapon-right-back" index="6"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
 [node name="SYSTEM_DND_HAUL" parent="weapon-right-back" index="7"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
 [node name="SYSTEM_DND_FIX" parent="weapon-right-back" index="8"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
@@ -682,56 +651,6 @@ position = Vector2( 190, 0 )
 rotation = 1.0472
 z_index = 27
 
-[node name="weapon-left-back2" parent="." instance=ExtResource( 12 )]
-visible = false
-position = Vector2( -122, -265 )
-rotation = -0.523599
-slot = "leftBay2"
-remove = true
-
-[node name="SYSTEM_DND_TS" parent="weapon-left-back2" index="6"]
-visible = true
-position = Vector2( -172, 142 )
-rotation = -1.5708
-
-[node name="SYSTEM_DND_HAUL" parent="weapon-left-back2" index="7"]
-visible = true
-position = Vector2( -172, 142 )
-rotation = -1.5708
-
-[node name="SYSTEM_DND_FIX" parent="weapon-left-back2" index="8"]
-visible = true
-position = Vector2( -172, 142 )
-rotation = -1.5708
-
-[node name="SYSTEM_PDMWG-L" parent="weapon-left-back2" index="13"]
-position = Vector2( -200, 81 )
-z_index = 27
-
-[node name="SYSTEM_EXSTORAGE-L" parent="weapon-left-back2" index="15"]
-visible = true
-
-[node name="SYSTEM_ACTEMD14" parent="weapon-left-back2" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="weapon-left-back2" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
-[node name="SYSTEM_SCOOP-L" parent="weapon-left-back2" index="22"]
-command = ""
-passFireAsCommand = ""
-
-[node name="SYSTEM_HUNK-L" parent="weapon-left-back2" index="24"]
-rotation = -0.174533
-
-[node name="SYSTEM_PDT-L" parent="weapon-left-back2" index="29"]
-position = Vector2( -190, 0 )
-rotation = -1.0472
-z_index = 27
-
 [node name="DronePort" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -92, -199 )
 z_index = 26
@@ -744,53 +663,6 @@ z_index = 26
 slot = "rightDrone"
 toggleCommand = "ship_slot_4"
 
-[node name="weapon-right-back2" parent="." instance=ExtResource( 12 )]
-visible = false
-position = Vector2( 122, -265 )
-rotation = 0.523599
-slot = "rightBay2"
-remove = true
-
-[node name="SYSTEM_DND_TS" parent="weapon-right-back2" index="6"]
-visible = true
-position = Vector2( 172, 142 )
-rotation = 1.5708
-
-[node name="SYSTEM_DND_HAUL" parent="weapon-right-back2" index="7"]
-visible = true
-position = Vector2( 172, 142 )
-rotation = 1.5708
-
-[node name="SYSTEM_DND_FIX" parent="weapon-right-back2" index="8"]
-visible = true
-position = Vector2( 172, 142 )
-rotation = 1.5708
-
-[node name="SYSTEM_PDMWG-R" parent="weapon-right-back2" index="14"]
-position = Vector2( 200, 81 )
-z_index = 27
-
-[node name="SYSTEM_ACTEMD14" parent="weapon-right-back2" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="weapon-right-back2" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
-[node name="SYSTEM_SCOOP-R" parent="weapon-right-back2" index="21"]
-command = ""
-passFireAsCommand = ""
-
-[node name="SYSTEM_HUNK-R" parent="weapon-right-back2" index="23"]
-rotation = 0.174533
-
-[node name="SYSTEM_PDT-R" parent="weapon-right-back2" index="30"]
-position = Vector2( 190, 0 )
-rotation = 1.0472
-z_index = 27
-
 [node name="weapon-left-back3" parent="." instance=ExtResource( 12 )]
 position = Vector2( -122, -175 )
 rotation = -0.523599
@@ -798,17 +670,14 @@ slot = "leftBay3"
 toggleCommand = "ship_slot_7"
 
 [node name="SYSTEM_DND_TS" parent="weapon-left-back3" index="6"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
 [node name="SYSTEM_DND_HAUL" parent="weapon-left-back3" index="7"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
 [node name="SYSTEM_DND_FIX" parent="weapon-left-back3" index="8"]
-visible = true
 position = Vector2( -172, 142 )
 rotation = -1.5708
 
@@ -844,17 +713,14 @@ slot = "rightBay3"
 toggleCommand = "ship_slot_8"
 
 [node name="SYSTEM_DND_TS" parent="weapon-right-back3" index="6"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
 [node name="SYSTEM_DND_HAUL" parent="weapon-right-back3" index="7"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
 [node name="SYSTEM_DND_FIX" parent="weapon-right-back3" index="8"]
-visible = true
 position = Vector2( 172, 142 )
 rotation = 1.5708
 
@@ -966,7 +832,7 @@ margin_left = -40.0
 margin_top = -355.0
 margin_right = 40.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.8, 0.498039 )
+color = Color( 1, 1, 0.65, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 
@@ -1002,8 +868,6 @@ editor_only = false
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]
 [editable path="weapon-right-back"]
-[editable path="weapon-left-back2"]
-[editable path="weapon-right-back2"]
 [editable path="weapon-left-back3"]
 [editable path="weapon-right-back3"]
 [editable path="AI"]
