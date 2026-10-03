@@ -1,3 +1,13 @@
+[2.10.7]
+
+1=* Added new titan variant - the ATE K225-CLAW
+1.1=* A sidegrade to the K225-SH that replaces the front portion of the ship with the EIME's beak
+2=* Fabricator and preprocessor accessory modules are now more efficient at being mounted to the ship
+3=* Fixed the Rusatom Chunk Cutter not appearing in the accessory slot
+4=* Fixed render priority of the top half of the K225-SH
+5=* Fixed preprocessor positioning on the K225-SH
+6=* Bay accessories are now capability locked
+
 [2.10.6]
 
 1=* Fixed radiator glow on the UMC Oberon
