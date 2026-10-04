@@ -444,7 +444,6 @@ occluder = SubResource( 19 )
 light_mask = 17
 
 [node name="CargoHoldArea2" type="Area2D" parent="Beak/Claw Right"]
-visible = false
 position = Vector2( -17, 155 )
 z_index = 50
 collision_layer = 524288
@@ -456,6 +455,8 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Beak/Claw Right/CargoHoldArea2"]
 visible = false
+position = Vector2( 0, 70 )
+scale = Vector2( 1.5, 1.5 )
 polygon = PoolVector2Array( 0, -276, 42, -246, 79, -97, 61, -83, 0, -117 )
 
 [node name="Claw Left" type="RigidBody2D" parent="Beak"]
@@ -505,7 +506,8 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Beak/Claw Left/CargoHoldArea"]
-visible = false
+position = Vector2( 0, 70 )
+scale = Vector2( 1.5, 1.5 )
 polygon = PoolVector2Array( 0, -278, 0, -118, -65, -82, -82, -87, -40, -247 )
 
 [node name="Open" type="AudioStreamPlayer" parent="Beak"]
@@ -732,7 +734,6 @@ z_index = 50
 polygon = PoolVector2Array( -27.6923, -10, -27.6923, 142.308, -18.4615, 174.615, 18.4615, 174.615, 27.6923, 143.077, 27.6923, -10, 73.077, -94.615, 107.692, -75.385, 58.4615, 15.3846, 58.4615, 43.8462, 113.077, 44.6154, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 143.077, 58.4615, 183.077, 58.4615, 216.923, 80, 216.923, 121.538, 270.769, 118.462, 293.077, 106.154, 303.846, -102.308, 303.077, -116.923, 293.077, -121.538, 270, -73.8462, 216.154, -60.7692, 216.154, -60.7692, 179.231, -38.4615, 143.077, -38.4615, 51.5385, -116.923, 51.5385, -113.077, 43.8462, -59.2308, 43.8462, -59.2308, 15.3846, -107.692, -75.3846, -73.0769, -94.6154 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
-visible = false
 light_mask = 0
 z_index = 50
 collision_layer = 524288
@@ -744,7 +745,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( -61, -540, 0, -584, 60, -539, 111, -318, 97, -286, 39, -180, 39, 21, 25, 65, -27, 65, -39, 20, -40, -179, -97, -287, -112, -318 )
+polygon = PoolVector2Array( 0, -388, 111, -318, 97, -286, 39, -180, 39, 21, 25, 65, -27, 65, -39, 20, -40, -179, -97, -287, -112, -318 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -1259,8 +1260,8 @@ region_rect = Rect2( 0, 518, 7560, 400 )
 repairReplacementPrice = 120000
 repairFixPrice = 12000
 repairFixTime = 72
-damageRodsThreshold = 1600.0
-damageRodsCapacity = 64000.0
+damageRodsThreshold = 700
+damageRodsCapacity = 48000.0
 damageLeakThreshold = 100.0
 damageLeakCapacity = 19200.0
 damageTurbineCapacity = 64000.0
@@ -1313,7 +1314,7 @@ margin_left = -150.0
 margin_top = -610.0
 margin_right = 150.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.7, 0.498039 )
+color = Color( 1, 1, 0.8, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 
@@ -1334,6 +1335,10 @@ border_color = Color( 0, 1, 0, 1 )
 border_width = 5.0
 editor_only = false
 
+[connection signal="body_entered" from="Beak/Claw Right/CargoHoldArea2" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="Beak/Claw Right/CargoHoldArea2" to="." method="_on_CargoHoldArea_body_exited"]
+[connection signal="body_entered" from="Beak/Claw Left/CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="Beak/Claw Left/CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
