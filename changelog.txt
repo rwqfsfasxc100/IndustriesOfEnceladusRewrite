@@ -1,3 +1,8 @@
+[2.10.8]
+
+1=* Fixed cargo bay doors of the ATE CLAW not registering objects to the cargo hold
+2=* Reduced acceleration buffer of the ATE CLAW
+
 [2.10.7]
 
 1=* Added new titan variant - the ATE K225-CLAW
