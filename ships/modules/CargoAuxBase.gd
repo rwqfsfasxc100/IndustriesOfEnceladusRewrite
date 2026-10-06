@@ -73,7 +73,7 @@ func make_mirror():
 		if set_rot != 0.0:
 			self.rotation = -deg2rad(set_rot)
 			var current_pos = self.position
-			var new_position = pointers.DataFormat.__rotate_point(current_pos,set_rot)
+			var new_position = pointers.Math.__rotate_point(current_pos,set_rot)
 			self.position = new_position
 		
 		var colliderName = systemName + "_COLLIDER_MIRROR"
@@ -104,9 +104,8 @@ func make_mirror():
 
 func modify_position() -> Vector2:
 	var selfPos = self.get_position()
-	var rv = (float(1)/float(2))*float(set_rot)
-	var nselfPos = pointers.DataFormat.__rotate_point(selfPos,rv)
-	var modifyP = Vector2(nselfPos[0], nselfPos[1])
+	var rv = (1.0/2)*float(set_rot)
+	var modifyP = pointers.Math.__rotate_point(selfPos,rv)
 	if mirrorVertical:
 		modifyP[1] = -modifyP[1]
 	else:
@@ -116,15 +115,13 @@ func modify_position() -> Vector2:
 
 func make_poly() -> PoolVector2Array:
 	var poly = self.polygon
-	var newPoly = PoolVector2Array()
-	for vec in poly:
+	for i in poly.size():
+		var vec:Vector2 = poly[i]
 		if mirrorVertical:
-			var newVec = Vector2(vec[0],-vec[1])
-			newPoly.append(newVec)
+			poly[i] = Vector2(vec.x,-vec.y)
 		else:
-			var newVec = Vector2(-vec[0],vec[1])
-			newPoly.append(newVec)
-	return newPoly
+			poly[i] = Vector2(-vec.x,vec.y)
+	return poly
 
 func getShip():
 	var c = self

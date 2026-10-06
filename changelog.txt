@@ -1,3 +1,7 @@
+[2.10.9]
+
+1=* Cargo bay accessories now use HevLib's new `Math` class for polygon adjustments.
+
 [2.10.8]
 
 1=* Fixed cargo bay doors of the ATE CLAW not registering objects to the cargo hold
