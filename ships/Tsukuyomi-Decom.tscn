@@ -876,7 +876,7 @@ polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 22 )]
 visible = false
-position = Vector2( 0, -1067 )
+position = Vector2( 0, -1065 )
 z_index = 50
 slot = "cargo.aux"
 
@@ -942,7 +942,7 @@ margin_left = -150.0
 margin_top = -1250.0
 margin_right = 150.0
 margin_bottom = -425.0
-color = Color( 1, 1, 0.8, 0.498039 )
+color = Color( 1, 1, 0.75, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, -600 )

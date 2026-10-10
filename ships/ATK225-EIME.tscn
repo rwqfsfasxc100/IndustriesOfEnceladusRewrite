@@ -297,7 +297,7 @@ func _physics_process(delta):
 position = Vector2( 0, 19 )
 collision_layer = 530
 collision_mask = 7
-mass = 130.0
+mass = 100.0
 physics_material_override = ExtResource( 20 )
 continuous_cd = 2
 linear_damp = 0.0
@@ -412,7 +412,7 @@ script = ExtResource( 40 )
 position = Vector2( 17, -15 )
 collision_layer = 18
 collision_mask = 7
-mass = 4.0
+mass = 40.0
 physics_material_override = ExtResource( 48 )
 continuous_cd = 2
 script = ExtResource( 13 )
@@ -463,7 +463,7 @@ polygon = PoolVector2Array( 0, -276, 42, -246, 79, -97, 61, -83, 0, -117 )
 position = Vector2( -17, -15 )
 collision_layer = 18
 collision_mask = 7
-mass = 4.0
+mass = 40.0
 physics_material_override = ExtResource( 48 )
 continuous_cd = 2
 script = ExtResource( 13 )
@@ -734,6 +734,7 @@ z_index = 50
 polygon = PoolVector2Array( -27.6923, -10, -27.6923, 142.308, -18.4615, 174.615, 18.4615, 174.615, 27.6923, 143.077, 27.6923, -10, 73.077, -94.615, 107.692, -75.385, 58.4615, 15.3846, 58.4615, 43.8462, 113.077, 44.6154, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 143.077, 58.4615, 183.077, 58.4615, 216.923, 80, 216.923, 121.538, 270.769, 118.462, 293.077, 106.154, 303.846, -102.308, 303.077, -116.923, 293.077, -121.538, 270, -73.8462, 216.154, -60.7692, 216.154, -60.7692, 179.231, -38.4615, 143.077, -38.4615, 51.5385, -116.923, 51.5385, -113.077, 43.8462, -59.2308, 43.8462, -59.2308, 15.3846, -107.692, -75.3846, -73.0769, -94.6154 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
+visible = false
 light_mask = 0
 z_index = 50
 collision_layer = 524288
@@ -765,13 +766,13 @@ scale = Vector2( 1.3, 1.3 )
 polygon = PoolVector2Array( -27.6923, -10, -27.6923, 142.308, -18.4615, 174.615, 18.4615, 174.615, 27.6923, 143.077, 27.6923, -10, 73.077, -94.615, 107.692, -75.385, 58.4615, 15.3846, 58.4615, 43.8462, 113.077, 44.6154, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 143.077, 58.4615, 183.077, 58.4615, 216.923, 80, 216.923, 121.538, 270.769, 118.462, 293.077, 106.154, 303.846, -102.308, 303.077, -116.923, 293.077, -121.538, 270, -73.8462, 216.154, -60.7692, 216.154, -60.7692, 179.231, -38.4615, 143.077, -38.4615, 51.5385, -116.923, 51.5385, -113.077, 43.8462, -59.2308, 43.8462, -59.2308, 15.3846, -107.692, -75.3846, -73.0769, -94.6154 )
 
 [node name="thruster-lt" parent="." instance=ExtResource( 15 )]
-position = Vector2( -95, -140 )
+position = Vector2( -155, -105 )
 rotation = -3.66519
 z_index = 15
 command = "bl"
 
 [node name="thruster-rt" parent="." instance=ExtResource( 15 )]
-position = Vector2( 95, -140 )
+position = Vector2( 155, -105 )
 rotation = 3.66519
 z_index = 15
 command = "br"
@@ -1261,10 +1262,10 @@ repairReplacementPrice = 120000
 repairFixPrice = 12000
 repairFixTime = 72
 damageRodsThreshold = 700
-damageRodsCapacity = 48000.0
+damageRodsCapacity = 30000
 damageLeakThreshold = 100.0
 damageLeakCapacity = 19200.0
-damageTurbineCapacity = 64000.0
+damageTurbineCapacity = 50000.0
 reactorRadius = 300.0
 systemName = "SYSTEM_REACTOR_AT225"
 
@@ -1314,7 +1315,7 @@ margin_left = -150.0
 margin_top = -610.0
 margin_right = 150.0
 margin_bottom = 70.0
-color = Color( 1, 1, 0.8, 0.498039 )
+color = Color( 1, 1, 0.95, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 

@@ -1580,12 +1580,11 @@ const TRANSLATIONS = {
 		},
 		"SHIP_AT225_EIME_DESC": {
 			"string": "A futher modification of the SH variant, the \"Claw\" brings Eon Interstellar into the mix with the introduction of an enlarged version of the beak from the Model E to provide the ability to transport larger constructions without issue.",
-			"version_hash": 1358667569,
-			"placeholder": false
+			"version_hash": 1358667569
 		},
 		"SHIP_AT225_EIME_SPECS": {
-			"string": "Make: Antonoff-Titan Heavy Industries-Eon Interstellar\nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2\nCrew: 12\nDry mass: 188,700 kg\nCargo bay: 700 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
-			"version_hash": 327818364
+			"string": "Make: Antonoff-Titan Heavy Industries-Eon Interstellar\nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2\nCrew: 12\nDry mass: 230,700 kg\nCargo bay: 700 m^3 \nProcessed cargo storage (per mineral): 10,000 kg",
+			"version_hash": 215662096
 		}
 	},
 	"ru_RU": {
