@@ -1,3 +1,7 @@
+[2.10.10]
+
+1=* Fixed cargo bay baffles on all MAD-CERF models.
+
 [2.10.9]
 
 1=* Cargo bay accessories now use HevLib's new `Math` class for polygon adjustments.
