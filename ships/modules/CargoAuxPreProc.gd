@@ -254,18 +254,12 @@ func _physics_process(delta):
 
 
 func modifyProcessor():
-	var current_efficiency_multi = modify_mineralEfficiency
-	var newMinEff = clamp(baseMineralEfficiency * (float(current_efficiency_multi)/100), 0.05, 0.995) if baseMineralEfficiency > 0.0 else 0.0
+	var newMinEff:float = clamp(baseMineralEfficiency * (modify_mineralEfficiency/100.0), 0.05, 0.995) if baseMineralEfficiency > 0.0 else 0.0
+	var cc:float = clamp(modify_kgps_percent_multi,10,1000)/100.0
+	var newKGPS:int = int(round(max((basekgps * cc) + modify_kgps_add,5)))
 	
-	var current_speed_multi = modify_kgps_percent_multi
-	var clp = clamp(current_speed_multi,10,1000)
-	var cc = clp/100.0
-	var pl = basekgps * cc
-	var om = pl + modify_kgps_add
-	var newKGPS = int(max(om,5))
-	
-	var rt = (float(baseMineralEfficiency)/float(newMinEff)) if newMinEff > 0.0 else 1.0
-	var newPower = pow(basePowerDrawPerKg / 10,2.0 - rt) * 10 * cc
+	var rt:float = (baseMineralEfficiency/newMinEff) if newMinEff > 0.0 else 1.0
+	var newPower:float = pow(basePowerDrawPerKg / 10.0,2.0 - rt) * 10.0 * cc
 	
 	if modify_mineralEfficiency != 100:
 		processor.setEfficiency(newMinEff)
@@ -274,15 +268,15 @@ func modifyProcessor():
 	if rt != 1:
 		processor.setPower(newPower)
 
-var counter = 0.0
-var bayCount = 0
-var current_indexes = []
+var counter:float = 0.0
+var bayCount:int = 0
+var current_indexes:Array = []
 func get_processable_object(delta):
-	var cargo = ship.cargo
-	var s = cargo.size()
+	var cargo:Array = ship.cargo
+	var s:int = cargo.size()
 	if s:
 		if s > max_ores_processing:
-			var lucky = []
+			var lucky:Array = []
 			if s == bayCount:
 				counter += delta
 				if counter > (ore_swapover_time + ore_swapover_fade_time):
@@ -304,7 +298,7 @@ func get_processable_object(delta):
 				if conserved_isproc:
 					swap.play()
 			for i in max_ores_processing:
-				lucky.append(cargo[current_indexes[i]])
+				lucky.append(cargo[i])
 			return lucky
 		else:
 			counter = 0.0
