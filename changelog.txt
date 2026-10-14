@@ -1,3 +1,8 @@
+[2.10.11]
+
+1=* Fixed the collider on the Deep Dish
+2=* Fixed issue that prevented preprocessors from removing & reclaiming water from chunks if there were more chunks in the bay than the listed stats
+
 [2.10.10]
 
 1=* Fixed cargo bay baffles on all MAD-CERF models.
