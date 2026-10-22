@@ -81,7 +81,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_6K"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
