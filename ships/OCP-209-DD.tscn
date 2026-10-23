@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -60,7 +60,26 @@ shader_param/shine = 1.0
 shader_param/charges = ExtResource( 5 )
 shader_param/map = ExtResource( 12 )
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=27]
+
+[sub_resource type="ShaderMaterial" id=28]
+shader = ExtResource( 1 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 5 )
+shader_param/map = ExtResource( 12 )
 
 [sub_resource type="ShaderMaterial" id=5]
 shader = ExtResource( 1 )
@@ -361,22 +380,22 @@ openTime = 2.0
 springPull = 0.99
 
 [node name="BayStopper 1" type="RigidBody2D" parent="Bay" groups=["splitstream"]]
-position = Vector2( 53, -156 )
+position = Vector2( -11, -144 )
 z_index = 78
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bay/BayStopper 1"]
-shape = SubResource( 2 )
+shape = SubResource( 27 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="Bay/BayStopper 1"]
 node_a = NodePath("..")
 node_b = NodePath("../../..")
 
 [node name="BayStopper 2" type="RigidBody2D" parent="Bay" groups=["splitstream"]]
-position = Vector2( -75, -129 )
+position = Vector2( -71, -132 )
 z_index = 78
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bay/BayStopper 2"]
-shape = SubResource( 2 )
+shape = SubResource( 27 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="Bay/BayStopper 2"]
 node_a = NodePath("..")
@@ -419,19 +438,18 @@ script = ExtResource( 25 )
 [node name="Bay" type="RigidBody2D" parent="Bay" groups=["slipstream"]]
 collision_layer = 2
 collision_mask = 7
-mass = 20.0
+mass = 25.0
 physics_material_override = ExtResource( 32 )
 script = ExtResource( 13 )
 
 [node name="CargoBaffles" type="CollisionPolygon2D" parent="Bay/Bay"]
-z_index = -30
-polygon = PoolVector2Array( -28, 67, -53, 52, -67, 32, -73, 13, -74, -9, -67, -34, -50, -54, -29, -68, 0, -72, 36, -87, 48, -103, 54, -117, 52, -129, 70, -121, 99, -98, 0, -63, -22, -59, -39, -49, -56, -27, -62, -8, -61, 16, -49, 38 )
+polygon = PoolVector2Array( 22, 73, -5, 75, -29, 69, -53, 52, -67, 32, -73, 13, -74, -9, -67, -34, -50, -54, -29, -68, 0, -72, 36, -87, 58, -107, 36, -124, 0, -139, 36, -135, 70, -121, 99, -98, 0, -63, -22, -59, -39, -49, -56, -27, -62, -8, -61, 16, -49, 38, -32, 53, -11, 61, 0, 62 )
 script = ExtResource( 21 )
 slot = "cargo.aux"
 
 [node name="baffleshape" type="Sprite" parent="Bay/Bay/CargoBaffles"]
 light_mask = 5
-material = SubResource( 1 )
+material = SubResource( 28 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.5 )
 z_index = 30
@@ -448,7 +466,7 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 light_mask = 0
 position = Vector2( -17, 21 )
 z_index = 40
-polygon = PoolVector2Array( 57, -170, 69, -166, 79, -168, 96, -155, 128, -132, 153, -98, 168, -62, 173, -20, 168, 19, 152, 57, 127, 90, 95, 114, 58, 130, 17, 136, 17, 119, 54, 114, 88, 100, 117, 78, 138, 50, 152, 16, 157, -20, 152, -57, 138, -91, 117, -119, 87, -142, 69, -150 )
+polygon = PoolVector2Array( 17, -177, 61, -171, 96, -155, 128, -132, 153, -98, 168, -62, 173, -20, 168, 19, 152, 57, 127, 90, 95, 114, 58, 130, 17, 136, 17, 119, 54, 114, 88, 100, 117, 78, 138, 50, 152, 16, 157, -20, 152, -57, 138, -91, 117, -119, 87, -142, 53, -156, 17, -161 )
 
 [node name="PinJoint2D" type="PinJoint2D" parent="Bay/Bay"]
 z_index = 23
@@ -458,7 +476,7 @@ bias = 0.8
 
 [node name="ExcavatorSprite" type="Sprite" parent="Bay/Bay"]
 light_mask = 5
-material = SubResource( 1 )
+material = SubResource( 28 )
 rotation = -1.5708
 scale = Vector2( 1.015, 1.015 )
 z_index = 31
@@ -485,7 +503,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bay/Bay/CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( 38, -141, 43, 138, -0.000370137, 146, -40, 140, -72, 128, -103, 102, -126, 71, -140, 36, -145, 0, -140, -39, -124, -75, -102, -103, -73, -126, -37, -141, 2, -145 )
+polygon = PoolVector2Array( 38, -141, 43, 138, -1, 146, -40, 140, -72, 128, -103, 102, -126, 71, -140, 36, -145, 0, -140, -39, -124, -75, -102, -103, -73, -126, -37, -141, 2, -145 )
 
 [node name="ShipCamera" parent="." instance=ExtResource( 9 )]
 
@@ -913,7 +931,7 @@ margin_left = -145.0
 margin_top = -275.0
 margin_right = 145.0
 margin_bottom = 175.0
-color = Color( 1, 1, 0.6, 0.498039 )
+color = Color( 1, 1, 0.7, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 105 )

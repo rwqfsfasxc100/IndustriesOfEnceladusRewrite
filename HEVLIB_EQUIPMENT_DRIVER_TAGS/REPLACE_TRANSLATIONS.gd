@@ -1063,8 +1063,8 @@ const TRANSLATIONS = {
 			"version_hash": 2746927220
 		},
 		"SHIP_OCP209_DD_SPECS": {
-			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2\nCrew: 8 \nDry mass: 230,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
-			"version_hash": 2657881000
+			"string": "Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 2 \nDrone Bays: 2\nCrew: 8 \nDry mass: 235,300 kg\nCargo bay: 675 m^3\nProcessed cargo storage (combined): 36,000 kg",
+			"version_hash": 1853876397
 		},
 		"SHIP_OCP209_SNAP": {
 			"string": "OCP-207-SNAP \"Piranha\"",
