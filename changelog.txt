@@ -1,3 +1,8 @@
+[2.10.12]
+
+1=* Updated cargo bay on the OCP-214-DD to match that of the current vanilla OCP-209.
+2=* Updated translations.
+
 [2.10.11]
 
 1=* Fixed the collider on the Deep Dish
