@@ -1,3 +1,8 @@
+[2.10.13]
+
+1=* Reduced the mass of the ATE-CLAW's doors by 75% to fix a physics issue
+1.1=* Mass has instead been moved to the main hull
+
 [2.10.12]
 
 1=* Updated cargo bay on the OCP-214-DD to match that of the current vanilla OCP-209.
