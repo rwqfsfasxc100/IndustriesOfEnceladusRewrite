@@ -38,14 +38,14 @@ export  var repairFixPrice = 1000
 export  var repairFixTime = 1
 onready var slotName = "CargoAux_" + systemName
 
-export var mass = 1000
-export  var systemName = "SYSTEM_CARGO_AUX"
-export  var slot = "cargo.aux"
+export  var mass = 1000
+export (String) var systemName = "SYSTEM_CARGO_AUX"
+export (String) var slot = "cargo.aux"
 
-export  var registerExternal = false
+export (bool) var registerExternal = false
 
-export var mirrorCollider = false
-export var mirrorVertical = false
+export (bool) var mirrorCollider = false
+export (bool) var mirrorVertical = false
 export (Vector2) var mirrorCentreOffset = Vector2(0,0)
 var set_rot = 0.0
 
@@ -53,20 +53,29 @@ var pointers
 
 var ship
 
+var removing:bool = false
+
+signal do_build_system
+
+var is_ready_to_build:bool = true
+
 func _ready():
 	pointers = ModLoader._savedObjects[0]
 	ship = getShip()
 	self.name = systemName
 	ship.registerCapability(slot, systemName)
-	if ship.getConfig(slot) != systemName:
+	var removing = ship.getConfig(slot) != systemName
+	if removing:
 		Tool.remove(self)
 	else:
 		visible = true
 		if registerExternal:
 			ship.externalSystems.append(self)
-	if not ship.setup:
-		yield(ship,"setup")
-	make_mirror()
+		if not ship.setup:
+			is_ready_to_build = false
+			yield(ship,"setup")
+			emit_signal("do_build_system")
+		make_mirror()
 
 func make_mirror():
 	if ship.getConfig(slot) == systemName and mirrorCollider:

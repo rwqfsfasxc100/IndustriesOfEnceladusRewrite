@@ -1,3 +1,7 @@
+[2.10.14]
+
+1=* Fixed issue where preprocessor and fabricator type bay accessories would throw errors in the log if the framerate was higher than the physics framerate.
+
 [2.10.13]
 
 1=* Reduced the mass of the ATE-CLAW's doors by 75% to fix a physics issue

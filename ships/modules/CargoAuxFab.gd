@@ -163,17 +163,17 @@ func getDroneCost():
 
 
 func _ready():
-	if not ship.setup:
-		yield(ship,"setup")
-	var processor
-	var current_mpu = ship.getConfig("cargo.equipment")
-	calculate_costs()
-	if ship.getConfig("cargo.aux") == systemName:
+	if not removing:
+		if not is_ready_to_build:
+			yield(self,"do_build_system")
+		var processor
+		var current_mpu = ship.getConfig("cargo.equipment")
+		calculate_costs()
 		var self_aux = systemName
 		for node in ship.get_children():
 			if "systemName" in node:
 				var nname = node.name
-				if node.systemName == current_mpu:
+				if node.systemName == current_mpu and "mineralEfficiency" in node and "kgps" in node and "powerDrawPerKg" in node:
 					processor = node
 		if processor:
 			baseMineralEfficiency = processor.mineralEfficiency
