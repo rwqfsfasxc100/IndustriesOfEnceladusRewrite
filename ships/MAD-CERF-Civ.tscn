@@ -114,19 +114,19 @@ shader_param/map = ExtResource( 4 )
 
 [sub_resource type="StreamTexture" id=15]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/grid_big_c.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/grid_big_c.png.stex"
 
 [sub_resource type="StreamTexture" id=16]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/grid_big_n.png.stex"
 
 [sub_resource type="StreamTexture" id=17]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/grid_big_c.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/grid_big_c.png.stex"
 
 [sub_resource type="StreamTexture" id=18]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/grid_big_n.png.stex"
 
 [sub_resource type="CircleShape2D" id=12]
 radius = 68.0074

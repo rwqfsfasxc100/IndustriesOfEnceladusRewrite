@@ -27,7 +27,7 @@
 
 [sub_resource type="StreamTexture" id=12]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/Oberon-m.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/Oberon-m.png.stex"
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
@@ -50,11 +50,11 @@ shader_param/map = SubResource( 12 )
 
 [sub_resource type="StreamTexture" id=9]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/Oberon-c.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/Oberon-c.png.stex"
 
 [sub_resource type="StreamTexture" id=10]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/Oberon-n.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/Oberon-n.png.stex"
 
 [sub_resource type="Animation" id=4]
 resource_name = "appear"
@@ -73,7 +73,7 @@ tracks/0/keys = {
 
 [sub_resource type="StreamTexture" id=11]
 flags = 4
-load_path = "res://IndustriesOfEnceladusRewrite/ships/Oberon-cl.png.stex"
+load_path = "res://IndustriesOfEnceladusRewrite/ships/sprites/Oberon-cl.png.stex"
 
 [sub_resource type="CanvasItemMaterial" id=7]
 blend_mode = 1
