@@ -64,7 +64,7 @@ func _ready():
 	ship = getShip()
 	self.name = systemName
 	ship.registerCapability(slot, systemName)
-	var removing = ship.getConfig(slot) != systemName
+	var removing:bool = ship.getConfig(slot,"") != systemName
 	if removing:
 		Tool.remove(self)
 	else:
@@ -78,7 +78,7 @@ func _ready():
 		make_mirror()
 
 func make_mirror():
-	if ship.getConfig(slot) == systemName and mirrorCollider:
+	if ship.getConfig(slot,"") == systemName and mirrorCollider:
 		if set_rot != 0.0:
 			self.rotation = -deg2rad(set_rot)
 			var current_pos = self.position

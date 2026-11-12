@@ -167,14 +167,11 @@ func _ready():
 		if not is_ready_to_build:
 			yield(self,"do_build_system")
 		var processor
-		var current_mpu = ship.getConfig("cargo.equipment")
+		var current_mpu:String = ship.getConfig("cargo.equipment","")
 		calculate_costs()
-		var self_aux = systemName
 		for node in ship.get_children():
-			if "systemName" in node:
-				var nname = node.name
-				if node.systemName == current_mpu and "mineralEfficiency" in node and "kgps" in node and "powerDrawPerKg" in node:
-					processor = node
+			if "systemName" in node and node.systemName == current_mpu and "mineralEfficiency" in node and "kgps" in node and "powerDrawPerKg" in node:
+				processor = node
 		if processor:
 			baseMineralEfficiency = processor.mineralEfficiency
 			basekgps = processor.kgps

@@ -135,10 +135,10 @@ func _ready():
 	if not removing:
 		if not is_ready_to_build:
 			yield(self,"do_build_system")
-		var shipSystems = ship.getSystems()
-		var current_mpu = ship.getConfig("cargo.equipment")
-		for sys in shipSystems:
-			var node = shipSystems[sys]
+		var shipSystems:Dictionary = ship.getSystems()
+		var current_mpu:String = ship.getConfig("cargo.equipment","")
+		for sys in shipSystems.keys():
+			var node:Dictionary = shipSystems[sys]
 			if node.name == current_mpu:
 				processor = node.ref
 		if processor:
