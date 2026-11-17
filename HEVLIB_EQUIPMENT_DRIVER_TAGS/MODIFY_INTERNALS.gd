@@ -63,7 +63,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_2K"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_4K",
@@ -72,7 +71,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_4K"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_6K",
@@ -84,12 +82,12 @@ const MODIFY_INTERNALS = [
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
+		"crew_morale":0.15,
 		"force_type":"divided",
 		"mass":-2650,
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_BOLTS"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH4",
@@ -101,7 +99,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_AMORPH4"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH5",
@@ -113,7 +110,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_AMORPH5"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH6",
@@ -125,7 +121,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CARGO_MOD_AMORPH6"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK",
@@ -136,7 +131,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_ADD_BUNK"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK2",
@@ -147,7 +141,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_ADD_BUNK2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_CAPSULE",
@@ -158,7 +151,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_ADD_CAPSULE"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_HOME",
@@ -169,7 +161,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_MOD_HOME"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_KMX",
@@ -180,7 +171,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_MOD_KMX"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_OCM",
@@ -191,7 +181,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_CREW_MOD_OCM"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_1",
@@ -204,7 +193,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_2",
@@ -217,7 +205,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_1",
@@ -230,7 +217,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
@@ -243,7 +229,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_3",
@@ -257,7 +242,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_3"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_1",
@@ -270,7 +254,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_2",
@@ -283,7 +266,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_1",
@@ -296,7 +278,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_EXTEND_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_2",
@@ -309,7 +290,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_EXTEND_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_NANO_EXTEND_3",
@@ -323,7 +303,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_NANO_EXTEND_3"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_1",
@@ -334,7 +313,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_2",
@@ -345,7 +323,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_1",
@@ -361,7 +338,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_2",
@@ -377,7 +353,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_2"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_PROP_EXTEND_3",
@@ -393,7 +368,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_PROP_EXTEND_3"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_1",
@@ -405,7 +379,6 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_CONSUMABLESPEED_1"
 		},
-	
 	},
 	{
 		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_2",
@@ -418,6 +391,5 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_CONSUMABLESPEED_2"
 		},
-	
 	},
 ]

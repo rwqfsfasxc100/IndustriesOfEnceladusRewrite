@@ -185,7 +185,7 @@ shipName = "SHIP_TRTL_RAM"
 baseShipName = "SHIP_TRTL"
 shipType = "fission"
 hullPrice = 1858500
-processedCargoCapacity = 37500
+processedCargoCapacity = 28000
 processedCargoStorageType = "amorphic"
 lifepod = ExtResource( 3 )
 evaOffset = Vector2( 30, -130 )
@@ -473,7 +473,7 @@ margin_left = -36.0
 margin_top = -180.0
 margin_right = 36.0
 margin_bottom = 52.0
-color = Color( 1, 1, 0.65, 0.498039 )
+color = Color( 1, 1, 0.7, 0.498039 )
 
 [node name="Offset" type="Node2D" parent="CargoBayCoverageVisual/Center"]
 position = Vector2( 0, 105 )

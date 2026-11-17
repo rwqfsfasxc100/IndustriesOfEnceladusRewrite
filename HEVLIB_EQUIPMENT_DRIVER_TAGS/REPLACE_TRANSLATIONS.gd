@@ -307,8 +307,8 @@ const TRANSLATIONS = {
 			"version_hash": 746481602
 		},
 		"SYSTEM_CREW_ADD_MANUAL": {
-			"string": "Increases or decreases total crew capacity. \n Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes.\nDoes not require power or reactor heat.",
-			"version_hash": 1498043543
+			"string": "Increases or decreases total crew capacity.\nIncreases or decreases crew morale erosion per day of operation.\nUnhappy crew may cause worse operational outcomes.\nDoes not require power or reactor heat.",
+			"version_hash": 1242837463
 		},
 		"SYSTEM_CREW_MOD_HOME": {
 			"string": "Conlido mgHome Kit",
@@ -507,8 +507,8 @@ const TRANSLATIONS = {
 			"version_hash": 2550121865
 		},
 		"SYSTEM_CARGO_MOD_BOLTS_SPECS": {
-			"string": "Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)\nMass reduction: 2,650 kg",
-			"version_hash": 2493003163
+			"string": "Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)\nCrew morale erosion per day: -15%\nMass reduction: 2,650 kg",
+			"version_hash": 3475970796
 		},
 		"SYSTEM_CARGO_MOD_BOLTS_MANUAL": {
 			"string": "Converts the mineral hold storage volume to Divided.\nDivisions are equally divided into sixths of the total combined capacity. \nDoes not require power or reactor heat.",
@@ -1131,8 +1131,8 @@ const TRANSLATIONS = {
 			"version_hash": 2164652602
 		},
 		"SHIP_TRTL_RAM_SPECS": {
-			"string": "Make: Rusatom-Antonoff / Custom-built\nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2\nCrew: 4 \nDry mass: 46,000 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 37,500 kg \nEMP shielding: 50 MW",
-			"version_hash": 86090113
+			"string": "Make: Rusatom-Antonoff / Custom-built\nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2\nCrew: 4 \nDry mass: 46,000 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 28,000 kg \nEMP shielding: 50 MW",
+			"version_hash": 1156198524
 		},
 		"SYSTEM_REACTOR_TNTRL_FORT": {
 			"string": "Braced K37 nuclear reactor",
