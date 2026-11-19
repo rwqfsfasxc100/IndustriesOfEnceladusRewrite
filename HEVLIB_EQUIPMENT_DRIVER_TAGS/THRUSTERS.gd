@@ -1,10 +1,9 @@
 # [license]
-# 3-Clause BSD NON-AI License
-# 
-# Copyright 2026 __hev (Benjamin Buckhurst)
+# SPDX-License-Identifier: LicenseRef-Proprietary
+# Copyright © 2026 __hev (Benjamin Buckhurst). All Rights Reserved.
 # 
 # Redistribution and use in source and binary forms, with or without modification,
-# are permitted provided that the following conditions are met:
+# are permitted provided that all following conditions are met:
 # 
 # 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 # 
@@ -265,7 +264,7 @@ const SYSTEM_MAIN_ENGINE_PIN1200 = {
 	"special_fuel_limit":5400,
 	"specific_impulse":105,
 	"thermal_factor":1,
-	"power_draw":550000,
+	"power_draw":450000,
 	"gimbal_power_draw":30000,
 	"gimbal":rad2deg(0.7),
 	"gimbal_accuracy":0.85,
@@ -274,7 +273,7 @@ const SYSTEM_MAIN_ENGINE_PIN1200 = {
 	"pulse_engine":false,
 	"external_power":true,
 	"tune_thrust_max":1.25,
-	"mass":11350,
+	"mass":7350,
 	"min_choke":0.5,
 	"position":[0,0.156],
 	"scale":[0.6,1],
