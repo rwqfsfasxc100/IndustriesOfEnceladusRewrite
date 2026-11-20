@@ -35,7 +35,7 @@ extends "res://hud/SensorDisplay.gd"
 var ioer_synchudcolours_uinit : bool = false
 func _ready():
 	if ioer_synchudcolours_uinit:
-		ModLoader._savedObjects[0].main_modmain.log_double_load_error(get_script().resource_path)
+		ModLoader._savedObjects[0].log_double_load_error(get_script().resource_path)
 	ioer_synchudcolours_uinit = true
 	call_deferred("_synchronize_styles")
 

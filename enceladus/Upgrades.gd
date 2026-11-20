@@ -36,7 +36,7 @@ onready var params_box = get_node_or_null(NodePath("VB/WindowMargin/TabHintConta
 var ioer_addnewsensors_uinit : bool = false
 func _ready():
 	if ioer_addnewsensors_uinit:
-		ModLoader._savedObjects[0].main_modmain.log_double_load_error(get_script().resource_path)
+		ModLoader._savedObjects[0].log_double_load_error(get_script().resource_path)
 	ioer_addnewsensors_uinit = true
 	var startIndex = 24
 	var holdLabel = Label.new()
